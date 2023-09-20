@@ -1,0 +1,49 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+homeassistant:
+  packages: !include_dir_named packages
+  customize:
+    input_boolean.trash_has_been_taken_out:
+      device_class: battery_charging
+
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+# Text to speech
+tts:
+  - platform: google_translate
+    cache: true
+    cache_dir: /tmp/tts
+    time_memory: 300
+    service_name: google_say
+    base_url: http://192.168.86.21:8123
+    service_name: google_say
+
+recorder:
+  purge_keep_days: 400
+  auto_purge: true
+  db_url: !secret db_url
+
+# Spotcast
+spotcast:
+  sp_dc: !secret sp_dc
+  sp_key: !secret sp_key
+
+ourgroceries:
+  username: !secret our_groceries_username
+  password: !secret our_groceries_password
+
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+binary_sensor: !include binary_sensors.yaml
+
+sensor: !include sensors.yaml
+
+input_select: !include input_selects.yaml

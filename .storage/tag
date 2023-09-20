@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "tag",
+  "data": {
+    "items": [
+      {
+        "tag_id": "Test",
+        "name": "Test",
+        "id": "Test"
+      },
+      {
+        "tag_id": "6893bdd3-2294-45dd-bc8b-54759d3cedc1",
+        "name": "Wifi Password",
+        "id": "6893bdd3-2294-45dd-bc8b-54759d3cedc1"
+      }
+    ]
+  }
+}

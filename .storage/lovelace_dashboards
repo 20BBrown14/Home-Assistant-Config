@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_dashboards",
+  "data": {
+    "items": [
+      {
+        "show_in_sidebar": true,
+        "icon": "mdi:cellphone",
+        "title": "Mobile",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "lovelace-mobile",
+        "id": "lovelace_mobile"
+      },
+      {
+        "show_in_sidebar": true,
+        "icon": "mdi:tie",
+        "title": "Admin Dashboard",
+        "require_admin": true,
+        "mode": "storage",
+        "url_path": "admin-dashboard",
+        "id": "admin_dashboard"
+      },
+      {
+        "show_in_sidebar": true,
+        "icon": "mdi:remote",
+        "title": "Remotes",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-remotes",
+        "id": "dashboard_remotes"
+      },
+      {
+        "show_in_sidebar": true,
+        "icon": "mdi:shield-home",
+        "title": "Security",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-security",
+        "id": "dashboard_security"
+      }
+    ]
+  }
+}

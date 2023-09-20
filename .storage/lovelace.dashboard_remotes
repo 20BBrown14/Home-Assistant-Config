@@ -1,0 +1,1439 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_remotes",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "title": "Basement Fireplace",
+          "icon": "mdi:fireplace",
+          "badges": [],
+          "cards": [
+            {
+              "square": false,
+              "columns": 1,
+              "type": "grid",
+              "cards": [
+                {
+                  "square": false,
+                  "columns": 2,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fireplace",
+                          "command": "Flame Color"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:fire",
+                      "name": "Flame Color",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fireplace",
+                          "command": "Base Color"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:palette",
+                      "name": "Base Color",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "type": "custom:button-card",
+                      "color_type": "blank-card",
+                      "styles": {
+                        "card": [
+                          {
+                            "border-width": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fireplace",
+                          "command": "Power"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:power",
+                      "name": "Power",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "type": "custom:button-card",
+                      "color_type": "blank-card",
+                      "styles": {
+                        "card": [
+                          {
+                            "border-width": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fireplace",
+                          "command": "Dimmer"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:brightness-6",
+                      "name": "Dimmer",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fireplace",
+                          "command": "Speed"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:speedometer",
+                      "name": "Speed",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fireplace",
+                          "command": "Timer"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:timer-sand",
+                      "name": "Timer",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Deck Lights",
+          "path": "deck-lights",
+          "icon": "mdi:led-strip-variant",
+          "badges": [],
+          "cards": [
+            {
+              "square": false,
+              "columns": 1,
+              "type": "grid",
+              "cards": [
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Power On"
+                        },
+                        "target": {}
+                      },
+                      "name": "Power On",
+                      "icon": "mdi:power-plug",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "type": "custom:button-card",
+                      "color_type": "blank-card",
+                      "styles": {
+                        "card": [
+                          {
+                            "border-width": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Power Off"
+                        },
+                        "target": {}
+                      },
+                      "name": "Power Off",
+                      "icon": "mdi:power-plug-off"
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 5,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Timer Off"
+                        },
+                        "target": {}
+                      },
+                      "name": "Timer Off",
+                      "icon": "mdi:timer-off"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "2 Hour Timer"
+                        },
+                        "target": {}
+                      },
+                      "name": "Hours",
+                      "icon": "mdi:numeric-2-box"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "4 Hour Timer"
+                        },
+                        "target": {}
+                      },
+                      "name": "Hours",
+                      "icon": "mdi:numeric-4-box"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "6 Hour Timer"
+                        },
+                        "target": {}
+                      },
+                      "name": "Hours",
+                      "icon": "mdi:numeric-6-box"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "8 Hour Timer"
+                        },
+                        "target": {}
+                      },
+                      "name": "Hours",
+                      "icon": "mdi:numeric-8-box"
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Previous Mode"
+                        },
+                        "target": {}
+                      },
+                      "name": "Previous Mode",
+                      "icon": "mdi:skip-previous"
+                    },
+                    {
+                      "type": "custom:button-card",
+                      "color_type": "blank-card",
+                      "styles": {
+                        "card": [
+                          {
+                            "border-width": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Next Mode"
+                        },
+                        "target": {}
+                      },
+                      "name": "Next Mode",
+                      "icon": "mdi:skip-next"
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 4,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Twinkling"
+                        },
+                        "target": {}
+                      },
+                      "name": "Twinkling",
+                      "icon": "mdi:star"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Faster Twinkling"
+                        },
+                        "target": {}
+                      },
+                      "name": "Fast Twinkling",
+                      "icon": "mdi:star-box-multiple"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Alternating Blinking"
+                        },
+                        "target": {}
+                      },
+                      "name": "Blinking",
+                      "icon": "mdi:eye-outline"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Slow Alternating Fading"
+                        },
+                        "target": {}
+                      },
+                      "name": "Slow Blinking",
+                      "icon": "mdi:eye-minus-outline"
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 4,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Fast Alternating Blinking"
+                        },
+                        "target": {}
+                      },
+                      "name": "Fast Alt Blinking",
+                      "icon": "mdi:eye-plus-outline"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Fastest Alternating Blinking"
+                        },
+                        "target": {}
+                      },
+                      "name": "Fastest Alt Blinking",
+                      "icon": "mdi:eye-plus"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Fading"
+                        },
+                        "target": {}
+                      },
+                      "name": "Fading",
+                      "icon": "mdi:solar-power"
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Solid"
+                        },
+                        "target": {}
+                      },
+                      "name": "Solid",
+                      "icon": "mdi:solid"
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Lower Brightness"
+                        },
+                        "target": {}
+                      },
+                      "name": "Lower Brightness",
+                      "icon": "mdi:minus",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "type": "custom:button-card",
+                      "color_type": "blank-card",
+                      "styles": {
+                        "card": [
+                          {
+                            "border-width": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.deck_light_commands",
+                        "data": {
+                          "command": "Increase Brightness"
+                        },
+                        "target": {}
+                      },
+                      "name": "Increase Brightness",
+                      "icon": "mdi:plus",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Basement Fan",
+          "path": "basement-fan",
+          "icon": "mdi:fan",
+          "badges": [],
+          "cards": [
+            {
+              "square": false,
+              "columns": 1,
+              "type": "grid",
+              "cards": [
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fan",
+                          "command": "Speed",
+                          "hold_secs": 0.5,
+                          "num_repeats": 1
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:fan-plus",
+                      "name": "Speed",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fan",
+                          "command": "Power"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:power",
+                      "name": "Power",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement Fan",
+                          "command": "Oscilate"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:rotate-360",
+                      "name": "Oscilate",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Basement TV",
+          "path": "basement-tv",
+          "icon": "mdi:television",
+          "badges": [],
+          "cards": [
+            {
+              "square": false,
+              "columns": 1,
+              "type": "grid",
+              "cards": [
+                {
+                  "square": false,
+                  "columns": 2,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Power"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Power",
+                      "icon": "mdi:power",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Input"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Input",
+                      "icon": "mdi:video-input-hdmi",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Settings"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Settings",
+                      "icon": "mdi:cog-outline",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Up"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Up",
+                      "icon": "mdi:arrow-up",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Home"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Home",
+                      "icon": "mdi:home-circle",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Left"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Left",
+                      "icon": "mdi:arrow-left",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Okay"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Okay",
+                      "icon": "mdi:hand-okay",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Right"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Right",
+                      "icon": "mdi:arrow-right",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Back"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Back",
+                      "icon": "mdi:backspace",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Down"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Down",
+                      "icon": "mdi:arrow-down",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Exit"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Exit",
+                      "icon": "mdi:exit-run",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Volume Up"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Volume +",
+                      "icon": "mdi:volume-plus",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "type": "custom:button-card",
+                      "color_type": "blank-card",
+                      "styles": {
+                        "card": [
+                          {
+                            "border-width": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Channel Up"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Channel Up",
+                      "icon": "mdi:upload",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Volume Down"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Volume -",
+                      "icon": "mdi:volume-minus",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Mute"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Mute",
+                      "icon": "mdi:volume-mute",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Channel Down"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Channel Down",
+                      "icon": "mdi:download",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Pause"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Pause",
+                      "icon": "mdi:pause",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Play"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Play",
+                      "icon": "mdi:play",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Stop"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Stop",
+                      "icon": "mdi:stop",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Rewind"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Rewind",
+                      "icon": "mdi:rewind",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Sleep"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Sleep",
+                      "icon": "mdi:sleep",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Fast Forward"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Fast Forward",
+                      "icon": "mdi:fast-forward",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 4,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Red"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Red",
+                      "icon": "mdi:alpha-r-circle",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Green"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Green",
+                      "icon": "mdi:alpha-g-circle",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Yellow"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Yellow",
+                      "icon": "mdi:alpha-y-circle",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Basement TV",
+                          "command": "Blue"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "name": "Blue",
+                      "icon": "mdi:alpha-b-circle",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Living Room Ceiling Fan",
+          "path": "living-room-ceiling-fan",
+          "icon": "mdi:ceiling-fan",
+          "badges": [],
+          "cards": [
+            {
+              "square": false,
+              "columns": 1,
+              "type": "grid",
+              "cards": [
+                {
+                  "square": false,
+                  "columns": 2,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Living Room Ceiling Fan",
+                          "command": "Fan Off"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:fan-off",
+                      "name": "Fan Off",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Living Room Ceiling Fan",
+                          "command": "Fan On"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:fan",
+                      "name": "Fan On",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "square": false,
+                  "columns": 3,
+                  "type": "grid",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Living Room Ceiling Fan",
+                          "command": "Lower Fan Speed"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:fan-minus",
+                      "name": "Decrease Speed",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Living Room Ceiling Fan",
+                          "command": "Light"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:lightbulb-on",
+                      "name": "Light",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "remote.send_command",
+                        "data": {
+                          "device": "Living Room Ceiling Fan",
+                          "command": "Increase Fan Speed"
+                        },
+                        "target": {
+                          "entity_id": "remote.basement_universal_remote"
+                        }
+                      },
+                      "icon": "mdi:fan-plus",
+                      "name": "Increase Speed",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

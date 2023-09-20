@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_security",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "cards": [
+            {
+              "type": "custom:auto-entities",
+              "card": {
+                "type": "entities",
+                "title": "Open Windows"
+              },
+              "filter": {
+                "include": [
+                  {
+                    "and": [
+                      {
+                        "entity_id": "binary_sensor.*window*"
+                      },
+                      {
+                        "state": "on"
+                      }
+                    ]
+                  }
+                ],
+                "exclude": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

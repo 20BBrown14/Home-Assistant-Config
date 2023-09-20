@@ -1,0 +1,30 @@
+### Ignored direcorties.
+.cloud
+.storage/*
+.google.token
+backups
+custom_components
+zigbee2mqtt-data
+mosquitto-data
+
+### Ignored Sensitive Files
+ip_bans.yaml
+secrets.yaml
+known_devices.yaml
+*.db
+
+
+### Ignored files
+*.log
+*.log.1
+*.log.fault
+*HA_VERSION*
+
+### Whitelist
+# broadlink files store our RF/IR codes
+!.storage/broadlink*
+!.storage/input_boolean
+!.storage/input_select
+!.storage/lovelace*
+!.storage/person
+!.storage/tag

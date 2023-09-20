@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "name": "Branden",
+        "user_id": "32f3dc229b3742fd85bee517cda43b55",
+        "device_trackers": [
+          "device_tracker.branden_s_phone"
+        ],
+        "id": "branden",
+        "picture": "/api/image/serve/9fc9c2b14e4e6227be12b03f701459ec/512x512"
+      },
+      {
+        "name": "Samantha",
+        "device_trackers": [
+          "device_tracker.samantha_s_phone"
+        ],
+        "user_id": "1f1c81d780d44b3f9c0ae5fd830bbef0",
+        "picture": "/api/image/serve/0a368d9a64dd6aa78d8eac388e101f50/512x512",
+        "id": "samantha"
+      }
+    ]
+  }
+}

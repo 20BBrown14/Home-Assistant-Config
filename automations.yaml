@@ -1,0 +1,2080 @@
+- id: '1668369074264'
+  alias: Wax Warmer Safety
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: b1f048780390b20bdff5fec7f0a8718a
+    entity_id: switch.wax_warmer
+    domain: switch
+    for:
+      hours: 5
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: b1f048780390b20bdff5fec7f0a8718a
+    entity_id: switch.wax_warmer
+    domain: switch
+  mode: single
+- id: '1668370715281'
+  alias: Garage Door Opening
+  description: ''
+  trigger:
+  - platform: device
+    device_id: f0a84228db7888b84cbdda3273020bcd
+    domain: cover
+    entity_id: cover.garage_door
+    type: opening
+  condition: []
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.75
+    target:
+      entity_id:
+      - media_player.basement_speaker
+      - media_player.kitchen_speaker
+      - media_player.master_bedroom_speaker
+  - service: scene.create
+    data:
+      snapshot_entities:
+      - light.outdoor_sconce_light_1
+      - light.outdoor_sconce_light_2
+      - light.outdoor_sconce_light_3
+      - light.outdoor_sconce_light_4
+      scene_id: sconce_lights_previous
+  - parallel:
+    - if:
+      - condition: sun
+        before: sunrise
+        before_offset: '1:00:00'
+        after: sunset
+        after_offset: '-1:00:00'
+      then:
+      - service: script.turn_on_outdoor_sconse_lights_full_cool_bright
+        data: {}
+        enabled: true
+    - service: script.set_garage_door_status_leds
+      data: {}
+      enabled: true
+    - type: turn_on
+      device_id: 171c8f1cbdc67a075d1170858166fd45
+      entity_id: switch.wall_dimmer_switch_2
+      domain: switch
+      enabled: true
+    - if:
+      - condition: or
+        conditions:
+        - condition: time
+          before: '23:00:00'
+          after: 08:00:00
+          weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+        - condition: time
+          before: '23:30:00'
+          after: 09:30:00
+          weekday:
+          - sun
+          - sat
+      then:
+      - parallel:
+        - service: notify.google_assistant_sdk
+          data:
+            message: Garage Door Opening
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 15
+      milliseconds: 0
+  - parallel:
+    - parallel:
+      - service: media_player.volume_set
+        data:
+          volume_level: '{{basementSpeakerVolume}}'
+        target:
+          entity_id: media_player.basement_speaker
+      - service: media_player.volume_set
+        data:
+          volume_level: '{{kitchenSpeakerVolume}}'
+        target:
+          entity_id: media_player.kitchen_speaker
+      - service: media_player.volume_set
+        data:
+          volume_level: '{{masterBedroomSpeakerVolume}}'
+        target:
+          entity_id: media_player.master_bedroom_speaker
+  variables:
+    wasBasementPlaying: '{{states(''media_player.basement_speaker'') == ''playing''
+      or states(''media_player.basement_speaker'') == ''buffering''}}'
+    wasKitchenPlaying: '{{states(''media_player.kitchen_speaker'') == ''playing''
+      or states(''media_player.kitchen_speaker'') == ''buffering''}}'
+    wasMasterBedroomPlaying: '{{states(''media_player.master_bedroom_speaker'') ==
+      ''playing'' or states(''media_player.master_bedroom_speaker'') == ''buffering''}}'
+    basementSpeakerVolume: '{{state_attr(''media_player.basement_speaker'', ''volume_level'')
+      or 0.5}}'
+    kitchenSpeakerVolume: '{{state_attr(''media_player.kitchen_speaker'', ''volume_level'')
+      or 0.5}}'
+    masterBedroomSpeakerVolume: '{{state_attr(''media_player.master_bedroom_speaker'',
+      ''volume_level'') or 0.5}}'
+  mode: single
+- id: '1668373428361'
+  alias: Garage Door Closed
+  description: ''
+  trigger:
+  - platform: device
+    device_id: f0a84228db7888b84cbdda3273020bcd
+    domain: cover
+    entity_id: cover.garage_door
+    type: closed
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+    id: immediate
+  - platform: device
+    device_id: f0a84228db7888b84cbdda3273020bcd
+    domain: cover
+    entity_id: cover.garage_door
+    type: closed
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+    id: 3-mins
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id: immediate
+    then:
+    - service: script.reset_garage_status_leds
+      data: {}
+  - if:
+    - condition: trigger
+      id: 3-mins
+    then:
+    - parallel:
+      - type: turn_off
+        device_id: 171c8f1cbdc67a075d1170858166fd45
+        entity_id: switch.wall_dimmer_switch_2
+        domain: switch
+      - service: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.sconce_lights_previous
+  mode: single
+- id: '1668373463761'
+  alias: Garage Light Turned On
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    entity_id: switch.wall_dimmer_switch_2
+    domain: switch
+  condition: []
+  action:
+  - service: script.set_garage_light_status_leds
+    data: {}
+  mode: single
+- id: '1668373534966'
+  alias: Garage Light Turned Off
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    entity_id: switch.wall_dimmer_switch_2
+    domain: switch
+  condition: []
+  action:
+  - service: script.reset_garage_light_status_leds
+    data: {}
+  mode: single
+- id: '1668374110867'
+  alias: Garage Door Opened 30 Min Warning
+  description: ''
+  trigger:
+  - platform: device
+    device_id: f0a84228db7888b84cbdda3273020bcd
+    domain: cover
+    entity_id: cover.garage_door
+    type: opened
+    for:
+      hours: 0
+      minutes: 30
+      seconds: 0
+  condition:
+  - condition: state
+    entity_id: automation.disable_garage_light_timer
+    state: 'off'
+  action:
+  - repeat:
+      until:
+      - condition: device
+        device_id: f0a84228db7888b84cbdda3273020bcd
+        domain: cover
+        entity_id: cover.garage_door
+        type: is_closed
+      sequence:
+      - service: notify.google_assistant_sdk
+        data:
+          message: Garage door has been open for more than 30 minutes
+      - delay:
+          hours: 0
+          minutes: 0
+          seconds: 5
+          milliseconds: 0
+      - parallel:
+        - service: media_player.volume_set
+          data:
+            volume_level: '{{basementSpeakerVolume}}'
+          target:
+            entity_id: media_player.basement_speaker
+        - service: media_player.volume_set
+          data:
+            volume_level: '{{kitchenSpeakerVolume}}'
+          target:
+            entity_id: media_player.kitchen_speaker
+        - service: media_player.volume_set
+          data:
+            volume_level: '{{masterBedroomSpeakerVolume}}'
+          target:
+            entity_id: media_player.master_bedroom_speaker
+      - delay:
+          hours: 0
+          minutes: 30
+          seconds: 0
+          milliseconds: 0
+      - device_id: 86b1b485f0e733b3962457c610d02eae
+        domain: mobile_app
+        type: notify
+        message: Garage Door has been open for longer than 30 minutes
+        title: Garage Door Still Open!
+  variables:
+    wasBasementPlaying: '{{states(''media_player.basement_speaker'') == ''playing''
+      or states(''media_player.basement_speaker'') == ''buffering''}}'
+    wasKitchenPlaying: '{{states(''media_player.kitchen_speaker'') == ''playing''
+      or states(''media_player.kitchen_speaker'') == ''buffering''}}'
+    wasMasterBedroomPlaying: '{{states(''media_player.master_bedroom_speaker'') ==
+      ''playing'' or states(''media_player.master_bedroom_speaker'') == ''buffering''}}'
+    basementSpeakerVolume: '{{state_attr(''media_player.basement_speaker'', ''volume_level'')
+      or 0.5}}'
+    kitchenSpeakerVolume: '{{state_attr(''media_player.kitchen_speaker'', ''volume_level'')
+      or 0.5}}'
+    masterBedroomSpeakerVolume: '{{state_attr(''media_player.master_bedroom_speaker'',
+      ''volume_level'') or 0.5}}'
+  mode: single
+- id: '1668380333956'
+  alias: Kitchen Lights Turned Off
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 93ba05451716dba297c5d26e20d1e2b6
+    entity_id: switch.in_wall_paddle_switch_qfsw_500s_2
+    domain: switch
+  condition: []
+  action:
+  - if:
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: input_boolean.good_night_mode
+        state: 'on'
+      - condition: state
+        entity_id: switch.wake_on_lan_2
+        state: 'off'
+      - condition: or
+        conditions:
+        - condition: time
+          before: 08:00:00
+          after: '23:00:00'
+          weekday:
+          - mon
+          - tue
+          - wed
+          - thu
+        - condition: time
+          before: 09:30:00
+          after: '23:30:00'
+          weekday:
+          - sat
+          - sun
+    then:
+    - service: script.reset_kitchen_leds
+      data: {}
+    else:
+    - if:
+      - condition: and
+        conditions:
+        - condition: state
+          entity_id: input_boolean.good_night_mode
+          state: 'on'
+      then:
+      - service: script.set_kitchen_leds_idle_low_brightness
+        data: {}
+      else:
+      - service: script.set_kitchen_leds_idle
+        data: {}
+  mode: single
+- id: '1668380371231'
+  alias: Trigger Kitchen LEDs - Cooking
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 93ba05451716dba297c5d26e20d1e2b6
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 3
+  condition: []
+  action:
+  - service: script.set_kitchen_leds_cooking_mode
+    data: {}
+  - type: turn_on
+    device_id: 93ba05451716dba297c5d26e20d1e2b6
+    entity_id: switch.in_wall_paddle_switch_qfsw_500s_2
+    domain: switch
+  mode: single
+- id: '1668381021752'
+  alias: Trigger Kitchen LEDs - Occupied
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 93ba05451716dba297c5d26e20d1e2b6
+    entity_id: switch.in_wall_paddle_switch_qfsw_500s_2
+    domain: switch
+  condition: []
+  action:
+  - if:
+    - condition: template
+      value_template: '{{ (now() -  state_attr(''automation.trigger_kitchen_leds_cooking'',
+        ''last_triggered'')).seconds > 10 }}'
+    then:
+    - service: script.set_kitchen_leds_occupied
+      data: {}
+  mode: single
+- id: '1668382091059'
+  alias: Turn off Kitchen LEDs in PM
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:30:00'
+  condition: []
+  action:
+  - repeat:
+      until:
+      - condition: and
+        conditions:
+        - condition: state
+          entity_id: light.rgbw_dimmer_2
+          state: 'off'
+        - condition: state
+          entity_id: light.rgbw_dimmer_3
+          state: 'off'
+        - condition: state
+          entity_id: light.rgbw_dimmer_4
+          state: 'off'
+        - condition: state
+          entity_id: light.rgbw_dimmer_5
+          state: 'off'
+      sequence:
+      - if:
+        - condition: state
+          entity_id: switch.wake_on_lan_2
+          state: 'off'
+          for:
+            hours: 0
+            minutes: 10
+            seconds: 0
+        - condition: state
+          entity_id: input_boolean.good_night_mode
+          state: 'on'
+        then:
+        - service: script.reset_kitchen_leds
+          data: {}
+        else:
+        - delay:
+            hours: 0
+            minutes: 10
+            seconds: 0
+            milliseconds: 0
+  mode: single
+- id: '1668382172666'
+  alias: Turn on Kitchen LEDs in AM
+  description: ''
+  trigger:
+  - platform: time
+    at: 07:30:00
+  - platform: time
+    at: 09:00:00
+  condition:
+  - condition: or
+    conditions:
+    - condition: time
+      before: 00:00:00
+      after: 07:29:00
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+    - condition: time
+      before: 00:00:00
+      after: 08:59:00
+      weekday:
+      - sat
+      - sun
+  action:
+  - if:
+    - condition: device
+      type: is_off
+      device_id: 93ba05451716dba297c5d26e20d1e2b6
+      entity_id: switch.in_wall_paddle_switch_qfsw_500s_2
+      domain: switch
+    then:
+    - service: script.set_kitchen_leds_idle
+      data: {}
+    else:
+    - service: script.set_kitchen_leds_occupied
+      data: {}
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.good_night_mode
+  mode: single
+- id: '1668382431877'
+  alias: Turn on Deck Lights at Sunset
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: '-1:00:00'
+  condition:
+  - condition: time
+    before: 00:00:00
+    weekday:
+    - fri
+    - sat
+    - wed
+    - mon
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.backyard_lights
+  mode: single
+- id: '1668382517143'
+  alias: Turn off Deck Lights in PM
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:30:00'
+  condition: []
+  action:
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.backyard_lights
+  mode: single
+- id: '1668384372156'
+  alias: Trigger Get Ready for Bed
+  description: ''
+  trigger:
+  - platform: device
+    device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 3
+  condition: []
+  action:
+  - service: script.get_ready_for_bed
+    data: {}
+  mode: single
+- id: '1668384398280'
+  alias: Trigger Empty Master Bedroom
+  description: ''
+  trigger:
+  - platform: device
+    device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '002'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 002
+    value: 3
+  condition: []
+  action:
+  - service: script.empty_master_bedroom
+    data: {}
+  mode: single
+- id: '1668384540643'
+  alias: Turn on Frontyard Lights
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 7667289dac32e9792162b70cc2af7484
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 3
+  - platform: sun
+    event: sunset
+    offset: '-1:00:00'
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: input_boolean.holiday_light_season
+      state: 'on'
+    then:
+    - service: script.turn_on_holiday_lights
+      data: {}
+    - service: input_boolean.turn_on
+      data: {}
+      target:
+        entity_id: input_boolean.holiday_light_mode
+    else:
+    - service: script.turn_on_frontyard_lights_idle
+      data: {}
+  mode: restart
+- id: '1668384757377'
+  alias: Turn off Frontyard Lights
+  description: ''
+  trigger:
+  - platform: time
+    at: 01:00:00
+  - platform: device
+    device_id: 7667289dac32e9792162b70cc2af7484
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '002'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 002
+    value: 3
+  condition: []
+  action:
+  - if:
+    - condition: state
+      entity_id: input_boolean.holiday_light_mode
+      state: 'on'
+    then:
+    - service: script.turn_off_holiday_lights
+      data: {}
+    - service: input_boolean.turn_off
+      data: {}
+      target:
+        entity_id: input_boolean.holiday_light_mode
+    else:
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id: light.frontyard_lights
+  mode: single
+- id: '1668385139698'
+  alias: Motion in Garage
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 64f87538bc7680d16b9d62de3e259936
+    entity_id: binary_sensor.z_wave_motion_sensor_motion_detection
+    domain: binary_sensor
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    entity_id: switch.wall_dimmer_switch_2
+    domain: switch
+  mode: single
+- id: '1668385202787'
+  alias: Motion Stopped in Garage
+  description: ''
+  trigger:
+  - type: no_motion
+    platform: device
+    device_id: 64f87538bc7680d16b9d62de3e259936
+    entity_id: binary_sensor.z_wave_motion_sensor_motion_detection
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+  condition:
+  - condition: state
+    entity_id: input_boolean.garage_light_timers_disabled
+    state: 'off'
+  action:
+  - type: turn_off
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    entity_id: switch.wall_dimmer_switch_2
+    domain: switch
+  - type: turn_off
+    device_id: 3a7eaf9ea0e6d8a7074a460e70917e59
+    entity_id: switch.garage_led_bar
+    domain: switch
+  mode: single
+- id: '1668385958360'
+  alias: Toggle Bedside Lamp
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 4123d53d80bf262f32a413067ab8812b
+    type: action
+    subtype: single
+    discovery_id: 0x00158d0008393dbe action_single
+  condition: []
+  action:
+  - type: toggle
+    device_id: b47adfbdffd61cfbe4a91df9331b1c05
+    entity_id: switch.smart_plug_1_channel_2
+    domain: switch
+  mode: single
+- id: '1668465157914'
+  alias: Trash Reminder
+  description: ''
+  trigger:
+  - platform: time
+    at: '19:00:00'
+  - platform: time
+    at: 06:30:00
+  condition:
+  - condition: or
+    conditions:
+    - condition: time
+      before: '23:00:00'
+      after: '18:59:00'
+      weekday:
+      - wed
+    - condition: time
+      before: '14:00:00'
+      after: 06:29:00
+      weekday:
+      - thu
+  action:
+  - parallel:
+    - if:
+      - condition: not
+        conditions:
+        - condition: or
+          conditions:
+          - condition: state
+            entity_id: input_boolean.trash_has_been_taken_out
+            state: 'on'
+          - condition: or
+            conditions:
+            - condition: time
+              before: 00:00:00
+              after: '23:01:00'
+              weekday:
+              - wed
+            - condition: time
+              before: 00:00:00
+              after: '14:01:00'
+              weekday:
+              - thu
+      then:
+      - device_id: fc14d585e20bc18f0fae2b868f5849f3
+        domain: zwave_js
+        type: set_config_parameter
+        parameter: 24
+        bitmask:
+        subtype: 24 (Status LED 4 Color)
+        value: 5
+      - device_id: fc14d585e20bc18f0fae2b868f5849f3
+        domain: zwave_js
+        type: set_config_parameter
+        parameter: 31
+        bitmask: 1
+        subtype: 31[0x1] (LED 1 Blink Status)
+        value: 1
+      - device_id: 171c8f1cbdc67a075d1170858166fd45
+        domain: zwave_js
+        type: set_config_parameter
+        parameter: 24
+        bitmask:
+        subtype: 24 (Status LED 4 Color)
+        value: 5
+      - device_id: 171c8f1cbdc67a075d1170858166fd45
+        domain: zwave_js
+        type: set_config_parameter
+        parameter: 31
+        bitmask: 8
+        subtype: 31[0x8] (LED 4 Blink Status)
+        value: 1
+      - repeat:
+          until:
+          - condition: or
+            conditions:
+            - condition: state
+              entity_id: input_boolean.trash_has_been_taken_out
+              state: 'on'
+            - condition: or
+              conditions:
+              - condition: time
+                before: 00:00:00
+                after: '23:01:00'
+                weekday:
+                - wed
+              - condition: time
+                before: 00:00:00
+                after: '14:01:00'
+                weekday:
+                - thu
+          sequence:
+          - device_id: 86b1b485f0e733b3962457c610d02eae
+            domain: mobile_app
+            type: notify
+            message: Don't forget to take the trash out!
+            title: Trash Day Reminder
+            data:
+              color: green
+              actions:
+              - action: TRASH_TAKEN_OUT
+                title: Confirm trash has been taken out
+          - device_id: 6636b1f64974c361328efbc239dceb84
+            domain: mobile_app
+            type: notify
+            message: Don't forget to take the trash out!
+            title: Trash Day Reminder
+            data:
+              color: purple
+              actions:
+              - action: TRASH_TAKEN_OUT
+                title: Confirm trash has been taken out
+            enabled: true
+          - delay:
+              hours: 0
+              minutes: 45
+              seconds: 0
+              milliseconds: 0
+    - if:
+      - condition: not
+        conditions:
+        - condition: or
+          conditions:
+          - condition: state
+            entity_id: input_boolean.trash_has_been_taken_out
+            state: 'on'
+          - condition: or
+            conditions:
+            - condition: time
+              before: 00:00:00
+              after: '23:01:00'
+              weekday:
+              - wed
+            - condition: time
+              before: 00:00:00
+              after: '14:01:00'
+              weekday:
+              - thu
+          - condition: template
+            value_template: '{{ now().isocalendar().week % 2 == 0}}'
+      then:
+      - repeat:
+          until:
+          - condition: or
+            conditions:
+            - condition: state
+              entity_id: input_boolean.trash_has_been_taken_out
+              state: 'on'
+            - condition: or
+              conditions:
+              - condition: time
+                before: 00:00:00
+                after: '23:01:00'
+                weekday:
+                - wed
+              - condition: time
+                before: 00:00:00
+                after: '14:01:00'
+                weekday:
+                - thu
+            - condition: template
+              value_template: '{{ now().isocalendar().week % 2 == 0}}'
+          sequence:
+          - device_id: 86b1b485f0e733b3962457c610d02eae
+            domain: mobile_app
+            type: notify
+            message: Don't forget to take the recycling out!
+            title: Recycling Day Reminder
+            data:
+              actions:
+              - action: RECYCLING_TAKEN_OUT
+                title: Confirm recycling has been taken out
+          - device_id: 6636b1f64974c361328efbc239dceb84
+            domain: mobile_app
+            type: notify
+            message: Don't forget to take the recycling out!
+            title: Recycling Day Reminder
+            data:
+              actions:
+              - action: RECYCLING_TAKEN_OUT
+                title: Confirm recycling has been taken out
+          - delay:
+              hours: 0
+              minutes: 45
+              seconds: 0
+              milliseconds: 0
+  mode: single
+- id: '1668465206707'
+  alias: Confirm Trash Taken Out
+  description: ''
+  trigger:
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: TRASH_TAKEN_OUT
+  condition: []
+  action:
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.trash_has_been_taken_out
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 24
+    bitmask:
+    subtype: 24 (Status LED 4 Color)
+    value: 0
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 24
+    bitmask:
+    subtype: 24 (Status LED 4 Color)
+    value: 0
+  mode: single
+- id: '1668465562267'
+  alias: Confirm Recycling Taken Out
+  description: ''
+  trigger:
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: RECYCLING_TAKEN_OUT
+  condition: []
+  action:
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.recycling_has_been_taken_out
+  mode: single
+- id: '1668467112500'
+  alias: Weather Radio
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.nws_alert_count
+  condition:
+  - condition: template
+    value_template: '{{ states.sensor.nws_alert_count.state | int > 0 }}'
+  action:
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.weather_radio_silenced
+  - parallel:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: '{{state_attr(''sensor.nws_alert_event'', ''features'')|map(attribute="properties")|map(attribute="event")|join(''
+          | '')}}'
+        title: Weather Alert
+        data:
+          sticky: true
+          color: '{{''#FF0000'' if (''warning'' in states.sensor.nws_alert_event.state|lower)
+            else ''#FF9300''}}'
+          actions:
+          - action: SILENCE_WEATHER_NOTIFICATION
+            title: Silence Weather Notification
+          - action: URI
+            title: View in Browser
+            uri: https://alerts.weather.gov/cap/wwaatmget.php?x=KSZ105
+      enabled: true
+    - service: notify.mobile_app_samantha_s_phone
+      data:
+        message: '{{state_attr(''sensor.nws_alert_event'', ''features'')|map(attribute="properties")|map(attribute="event")|join(''
+          | '')}}'
+        title: Weather Alert
+        data:
+          sticky: true
+          color: '{{''#FF0000'' if (''warning'' in states.sensor.nws_alert_event.state|lower)
+            else ''#FF9300''}}'
+          actions:
+          - action: SILENCE_WEATHER_NOTIFICATION
+            title: Silence Weather Notification
+          - action: URI
+            title: View in Browser
+            uri: https://alerts.weather.gov/cap/wwaatmget.php?x=KSZ105
+      enabled: true
+    - repeat:
+        count: 2
+        sequence:
+        - if:
+          - condition: or
+            conditions:
+            - condition: and
+              conditions:
+              - condition: state
+                entity_id: input_boolean.weather_radio_silenced
+                state: 'off'
+              - condition: time
+                before: '23:00:00'
+                after: 07:00:00
+                weekday:
+                - sun
+                - mon
+                - tue
+                - wed
+                - thu
+                - fri
+                - sat
+              enabled: true
+            - condition: template
+              value_template: '{{ ''warning'' in states.sensor.nws_alert_event.state|lower}}'
+            enabled: false
+          - condition: and
+            conditions:
+            - condition: template
+              value_template: '{{ ''warning'' in states.sensor.nws_alert_event.state|lower}}'
+            - condition: template
+              value_template: '{{ ''tornado'' in states.sensor.nws_alert_event.state|lower}}'
+          then:
+          - service: media_player.volume_set
+            data:
+              volume_level: 0.8
+            target:
+              entity_id:
+              - media_player.basement_speaker
+              - media_player.kitchen_speaker
+              - media_player.master_bedroom_speaker
+          - service: media_player.play_media
+            data:
+              media_content_id: media-source://tts/google_translate?message={{'ATTENTION...
+                ATTENTION... The national weather service has issued the following
+                statements... ' + state_attr('sensor.nws_alert_event', 'features')|map(attribute="properties")|map(attribute="headline")|join('...
+                NEXT ALERT... ')}}
+              media_content_type: provider
+            target:
+              entity_id:
+              - media_player.kitchen_speaker
+              - media_player.basement_speaker
+              - media_player.master_bedroom_speaker
+            enabled: true
+          - service: media_player.play_media
+            data:
+              media_content_id: media-source://tts/google_translate?message={{'ATTENTION...
+                ATTENTION... The national weather service has issued important weather
+                statements.'}}
+              media_content_type: provider
+            target:
+              entity_id:
+              - media_player.kitchen_speaker
+              - media_player.basement_speaker
+              - media_player.master_bedroom_speaker
+            enabled: false
+          - delay:
+              hours: 0
+              minutes: 1
+              seconds: 0
+              milliseconds: 0
+          - service: media_player.volume_set
+            data:
+              volume_level: 0.5
+            target:
+              entity_id: media_player.all_speakers
+      enabled: true
+  - parallel:
+    - if:
+      - condition: template
+        value_template: '{{wasBasementPlaying == true}}'
+      then:
+      - service: media_player.volume_set
+        data:
+          volume_level: '{{basementSpeakerVolume}}'
+        target:
+          entity_id: media_player.basement_speaker
+      - service: spotcast.start
+        data:
+          force_playback: true
+          entity_id: media_player.basement_speaker
+          limit: 20
+          random_song: false
+          repeat: 'off'
+          shuffle: false
+          offset: 0
+          ignore_fully_played: false
+    - if:
+      - condition: template
+        value_template: '{{wasKitchenPlaying == true}}'
+      then:
+      - service: media_player.volume_set
+        data:
+          volume_level: '{{kitchenSpeakerVolume}}'
+        target:
+          entity_id: media_player.kitchen_speaker
+      - service: spotcast.start
+        data:
+          force_playback: true
+          entity_id: media_player.kitchen_speaker
+          limit: 20
+          random_song: false
+          repeat: 'off'
+          shuffle: false
+          offset: 0
+          ignore_fully_played: false
+    - if:
+      - condition: template
+        value_template: '{{wasMasterBedroomPlaying == true}}'
+      then:
+      - service: media_player.volume_set
+        data:
+          volume_level: '{{masterBedroomSpeakerVolume}}'
+        target:
+          entity_id: media_player.master_bedroom_speaker
+      - service: spotcast.start
+        data:
+          force_playback: true
+          entity_id: media_player.master_bedroom_speaker
+          limit: 20
+          random_song: false
+          repeat: 'off'
+          shuffle: false
+          offset: 0
+          ignore_fully_played: false
+    enabled: false
+  variables:
+    wasBasementPlaying: '{{states(''media_player.basement_speaker'') == ''playing''
+      or states(''media_player.basement_speaker'') == ''buffering''}}'
+    wasKitchenPlaying: '{{states(''media_player.kitchen_speaker'') == ''playing''
+      or states(''media_player.kitchen_speaker'') == ''buffering''}}'
+    wasMasterBedroomPlaying: '{{states(''media_player.master_bedroom_speaker'') ==
+      ''playing'' or states(''media_player.master_bedroom_speaker'') == ''buffering''}}'
+    basementSpeakerVolume: '{{state_attr(''media_player.basement_speaker'', ''volume_level'')
+      or 0.5}}'
+    kitchenSpeakerVolume: '{{state_attr(''media_player.kitchen_speaker'', ''volume_level'')
+      or 0.5}}'
+    masterBedroomSpeakerVolume: '{{state_attr(''media_player.master_bedroom_speaker'',
+      ''volume_level'') or 0.5}}'
+  mode: single
+- id: '1668467973795'
+  alias: Silence Weather Radio
+  description: ''
+  trigger:
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: SILENCE_WEATHER_NOTIFICATION
+  condition: []
+  action:
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.weather_radio_silenced
+  mode: single
+- id: '1668616382871'
+  alias: Turn on bedside fan
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 4123d53d80bf262f32a413067ab8812b
+    type: action
+    subtype: hold
+    discovery_id: 0x00158d0008393dbe action_hold
+  condition: []
+  action:
+  - type: toggle
+    device_id: 10186c425eb8729e24fde4e484d6a531
+    entity_id: switch.smart_plug_1_channel
+    domain: switch
+  mode: single
+- id: '1668826022378'
+  alias: Reset Trash Reminders
+  description: ''
+  trigger:
+  - platform: time
+    at: 08:00:00
+  condition:
+  - condition: time
+    before: 00:00:00
+    weekday:
+    - wed
+    after: 00:00:00
+  action:
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id:
+      - input_boolean.recycling_has_been_taken_out
+      - input_boolean.trash_has_been_taken_out
+  mode: single
+- id: '1669149028048'
+  alias: Low Battery Notifications
+  description: ''
+  trigger:
+  - type: battery_level
+    platform: device
+    device_id: 4123d53d80bf262f32a413067ab8812b
+    entity_id: sensor.bedside_lamp_button_battery
+    domain: sensor
+    below: 90
+    id: Bedside Lamp Button
+  - type: battery_level
+    platform: device
+    device_id: 3f5c22d3f62c1224844e69a476dd9aa3
+    entity_id: sensor.garage_light_button_battery
+    domain: sensor
+    id: Garage Light Button
+    below: 95
+  - type: battery_level
+    platform: device
+    device_id: 64f87538bc7680d16b9d62de3e259936
+    entity_id: sensor.garage_motion_sensor_battery
+    domain: sensor
+    below: 30
+    id: Garage Motion Sensor
+  condition: []
+  action:
+  - device_id: 86b1b485f0e733b3962457c610d02eae
+    domain: mobile_app
+    type: notify
+    message: '{{trigger.id}}''s battery is low.'
+    title: Low Battery Warning
+  mode: parallel
+  max: 10
+- id: '1669152857813'
+  alias: Toggle Garage Lights
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 3f5c22d3f62c1224844e69a476dd9aa3
+    type: action
+    subtype: single
+    discovery_id: 0x00158d0008394a31 action_single
+    id: single_click
+  - platform: device
+    domain: mqtt
+    device_id: 3f5c22d3f62c1224844e69a476dd9aa3
+    type: action
+    subtype: hold
+    discovery_id: 0x00158d0008394a31 action_hold
+    id: hold_click
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id: single_click
+    then:
+    - type: toggle
+      device_id: 171c8f1cbdc67a075d1170858166fd45
+      entity_id: switch.wall_dimmer_switch_2
+      domain: switch
+  - if:
+    - condition: trigger
+      id: hold_click
+    then:
+    - type: toggle
+      device_id: 3a7eaf9ea0e6d8a7074a460e70917e59
+      entity_id: switch.garage_led_bar
+      domain: switch
+  mode: single
+- id: '1669225163811'
+  alias: Low Battery Notification
+  description: ''
+  use_blueprint:
+    path: sbyx/low-battery-level-detection-notification-for-all-battery-sensors.yaml
+    input:
+      exclude:
+        entity_id:
+        - sensor.branden_s_phone_battery_level
+        - sensor.samantha_s_phone_battery_level
+      actions:
+      - device_id: 86b1b485f0e733b3962457c610d02eae
+        domain: mobile_app
+        type: notify
+        message: '{{sensors}}'
+        title: Low Battery Notification
+      threshold: 20
+      time: '10:00:00'
+- id: '1670669877104'
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  mode: single
+- id: '1672032565019'
+  alias: Water Sensor
+  description: ''
+  trigger:
+  - type: moist
+    platform: device
+    device_id: 0ee6462039b411dbe8b8a4563e2c3653
+    entity_id: binary_sensor.sump_pump_leak_sensor_water_leak
+    domain: binary_sensor
+  condition: []
+  action:
+  - parallel:
+    - device_id: 86b1b485f0e733b3962457c610d02eae
+      domain: mobile_app
+      type: notify
+      message: Sump Pump Water Sensor Tripped
+      title: "\U0001F4A7 ⚠️ Water Leak Detected \U0001F4A7 ⚠️ "
+    - device_id: 6636b1f64974c361328efbc239dceb84
+      domain: mobile_app
+      type: notify
+      message: Sump Pump Water Sensor Tripped
+      title: "\U0001F4A7 ⚠️ Water Leak Detected \U0001F4A7 ⚠️ "
+  mode: single
+- id: '1672945679380'
+  alias: Universal Remote Test
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: remote.learn_command
+    data:
+      device: Basement TV
+      command: Power
+    target:
+      entity_id: remote.basement_universal_remote
+  - service: remote.send_command
+    data:
+      hold_secs: 0.5
+      device: Basement TV
+      command: Power
+    target:
+      entity_id: remote.basement_universal_remote
+  - service: remote.delete_command
+    data:
+      command: Fan Power
+      device: Living Room Ceiling Fan
+    target:
+      entity_id: remote.basement_universal_remote
+  mode: single
+- id: '1673115807419'
+  alias: Garage Entry Opened
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: 933741cce5d5e2275a126b49415cad02
+    entity_id: binary_sensor.garage_door_window_door_is_open
+    domain: binary_sensor
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    entity_id: switch.wall_dimmer_switch_2
+    domain: switch
+  - if:
+    - condition: sun
+      before: sunrise
+      before_offset: '1:00:00'
+      after: sunset
+      after_offset: '-1:00:00'
+    then:
+    - type: turn_on
+      device_id: 1f38410000bfa7512b5e118322a6f696
+      entity_id: switch.entry_light
+      domain: switch
+  - delay:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - if:
+    - condition: state
+      entity_id: input_boolean.garage_light_timers_disabled
+      state: 'off'
+    then:
+    - type: turn_off
+      device_id: 171c8f1cbdc67a075d1170858166fd45
+      entity_id: switch.wall_dimmer_switch_2
+      domain: switch
+  - if:
+    - type: is_not_occupied
+      condition: device
+      device_id: cec1c9acc6998365c5762cb515ed6469
+      entity_id: binary_sensor.living_room_occupancy
+      domain: binary_sensor
+    then:
+    - type: turn_off
+      device_id: 1f38410000bfa7512b5e118322a6f696
+      entity_id: switch.entry_light
+      domain: switch
+    else:
+    - wait_for_trigger:
+      - type: not_occupied
+        platform: device
+        device_id: cec1c9acc6998365c5762cb515ed6469
+        entity_id: binary_sensor.living_room_occupancy
+        domain: binary_sensor
+    - type: turn_off
+      device_id: 1f38410000bfa7512b5e118322a6f696
+      entity_id: switch.entry_light
+      domain: switch
+  mode: restart
+- id: '1674073338532'
+  alias: Leak detection & notification
+  description: ''
+  use_blueprint:
+    path: TurtleFX/leak-detector-notifier.yaml
+    input:
+      actions:
+      - device_id: 86b1b485f0e733b3962457c610d02eae
+        domain: mobile_app
+        type: notify
+        message: "⚠️\U0001F4A6 {{ trigger.event.data.new_state.attributes.friendly_name
+          }} has detected a leak! \U0001F4A6⚠️"
+        title: Water leak!
+      - device_id: 6636b1f64974c361328efbc239dceb84
+        domain: mobile_app
+        type: notify
+        message: "⚠️\U0001F4A6 {{ trigger.event.data.new_state.attributes.friendly_name
+          }} has detected a leak! \U0001F4A6⚠️"
+        title: Water leak!
+- id: '1674073683498'
+  alias: Frontyard light Visibility
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 1f38410000bfa7512b5e118322a6f696
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 4
+    id: trigger_on
+  - platform: device
+    device_id: 1f38410000bfa7512b5e118322a6f696
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '002'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 002
+    value: 4
+    id: trigger_off
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id: trigger_on
+    then:
+    - service: script.switch_to_front_yard_visibility_and_back
+      data: {}
+  - if:
+    - condition: trigger
+      id: trigger_off
+    then:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.frontyard_previous
+      metadata: {}
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 10
+        milliseconds: 0
+    - service: scene.create
+      data:
+        scene_id: frontyard_previous
+        snapshot_entities:
+        - light.outdoor_sconce_light_1
+        - light.outdoor_sconce_light_2
+        - light.outdoor_sconce_light_3
+        - light.outdoor_sconce_light_4
+        - light.porch_light
+  mode: restart
+- id: '1674349011766'
+  alias: Turn of Master Bedroom light, delayed
+  description: ''
+  trigger:
+  - platform: device
+    device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '002'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 002
+    value: 2
+  condition: []
+  action:
+  - repeat:
+      count: '2'
+      sequence:
+      - type: toggle
+        device_id: fc14d585e20bc18f0fae2b868f5849f3
+        entity_id: light.master_bedroom_light
+        domain: light
+      - delay:
+          hours: 0
+          minutes: 0
+          seconds: 0
+          milliseconds: 250
+  - delay:
+      hours: 0
+      minutes: 6
+      seconds: 0
+      milliseconds: 0
+  - type: turn_off
+    device_id: fc14d585e20bc18f0fae2b868f5849f3
+    entity_id: light.master_bedroom_light
+    domain: light
+  mode: restart
+- id: '1674374816162'
+  alias: New Automation
+  description: ''
+  trigger:
+  - platform: time
+    at: 06:00:00
+  condition: []
+  action:
+  - type: turn_off
+    device_id: b1f048780390b20bdff5fec7f0a8718a
+    entity_id: switch.wax_warmer
+    domain: switch
+  mode: single
+- id: '1674500755303'
+  alias: Turn on Kitchen Light
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 896c999f58ebc3aab7ebfd0e161a2ef3
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 3
+    id: Flood-light-trigger
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 93ba05451716dba297c5d26e20d1e2b6
+    entity_id: switch.in_wall_paddle_switch_qfsw_500s_2
+    domain: switch
+  - if:
+    - condition: trigger
+      id: Flood-light-trigger
+    then:
+    - type: turn_off
+      device_id: 896c999f58ebc3aab7ebfd0e161a2ef3
+      entity_id: switch.flood_light
+      domain: switch
+  mode: single
+- id: '1676406975991'
+  alias: Subbasement Air Filter
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:00:00
+    id: 'On'
+  - platform: time
+    at: 07:00:00
+    id: 'Off'
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id: 'On'
+    then:
+    - type: turn_on
+      device_id: 6d227761a2477b601fc1d49c41d13a48
+      entity_id: switch.subbasement_filter
+      domain: switch
+  - if:
+    - condition: trigger
+      id: 'Off'
+    then:
+    - type: turn_off
+      device_id: 6d227761a2477b601fc1d49c41d13a48
+      entity_id: switch.subbasement_filter
+      domain: switch
+  mode: single
+- id: '1676739355156'
+  alias: Disable Garage Light Timer
+  description: ''
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 3f5c22d3f62c1224844e69a476dd9aa3
+    type: action
+    subtype: double
+    discovery_id: 0x00158d0008394a31 action_double
+    id: turn_on_1
+  - platform: device
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 2
+    id: turn_on_2
+  - platform: state
+    entity_id:
+    - input_boolean.garage_light_timers_disabled
+    to: 'on'
+    for:
+      hours: 4
+      minutes: 0
+      seconds: 0
+    id: turn_off_1
+  - platform: device
+    device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '002'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 002
+    value: 2
+    id: turn_off_2
+  condition: []
+  action:
+  - if:
+    - condition: or
+      conditions:
+      - condition: trigger
+        id: turn_on_1
+      - condition: trigger
+        id: turn_on_2
+    then:
+    - service: input_boolean.turn_on
+      data: {}
+      target:
+        entity_id: input_boolean.garage_light_timers_disabled
+    - type: turn_on
+      device_id: 171c8f1cbdc67a075d1170858166fd45
+      entity_id: switch.wall_dimmer_switch_2
+      domain: switch
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      parameter: 31
+      bitmask: 16
+      subtype: 31[0x10] (LED 5 Blink Status)
+      value: 0
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      parameter: 25
+      bitmask:
+      subtype: 25 (Status LED 5 Color)
+      value: 3
+  - if:
+    - condition: or
+      conditions:
+      - condition: trigger
+        id: turn_off_1
+      - condition: trigger
+        id: turn_off_2
+    then:
+    - type: turn_off
+      device_id: 171c8f1cbdc67a075d1170858166fd45
+      entity_id: switch.wall_dimmer_switch_2
+      domain: switch
+    - service: input_boolean.turn_off
+      data: {}
+      target:
+        entity_id: input_boolean.garage_light_timers_disabled
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      parameter: 25
+      bitmask:
+      subtype: 25 (Status LED 5 Color)
+      value: 0
+  mode: restart
+- id: '1677391431999'
+  alias: Front Door Opened
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: ca0457c4a2a23167836611ffe6200a52
+    entity_id: binary_sensor.front_door_window_door_is_open
+    domain: binary_sensor
+  condition: []
+  action:
+  - if:
+    - condition: sun
+      before: sunrise
+      before_offset: '1:00:00'
+      after: sunset
+      after_offset: '-1:00:00'
+    then:
+    - service: script.switch_to_front_yard_visibility_and_back
+      data: {}
+  mode: restart
+- id: '1677391512771'
+  alias: Front Door Closed
+  description: ''
+  trigger:
+  - type: not_opened
+    platform: device
+    device_id: ca0457c4a2a23167836611ffe6200a52
+    entity_id: binary_sensor.front_door_window_door_is_open
+    domain: binary_sensor
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 2
+      seconds: 0
+      milliseconds: 0
+  - service: scene.turn_on
+    data: {}
+    target:
+      entity_id: scene.frontyard_previous
+  mode: restart
+- id: '1681152888179'
+  alias: Doors and Window - Climate
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.all_windows
+    from: 'off'
+    to: 'on'
+    id: Window(s)_Opened
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    alias: Windows Open for 10 minutes
+  - platform: state
+    entity_id:
+    - binary_sensor.all_doors
+    from: 'off'
+    to: 'on'
+    id: Door(s)_Opened
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+    alias: Doors Open for 15 minutes
+  - platform: state
+    entity_id:
+    - binary_sensor.all_doors
+    from: 'on'
+    to: 'off'
+    id: Door(s)_Closed
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    alias: Doors closed for 5 minutes
+  - platform: state
+    entity_id:
+    - binary_sensor.all_windows
+    from: 'on'
+    to: 'off'
+    id: Window(s)_Closed
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    alias: Windows closed for 5 minutes
+  - type: opened
+    platform: device
+    device_id: a7b07bea42b31891f7476f3d3c86d4b8
+    entity_id: binary_sensor.master_bedroom_window_1_contact
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    id: master_bedroom_windows_1
+  - type: opened
+    platform: device
+    device_id: d61ec84b8f27358063c640c92918a30c
+    entity_id: binary_sensor.master_bedroom_window_2_contact
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    id: master_bedroom_windows_2
+  - type: opened
+    platform: device
+    device_id: e745d1a473239dbd4e97e4543ae1ddb8
+    entity_id: binary_sensor.living_room_window_1_contact
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    id: living_room_window_1_opened
+  - type: opened
+    platform: device
+    device_id: 89a16d3809eba6acb1fccc31484038aa
+    entity_id: binary_sensor.living_room_window_2_contact
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    id: living_room_window_2_opened
+  - type: opened
+    platform: device
+    device_id: dbc279518161d86c319c53a54a12b234
+    entity_id: binary_sensor.living_room_window_3_contact
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    id: living_room_window_3_opened
+  - type: opened
+    platform: device
+    device_id: ca0457c4a2a23167836611ffe6200a52
+    entity_id: binary_sensor.front_door_window_door_is_open
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+    id: front_door_open
+  - type: opened
+    platform: device
+    device_id: 605f72a4446c466652d58d50cd8ea648
+    entity_id: binary_sensor.kitchen_door_window_door_is_open
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+    id: kitchen_door_open
+  condition: []
+  action:
+  - if:
+    - condition: or
+      conditions:
+      - condition: trigger
+        id: Window(s)_Opened
+      - condition: trigger
+        id: Door(s)_Opened
+    then:
+    - device_id: 0bcb5d2a9faa56f77c07a7c9da51e63d
+      domain: climate
+      entity_id: climate.thermostat
+      type: set_hvac_mode
+      hvac_mode: 'off'
+    alias: Turn off thermostat if doors/windows open
+  - if:
+    - condition: or
+      conditions:
+      - condition: trigger
+        id: Door(s)_Closed
+      - condition: trigger
+        id: Window(s)_Closed
+    - condition: state
+      entity_id: binary_sensor.doors_and_windows
+      state: 'off'
+    then:
+    - device_id: 0bcb5d2a9faa56f77c07a7c9da51e63d
+      domain: climate
+      entity_id: climate.thermostat
+      type: set_hvac_mode
+      hvac_mode: cool
+    alias: Turn on thermostat if doors/windows closed
+  - if:
+    - condition: or
+      conditions:
+      - condition: trigger
+        id: master_bedroom_windows_1
+      - condition: trigger
+        id: master_bedroom_windows_2
+    then:
+    - type: turn_on
+      device_id: e50cb3846e82014dde1e95832d9d4e9c
+      entity_id: fan.in_wall_fan_speed_control_500s
+      domain: fan
+    alias: Master Bedroom
+  - if:
+    - condition: or
+      conditions:
+      - condition: trigger
+        id: living_room_window_1_opened
+      - condition: trigger
+        id: living_room_window_2_opened
+      - condition: trigger
+        id: living_room_window_3_opened
+      - condition: trigger
+        id: front_door_open
+      - condition: trigger
+        id: kitchen_door_open
+    then:
+    - type: turn_on
+      device_id: 1b34603e48a969148fd92a4667db70e9
+      entity_id: switch.living_room_light
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 20
+        milliseconds: 0
+    - service: remote.send_command
+      data:
+        device: Living Room Ceiling Fan
+        command: Fan On
+        num_repeats: 1
+        delay_secs: 0.4
+        hold_secs: 0
+      target:
+        entity_id: remote.basement_universal_remote
+    alias: Living Room
+  mode: single
+- id: '1688524813925'
+  alias: Master Bathroom Humidity
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: c29d2e813077036d4bab3e9b611dbfcc
+    entity_id: light.master_bath_light
+    domain: light
+  condition:
+  - condition: or
+    conditions:
+    - type: is_humidity
+      condition: device
+      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
+      entity_id: sensor.master_bath_humidity_sensor_humidity
+      domain: sensor
+      above: 55
+    - condition: device
+      type: is_on
+      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+      entity_id: switch.master_bath_fan
+      domain: switch
+  action:
+  - type: turn_on
+    device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+    entity_id: switch.master_bath_fan
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - if:
+    - type: is_humidity
+      condition: device
+      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
+      entity_id: sensor.master_bath_humidity_sensor_humidity
+      domain: sensor
+      below: 55
+    then:
+    - type: turn_off
+      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+      entity_id: switch.master_bath_fan
+      domain: switch
+    else:
+    - wait_for_trigger:
+      - type: humidity
+        platform: device
+        device_id: 1169d1b12d491476d9d27c9da4fa3f7e
+        entity_id: sensor.master_bath_humidity_sensor_humidity
+        domain: sensor
+        below: 55
+    - type: turn_off
+      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+      entity_id: switch.master_bath_fan
+      domain: switch
+  mode: restart
+- id: '1691364797438'
+  alias: Master Bath Night Time
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.good_night_mode
+    to: 'on'
+    id: 'On'
+  - platform: state
+    entity_id:
+    - input_boolean.good_night_mode
+    to: 'off'
+    id: 'Off'
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id: 'On'
+    then:
+    - device_id: c29d2e813077036d4bab3e9b611dbfcc
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 18
+      bitmask:
+      subtype: 18 (Custom Brightness Level) on endpoint 0
+      value: 10
+  - if:
+    - condition: trigger
+      id: 'Off'
+    then:
+    - device_id: c29d2e813077036d4bab3e9b611dbfcc
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 18
+      bitmask:
+      subtype: 18 (Custom Brightness Level) on endpoint 0
+      value: 99
+  mode: single
+- id: '1692042872884'
+  alias: Upstairs Bath Humidity
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 6d3f36694a2e5b4f48d6bd264219ca4d
+    entity_id: light.upstairs_bathroom_light
+    domain: light
+  condition:
+  - condition: or
+    conditions:
+    - type: is_humidity
+      condition: device
+      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
+      entity_id: sensor.master_bath_humidity_sensor_humidity
+      domain: sensor
+      above: 55
+      enabled: false
+    - condition: device
+      type: is_on
+      device_id: 210139e6bd0e25f06141a1d46ef27425
+      entity_id: switch.upstairs_bathroom_fan
+      domain: switch
+  action:
+  - type: turn_on
+    device_id: 210139e6bd0e25f06141a1d46ef27425
+    entity_id: switch.upstairs_bathroom_fan
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - if:
+    - type: is_humidity
+      condition: device
+      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
+      entity_id: sensor.master_bath_humidity_sensor_humidity
+      domain: sensor
+      below: 55
+    then:
+    - type: turn_off
+      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+      entity_id: switch.master_bath_fan
+      domain: switch
+    else:
+    - wait_for_trigger:
+      - type: humidity
+        platform: device
+        device_id: 1169d1b12d491476d9d27c9da4fa3f7e
+        entity_id: sensor.master_bath_humidity_sensor_humidity
+        domain: sensor
+        below: 55
+    - type: turn_off
+      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+      entity_id: switch.master_bath_fan
+      domain: switch
+    enabled: false
+  - type: turn_off
+    device_id: 210139e6bd0e25f06141a1d46ef27425
+    entity_id: switch.upstairs_bathroom_fan
+    domain: switch
+  mode: restart
+- id: '1692043138901'
+  alias: Upstairs Bath Night Time
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.good_night_mode
+    to: 'on'
+    id: 'On'
+  - platform: state
+    entity_id:
+    - input_boolean.good_night_mode
+    to: 'off'
+    id: 'Off'
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id: 'On'
+    then:
+    - device_id: 6d3f36694a2e5b4f48d6bd264219ca4d
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 18
+      bitmask:
+      subtype: 18 (Custom Brightness Level) on endpoint 0
+      value: 45
+  - if:
+    - condition: trigger
+      id: 'Off'
+    then:
+    - device_id: 6d3f36694a2e5b4f48d6bd264219ca4d
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 18
+      bitmask:
+      subtype: 18 (Custom Brightness Level) on endpoint 0
+      value: 99
+  mode: single

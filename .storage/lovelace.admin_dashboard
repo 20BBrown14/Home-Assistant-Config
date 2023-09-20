@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.admin_dashboard",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "theme": "Backend-selected",
+          "title": "Battery Devices",
+          "icon": "mdi:battery-unknown",
+          "badges": [],
+          "cards": [
+            {
+              "type": "custom:auto-entities",
+              "card": {
+                "type": "entities"
+              },
+              "filter": {
+                "include": [
+                  {
+                    "entity_id": "sensor.*battery"
+                  }
+                ],
+                "exclude": []
+              },
+              "sort": {
+                "method": "state",
+                "reverse": false,
+                "numeric": true
+              }
+            },
+            {
+              "type": "custom:auto-entities",
+              "card": {
+                "type": "entities"
+              },
+              "filter": {
+                "include": [
+                  {
+                    "entity_id": "sensor.*temperature"
+                  }
+                ],
+                "exclude": [
+                  {
+                    "entity_id": "*window*"
+                  },
+                  {
+                    "entity_id": "*phone*"
+                  },
+                  {
+                    "entity_id": "*device*"
+                  }
+                ]
+              },
+              "sort": {
+                "method": "state",
+                "reverse": true,
+                "numeric": true
+              }
+            }
+          ]
+        },
+        {
+          "theme": "Backend-selected",
+          "title": "Machine",
+          "path": "machine",
+          "panel": true,
+          "icon": "mdi:desktop-classic",
+          "badges": [],
+          "cards": [
+            {
+              "square": true,
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "custom:history-explorer-card",
+                      "cardName": "PC",
+                      "graphs": [
+                        {
+                          "type": "line",
+                          "entities": [
+                            {
+                              "entity": "sensor.processor_temperature"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "line",
+                          "entities": [
+                            {
+                              "entity": "sensor.processor_use"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "custom:history-explorer-card",
+                      "cardName": "PC",
+                      "graphs": [
+                        {
+                          "type": "line",
+                          "entities": [
+                            {
+                              "entity": "sensor.disk_free_config"
+                            },
+                            {
+                              "entity": "sensor.disk_use_config"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "custom:history-explorer-card",
+                      "cardName": "PC",
+                      "graphs": [
+                        {
+                          "type": "line",
+                          "entities": [
+                            {
+                              "entity": "sensor.memory_free"
+                            },
+                            {
+                              "entity": "sensor.memory_use"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "entity": "sensor.disk_free_config"
+                        },
+                        {
+                          "entity": "sensor.disk_use_config"
+                        },
+                        {
+                          "entity": "sensor.memory_free"
+                        },
+                        {
+                          "entity": "sensor.memory_use"
+                        },
+                        {
+                          "entity": "sensor.processor_use"
+                        },
+                        {
+                          "entity": "sensor.last_boot"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "columns": 3
+            }
+          ]
+        },
+        {
+          "title": "Home",
+          "icon": "mdi:history",
+          "cards": [
+            {
+              "type": "custom:history-explorer-card",
+              "cardName": "historycard-80460175",
+              "graphs": [
+                {
+                  "type": "line",
+                  "entities": [
+                    {
+                      "entity": "sensor.garage_temp_sensor_temperature"
+                    },
+                    {
+                      "entity": "sensor.outside_temp_sensor_temperature"
+                    },
+                    {
+                      "entity": "cover.garage_door"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "custom:history-explorer-card",
+              "cardName": "historycard-80460175",
+              "graphs": [
+                {
+                  "type": "line",
+                  "entities": [
+                    {
+                      "entity": "sensor.thermostat_temperature"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "entities": [
+                    {
+                      "entity": "sensor.basement_temperature"
+                    },
+                    {
+                      "entity": "sensor.outside_temp_sensor_temperature"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

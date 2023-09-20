@@ -1,0 +1,41 @@
+- platform: systemmonitor
+  scan_interval: 60
+  resources:
+    - type: disk_use
+      arg: /config
+    - type: disk_free
+      arg: /config
+    - type: memory_use
+    - type: memory_free
+    - type: last_boot
+    - type: processor_use
+    - type: processor_temperature
+- platform: rest
+  resource: https://api.weather.gov/alerts/active/count
+  name: NWS Alert Count
+  value_template: >
+    {% if value_json.zones.KSZ105 is defined %}
+      {{ value_json.zones.KSZ105 }}
+    {% else %}
+      0
+    {% endif %}
+  headers:
+    User-Agent: Homeassistant
+    Accept: application/ld+json
+  scan_interval: 60
+    
+- platform: rest
+  resource: https://api.weather.gov/alerts/active?zone=KSZ105
+  name: NWS Alert Event
+  value_template: >
+    {% if value_json.features is defined %}
+      {{ value_json['features']|map(attribute="properties")|map(attribute="event")|join(' | ') }}
+    {% else %}
+      None
+    {% endif %}
+  json_attributes:
+    - features
+  headers:
+    User-Agent: Homeassistant
+    Accept: application/geo+json
+  scan_interval: 60

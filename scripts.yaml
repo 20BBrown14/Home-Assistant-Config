@@ -1,0 +1,842 @@
+set_garage_door_status_leds:
+  alias: Set Garage Door Status LEDs
+  sequence:
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 27
+    bitmask:
+    subtype: 27 (Status LED 7 Color)
+    value: 1
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 31
+    bitmask: 64
+    subtype: 31[0x40] (LED 7 Blink Status)
+    value: 1
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 31
+    bitmask: 64
+    subtype: 31[0x40] (LED 7 Blink Status)
+    value: 1
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 27
+    bitmask:
+    subtype: 27 (Status LED 7 Color)
+    value: 1
+  mode: single
+reset_garage_status_leds:
+  alias: Reset Garage Status LEDs
+  sequence:
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 27
+    bitmask:
+    subtype: 27 (Status LED 7 Color)
+    value: 0
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 27
+    bitmask:
+    subtype: 27 (Status LED 7 Color)
+    value: 0
+  mode: single
+reset_garage_light_status_leds:
+  alias: Reset Garage Light Status LEDs
+  sequence:
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 21
+    bitmask:
+    subtype: 21 (Status LED 1 Color)
+    value: 0
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 21
+    bitmask:
+    subtype: 21 (Status LED 1 Color)
+    value: 0
+  mode: single
+set_garage_light_status_leds:
+  alias: Set Garage Light Status LEDs
+  sequence:
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 21
+    bitmask:
+    subtype: 21 (Status LED 1 Color)
+    value: 7
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 31
+    bitmask: 1
+    subtype: 31[0x1] (LED 1 Blink Status)
+    value: 0
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 31
+    bitmask: 1
+    subtype: 31[0x1] (LED 1 Blink Status)
+    value: 0
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    parameter: 21
+    bitmask:
+    subtype: 21 (Status LED 1 Color)
+    value: 7
+  mode: single
+turn_on_outdoor_sconse_lights_full_cool_bright:
+  alias: Turn on Outdoor Sconse Lights - Full Cool, Bright
+  sequence:
+  - if:
+    - condition: device
+      type: is_off
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: switch.porch_lights
+      domain: switch
+    then:
+    - type: turn_on
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: switch.porch_lights
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 1
+        milliseconds: 0
+  - service: light.turn_on
+    data:
+      brightness_pct: 100
+      color_temp: 154
+    target:
+      entity_id: light.outdoor_sconce_lights
+  mode: single
+good_night:
+  alias: Good Night
+  sequence:
+  - parallel:
+    - type: turn_off
+      device_id: fc14d585e20bc18f0fae2b868f5849f3
+      entity_id: light.master_bedroom_light
+      domain: light
+    - type: turn_off
+      device_id: b47adfbdffd61cfbe4a91df9331b1c05
+      entity_id: switch.smart_plug_1_channel_2
+      domain: switch
+    - type: turn_on
+      device_id: e50cb3846e82014dde1e95832d9d4e9c
+      entity_id: fan.in_wall_fan_speed_control_500s
+      domain: fan
+    - type: turn_on
+      device_id: 10186c425eb8729e24fde4e484d6a531
+      entity_id: switch.smart_plug_1_channel
+      domain: switch
+    - type: turn_off
+      device_id: b1f048780390b20bdff5fec7f0a8718a
+      entity_id: switch.wax_warmer
+      domain: switch
+    - service: input_boolean.turn_on
+      data: {}
+      target:
+        entity_id: input_boolean.good_night_mode
+    - if:
+      - condition: state
+        entity_id: switch.wake_on_lan_2
+        state: 'off'
+      then:
+      - service: script.reset_kitchen_leds
+        data: {}
+      else:
+      - service: script.set_kitchen_leds_idle_low_brightness
+        data: {}
+    - type: turn_off
+      device_id: 39deb1f87e6aad05d538dd7f5a39245b
+      entity_id: switch.christmas_tree
+      domain: switch
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      parameter: 24
+      bitmask:
+      subtype: 24 (Status LED 4 Color)
+      value: 0
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      parameter: 24
+      bitmask:
+      subtype: 24 (Status LED 4 Color)
+      value: 0
+  mode: single
+reset_kitchen_leds:
+  alias: Reset Kitchen LEDs
+  sequence:
+  - parallel:
+    - service: light.turn_off
+      data: {}
+      target:
+        entity_id:
+        - light.rgbw_dimmer_4
+        - light.rgbw_dimmer_3
+        - light.rgbw_dimmer_2
+        - light.rgbw_dimmer_5
+  mode: single
+set_kitchen_leds_cooking_mode:
+  alias: Set Kitchen LEDs - Cooking Mode
+  sequence:
+  - service: script.reset_kitchen_leds
+    data: {}
+  - service: light.turn_on
+    data:
+      brightness_pct: 100
+    target:
+      entity_id:
+      - light.rgbw_dimmer_5
+      - light.rgbw_dimmer
+  mode: single
+set_kitchen_leds_occupied:
+  alias: Set Kitchen LEDs - Occupied
+  sequence:
+  - service: script.reset_kitchen_leds
+    data: {}
+  - service: light.turn_on
+    data:
+      brightness_pct: 75
+    target:
+      entity_id:
+      - light.rgbw_dimmer
+      - light.rgbw_dimmer_5
+  mode: single
+set_kitchen_leds_idle:
+  alias: Set Kitchen LEDs - Idle
+  sequence:
+  - service: script.reset_kitchen_leds
+    data: {}
+  - service: light.turn_on
+    data:
+      brightness_pct: 75
+    target:
+      entity_id: light.rgbw_dimmer_3
+  mode: single
+set_kitchen_leds_idle_low_brightness:
+  alias: Set Kitchen LEDs - Idle, Low Brightness
+  sequence:
+  - service: script.reset_kitchen_leds
+    data: {}
+  - service: light.turn_on
+    data:
+      brightness_pct: 40
+    target:
+      entity_id:
+      - light.rgbw_dimmer
+      - light.rgbw_dimmer_3
+  mode: single
+get_ready_for_bed:
+  alias: Get Ready For Bed
+  sequence:
+  - parallel:
+    - type: turn_on
+      device_id: fc14d585e20bc18f0fae2b868f5849f3
+      entity_id: light.master_bedroom_light
+      domain: light
+      brightness_pct: 55
+    - type: turn_on
+      device_id: e50cb3846e82014dde1e95832d9d4e9c
+      entity_id: fan.in_wall_fan_speed_control_500s
+      domain: fan
+    - type: turn_on
+      device_id: b47adfbdffd61cfbe4a91df9331b1c05
+      entity_id: switch.smart_plug_1_channel_2
+      domain: switch
+    - type: turn_on
+      device_id: 10186c425eb8729e24fde4e484d6a531
+      entity_id: switch.smart_plug_1_channel
+      domain: switch
+  mode: single
+empty_master_bedroom:
+  alias: Empty Master Bedroom
+  sequence:
+  - type: turn_off
+    device_id: fc14d585e20bc18f0fae2b868f5849f3
+    entity_id: light.master_bedroom_light
+    domain: light
+  - type: turn_off
+    device_id: e50cb3846e82014dde1e95832d9d4e9c
+    entity_id: fan.in_wall_fan_speed_control_500s
+    domain: fan
+  - type: turn_off
+    device_id: 10186c425eb8729e24fde4e484d6a531
+    entity_id: switch.smart_plug_1_channel
+    domain: switch
+  - type: turn_off
+    device_id: b47adfbdffd61cfbe4a91df9331b1c05
+    entity_id: switch.smart_plug_1_channel_2
+    domain: switch
+  mode: single
+turn_on_holiday_lights:
+  alias: Turn on Holiday Lights
+  sequence:
+  - if:
+    - condition: device
+      type: is_off
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: switch.porch_lights
+      domain: switch
+    then:
+    - type: turn_on
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: switch.porch_lights
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 1
+        milliseconds: 0
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.holiday_lights
+  - service: light.turn_on
+    data:
+      color_name: green
+      brightness_pct: 100
+    target:
+      entity_id: light.outdoor_sconce_lights
+  - service: light.turn_on
+    data:
+      brightness_pct: 63
+      effect: Christmas
+    target:
+      entity_id: light.porch_light
+  - type: turn_on
+    device_id: 39deb1f87e6aad05d538dd7f5a39245b
+    entity_id: switch.christmas_tree
+    domain: switch
+  - type: turn_on
+    device_id: a62a8e0b44081f63016629a6823476d5
+    entity_id: switch.upstairs_window_decoration
+    domain: switch
+  mode: single
+turn_off_holiday_lights:
+  alias: Turn off Holiday Lights
+  sequence:
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.holiday_lights
+  - service: light.turn_off
+    data: {}
+    target:
+      entity_id: light.outdoor_sconce_lights
+  - type: turn_off
+    device_id: e92e0738814460ac3d65d44e25ff7c4a
+    entity_id: light.porch_light
+    domain: light
+  - type: turn_off
+    device_id: 39deb1f87e6aad05d538dd7f5a39245b
+    entity_id: switch.christmas_tree
+    domain: switch
+  - type: turn_off
+    device_id: a62a8e0b44081f63016629a6823476d5
+    entity_id: switch.upstairs_window_decoration
+    domain: switch
+  mode: single
+set_front_yard_lights_for_visibility:
+  alias: Set Front Yard Lights for Visibility
+  sequence:
+  - if:
+    - condition: device
+      type: is_off
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: switch.porch_lights
+      domain: switch
+    then:
+    - type: turn_on
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: switch.porch_lights
+      domain: switch
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 1
+        milliseconds: 0
+  - service: script.turn_on_outdoor_sconse_lights_full_cool_bright
+    data: {}
+  - service: light.turn_on
+    data:
+      brightness_pct: 100
+      effect: Cool white
+    target:
+      device_id: e92e0738814460ac3d65d44e25ff7c4a
+  mode: restart
+switch_to_front_yard_visibility_and_back:
+  alias: Switch to front yard visibility and back
+  sequence:
+  - service: scene.create
+    data:
+      scene_id: frontyard_previous
+      snapshot_entities:
+      - light.outdoor_sconce_light_1
+      - light.outdoor_sconce_light_2
+      - light.outdoor_sconce_light_3
+      - light.outdoor_sconce_light_4
+      - light.porch_light
+  - service: script.set_front_yard_lights_for_visibility
+    data: {}
+  mode: restart
+new_script:
+  alias: New Script
+  sequence:
+  - delay:
+      hours: 3
+      minutes: 30
+      seconds: 1
+      milliseconds: 0
+  - type: turn_off
+    device_id: b1f048780390b20bdff5fec7f0a8718a
+    entity_id: switch.wax_warmer
+    domain: switch
+  mode: single
+new_script_2:
+  alias: TTS and resume
+  variables:
+    mediaplayer_State: '{{ states(media_player.basement_speaker) }}'
+    mediaplayer_volume_level: '{{ state_attr(media_player.basement_speaker,''volume_level'')
+      }}'
+    mediaplayer_media_content_id: '{{ state_attr(media_player.basement_speaker,''media_content_id'')
+      }}'
+    mediaplayer_app_name: '{{ state_attr(media_player.basement_speaker,''app_name'')
+      }}'
+    mediaplayer_Source: '{{ state_attr(media_player.basement_speaker,''media_channel'')
+      }}'
+  sequence:
+  - service: media_player.volume_set
+    data:
+      entity_id: '{{ media_player.basement_speaker }}'
+      volume_level: 0.75
+  - service: tts.google_translate_say
+    data:
+      entity_id: '{{ media_player.basement_speaker }}'
+      language: da
+      message: '{{ "this is a test" }}'
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 7
+      milliseconds: 0
+  - service: media_player.volume_set
+    data:
+      entity_id: '{{ media_player.basement_speaker }}'
+      volume_level: '{{ mediaplayer_volume_level }}'
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ mediaplayer_app_name == ''Spotify'' }}'
+      sequence:
+      - service: spotcast.start
+        data:
+          entity_id: '{{ media_player.basement_speaker }}'
+      - service: media_player.media_play
+        data:
+          entity_id: '{{ media_player.basement_speaker }}'
+    default:
+    - service: media_player.play_media
+      data:
+        entity_id: '{{ media_player.basement_speaker }}'
+        media_content_id: '{{ mediaplayer_media_content_id }}'
+        media_content_type: music
+    - delay:
+        hours: 0
+        minutes: 0
+        seconds: 8
+        milliseconds: 0
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ mediaplayer_Source != None }}'
+      sequence:
+      - service: media_player.select_source
+        data:
+          entity_id: '{{ media_player.basement_speaker }}'
+          source: '{{ mediaplayer_Source }}'
+  - service: media_player.media_pause
+    data:
+      entity_id: '{{ media_player.basement_speaker }}'
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 4
+      milliseconds: 0
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ mediaplayer_State == ''playing'' }}'
+      sequence:
+      - service: media_player.media_play
+        data:
+          entity_id: '{{ media_player.basement_speaker }}'
+  mode: single
+new_script_3:
+  alias: tts test
+  sequence:
+  - service: media_player.play_media
+    data:
+      media_content_id: media-source://tts/google_translate?message={{"fat test"}}
+      media_content_type: provider
+    target:
+      entity_id: media_player.all_speakers
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - parallel:
+    - service: spotcast.start
+      data:
+        entity_id: media_player.basement_speaker
+        force_playback: false
+  mode: single
+weather_radio_announcement:
+  alias: Weather Radio Announcement
+  sequence:
+  - repeat:
+      count: 2
+      sequence:
+      - if:
+        - condition: or
+          conditions:
+          - condition: and
+            conditions:
+            - condition: state
+              entity_id: input_boolean.weather_radio_silenced
+              state: 'off'
+            - condition: time
+              before: '23:00:00'
+              after: 07:00:00
+              weekday:
+              - sun
+              - mon
+              - tue
+              - wed
+              - thu
+              - fri
+              - sat
+          - condition: template
+            value_template: '{{ ''warning'' in states.sensor.nws_alert_event.state|lower}}'
+        then:
+        - service: media_player.volume_set
+          data:
+            volume_level: 0.8
+          target:
+            entity_id:
+            - media_player.basement_speaker
+            - media_player.kitchen_speaker
+            - media_player.master_bedroom_speaker
+        - service: media_player.play_media
+          data:
+            media_content_id: media-source://tts/google_translate?message={{'ATTENTION...
+              ATTENTION... The national weather service has issued the following statements...
+              ' + state_attr('sensor.nws_alert_event', 'features')|map(attribute="properties")|map(attribute="headline")|join('...
+              NEXT ALERT... ')}}
+            media_content_type: provider
+          target:
+            entity_id:
+            - media_player.kitchen_speaker
+            - media_player.basement_speaker
+            - media_player.master_bedroom_speaker
+        - delay:
+            hours: 0
+            minutes: 1
+            seconds: 0
+            milliseconds: 0
+        - service: media_player.volume_set
+          data:
+            volume_level: 0.5
+          target:
+            entity_id: media_player.all_speakers
+  mode: single
+let_there_be_light_out_front:
+  alias: Let there be light out front
+  sequence:
+  - service: script.set_front_yard_lights_for_visibility
+    data: {}
+  mode: restart
+  icon: mdi:doorbell
+reset_front_yard_lights:
+  alias: Reset front Yard lights
+  sequence:
+  - service: scene.turn_on
+    data: {}
+    target:
+      entity_id: scene.frontyard_previous
+  mode: restart
+  icon: mdi:lock-reset
+turn_on_frontyard_lights_idle:
+  alias: Turn on Frontyard Lights, Idle
+  sequence:
+  - service: light.turn_on
+    data:
+      brightness: 255
+      kelvin: 2702
+    target:
+      entity_id: light.outdoor_sconce_lights
+  - service: light.turn_on
+    data:
+      brightness_pct: 10
+      kelvin: 2702
+    target:
+      entity_id: light.porch_light
+  mode: single
+deck_light_remote_power_on:
+  alias: 'Deck Light Remote: Power On'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Deck Lights 1
+      command: Power On
+    target:
+      entity_id: remote.basement_universal_remote
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  - service: remote.send_command
+    data:
+      device: Deck Lights 2
+      command: Power On
+    target:
+      entity_id: remote.basement_universal_remote
+  mode: restart
+  icon: mdi:balcony
+deck_light_remote_power_off:
+  alias: 'Deck Light Remote: Power Off'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Deck Lights 1
+      command: Power Off
+    target:
+      entity_id: remote.basement_universal_remote
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  - service: remote.send_command
+    data:
+      device: Deck Lights 2
+      command: Power Off
+    target:
+      entity_id: remote.basement_universal_remote
+  mode: restart
+  icon: mdi:balcony
+deck_light_commands:
+  alias: Deck Light Commands
+  sequence:
+  - if:
+    - condition: template
+      value_template: '{{command == "Power On"}}'
+    then:
+    - parallel:
+      - type: turn_on
+        device_id: 7c289e53447c81f5d6494596316c8954
+        entity_id: switch.outdoor_z_wave_plug_in_module_2_channel
+        domain: switch
+      - type: turn_on
+        device_id: 7c289e53447c81f5d6494596316c8954
+        entity_id: switch.outdoor_z_wave_plug_in_module_2_channel_2
+        domain: switch
+  - if:
+    - condition: template
+      value_template: '{{commnand == "Power Off"}}'
+    then:
+    - parallel:
+      - type: turn_off
+        device_id: 7c289e53447c81f5d6494596316c8954
+        entity_id: switch.outdoor_z_wave_plug_in_module_2_channel
+        domain: switch
+      - type: turn_off
+        device_id: 7c289e53447c81f5d6494596316c8954
+        entity_id: switch.outdoor_z_wave_plug_in_module_2_channel_2
+        domain: switch
+  - service: remote.send_command
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: Deck Lights 1
+      command: '{{command}}'
+    target:
+      entity_id: remote.basement_universal_remote
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 0
+      milliseconds: 500
+  - service: remote.send_command
+    data:
+      num_repeats: 1
+      delay_secs: 0.4
+      hold_secs: 0
+      device: Deck Lights 2
+      command: '{{command}}'
+    target:
+      entity_id: remote.basement_universal_remote
+  - if:
+    - condition: template
+      value_template: '{{commnand == "Power Off"}}'
+    then:
+    - parallel:
+      - type: turn_off
+        device_id: 7c289e53447c81f5d6494596316c8954
+        entity_id: switch.outdoor_z_wave_plug_in_module_2_channel
+        domain: switch
+      - type: turn_off
+        device_id: 7c289e53447c81f5d6494596316c8954
+        entity_id: switch.outdoor_z_wave_plug_in_module_2_channel_2
+        domain: switch
+  mode: restart
+basement_tv_pause:
+  alias: 'Basement TV: Pause'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Basement TV
+      command: Pause
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_play:
+  alias: 'Basement TV: Play'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Basement TV
+      command: Play
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_power:
+  alias: 'Basement TV: Power'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Basement TV
+      command: Power
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_pause_in_15_seconds:
+  alias: 'Basement TV: Pause in 15 seconds'
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 12
+      milliseconds: 0
+  - service: remote.send_command
+    data:
+      command: Pause
+      device: Basement TV
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_pause_in_30_seconds:
+  alias: 'Basement TV: Pause in 30 seconds'
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 27
+      milliseconds: 0
+  - service: remote.send_command
+    data:
+      command: Pause
+      device: Basement TV
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_pause_in_45_seconds:
+  alias: 'Basement TV: Pause in 45 seconds'
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 42
+      milliseconds: 0
+  - service: remote.send_command
+    data:
+      command: Pause
+      device: Basement TV
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_pause_in_60_seconds:
+  alias: 'Basement TV: Pause in 60 seconds'
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 57
+      milliseconds: 0
+  - service: remote.send_command
+    data:
+      command: Pause
+      device: Basement TV
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_pause_in_75_seconds:
+  alias: 'Basement TV: Pause in 75 seconds'
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 1
+      seconds: 12
+      milliseconds: 0
+  - service: remote.send_command
+    data:
+      command: Pause
+      device: Basement TV
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_tv_pause_in_90_seconds:
+  alias: 'Basement TV: Pause in 90 seconds'
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 1
+      seconds: 27
+      milliseconds: 0
+  - service: remote.send_command
+    data:
+      command: Pause
+      device: Basement TV
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: restart
+basement_fan_power:
+  alias: 'Basement Fan: Power'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Basement Fan
+      command: Power
+    target:
+      entity_id: remote.basement_universal_remote
+  mode: restart

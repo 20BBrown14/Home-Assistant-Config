@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_resources",
+  "data": {
+    "items": [
+      {
+        "url": "/local/vacuum-card.js",
+        "type": "module",
+        "id": "8b3e0ab595f24bfa9133576b53c31c68"
+      },
+      {
+        "url": "/hacsfiles/vacuum-card/vacuum-card.js?hacstag=261291295273",
+        "type": "module",
+        "id": "880837bfd2cf451794fa0b3b99ec60a0"
+      },
+      {
+        "url": "/hacsfiles/ha-floorplan/floorplan.js?hacstag=1883234941035",
+        "type": "module",
+        "id": "4905f571b317420783debf07de5b637d"
+      },
+      {
+        "url": "/hacsfiles/button-card/button-card.js?hacstag=146194325350",
+        "type": "module",
+        "id": "91e625211be94ad6a4e811be110109a4"
+      },
+      {
+        "url": "http://0.0.0.0:8080/main.js",
+        "type": "module",
+        "id": "47f582ea7efa475d9ab47db65f6e5f69"
+      },
+      {
+        "url": "/local/react-panel/main.js",
+        "type": "module",
+        "id": "e355e10d317f4e6e86587c56c05cd832"
+      },
+      {
+        "url": "/local/auto-entities.js",
+        "type": "module",
+        "id": "fcaa321ff0af4af38371a38ccccc216e"
+      },
+      {
+        "id": "0c56c237f39a444fad47617bb3163e3b",
+        "url": "/hacsfiles/our-groceries-card/our-groceries-card.js?hacstag=197960232161",
+        "type": "module"
+      },
+      {
+        "id": "22289ce1840b40e6a78d5ac03e27e289",
+        "url": "/hacsfiles/history-explorer-card/history-explorer-card.js?hacstag=4403747941047",
+        "type": "module"
+      },
+      {
+        "id": "8febad8b37694c068478aba0e0650939",
+        "url": "/hacsfiles/select-list-card/select-list-card.js?hacstag=275672933120",
+        "type": "module"
+      },
+      {
+        "id": "712a58b551374704a5ec8d80aebcd8a5",
+        "url": "/hacsfiles/lovelace-auto-entities/auto-entities.js?hacstag=1677445841121",
+        "type": "module"
+      },
+      {
+        "id": "e3c53f796b9142d29ce8fcb91c4ed481",
+        "url": "/hacsfiles/config-template-card/config-template-card.js?hacstag=172177543136",
+        "type": "module"
+      }
+    ]
+  }
+}

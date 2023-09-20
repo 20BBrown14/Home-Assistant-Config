@@ -1,0 +1,22 @@
+room_select:
+  name: Room Select
+  options:
+    - "Backyard"
+    - "Basement"
+    - "Basement Bathroom"
+    - "Dining Room"
+    - "Entrance"
+    - "Finnley's Room"
+    - "Frontyard"
+    - "Garage"
+    - "Hallway"
+    - "Kitchen"
+    - "Kitchen Cabinets"
+    - "Living Room"
+    - "Master Bathroom"
+    - "Master Bedroom"
+    - "Office"
+    - "Outside"
+    - "Storage Room"
+    - "Sub-basement"
+    - "Upstairs Bathroom"

@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_boolean",
+  "data": {
+    "items": [
+      {
+        "name": "Good Night Mode",
+        "icon": "mdi:weather-night",
+        "id": "good_night_mode"
+      },
+      {
+        "name": "Holiday Light Mode",
+        "icon": "mdi:string-lights",
+        "id": "holiday_light_mode"
+      },
+      {
+        "name": "Trash has been taken out",
+        "icon": "mdi:trash-can",
+        "id": "trash_has_been_taken_out"
+      },
+      {
+        "name": "Recycling has been taken out",
+        "icon": "mdi:recycle",
+        "id": "recycling_has_been_taken_out"
+      },
+      {
+        "id": "weather_radio_silenced",
+        "name": "Weather Radio Silenced",
+        "icon": "mdi:radio-off"
+      },
+      {
+        "id": "holiday_light_season",
+        "name": "Holiday Light Season",
+        "icon": "mdi:party-popper"
+      },
+      {
+        "name": "Garage Light Timers Disabled",
+        "icon": "mdi:timer-cancel",
+        "id": "garage_light_timers_disabled"
+      },
+      {
+        "id": "security_system",
+        "name": "Security System",
+        "icon": "mdi:security"
+      }
+    ]
+  }
+}
