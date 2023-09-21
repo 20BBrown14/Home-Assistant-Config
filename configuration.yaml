@@ -47,3 +47,6 @@ binary_sensor: !include binary_sensors.yaml
 sensor: !include sensors.yaml
 
 input_select: !include input_selects.yaml
+
+shell_command:
+  push_git_backup: git add . && git commit -m $(date "+%H:%M:%S   %d/%m/%y")

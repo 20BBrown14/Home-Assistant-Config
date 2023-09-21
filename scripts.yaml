@@ -154,7 +154,7 @@ good_night:
         entity_id: input_boolean.good_night_mode
     - if:
       - condition: state
-        entity_id: switch.wake_on_lan_2
+        entity_id: light.basement_light
         state: 'off'
       then:
       - service: script.reset_kitchen_leds
