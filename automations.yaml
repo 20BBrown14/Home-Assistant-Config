@@ -1111,6 +1111,16 @@
     type: action
     subtype: hold
     discovery_id: 0x00158d0008393dbe action_hold
+  - platform: device
+    device_id: e50cb3846e82014dde1e95832d9d4e9c
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 3
   condition: []
   action:
   - type: toggle
