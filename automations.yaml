@@ -1896,17 +1896,15 @@
   condition:
   - condition: or
     conditions:
-    - type: is_humidity
-      condition: device
-      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
-      entity_id: sensor.master_bath_humidity_sensor_humidity
-      domain: sensor
-      above: 55
     - condition: device
       type: is_on
       device_id: 92803b34ad5be7b3ad7ef608c0825d5a
       entity_id: switch.master_bath_fan
       domain: switch
+    - condition: template
+      value_template: '{{states.sensor.master_bath_humidity_sensor_humidity.state
+        | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
+        | float * 1.10}}'
   action:
   - type: turn_on
     device_id: 92803b34ad5be7b3ad7ef608c0825d5a
@@ -1918,12 +1916,10 @@
       seconds: 0
       milliseconds: 0
   - if:
-    - type: is_humidity
-      condition: device
-      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
-      entity_id: sensor.master_bath_humidity_sensor_humidity
-      domain: sensor
-      below: 55
+    - condition: template
+      value_template: '  {{states.sensor.master_bath_humidity_sensor_humidity.state
+        | float <= states.sensor.average_climate_controlled_humidity_bathrooms.state
+        | float * 1.10}}'
     then:
     - type: turn_off
       device_id: 92803b34ad5be7b3ad7ef608c0825d5a

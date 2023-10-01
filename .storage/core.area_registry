@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "Living Room",
+        "id": "living_room",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Kitchen",
+        "id": "kitchen",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Master Bedroom",
+        "id": "master_bedroom",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Basement",
+        "id": "basement",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Garage",
+        "id": "garage",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Kitchen Cabinets",
+        "id": "kitchen_cabinets",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Backyard",
+        "id": "backyard",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Frontyard",
+        "id": "frontyard",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Entrance",
+        "id": "entrance",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Hallway",
+        "id": "hallway",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Outside",
+        "id": "outside",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Storage Room",
+        "id": "storage_room",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Dining Room",
+        "id": "dining_room",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Office",
+        "id": "office",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Sub-basement",
+        "id": "sub_basement",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Upstairs Bathroom",
+        "id": "upstairs_bathroom",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Finnley's Room",
+        "id": "finnley_s_room",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Master Bathroom",
+        "id": "master_bathroom",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Basement Bathroom",
+        "id": "basement_bathroom",
+        "picture": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,2084 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "9f0e41bbe33813c288826b857bc76d90"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "36e6b3cf994c47d3ca7a47bb4454334e",
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a194f958f8d0b08f556aff6106e1cde3",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-1-0:4:4"
+          ],
+          [
+            "zwave_js",
+            "3343393661-1"
+          ]
+        ],
+        "manufacturer": "Silicon Labs",
+        "model": "700 Series",
+        "name_by_user": null,
+        "name": "USB Controller",
+        "sw_version": "7.18.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e50cb3846e82014dde1e95832d9d4e9c",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-19"
+          ],
+          [
+            "zwave_js",
+            "3343393661-19-99:18756:13111"
+          ]
+        ],
+        "manufacturer": "Enbrighten",
+        "model": "55258 / ZW4002",
+        "name_by_user": null,
+        "name": "Ceiling Fan",
+        "sw_version": "5.50",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "5036a3a11bba97d25eb9b82e8b69decf",
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "10186c425eb8729e24fde4e484d6a531",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-21"
+          ],
+          [
+            "zwave_js",
+            "3343393661-21-786:65280:65292"
+          ]
+        ],
+        "manufacturer": "Minoston",
+        "model": "MP21Z / MP31Z",
+        "name_by_user": null,
+        "name": "Bedside Fan",
+        "sw_version": "1.0.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "4d198b0c52d3f21e86684be21461084f",
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-22-786:65280:65292"
+          ],
+          [
+            "zwave_js",
+            "3343393661-22"
+          ]
+        ],
+        "manufacturer": "Minoston",
+        "model": "MP21Z / MP31Z",
+        "name_by_user": "Bedside Lamp",
+        "name": "Bedside Lamp",
+        "sw_version": "1.0.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "dining_room",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "acee43e1932b364bc7db9deb54e4090d",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-23"
+          ],
+          [
+            "zwave_js",
+            "3343393661-23-99:18770:12597"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Dining Room Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "64f87538bc7680d16b9d62de3e259936",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-24"
+          ],
+          [
+            "zwave_js",
+            "3343393661-24-330:4:1"
+          ]
+        ],
+        "manufacturer": "Ecolink",
+        "model": "PIR Motion Sensor v2.5",
+        "name_by_user": null,
+        "name": "Garage Motion Sensor",
+        "sw_version": "10.1",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "171c8f1cbdc67a075d1170858166fd45",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-25"
+          ],
+          [
+            "zwave_js",
+            "3343393661-25-12:17479:16439"
+          ]
+        ],
+        "manufacturer": "HomeSeer Technologies",
+        "model": "HS-WX300",
+        "name_by_user": null,
+        "name": "Garage Light",
+        "sw_version": "1.13.6",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "kitchen_cabinets",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6b75c1eed303c424da4793c30c23b346",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-26-634:2306:8192"
+          ],
+          [
+            "zwave_js",
+            "3343393661-26"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN31",
+        "name_by_user": null,
+        "name": "LED Controller",
+        "sw_version": "5.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "93ba05451716dba297c5d26e20d1e2b6",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-27-99:18770:12597"
+          ],
+          [
+            "zwave_js",
+            "3343393661-27"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Kitchen Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "backyard",
+        "config_entries": [
+          "2c5ce0bfc343e83e40169c18d16cd1f0",
+          "c360373dda801e0ca73ccd582d53d98d",
+          "58e47bce27bf6aedbe7250e4c4716963"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7c289e53447c81f5d6494596316c8954",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-28"
+          ],
+          [
+            "zwave_js",
+            "3343393661-28-786:49152:49159"
+          ]
+        ],
+        "manufacturer": "EVA Logik",
+        "model": "ZW97",
+        "name_by_user": null,
+        "name": "Deck Lights",
+        "sw_version": "1.1.1",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4123d53d80bf262f32a413067ab8812b",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0008393dbe"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara wireless switch (WXKG11LM)",
+        "name_by_user": null,
+        "name": "Bedside Lamp Light Button",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "3f5c22d3f62c1224844e69a476dd9aa3",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0008394a31"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara wireless switch (WXKG11LM)",
+        "name_by_user": null,
+        "name": "Garage Light Button",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "b3ebcd3024a8b648282d4e4e7aaa53d2"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "defc83e79d587080bd0e65b4f5e3cbc6",
+        "identifiers": [
+          [
+            "cast",
+            "2e1053fd0a01dbc0b04c30fc313d1ecc"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Nest Mini",
+        "name_by_user": null,
+        "name": "Master Bedroom speaker",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "b3ebcd3024a8b648282d4e4e7aaa53d2"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "97d6d589960a97cd848f2973e4f99b46",
+        "identifiers": [
+          [
+            "cast",
+            "bb21c72d954ca633379042f724448773"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Google Nest Mini",
+        "name_by_user": null,
+        "name": "Basement speaker",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "b3ebcd3024a8b648282d4e4e7aaa53d2"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c5a784347892b98964305dae8fc8a4f9",
+        "identifiers": [
+          [
+            "cast",
+            "3a4365d0bd2983763c4929399536aa2d"
+          ]
+        ],
+        "manufacturer": "Google Inc.",
+        "model": "Nest Audio",
+        "name_by_user": null,
+        "name": "Kitchen speaker",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "7ae3380ec0d779d8c0efa855882541f3"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "86b1b485f0e733b3962457c610d02eae",
+        "identifiers": [
+          [
+            "mobile_app",
+            "996280c4450cfc9b"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-N986U",
+        "name_by_user": null,
+        "name": "Branden's Phone",
+        "sw_version": "33",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "2454e50d2817ff721f76ef34370a7f05"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6636b1f64974c361328efbc239dceb84",
+        "identifiers": [
+          [
+            "mobile_app",
+            "6e8d90d3ee09aeaa"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-G991U",
+        "name_by_user": null,
+        "name": "Samantha's Phone",
+        "sw_version": "33",
+        "via_device_id": null
+      },
+      {
+        "area_id": "frontyard",
+        "config_entries": [
+          "938f1fe1c1e5bf6b7aa1d4b18ba0ee4f"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "6c:29:90:da:09:5c"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "ESP20 01",
+        "id": "e92e0738814460ac3d65d44e25ff7c4a",
+        "identifiers": [],
+        "manufacturer": "WiZ",
+        "model": "SHRGBC",
+        "name_by_user": null,
+        "name": "WiZ RGBW Tunable DA095C",
+        "sw_version": "1.29.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "c8d22b80c3bc24550dec4fc5b635c426"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6ea8e451dc6483ecf9b355a0d9e29133",
+        "identifiers": [
+          [
+            "ecobee",
+            "QGBJ"
+          ]
+        ],
+        "manufacturer": "ecobee",
+        "model": "ecobee Room Sensor",
+        "name_by_user": null,
+        "name": "Master Bedroom",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "c8d22b80c3bc24550dec4fc5b635c426"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2b2d3a0c6a83ee73124ad0469de51c16",
+        "identifiers": [
+          [
+            "ecobee",
+            "YH68"
+          ]
+        ],
+        "manufacturer": "ecobee",
+        "model": "ecobee Room Sensor",
+        "name_by_user": null,
+        "name": "Basement",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "c8d22b80c3bc24550dec4fc5b635c426"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "cec1c9acc6998365c5762cb515ed6469",
+        "identifiers": [
+          [
+            "ecobee",
+            "YHZQ"
+          ]
+        ],
+        "manufacturer": "ecobee",
+        "model": "ecobee Room Sensor",
+        "name_by_user": null,
+        "name": "Living Room",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "hallway",
+        "config_entries": [
+          "c8d22b80c3bc24550dec4fc5b635c426"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0bcb5d2a9faa56f77c07a7c9da51e63d",
+        "identifiers": [
+          [
+            "ecobee",
+            "511872404400"
+          ]
+        ],
+        "manufacturer": "ecobee",
+        "model": "ecobee4 Smart Thermostat",
+        "name_by_user": null,
+        "name": "Thermostat",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b1f048780390b20bdff5fec7f0a8718a",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0025143bf7"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Wax Warmer",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a0db4bae38481acea04fab7d40079eff",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0025143e57"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Left Bush Lights",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7ec3856b58aed5fb87f92ded22cb03bc",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0025143e04"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Right Bush Lights",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "39deb1f87e6aad05d538dd7f5a39245b",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b002514498b"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Christmas Tree",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": "frontyard",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b93bec3dacc916e7fc4c1a10d1481d76",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0xb0ce181400168a08"
+          ]
+        ],
+        "manufacturer": "Sengled",
+        "model": "Element color plus E12 (E1F-N5E)",
+        "name_by_user": null,
+        "name": "Outdoor Sconce Light 4",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "frontyard",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9b0676fed66075a41a8e7f84fbb36cee",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0xb0ce181400167f5d"
+          ]
+        ],
+        "manufacturer": "Sengled",
+        "model": "Element color plus E12 (E1F-N5E)",
+        "name_by_user": null,
+        "name": "Outdoor Sconce Light 3",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "entrance",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1f38410000bfa7512b5e118322a6f696",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-29-99:18770:12597"
+          ],
+          [
+            "zwave_js",
+            "3343393661-29"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Entry Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "hallway",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c86badde84fdf38637c683bfdbac187c",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-30"
+          ],
+          [
+            "zwave_js",
+            "3343393661-30-99:18770:12597"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Hallway Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "frontyard",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7667289dac32e9792162b70cc2af7484",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-31"
+          ],
+          [
+            "zwave_js",
+            "3343393661-31-99:18770:12597"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Front Yard Lights",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1b34603e48a969148fd92a4667db70e9",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-32"
+          ],
+          [
+            "zwave_js",
+            "3343393661-32-99:18770:12597"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Living Room Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a62a8e0b44081f63016629a6823476d5",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b002513db1f"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Upstairs Window Decoration",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "8dc8ef2eb05125ac3d6aff5de8c0e61f"
+        ],
+        "configuration_url": "https://open.spotify.com",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "e9077faaa8424a86bd187cc953313ac8",
+        "identifiers": [
+          [
+            "spotify",
+            "20bbrown14"
+          ]
+        ],
+        "manufacturer": "Spotify AB",
+        "model": "Spotify premium",
+        "name_by_user": null,
+        "name": "Spotify Branden Brown",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sub_basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0ee6462039b411dbe8b8a4563e2c3653",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d000879d420"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara water leak sensor (SJCGQ11LM)",
+        "name_by_user": null,
+        "name": "Sump Pump Leak Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "c7d0bba2f64b2ebb228bd679d85730f0"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "525aa545fd6b725f3ce1dc7adc374e26",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name_by_user": null,
+        "name": "HACS",
+        "sw_version": "1.32.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "7ec7ef32ecf55923ddb67a18d27ea8ab"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "ec:0b:ae:d8:a2:f8"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "87aa1df34edae2559dd3b3ea8cae7799",
+        "identifiers": [
+          [
+            "broadlink",
+            "ec0baed8a2f8"
+          ]
+        ],
+        "manufacturer": "Broadlink",
+        "model": "RM4 pro",
+        "name_by_user": null,
+        "name": "Basement Universal Remote",
+        "sw_version": 62092,
+        "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "933741cce5d5e2275a126b49415cad02",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-33"
+          ],
+          [
+            "zwave_js",
+            "3343393661-33-881:258:187"
+          ]
+        ],
+        "manufacturer": "Aeotec Ltd.",
+        "model": "ZW187",
+        "name_by_user": null,
+        "name": "Garage Entry",
+        "sw_version": "1.5.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "storage_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8f00fdbfdfce0dfa33d087b9237f9149",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0008831a0a"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara water leak sensor (SJCGQ11LM)",
+        "name_by_user": null,
+        "name": "Water Heater Leak Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "76710dc69ac804e6bda9ff60a7f515a2",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00088318ad"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara water leak sensor (SJCGQ11LM)",
+        "name_by_user": null,
+        "name": "Kitchen Sink Leak Sensor",
+        "sw_version": "3000-0001",
+        "via_device_id": null
+      },
+      {
+        "area_id": "upstairs_bathroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a777f61003cee748876c140104c60bc5",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0008838f86"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara water leak sensor (SJCGQ11LM)",
+        "name_by_user": null,
+        "name": "Upstairs Bathroom Sink Leak Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c10c5693aa72ffa8de675fe6af4d8761",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-34-99:18756:12853"
+          ],
+          [
+            "zwave_js",
+            "3343393661-34"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46203 / ZW3010",
+        "name_by_user": null,
+        "name": "Basement Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "backyard",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "896c999f58ebc3aab7ebfd0e161a2ef3",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-35-99:18770:12597"
+          ],
+          [
+            "zwave_js",
+            "3343393661-35"
+          ]
+        ],
+        "manufacturer": "GE/Enbrighten",
+        "model": "46201 / ZW4008",
+        "name_by_user": null,
+        "name": "Flood Light",
+        "sw_version": "5.54",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "entrance",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ca0457c4a2a23167836611ffe6200a52",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-36-881:258:187"
+          ],
+          [
+            "zwave_js",
+            "3343393661-36"
+          ]
+        ],
+        "manufacturer": "Aeotec Ltd.",
+        "model": "ZW187",
+        "name_by_user": null,
+        "name": "Front Door",
+        "sw_version": "1.5.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "fc14d585e20bc18f0fae2b868f5849f3",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-37"
+          ],
+          [
+            "zwave_js",
+            "3343393661-37-12:17479:16438"
+          ]
+        ],
+        "manufacturer": "HomeSeer Technologies",
+        "model": "HS-WX300",
+        "name_by_user": null,
+        "name": "Master Bedroom Light",
+        "sw_version": "1.13.6",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "frontyard",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "859e5f1309be55e837a196df4fa95ba8",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0xb0ce181400169b05"
+          ]
+        ],
+        "manufacturer": "Sengled",
+        "model": "Element color plus E12 (E1F-N5E)",
+        "name_by_user": null,
+        "name": "Outdoor Sconce Light 1",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sub_basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6d227761a2477b601fc1d49c41d13a48",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b002513aa3d"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Subbasement Filter",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": "frontyard",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4d90c43cf5982211980c0b979d77b5c5",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0xb0ce181400169577"
+          ]
+        ],
+        "manufacturer": "Sengled",
+        "model": "Element color plus E12 (E1F-N5E)",
+        "name_by_user": null,
+        "name": "Outdoor Sconce Light 2",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1de0f4b47ecc37db5dcf97cd085b21c0",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00090d5e0a"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Basement Window 4",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "dbc279518161d86c319c53a54a12b234",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0009120216"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Living Room Window 3",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "89a16d3809eba6acb1fccc31484038aa",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00091c3c6b"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Living Room Window 2",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e745d1a473239dbd4e97e4543ae1ddb8",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00091af7cb"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Living Room Window 1",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d61ec84b8f27358063c640c92918a30c",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d000911ec44"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Master Bedroom Window 2",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a7b07bea42b31891f7476f3d3c86d4b8",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00091c3532"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Master Bedroom Window 1",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "finnley_s_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f7dcf9011c5c87be5d391b76de6de07f",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00090e775a"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Bedroom Window",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "office",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0039d9ca61d07705d13a79b147d46db1",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d000911ecc0"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Office Window",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "79b33e4e5ffbe1637b84b765792c9c03",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00091c3bc0"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Basement Window 3",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6cb36ecbd7a01bc39111fe1291e488c6",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00090e6c72"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Basement Window 2",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "3480480b43a872c00fee26af9d7c8dcf",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00090e7bfd"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Basement Window 1",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "sub_basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "75584f0aef05972bc2896726aac2bf23",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00090e7bbc"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Subbasement Window",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "605f72a4446c466652d58d50cd8ea648",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-39-881:258:187"
+          ],
+          [
+            "zwave_js",
+            "3343393661-39"
+          ]
+        ],
+        "manufacturer": "Aeotec Ltd.",
+        "model": "ZW187",
+        "name_by_user": null,
+        "name": "Kitchen Door",
+        "sw_version": "1.5.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "3a7eaf9ea0e6d8a7074a460e70917e59",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b002513d3cc"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Garage LED Bar",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "135ebc427749ade91e3a4e47955ea67c",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d000945236f"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+        "name_by_user": null,
+        "name": "Garage Temp Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bathroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1169d1b12d491476d9d27c9da4fa3f7e",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0009451ccd"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+        "name_by_user": null,
+        "name": "Master Bath Humidity Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4642c3a8264f17c128055cda7e4b2a49"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "25c8b16ec186ac32a3442e76b7c52fc7",
+        "identifiers": [
+          [
+            "sun",
+            "4642c3a8264f17c128055cda7e4b2a49"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bathroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "12356bc6f057627c71644c188fcb5183",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-40-634:260:514"
+          ],
+          [
+            "zwave_js",
+            "3343393661-40"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN52",
+        "name_by_user": null,
+        "name": "Master Bath Relay",
+        "sw_version": "1.40.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "outside",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e0e90e638552606c6517bc1331ef9556",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d00091c67aa"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+        "name_by_user": null,
+        "name": "Outside Temp Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "finnley_s_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "605a920f0d023ed6619a8aa33da58748",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b002a4e2bd6"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Temperature and humidity sensor (SNZB-02)",
+        "name_by_user": "Finnley's Room Temperature Sensor",
+        "name": "Finnley's Room Temperature Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "office",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ff23a25460d9c5f47f6b07f85be1ec6a",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b002a4e79a1"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Temperature and humidity sensor (SNZB-02)",
+        "name_by_user": null,
+        "name": "Office Temperature Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bathroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c29d2e813077036d4bab3e9b611dbfcc",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-41"
+          ],
+          [
+            "zwave_js",
+            "3343393661-41-634:28672:40962"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN72 800LR",
+        "name_by_user": "Master Bath Light",
+        "name": "Master Bath Light",
+        "sw_version": "3.20.2",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "master_bathroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-42-634:2308:513"
+          ],
+          [
+            "zwave_js",
+            "3343393661-42"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN51 LR",
+        "name_by_user": null,
+        "name": "Master Bath Fan",
+        "sw_version": "1.60.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "upstairs_bathroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "210139e6bd0e25f06141a1d46ef27425",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-43-634:2308:513"
+          ],
+          [
+            "zwave_js",
+            "3343393661-43"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN51 LR",
+        "name_by_user": null,
+        "name": "Upstairs Bathroom Fan",
+        "sw_version": "1.60.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "upstairs_bathroom",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6d3f36694a2e5b4f48d6bd264219ca4d",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-44"
+          ],
+          [
+            "zwave_js",
+            "3343393661-44-634:28672:40962"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN72 800LR",
+        "name_by_user": null,
+        "name": "Upstairs Bathroom Light",
+        "sw_version": "3.20.2",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "finnley_s_room",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "fd9c68d487e9da3c5d33d22aa0b3e290",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-45"
+          ],
+          [
+            "zwave_js",
+            "3343393661-45-634:28672:40962"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN72 800LR",
+        "name_by_user": null,
+        "name": "Finnley's Room Light",
+        "sw_version": "3.10.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "finnley_s_room",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "271b54528ef7dc397f28f1200a8f11b8",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-46-99:18756:12593"
+          ],
+          [
+            "zwave_js",
+            "3343393661-46"
+          ]
+        ],
+        "manufacturer": "GE",
+        "model": "14287 / ZW4002",
+        "name_by_user": null,
+        "name": "Finnley's Room Ceilling Fan",
+        "sw_version": "5.24",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "09d1b870bcf31a4cfa53bbbc49ddb3e6"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "50:14:79:51:89:23"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8c32281e3ff008d4c1c48e228cbb380b",
+        "identifiers": [
+          [
+            "roomba",
+            "roomba_A997B4A453BC462F89BC6105E0EE71C1"
+          ]
+        ],
+        "manufacturer": "iRobot",
+        "model": "i155220",
+        "name_by_user": null,
+        "name": "Roomba",
+        "sw_version": "daredevil+2.6.0+daredevil-release+163",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4da110200fb7ff6fe1c7f22709240061"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f0a84228db7888b84cbdda3273020bcd",
+        "identifiers": [
+          [
+            "myq",
+            "CG086036B192"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "LiftMaster Wi-Fi GDO DC w/Battery Backup",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4da110200fb7ff6fe1c7f22709240061"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4bda6147c8298250f44d8ec9ca5bf4ba",
+        "identifiers": [
+          [
+            "myq",
+            "GW0E0013AB21"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "Chamberlain Wi-Fi GDO DC 3/4HP",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": "3.13",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "855e42f6cf0cf97cc09e12fac100ad9a",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0025140f94"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "Zigbee smart plug (US version) (S31ZB)",
+        "name_by_user": null,
+        "name": "Office Zigbee Router",
+        "sw_version": "1.0.7",
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-20-12:17479:16439"
+          ],
+          [
+            "zwave_js",
+            "3343393661-20"
+          ]
+        ],
+        "id": "63731068bce97381e2cce1c4a43b9c6c",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-38"
+          ]
+        ],
+        "id": "36193dab9a7864c50339dcbd9a28eb90",
+        "orphaned_timestamp": null
+      }
+    ]
+  }
+}

@@ -28,3 +28,10 @@ known_devices.yaml
 !.storage/lovelace*
 !.storage/person
 !.storage/tag
+!.storage/core.analytics
+!.storage/core.area_registry
+!.storage/core.config
+!.storage/core.config_entries
+!.storage/core.device_registry
+!.storage/core.entity_registry
+!.storage/core.uuid
