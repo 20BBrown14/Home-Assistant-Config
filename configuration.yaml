@@ -48,4 +48,4 @@ sensor: !include sensors.yaml
 
 input_select: !include input_selects.yaml
 
-#test comment5
+#test comment6
