@@ -1995,7 +1995,7 @@
         "name_by_user": null,
         "name": "Garage Door",
         "sw_version": null,
-        "via_device_id": null
+        "via_device_id": "4bda6147c8298250f44d8ec9ca5bf4ba"
       },
       {
         "area_id": null,
@@ -2043,6 +2043,54 @@
         "name_by_user": null,
         "name": "Office Zigbee Router",
         "sw_version": "1.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4da110200fb7ff6fe1c7f22709240061"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "52c2805486809c9d49a3968fc110687a",
+        "identifiers": [
+          [
+            "myq",
+            "CG08464D4901"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "LiftMaster Wi-Fi GDO DC w/Battery Backup",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "4da110200fb7ff6fe1c7f22709240061"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f676be4320b2383a1d5f5599487193e7",
+        "identifiers": [
+          [
+            "myq",
+            "GW230022CE71"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "Chamberlain Smart Garage Hub",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": "3.14",
         "via_device_id": null
       }
     ],
