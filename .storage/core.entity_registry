@@ -43416,6 +43416,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
