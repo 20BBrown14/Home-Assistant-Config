@@ -1,5 +1,5 @@
 - platform: systemmonitor
-  scan_interval: 60
+  scan_interval: 240
   resources:
     - type: disk_use
       arg: /config

@@ -40954,7 +40954,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:robot-dead",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -43340,7 +43340,7 @@
         "entity_category": null,
         "entity_id": "sensor.average_climate_controlled_humidity_bathrooms",
         "hidden_by": null,
-        "icon": null,
+        "icon": "mdi:water-percent",
         "id": "1c0b6b71b521c6f9878191582d78aed4",
         "has_entity_name": false,
         "name": null,
@@ -43493,6 +43493,420 @@
         "translation_key": null,
         "unique_id": "GW230022CE71",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "b6873bbfc9b9518a09870821ae2455d3",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.subbasement_temperature_sensor_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2048f6ef9747ec66aaccae567884692f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d39fea_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "b6873bbfc9b9518a09870821ae2455d3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.subbasement_temperature_sensor_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "56ef88290b79bfab30a992e5e08811d3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "temperature",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d39fea_temperature_zigbee2mqtt",
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "b6873bbfc9b9518a09870821ae2455d3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.subbasement_temperature_sensor_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "adddc1895b4d03674882fd93746e26e6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "humidity",
+        "original_icon": null,
+        "original_name": "humidity",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d39fea_humidity_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "b6873bbfc9b9518a09870821ae2455d3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.subbasement_temperature_sensor_pressure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a4952e992398e02ff12fb76cc13f9cd1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "psi"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "pressure",
+        "original_icon": null,
+        "original_name": "pressure",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d39fea_pressure_zigbee2mqtt",
+        "unit_of_measurement": "psi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "b6873bbfc9b9518a09870821ae2455d3",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.subbasement_temperature_sensor_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "40ec9582d98f24c6dac7d0dea4966450",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d39fea_voltage_zigbee2mqtt",
+        "unit_of_measurement": "mV"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "b6873bbfc9b9518a09870821ae2455d3",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.subbasement_temperature_sensor_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "945e58a6602b3869495989d3fb08619d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d39fea_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "d8dad40600ff999f3659642df23fa76c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.storage_room_temperature_sensor_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "05924b0f612b775201a036358782a582",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360f2_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "d8dad40600ff999f3659642df23fa76c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.storage_room_temperature_sensor_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "78a51b26ec14a840b4603531742ec0e7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "temperature",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360f2_temperature_zigbee2mqtt",
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "d8dad40600ff999f3659642df23fa76c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.storage_room_temperature_sensor_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7a66624ba9013914f852c41ec8482a7e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "humidity",
+        "original_icon": null,
+        "original_name": "humidity",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360f2_humidity_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "d8dad40600ff999f3659642df23fa76c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.storage_room_temperature_sensor_pressure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c1da7ec2d98d2b9a1dcd72b4e3e307b9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "psi"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "pressure",
+        "original_icon": null,
+        "original_name": "pressure",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360f2_pressure_zigbee2mqtt",
+        "unit_of_measurement": "psi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "d8dad40600ff999f3659642df23fa76c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.storage_room_temperature_sensor_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e4d8cdfe8643628fdb9c597bfeb11783",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360f2_voltage_zigbee2mqtt",
+        "unit_of_measurement": "mV"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "d8dad40600ff999f3659642df23fa76c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.storage_room_temperature_sensor_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d40e05b2165d216104dc0ac95fe9a013",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360f2_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
       }
     ],
     "deleted_entities": []

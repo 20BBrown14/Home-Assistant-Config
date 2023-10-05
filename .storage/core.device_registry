@@ -2092,6 +2092,54 @@
         "name": "Garage Door",
         "sw_version": "3.14",
         "via_device_id": null
+      },
+      {
+        "area_id": "sub_basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b6873bbfc9b9518a09870821ae2455d3",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0009d39fea"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+        "name_by_user": null,
+        "name": "Subbasement Temperature Sensor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "storage_room",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d8dad40600ff999f3659642df23fa76c",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0009d360f2"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
+        "name_by_user": null,
+        "name": "Storage Room Temperature Sensor",
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
