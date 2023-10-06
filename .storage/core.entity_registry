@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-60",
+        "original_icon": "mdi:battery-70",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -13352,7 +13352,12 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {},
+        "capabilities": {
+          "source_list": [
+            "Branden's Note20 Ultra",
+            "Kitchen speaker"
+          ]
+        },
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -13379,7 +13384,7 @@
         "original_icon": "mdi:spotify",
         "original_name": null,
         "platform": "spotify",
-        "supported_features": 2048,
+        "supported_features": 444983,
         "translation_key": null,
         "unique_id": "20bbrown14",
         "unit_of_measurement": null
@@ -40176,40 +40181,6 @@
         "aliases": [],
         "area_id": null,
         "capabilities": {
-          "id": "1692042872884"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.upstairs_bath_humidity",
-        "hidden_by": null,
-        "icon": null,
-        "id": "c42c1ecd0804e0dc705e8eb0e51996fe",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Upstairs Bath Humidity",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1692042872884",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
           "id": "1692043138901"
         },
         "config_entry_id": null,
@@ -40954,7 +40925,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:robot-dead",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -42012,7 +41983,7 @@
         },
         "original_device_class": null,
         "original_icon": null,
-        "original_name": "Enable/Disable Scene Control",
+        "original_name": "Scene Control",
         "platform": "zwave_js",
         "supported_features": 0,
         "translation_key": null,
@@ -43265,70 +43236,6 @@
       },
       {
         "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "4da110200fb7ff6fe1c7f22709240061",
-        "device_class": null,
-        "device_id": "f0a84228db7888b84cbdda3273020bcd",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "cover.garage_door",
-        "hidden_by": null,
-        "icon": null,
-        "id": "2b1f05e3b349331632a74c899afa916d",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": true
-          },
-          "cloud.google_assistant": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": "garage",
-        "original_icon": null,
-        "original_name": "Garage Door",
-        "platform": "myq",
-        "supported_features": 3,
-        "translation_key": null,
-        "unique_id": "CG086036B192",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "4da110200fb7ff6fe1c7f22709240061",
-        "device_class": null,
-        "device_id": "4bda6147c8298250f44d8ec9ca5bf4ba",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "binary_sensor.garage_door_myq_gateway",
-        "hidden_by": null,
-        "icon": null,
-        "id": "10153db515f5f2f2506cf2bb9d146f99",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "connectivity",
-        "original_icon": null,
-        "original_name": "Garage Door MyQ Gateway",
-        "platform": "myq",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "GW0E0013AB21",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
         "area_id": "storage_room",
         "capabilities": {
           "state_class": "measurement"
@@ -43429,70 +43336,6 @@
         "translation_key": null,
         "unique_id": "0x00124b0025140f94_linkquality_zigbee2mqtt",
         "unit_of_measurement": "lqi"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "4da110200fb7ff6fe1c7f22709240061",
-        "device_class": null,
-        "device_id": "52c2805486809c9d49a3968fc110687a",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "cover.garage_door_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "8887f0478b30d6af83a70b8137fc3dca",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "conversation": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": "garage",
-        "original_icon": null,
-        "original_name": "Garage Door",
-        "platform": "myq",
-        "supported_features": 3,
-        "translation_key": null,
-        "unique_id": "CG08464D4901",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "4da110200fb7ff6fe1c7f22709240061",
-        "device_class": null,
-        "device_id": "f676be4320b2383a1d5f5599487193e7",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "binary_sensor.garage_door_myq_gateway_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "10cb1b49675ca8069228aade2eea90df",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "connectivity",
-        "original_icon": null,
-        "original_name": "Garage Door MyQ Gateway",
-        "platform": "myq",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "GW230022CE71",
-        "unit_of_measurement": null
       },
       {
         "aliases": [],
@@ -43907,8 +43750,398 @@
         "translation_key": null,
         "unique_id": "0x00158d0009d360f2_linkquality_zigbee2mqtt",
         "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "fd9c68d487e9da3c5d33d22aa0b3e290",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.finnley_s_room_light_scene_control_remote_3_way_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a7b806c314190415fabf9154c471bb36",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control: Remote 3-Way Switch",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.45-112-0-31",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "fd9c68d487e9da3c5d33d22aa0b3e290",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.finnley_s_room_light_led_indicator_confirm_configuration_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b8f85d42844008ed8d49f5219ffc9c14",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Confirm Configuration Change",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.45-112-0-32",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1696540824535"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.freeze_warning",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3557c972bfe30a17e90fcedbd4ab16ae",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Freeze Warning",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1696540824535",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ca883d22b30a24ea9978b437468453b4",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_temperature_sensor_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2221cbb8a6d5d782a401dd9bef406a70",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360e1_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ca883d22b30a24ea9978b437468453b4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.upstairs_bathroom_temperature_sensor_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c64df1d9f283a24d34d70a2b99d5a8d3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "temperature",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360e1_temperature_zigbee2mqtt",
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ca883d22b30a24ea9978b437468453b4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.upstairs_bathroom_temperature_sensor_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "44abffe722890b65c7a6c3d135b27b8d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "humidity",
+        "original_icon": null,
+        "original_name": "humidity",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360e1_humidity_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ca883d22b30a24ea9978b437468453b4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.upstairs_bathroom_temperature_sensor_pressure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "41e9d5e4f1786be0e38af9786fee8f1d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "psi"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "pressure",
+        "original_icon": null,
+        "original_name": "pressure",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360e1_pressure_zigbee2mqtt",
+        "unit_of_measurement": "psi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ca883d22b30a24ea9978b437468453b4",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_temperature_sensor_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b9dd86e9020c51b67c5b4772ad84c841",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360e1_voltage_zigbee2mqtt",
+        "unit_of_measurement": "mV"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ca883d22b30a24ea9978b437468453b4",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_temperature_sensor_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9c56879a3c3a7b13cea3f1603dda25d0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009d360e1_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1696544344070"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.upstairs_bath_humidity_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ad6679ec1d6da7b2469e3154921a3bb6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Upstairs Bath Humidity",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1696544344070",
+        "unit_of_measurement": null
       }
     ],
-    "deleted_entities": []
+    "deleted_entities": [
+      {
+        "config_entry_id": null,
+        "entity_id": "cover.garage_door",
+        "id": "2b1f05e3b349331632a74c899afa916d",
+        "orphaned_timestamp": 1696541739.144709,
+        "platform": "myq",
+        "unique_id": "CG086036B192"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.garage_door_myq_gateway",
+        "id": "10153db515f5f2f2506cf2bb9d146f99",
+        "orphaned_timestamp": 1696541739.144709,
+        "platform": "myq",
+        "unique_id": "GW0E0013AB21"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "cover.garage_door_2",
+        "id": "8887f0478b30d6af83a70b8137fc3dca",
+        "orphaned_timestamp": 1696541739.144709,
+        "platform": "myq",
+        "unique_id": "CG08464D4901"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.garage_door_myq_gateway_2",
+        "id": "10cb1b49675ca8069228aade2eea90df",
+        "orphaned_timestamp": 1696541739.144709,
+        "platform": "myq",
+        "unique_id": "GW230022CE71"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.upstairs_bath_humidity",
+        "id": "c42c1ecd0804e0dc705e8eb0e51996fe",
+        "orphaned_timestamp": 1696544471.9917862,
+        "platform": "automation",
+        "unique_id": "1692042872884"
+      }
+    ]
   }
 }

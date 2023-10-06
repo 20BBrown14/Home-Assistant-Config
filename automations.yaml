@@ -910,6 +910,8 @@
           | '')}}'
         title: Weather Alert
         data:
+          ttl: 0
+          priority: high
           sticky: true
           color: '{{''#FF0000'' if (''warning'' in states.sensor.nws_alert_event.state|lower)
             else ''#FF9300''}}'
@@ -1926,13 +1928,10 @@
       entity_id: switch.master_bath_fan
       domain: switch
     else:
-    - wait_for_trigger:
-      - type: humidity
-        platform: device
-        device_id: 1169d1b12d491476d9d27c9da4fa3f7e
-        entity_id: sensor.master_bath_humidity_sensor_humidity
-        domain: sensor
-        below: 55
+    - wait_template: '{{states.sensor.master_bath_humidity_sensor_humidity.state |
+        float < states.sensor.average_climate_controlled_humidity_bathrooms.state
+        | float * 1.05}}'
+      continue_on_timeout: true
     - type: turn_off
       device_id: 92803b34ad5be7b3ad7ef608c0825d5a
       entity_id: switch.master_bath_fan
@@ -1979,70 +1978,6 @@
       subtype: 18 (Custom Brightness Level) on endpoint 0
       value: 99
   mode: single
-- id: '1692042872884'
-  alias: Upstairs Bath Humidity
-  description: ''
-  trigger:
-  - platform: device
-    type: turned_off
-    device_id: 6d3f36694a2e5b4f48d6bd264219ca4d
-    entity_id: light.upstairs_bathroom_light
-    domain: light
-  condition:
-  - condition: or
-    conditions:
-    - type: is_humidity
-      condition: device
-      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
-      entity_id: sensor.master_bath_humidity_sensor_humidity
-      domain: sensor
-      above: 55
-      enabled: false
-    - condition: device
-      type: is_on
-      device_id: 210139e6bd0e25f06141a1d46ef27425
-      entity_id: switch.upstairs_bathroom_fan
-      domain: switch
-  action:
-  - type: turn_on
-    device_id: 210139e6bd0e25f06141a1d46ef27425
-    entity_id: switch.upstairs_bathroom_fan
-    domain: switch
-  - delay:
-      hours: 0
-      minutes: 10
-      seconds: 0
-      milliseconds: 0
-  - if:
-    - type: is_humidity
-      condition: device
-      device_id: 1169d1b12d491476d9d27c9da4fa3f7e
-      entity_id: sensor.master_bath_humidity_sensor_humidity
-      domain: sensor
-      below: 55
-    then:
-    - type: turn_off
-      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
-      entity_id: switch.master_bath_fan
-      domain: switch
-    else:
-    - wait_for_trigger:
-      - type: humidity
-        platform: device
-        device_id: 1169d1b12d491476d9d27c9da4fa3f7e
-        entity_id: sensor.master_bath_humidity_sensor_humidity
-        domain: sensor
-        below: 55
-    - type: turn_off
-      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
-      entity_id: switch.master_bath_fan
-      domain: switch
-    enabled: false
-  - type: turn_off
-    device_id: 210139e6bd0e25f06141a1d46ef27425
-    entity_id: switch.upstairs_bathroom_fan
-    domain: switch
-  mode: restart
 - id: '1692043138901'
   alias: Upstairs Bath Night Time
   description: ''
@@ -2093,3 +2028,95 @@
   - service: shell_command.push_git_backup
     data: {}
   mode: single
+- id: '1696540824535'
+  alias: Freeze Warning
+  description: ''
+  trigger:
+  - type: temperature
+    platform: device
+    device_id: b6873bbfc9b9518a09870821ae2455d3
+    entity_id: 56ef88290b79bfab30a992e5e08811d3
+    domain: sensor
+    below: 35
+    id: subbasement
+  - type: temperature
+    platform: device
+    device_id: d8dad40600ff999f3659642df23fa76c
+    entity_id: 78a51b26ec14a840b4603531742ec0e7
+    domain: sensor
+    below: 35
+    id: storage-room
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - subbasement
+    then:
+    - device_id: 86b1b485f0e733b3962457c610d02eae
+      domain: mobile_app
+      type: notify
+      message: ❄️ Subbasement below 35F! ❄️
+      title: ⚠️ Freeze Warning ⚠️
+  - if:
+    - condition: trigger
+      id:
+      - storage-room
+    then:
+    - device_id: 86b1b485f0e733b3962457c610d02eae
+      domain: mobile_app
+      type: notify
+      message: '❄️ Storage Room is below 35F! ❄️ '
+      title: '⚠️ Freeze Warning ⚠️ '
+  mode: single
+- id: '1696544344070'
+  alias: Upstairs Bath Humidity
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 6d3f36694a2e5b4f48d6bd264219ca4d
+    entity_id: adbd87702f118df28d708438bf52165d
+    domain: light
+  condition:
+  - condition: or
+    conditions:
+    - condition: device
+      type: is_on
+      device_id: 210139e6bd0e25f06141a1d46ef27425
+      entity_id: 7dadbc84e4d99a52ff4911bf2c71b892
+      domain: switch
+    - condition: template
+      value_template: '{{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
+        | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
+        | float * 1.10}}'
+  action:
+  - type: turn_on
+    device_id: 210139e6bd0e25f06141a1d46ef27425
+    entity_id: 7dadbc84e4d99a52ff4911bf2c71b892
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - if:
+    - condition: template
+      value_template: '  {{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
+        | float <= states.sensor.average_climate_controlled_humidity_bathrooms.state
+        | float * 1.10}}'
+    then:
+    - type: turn_off
+      device_id: 210139e6bd0e25f06141a1d46ef27425
+      entity_id: 7dadbc84e4d99a52ff4911bf2c71b892
+      domain: switch
+    else:
+    - wait_template: '{{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
+        | float < states.sensor.average_climate_controlled_humidity_bathrooms.state
+        | float * 1.05}}'
+      continue_on_timeout: true
+    - type: turn_off
+      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+      entity_id: switch.master_bath_fan
+      domain: switch
+  mode: restart

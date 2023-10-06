@@ -21,7 +21,6 @@ tts:
     time_memory: 300
     service_name: google_say
     # base_url: http://192.168.86.21:8123
-    service_name: google_say
 
 recorder:
   purge_keep_days: 400
@@ -33,9 +32,9 @@ spotcast:
   sp_dc: !secret sp_dc
   sp_key: !secret sp_key
 
-ourgroceries:
-  username: !secret our_groceries_username
-  password: !secret our_groceries_password
+# ourgroceries:
+#   username: !secret our_groceries_username
+#   password: !secret our_groceries_password
 
 
 automation: !include automations.yaml
