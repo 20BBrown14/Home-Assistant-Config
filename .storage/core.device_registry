@@ -86,8 +86,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "5036a3a11bba97d25eb9b82e8b69decf",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "5036a3a11bba97d25eb9b82e8b69decf"
         ],
         "configuration_url": null,
         "connections": [],
@@ -98,11 +98,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-21"
+            "3343393661-21-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-21-786:65280:65292"
+            "3343393661-21"
           ]
         ],
         "manufacturer": "Minoston",
@@ -115,8 +115,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "4d198b0c52d3f21e86684be21461084f",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "4d198b0c52d3f21e86684be21461084f"
         ],
         "configuration_url": null,
         "connections": [],
@@ -127,11 +127,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-22-786:65280:65292"
+            "3343393661-22"
           ],
           [
             "zwave_js",
-            "3343393661-22"
+            "3343393661-22-786:65280:65292"
           ]
         ],
         "manufacturer": "Minoston",
@@ -155,11 +155,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-23-99:18770:12597"
+            "3343393661-23"
           ],
           [
             "zwave_js",
-            "3343393661-23"
+            "3343393661-23-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -183,11 +183,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-24-330:4:1"
+            "3343393661-24"
           ],
           [
             "zwave_js",
-            "3343393661-24"
+            "3343393661-24-330:4:1"
           ]
         ],
         "manufacturer": "Ecolink",
@@ -239,11 +239,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-26"
+            "3343393661-26-634:2306:8192"
           ],
           [
             "zwave_js",
-            "3343393661-26-634:2306:8192"
+            "3343393661-26"
           ]
         ],
         "manufacturer": "Zooz",
@@ -267,11 +267,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-27-99:18770:12597"
+            "3343393661-27"
           ],
           [
             "zwave_js",
-            "3343393661-27"
+            "3343393661-27-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -284,9 +284,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
-          "2c5ce0bfc343e83e40169c18d16cd1f0",
           "c360373dda801e0ca73ccd582d53d98d",
-          "58e47bce27bf6aedbe7250e4c4716963"
+          "58e47bce27bf6aedbe7250e4c4716963",
+          "2c5ce0bfc343e83e40169c18d16cd1f0"
         ],
         "configuration_url": null,
         "connections": [],
@@ -297,11 +297,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-28"
+            "3343393661-28-786:49152:49159"
           ],
           [
             "zwave_js",
-            "3343393661-28-786:49152:49159"
+            "3343393661-28"
           ]
         ],
         "manufacturer": "EVA Logik",
@@ -757,11 +757,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-29"
+            "3343393661-29-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-29-99:18770:12597"
+            "3343393661-29"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -785,11 +785,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-30"
+            "3343393661-30-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-30-99:18770:12597"
+            "3343393661-30"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -813,11 +813,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-31-99:18770:12597"
+            "3343393661-31"
           ],
           [
             "zwave_js",
-            "3343393661-31"
+            "3343393661-31-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -994,11 +994,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1094,11 +1094,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-34-99:18756:12853"
+            "3343393661-34"
           ],
           [
             "zwave_js",
-            "3343393661-34"
+            "3343393661-34-99:18756:12853"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1150,11 +1150,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-36-881:258:187"
+            "3343393661-36"
           ],
           [
             "zwave_js",
-            "3343393661-36"
+            "3343393661-36-881:258:187"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1178,11 +1178,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-37"
+            "3343393661-37-12:17479:16438"
           ],
           [
             "zwave_js",
-            "3343393661-37-12:17479:16438"
+            "3343393661-37"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -1818,11 +1818,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-42"
+            "3343393661-42-634:2308:513"
           ],
           [
             "zwave_js",
-            "3343393661-42-634:2308:513"
+            "3343393661-42"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1902,11 +1902,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ],
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2068,6 +2068,102 @@
         "name": "Upstairs Bathroom Temperature Sensor",
         "sw_version": null,
         "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "f6530b9879d400d5fc4d491378515440"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f0a84228db7888b84cbdda3273020bcd",
+        "identifiers": [
+          [
+            "myq",
+            "CG086036B192"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "LiftMaster Wi-Fi GDO DC w/Battery Backup",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "storage_room",
+        "config_entries": [
+          "f6530b9879d400d5fc4d491378515440"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "52c2805486809c9d49a3968fc110687a",
+        "identifiers": [
+          [
+            "myq",
+            "CG08464D4901"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "LiftMaster Wi-Fi GDO DC w/Battery Backup",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "f6530b9879d400d5fc4d491378515440"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4bda6147c8298250f44d8ec9ca5bf4ba",
+        "identifiers": [
+          [
+            "myq",
+            "GW0E0013AB21"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "Chamberlain Wi-Fi GDO DC 3/4HP",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": "3.13",
+        "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "f6530b9879d400d5fc4d491378515440"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f676be4320b2383a1d5f5599487193e7",
+        "identifiers": [
+          [
+            "myq",
+            "GW230022CE71"
+          ]
+        ],
+        "manufacturer": "The Chamberlain Group Inc.",
+        "model": "Chamberlain Smart Garage Hub",
+        "name_by_user": null,
+        "name": "Garage Door",
+        "sw_version": "3.14",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
@@ -2079,11 +2175,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-20"
+            "3343393661-20-12:17479:16439"
           ],
           [
             "zwave_js",
-            "3343393661-20-12:17479:16439"
+            "3343393661-20"
           ]
         ],
         "id": "63731068bce97381e2cce1c4a43b9c6c",
@@ -2102,54 +2198,6 @@
         ],
         "id": "36193dab9a7864c50339dcbd9a28eb90",
         "orphaned_timestamp": null
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "myq",
-            "CG086036B192"
-          ]
-        ],
-        "id": "f0a84228db7888b84cbdda3273020bcd",
-        "orphaned_timestamp": 1696541739.1426985
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "myq",
-            "GW0E0013AB21"
-          ]
-        ],
-        "id": "4bda6147c8298250f44d8ec9ca5bf4ba",
-        "orphaned_timestamp": 1696541739.1426985
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "myq",
-            "CG08464D4901"
-          ]
-        ],
-        "id": "52c2805486809c9d49a3968fc110687a",
-        "orphaned_timestamp": 1696541739.1426985
-      },
-      {
-        "config_entries": [],
-        "connections": [],
-        "identifiers": [
-          [
-            "myq",
-            "GW230022CE71"
-          ]
-        ],
-        "id": "f676be4320b2383a1d5f5599487193e7",
-        "orphaned_timestamp": 1696541739.1426985
       }
     ]
   }

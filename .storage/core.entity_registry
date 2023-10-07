@@ -44099,41 +44099,137 @@
         "translation_key": null,
         "unique_id": "1696544344070",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "f6530b9879d400d5fc4d491378515440",
+        "device_class": null,
+        "device_id": "f0a84228db7888b84cbdda3273020bcd",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "cover.garage_door",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2b1f05e3b349331632a74c899afa916d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "garage",
+        "original_icon": null,
+        "original_name": "Garage Door",
+        "platform": "myq",
+        "supported_features": 3,
+        "translation_key": null,
+        "unique_id": "CG086036B192",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "f6530b9879d400d5fc4d491378515440",
+        "device_class": null,
+        "device_id": "52c2805486809c9d49a3968fc110687a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "cover.garage_door_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8887f0478b30d6af83a70b8137fc3dca",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "garage",
+        "original_icon": null,
+        "original_name": "Garage Door",
+        "platform": "myq",
+        "supported_features": 3,
+        "translation_key": null,
+        "unique_id": "CG08464D4901",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "f6530b9879d400d5fc4d491378515440",
+        "device_class": null,
+        "device_id": "4bda6147c8298250f44d8ec9ca5bf4ba",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.garage_door_myq_gateway",
+        "hidden_by": null,
+        "icon": null,
+        "id": "10153db515f5f2f2506cf2bb9d146f99",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "connectivity",
+        "original_icon": null,
+        "original_name": "Garage Door MyQ Gateway",
+        "platform": "myq",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "GW0E0013AB21",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "f6530b9879d400d5fc4d491378515440",
+        "device_class": null,
+        "device_id": "f676be4320b2383a1d5f5599487193e7",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.garage_door_myq_gateway_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "10cb1b49675ca8069228aade2eea90df",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "connectivity",
+        "original_icon": null,
+        "original_name": "Garage Door MyQ Gateway",
+        "platform": "myq",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "GW230022CE71",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
-      {
-        "config_entry_id": null,
-        "entity_id": "cover.garage_door",
-        "id": "2b1f05e3b349331632a74c899afa916d",
-        "orphaned_timestamp": 1696541739.144709,
-        "platform": "myq",
-        "unique_id": "CG086036B192"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "binary_sensor.garage_door_myq_gateway",
-        "id": "10153db515f5f2f2506cf2bb9d146f99",
-        "orphaned_timestamp": 1696541739.144709,
-        "platform": "myq",
-        "unique_id": "GW0E0013AB21"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "cover.garage_door_2",
-        "id": "8887f0478b30d6af83a70b8137fc3dca",
-        "orphaned_timestamp": 1696541739.144709,
-        "platform": "myq",
-        "unique_id": "CG08464D4901"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "binary_sensor.garage_door_myq_gateway_2",
-        "id": "10cb1b49675ca8069228aade2eea90df",
-        "orphaned_timestamp": 1696541739.144709,
-        "platform": "myq",
-        "unique_id": "GW230022CE71"
-      },
       {
         "config_entry_id": null,
         "entity_id": "automation.upstairs_bath_humidity",
