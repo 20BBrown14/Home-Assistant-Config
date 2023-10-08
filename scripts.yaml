@@ -227,9 +227,15 @@ set_kitchen_leds_idle:
     data: {}
   - service: light.turn_on
     data:
-      brightness_pct: 75
+      brightness_pct: 23
     target:
       entity_id: light.rgbw_dimmer_3
+  - service: light.turn_on
+    data:
+      brightness_pct: 75
+    target:
+      entity_id:
+      - light.rgbw_dimmer_2
   mode: single
 set_kitchen_leds_idle_low_brightness:
   alias: Set Kitchen LEDs - Idle, Low Brightness
@@ -238,11 +244,18 @@ set_kitchen_leds_idle_low_brightness:
     data: {}
   - service: light.turn_on
     data:
-      brightness_pct: 40
+      brightness_pct: 9
     target:
       entity_id:
       - light.rgbw_dimmer
       - light.rgbw_dimmer_3
+  - service: light.turn_on
+    data:
+      brightness_pct: 40
+    target:
+      entity_id:
+      - light.rgbw_dimmer
+      - light.rgbw_dimmer_2
   mode: single
 get_ready_for_bed:
   alias: Get Ready For Bed
@@ -303,7 +316,7 @@ turn_on_holiday_lights:
     - delay:
         hours: 0
         minutes: 0
-        seconds: 1
+        seconds: 3
         milliseconds: 0
   - service: switch.turn_on
     data: {}
@@ -311,14 +324,17 @@ turn_on_holiday_lights:
       entity_id: switch.holiday_lights
   - service: light.turn_on
     data:
-      color_name: green
+      color_name: orange
       brightness_pct: 100
     target:
       entity_id: light.outdoor_sconce_lights
   - service: light.turn_on
     data:
       brightness_pct: 63
-      effect: Christmas
+      rgb_color:
+      - 147
+      - 4
+      - 149
     target:
       entity_id: light.porch_light
   - type: turn_on
@@ -840,3 +856,31 @@ basement_fan_power:
     target:
       entity_id: remote.basement_universal_remote
   mode: restart
+living_room_ceiling_fan_turn_off:
+  alias: 'Living Room Ceiling Fan: Turn off'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Living Room Ceiling Fan
+      command: Fan Off
+      num_repeats: 5
+      delay_secs: 0.8
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: parallel
+  icon: mdi:fan-off
+  max: 10
+living_room_ceiling_fan_turn_on:
+  alias: 'Living Room Ceiling Fan: Turn On'
+  sequence:
+  - service: remote.send_command
+    data:
+      device: Living Room Ceiling Fan
+      command: Fan On
+      num_repeats: 5
+      delay_secs: 0.8
+    target:
+      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  mode: parallel
+  icon: mdi:fan-on
+  max: 10

@@ -11294,7 +11294,7 @@
       },
       {
         "aliases": [],
-        "area_id": "basement",
+        "area_id": "living_room",
         "capabilities": null,
         "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
         "device_class": null,
@@ -44226,6 +44226,70 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "GW230022CE71",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": "living_room",
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.living_room_ceiling_fan_turn_off",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bc3dd23df9bda1eea61f32d5406ffcee",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:fan-off",
+        "original_name": "Living Room Ceiling Fan: Turn off",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "living_room_ceiling_fan_turn_off",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": "living_room",
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.living_room_ceiling_fan_turn_on",
+        "hidden_by": null,
+        "icon": null,
+        "id": "50681eac954223cc9f78b163a812ce7f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:fan-on",
+        "original_name": "Living Room Ceiling Fan: Turn On",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "living_room_ceiling_fan_turn_on",
         "unit_of_measurement": null
       }
     ],
