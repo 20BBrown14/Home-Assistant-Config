@@ -10,9 +10,9 @@
         "id": "good_night_mode"
       },
       {
+        "id": "holiday_light_mode",
         "name": "Holiday Light Mode",
-        "icon": "mdi:string-lights",
-        "id": "holiday_light_mode"
+        "icon": "mdi:string-lights"
       },
       {
         "name": "Trash has been taken out",

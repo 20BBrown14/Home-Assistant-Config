@@ -10081,7 +10081,7 @@
       },
       {
         "aliases": [],
-        "area_id": null,
+        "area_id": "storage_room",
         "capabilities": null,
         "config_entry_id": null,
         "device_class": null,
@@ -44146,7 +44146,7 @@
         "icon": null,
         "id": "8887f0478b30d6af83a70b8137fc3dca",
         "has_entity_name": false,
-        "name": null,
+        "name": "Hannah's Garage Door",
         "options": {
           "cloud.google_assistant": {
             "should_expose": true
