@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-70",
+        "original_icon": "mdi:battery-charging-wireless-90",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4113,7 +4113,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug-off",
+        "original_icon": "mdi:power-plug",
         "original_name": "Branden's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4148,7 +4148,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Branden's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4256,7 +4256,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -44290,6 +44290,35 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "living_room_ceiling_fan_turn_on",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
+        "device_class": null,
+        "device_id": "86b1b485f0e733b3962457c610d02eae",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.branden_s_phone_nfc_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "553d9102488955a9ee5f3138ec09c3da",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:nfc-variant",
+        "original_name": "Branden's Phone NFC state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "43decfd0a90b302918d57e17c32715f1dbff11f381e1165579a84cf418b41c5b_nfc_state",
         "unit_of_measurement": null
       }
     ],
