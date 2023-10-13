@@ -130,7 +130,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -165,7 +165,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -200,7 +200,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -235,7 +235,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -375,7 +375,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -410,7 +410,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-50",
+        "original_icon": "mdi:battery-charging-wireless-50",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8257,7 +8257,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8292,7 +8292,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug-off",
+        "original_icon": "mdi:power-plug",
         "original_name": "Samantha's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8327,7 +8327,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Samantha's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8435,7 +8435,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -12576,7 +12576,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -12750,7 +12750,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -12924,7 +12924,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -15951,7 +15951,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -16129,7 +16129,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -16927,7 +16927,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -34978,7 +34978,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -35962,7 +35962,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -37764,7 +37764,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -38611,7 +38611,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -40920,7 +40920,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -42505,7 +42505,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -44317,6 +44317,290 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "43decfd0a90b302918d57e17c32715f1dbff11f381e1165579a84cf418b41c5b_nfc_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.heated_blanket",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a07f5f1dec6204bc94bfd0b5a3c529ec",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_switch_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "sensor.heated_blanket_power_on_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "69f1028f09fed2df1511a814e96d180b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power-settings",
+        "original_name": "power on behavior",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_power_on_behavior_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "off",
+            "on",
+            "toggle",
+            "previous"
+          ]
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "select.heated_blanket_power_on_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3fc85f3d4bf190eef9d2c85beb5888cf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power-settings",
+        "original_name": "power on behavior",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_power_on_behavior_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.heated_blanket_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a25c4af4666dadba4f9efa196b8f588a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.heated_blanket_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bf2e93a5e00e04a8dcd04695b6592a80",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_update_state_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.heated_blanket_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "26ee31f34876a8b699c812ce5da47be9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_update_available_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.heated_blanket",
+        "hidden_by": null,
+        "icon": null,
+        "id": "270c3cf191d01bfd511f445108ade48c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e86a38_update_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1697148506924"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.heated_blanket_safety",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8c626cd4b414d5563824cb9ce60d8dad",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Heated Blanket Safety",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1697148506924",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
+        "device_class": null,
+        "device_id": "6636b1f64974c361328efbc239dceb84",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.samantha_s_phone_nfc_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "383531cf51ae653cb2f1ab6af8f8818d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:nfc-variant",
+        "original_name": "Samantha's Phone NFC state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0dfb818836402d406b9696502e029d26399230aa6ccff73f8373c9f4b5f3d480_nfc_state",
         "unit_of_measurement": null
       }
     ],

@@ -2164,6 +2164,30 @@
         "name": "Garage Door",
         "sw_version": "3.14",
         "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "876ccfa73e96c6e92bbdbfc4cc139003",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0029e86a38"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "15A Zigbee smart plug (S40ZBTPB)",
+        "name_by_user": null,
+        "name": "Heated Blanket",
+        "sw_version": "1.1.0",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

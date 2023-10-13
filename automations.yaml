@@ -2120,3 +2120,23 @@
       entity_id: switch.master_bath_fan
       domain: switch
   mode: restart
+- id: '1697148506924'
+  alias: Heated Blanket Safety
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+    for:
+      hours: 5
+      minutes: 0
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+  mode: single
