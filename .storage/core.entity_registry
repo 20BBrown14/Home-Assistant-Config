@@ -130,7 +130,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -165,7 +165,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -200,7 +200,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -235,7 +235,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -375,7 +375,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -410,7 +410,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-90",
+        "original_icon": "mdi:battery-80",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4256,7 +4256,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-50",
+        "original_icon": "mdi:battery-70",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8435,7 +8435,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Samantha's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -12576,7 +12576,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -12750,7 +12750,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -12924,7 +12924,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -13352,7 +13352,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {},
+        "capabilities": {
+          "source_list": [
+            "DESKTOP-HU2T9JO"
+          ]
+        },
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -13379,7 +13383,7 @@
         "original_icon": "mdi:spotify",
         "original_name": null,
         "platform": "spotify",
-        "supported_features": 2048,
+        "supported_features": 444983,
         "translation_key": null,
         "unique_id": "20bbrown14",
         "unit_of_measurement": null
@@ -15951,7 +15955,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -16129,7 +16133,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -16927,7 +16931,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -33323,7 +33327,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:robot-dead",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -34978,7 +34982,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -35962,7 +35966,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -37764,7 +37768,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -38611,7 +38615,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -40920,7 +40924,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -42505,7 +42509,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -44369,6 +44373,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44439,6 +44446,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44468,6 +44478,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44496,6 +44509,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -44592,6 +44608,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44601,6 +44620,902 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "0dfb818836402d406b9696502e029d26399230aa6ccff73f8373c9f4b5f3d480_nfc_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_capture_cpu_usage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "eac0d2d950404ff47e2922e9b143859b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scoreboard-outline",
+        "original_name": "capture cpu usage",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:capture_cpu_usage:front_door",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_detect_cpu_usage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3d4d7ee5471cebfdd902374b1b020f42",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scoreboard-outline",
+        "original_name": "detect cpu usage",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:detect_cpu_usage:front_door",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_ffmpeg_cpu_usage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "465343627a98136a2d5ab73c91d018e0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scoreboard-outline",
+        "original_name": "ffmpeg cpu usage",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:ffmpeg_cpu_usage:front_door",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "ddc274d6e1da8c6e24f65d52b6fda161",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.frigate_detection_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a1a6da402e7a3ea0e20dcec033b1d6a7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Detection fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:detection",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "ddc274d6e1da8c6e24f65d52b6fda161",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.frigate_coral_inference_speed",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1f3f2d1f8e7e8037d73fb385890f0b9b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Coral inference speed",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_detector_speed:coral",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_camera_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "14eefd0c51f4328a31b3e728c1322207",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "camera fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:front_door_camera",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_detection_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5156a9166d100e642e11222ea16ca698",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "detection fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:front_door_detection",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_process_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7ffa61b1a33adc2effa2b6a03970d76",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "process fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:front_door_process",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.front_door_skipped_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "96d0338c15d3e645d6a25261257d0876",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "skipped fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:front_door_skipped",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "ddc274d6e1da8c6e24f65d52b6fda161",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.frigate_intel_vaapi_gpu_load",
+        "hidden_by": null,
+        "icon": null,
+        "id": "01f431affd179dc9ac6ab823919a2803",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Intel-Vaapi gpu load",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:gpu_load:intel-vaapi",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b93dbffaba092ea0b0a98ca4d7c7cb6c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "219552482e2917cfad958686019320c6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f32797fc580416289a417a682f7d9fdd",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "ddc274d6e1da8c6e24f65d52b6fda161",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.frigate_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "244b15cc1ab7d7a5457aeb9d6bbcabe6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:server",
+        "original_name": "Status",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_status:frigate",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5aed2ef1f8625b9bac10cb63767cdd08",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "camera",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "frigate",
+        "supported_features": 2,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera:front_door",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_person",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4268b7c8943d027ea9ce12b1c1cc4b13",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Person",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_cat",
+        "hidden_by": null,
+        "icon": null,
+        "id": "945b921d6a5d299ec5944796a3a7f2e4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Cat",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 15,
+          "max": 50,
+          "step": 1,
+          "mode": "auto"
+        },
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.front_door_contour_area",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c8d6d19c4729ffe1dfad397fe97742d5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Contour area",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:number:front_door_contour_area",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1,
+          "max": 255,
+          "step": 1,
+          "mode": "auto"
+        },
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.front_door_threshold",
+        "hidden_by": null,
+        "icon": null,
+        "id": "23a0006dd60470cf1177651bba6476ef",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Threshold",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:number:front_door_threshold",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.front_door_detect",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0a5641c4ccfc97d888c821a764de1a47",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motion-sensor",
+        "original_name": "Detect",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:front_door_detect",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.front_door_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b6b7c4f2740ab14172ca5da63643992d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motion-sensor",
+        "original_name": "Motion",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:front_door_motion",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.front_door_recordings",
+        "hidden_by": null,
+        "icon": null,
+        "id": "764e1008b0ae8f0d347e44eda9cd0898",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:filmstrip-box-multiple",
+        "original_name": "Recordings",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:front_door_recordings",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.front_door_snapshots",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2eca6bd6608790029ec00d18129a5c3a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:image-multiple",
+        "original_name": "Snapshots",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:front_door_snapshots",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.front_door_improve_contrast",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6ff72f23bc928e21deb70f34c853632e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:contrast-circle",
+        "original_name": "Improve Contrast",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:front_door_improve_contrast",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "618d2e63e9ea60d59c4d1b93bafe3fc2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6bc1861b68dff63bf76f0b8a64653bb3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9cbc90c444fe4d3661ade19791a034d3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ebaaaafc7af4dce1d5820f7b88def89a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "motion",
+        "original_icon": null,
+        "original_name": "Motion",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:motion_sensor:front_door",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "ddc274d6e1da8c6e24f65d52b6fda161",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "update.frigate_server",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bdaeb02e9d5782d06db6dc368d82b9ed",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Server",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:update:frigate_server",
         "unit_of_measurement": null
       }
     ],
