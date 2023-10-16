@@ -13179,43 +13179,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "id": "1670669877104"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.automation_30",
-        "hidden_by": null,
-        "icon": null,
-        "id": "0812ea5ce758e59f65245bb21a6012d9",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "cloud.alexa": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "automation 30",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1670669877104",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": null,
         "config_entry_id": null,
         "device_class": null,
@@ -13352,11 +13315,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "source_list": [
-            "DESKTOP-HU2T9JO"
-          ]
-        },
+        "capabilities": {},
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -13383,7 +13342,7 @@
         "original_icon": "mdi:spotify",
         "original_name": null,
         "platform": "spotify",
-        "supported_features": 444983,
+        "supported_features": 2048,
         "translation_key": null,
         "unique_id": "20bbrown14",
         "unit_of_measurement": null
@@ -15889,43 +15848,6 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "1674349011766",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "id": "1674374816162"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.new_automation",
-        "hidden_by": null,
-        "icon": null,
-        "id": "a8bd9eab203fc35fcb7962d49d541afd",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "cloud.alexa": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "New Automation",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1674374816162",
         "unit_of_measurement": null
       },
       {
@@ -43064,40 +42986,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "id": "1695245865186"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.git_push_backup",
-        "hidden_by": null,
-        "icon": null,
-        "id": "45bce496051a38a7709dc8fca5ad043b",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Git Push Backup",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1695245865186",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": null,
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
         "device_class": null,
@@ -44640,6 +44528,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44668,6 +44559,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -44698,6 +44592,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44726,6 +44623,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -44756,6 +44656,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44784,6 +44687,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -44814,6 +44720,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44842,6 +44751,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -44872,6 +44784,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -44900,6 +44815,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45025,6 +44943,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45156,6 +45077,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -45189,6 +45113,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45346,6 +45273,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45527,6 +45457,30 @@
         "orphaned_timestamp": 1696544471.9917862,
         "platform": "automation",
         "unique_id": "1692042872884"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.git_push_backup",
+        "id": "45bce496051a38a7709dc8fca5ad043b",
+        "orphaned_timestamp": 1697386671.1504586,
+        "platform": "automation",
+        "unique_id": "1695245865186"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.new_automation",
+        "id": "a8bd9eab203fc35fcb7962d49d541afd",
+        "orphaned_timestamp": 1697386692.3453276,
+        "platform": "automation",
+        "unique_id": "1674374816162"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.automation_30",
+        "id": "0812ea5ce758e59f65245bb21a6012d9",
+        "orphaned_timestamp": 1697386707.258859,
+        "platform": "automation",
+        "unique_id": "1670669877104"
       }
     ]
   }

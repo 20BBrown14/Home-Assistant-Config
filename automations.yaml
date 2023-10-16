@@ -1239,17 +1239,6 @@
         title: Low Battery Notification
       threshold: 20
       time: '10:00:00'
-- id: '1670669877104'
-  description: ''
-  trigger: []
-  condition: []
-  action:
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 0
-      milliseconds: 500
-  mode: single
 - id: '1672032565019'
   alias: Water Sensor
   description: ''
@@ -1476,19 +1465,6 @@
     entity_id: light.master_bedroom_light
     domain: light
   mode: restart
-- id: '1674374816162'
-  alias: New Automation
-  description: ''
-  trigger:
-  - platform: time
-    at: 06:00:00
-  condition: []
-  action:
-  - type: turn_off
-    device_id: b1f048780390b20bdff5fec7f0a8718a
-    entity_id: switch.wax_warmer
-    domain: switch
-  mode: single
 - id: '1674500755303'
   alias: Turn on Kitchen Light
   description: ''
@@ -1837,7 +1813,7 @@
       domain: climate
       entity_id: climate.thermostat
       type: set_hvac_mode
-      hvac_mode: cool
+      hvac_mode: heat
     alias: Turn on thermostat if doors/windows closed
   - if:
     - condition: or
@@ -2018,15 +1994,6 @@
       bitmask:
       subtype: 18 (Custom Brightness Level) on endpoint 0
       value: 99
-  mode: single
-- id: '1695245865186'
-  alias: Git Push Backup
-  description: ''
-  trigger: []
-  condition: []
-  action:
-  - service: shell_command.push_git_backup
-    data: {}
   mode: single
 - id: '1696540824535'
   alias: Freeze Warning
