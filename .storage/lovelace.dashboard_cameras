@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_cameras",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "cards": [
+            {
+              "type": "custom:frigate-card",
+              "cameras": [
+                {
+                  "camera_entity": "camera.front_door"
+                }
+              ],
+              "view": {
+                "default": "live",
+                "dark_mode": "off",
+                "update_force": true
+              },
+              "performance": {
+                "profile": "high",
+                "features": {
+                  "media_chunk_size": 1000
+                },
+                "style": {
+                  "border_radius": true,
+                  "box_shadow": true
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

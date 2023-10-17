@@ -63,6 +63,11 @@
         "id": "e3c53f796b9142d29ce8fcb91c4ed481",
         "url": "/hacsfiles/config-template-card/config-template-card.js?hacstag=172177543136",
         "type": "module"
+      },
+      {
+        "id": "a7b73144bd8445a5865bbe2f85e68886",
+        "url": "/hacsfiles/frigate-hass-card/frigate-hass-card.js?hacstag=394082552520",
+        "type": "module"
       }
     ]
   }

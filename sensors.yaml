@@ -5,6 +5,10 @@
       arg: /config
     - type: disk_free
       arg: /config
+    - type: disk_use
+      arg: /frigate-drive
+    - type: disk_free
+      arg: /frigate-drive
     - type: memory_use
     - type: memory_free
     - type: last_boot

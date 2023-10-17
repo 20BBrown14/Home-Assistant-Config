@@ -2107,3 +2107,11 @@
     entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
     domain: switch
   mode: single
+- id: '1697503834583'
+  alias: Frigate -test
+  description: ''
+  use_blueprint:
+    path: SgtBatten/Stable.yaml
+    input:
+      camera: camera.front_door
+      notify_device: 86b1b485f0e733b3962457c610d02eae

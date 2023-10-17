@@ -39,6 +39,15 @@
         "mode": "storage",
         "url_path": "dashboard-security",
         "id": "dashboard_security"
+      },
+      {
+        "id": "dashboard_cameras",
+        "show_in_sidebar": true,
+        "icon": "mdi:webcam",
+        "title": "Cameras",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-cameras"
       }
     ]
   }

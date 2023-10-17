@@ -13315,7 +13315,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {},
+        "capabilities": {
+          "source_list": [
+            "DESKTOP-HU2T9JO"
+          ]
+        },
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -13342,7 +13346,7 @@
         "original_icon": "mdi:spotify",
         "original_name": null,
         "platform": "spotify",
-        "supported_features": 2048,
+        "supported_features": 444983,
         "translation_key": null,
         "unique_id": "20bbrown14",
         "unit_of_measurement": null
@@ -45446,6 +45450,108 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:update:frigate_server",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.disk_use_frigate_drive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8ecef03553a64f343753543819fed31a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": "mdi:harddisk",
+        "original_name": "Disk use /frigate-drive",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "disk_use_frigate_drive",
+        "unit_of_measurement": "GiB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.disk_free_frigate_drive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "09e5ad060dada6f03dd8c044a3afd143",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": "mdi:harddisk",
+        "original_name": "Disk free /frigate-drive",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "disk_free_frigate_drive",
+        "unit_of_measurement": "GiB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1697503834583"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frigate_test",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e2791bb15cae806e0e06053b0e6dbabe",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frigate -test",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1697503834583",
         "unit_of_measurement": null
       }
     ],
