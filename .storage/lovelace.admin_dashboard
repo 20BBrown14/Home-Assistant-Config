@@ -152,6 +152,12 @@
                           "entity": "sensor.disk_use_config"
                         },
                         {
+                          "entity": "sensor.disk_free_frigate_drive"
+                        },
+                        {
+                          "entity": "sensor.disk_use_frigate_drive"
+                        },
+                        {
                           "entity": "sensor.memory_free"
                         },
                         {
