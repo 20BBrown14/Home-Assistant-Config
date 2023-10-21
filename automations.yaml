@@ -22,11 +22,11 @@
   alias: Garage Door Opening
   description: ''
   trigger:
-  - platform: device
-    device_id: f0a84228db7888b84cbdda3273020bcd
-    domain: cover
-    entity_id: cover.garage_door
-    type: opening
+  - type: opened
+    platform: device
+    device_id: 0bf36539db8d07d0911c6ef021a6f0b5
+    entity_id: fd29b271b27b1fe7b648db16fee5a07d
+    domain: binary_sensor
   condition: []
   action:
   - service: media_player.volume_set
@@ -127,26 +127,22 @@
   alias: Garage Door Closed
   description: ''
   trigger:
-  - platform: device
-    device_id: f0a84228db7888b84cbdda3273020bcd
-    domain: cover
-    entity_id: cover.garage_door
-    type: closed
-    for:
-      hours: 0
-      minutes: 0
-      seconds: 0
+  - type: not_opened
+    platform: device
+    device_id: 0bf36539db8d07d0911c6ef021a6f0b5
+    entity_id: fd29b271b27b1fe7b648db16fee5a07d
+    domain: binary_sensor
     id: immediate
-  - platform: device
-    device_id: f0a84228db7888b84cbdda3273020bcd
-    domain: cover
-    entity_id: cover.garage_door
-    type: closed
+  - type: not_opened
+    platform: device
+    device_id: 0bf36539db8d07d0911c6ef021a6f0b5
+    entity_id: fd29b271b27b1fe7b648db16fee5a07d
+    domain: binary_sensor
+    id: 3-mins
     for:
       hours: 0
       minutes: 3
       seconds: 0
-    id: 3-mins
   condition: []
   action:
   - if:
@@ -201,11 +197,11 @@
   alias: Garage Door Opened 30 Min Warning
   description: ''
   trigger:
-  - platform: device
-    device_id: f0a84228db7888b84cbdda3273020bcd
-    domain: cover
-    entity_id: cover.garage_door
-    type: opened
+  - type: opened
+    platform: device
+    device_id: 0bf36539db8d07d0911c6ef021a6f0b5
+    entity_id: fd29b271b27b1fe7b648db16fee5a07d
+    domain: binary_sensor
     for:
       hours: 0
       minutes: 30

@@ -86,8 +86,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
-          "5036a3a11bba97d25eb9b82e8b69decf"
+          "5036a3a11bba97d25eb9b82e8b69decf",
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -98,11 +98,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-21"
+            "3343393661-21-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-21-786:65280:65292"
+            "3343393661-21"
           ]
         ],
         "manufacturer": "Minoston",
@@ -115,8 +115,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
-          "4d198b0c52d3f21e86684be21461084f"
+          "4d198b0c52d3f21e86684be21461084f",
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -127,11 +127,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-22"
+            "3343393661-22-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-22-786:65280:65292"
+            "3343393661-22"
           ]
         ],
         "manufacturer": "Minoston",
@@ -155,11 +155,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-23-99:18770:12597"
+            "3343393661-23"
           ],
           [
             "zwave_js",
-            "3343393661-23"
+            "3343393661-23-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -183,11 +183,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-24-330:4:1"
+            "3343393661-24"
           ],
           [
             "zwave_js",
-            "3343393661-24"
+            "3343393661-24-330:4:1"
           ]
         ],
         "manufacturer": "Ecolink",
@@ -211,11 +211,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-25-12:17479:16439"
+            "3343393661-25"
           ],
           [
             "zwave_js",
-            "3343393661-25"
+            "3343393661-25-12:17479:16439"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -239,11 +239,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-26-634:2306:8192"
+            "3343393661-26"
           ],
           [
             "zwave_js",
-            "3343393661-26"
+            "3343393661-26-634:2306:8192"
           ]
         ],
         "manufacturer": "Zooz",
@@ -267,11 +267,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-27"
+            "3343393661-27-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-27-99:18770:12597"
+            "3343393661-27"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -284,9 +284,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
+          "58e47bce27bf6aedbe7250e4c4716963",
           "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "58e47bce27bf6aedbe7250e4c4716963"
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -785,11 +785,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-30-99:18770:12597"
+            "3343393661-30"
           ],
           [
             "zwave_js",
-            "3343393661-30"
+            "3343393661-30-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -994,11 +994,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ],
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1566,11 +1566,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-39-881:258:187"
+            "3343393661-39"
           ],
           [
             "zwave_js",
-            "3343393661-39"
+            "3343393661-39-881:258:187"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1690,11 +1690,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-40"
+            "3343393661-40-634:260:514"
           ],
           [
             "zwave_js",
-            "3343393661-40-634:260:514"
+            "3343393661-40"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1790,11 +1790,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-41"
+            "3343393661-41-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-41-634:28672:40962"
+            "3343393661-41"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2076,7 +2076,7 @@
         ],
         "configuration_url": null,
         "connections": [],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": null,
         "id": "f0a84228db7888b84cbdda3273020bcd",
@@ -2100,7 +2100,7 @@
         ],
         "configuration_url": null,
         "connections": [],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": null,
         "id": "52c2805486809c9d49a3968fc110687a",
@@ -2124,7 +2124,7 @@
         ],
         "configuration_url": null,
         "connections": [],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": null,
         "id": "4bda6147c8298250f44d8ec9ca5bf4ba",
@@ -2148,7 +2148,7 @@
         ],
         "configuration_url": null,
         "connections": [],
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entry_type": null,
         "hw_version": null,
         "id": "f676be4320b2383a1d5f5599487193e7",
@@ -2236,6 +2236,30 @@
         "name": "Frigate",
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d000975eaa0"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Garage Door Sensor",
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

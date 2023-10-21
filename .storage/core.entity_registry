@@ -43994,7 +43994,7 @@
         "config_entry_id": "f6530b9879d400d5fc4d491378515440",
         "device_class": null,
         "device_id": "f0a84228db7888b84cbdda3273020bcd",
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entity_category": null,
         "entity_id": "cover.garage_door",
         "hidden_by": null,
@@ -44026,7 +44026,7 @@
         "config_entry_id": "f6530b9879d400d5fc4d491378515440",
         "device_class": null,
         "device_id": "52c2805486809c9d49a3968fc110687a",
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entity_category": null,
         "entity_id": "cover.garage_door_2",
         "hidden_by": null,
@@ -44058,7 +44058,7 @@
         "config_entry_id": "f6530b9879d400d5fc4d491378515440",
         "device_class": null,
         "device_id": "4bda6147c8298250f44d8ec9ca5bf4ba",
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entity_category": "diagnostic",
         "entity_id": "binary_sensor.garage_door_myq_gateway",
         "hidden_by": null,
@@ -44090,7 +44090,7 @@
         "config_entry_id": "f6530b9879d400d5fc4d491378515440",
         "device_class": null,
         "device_id": "f676be4320b2383a1d5f5599487193e7",
-        "disabled_by": null,
+        "disabled_by": "config_entry",
         "entity_category": "diagnostic",
         "entity_id": "binary_sensor.garage_door_myq_gateway_2",
         "hidden_by": null,
@@ -45549,6 +45549,200 @@
         "translation_key": null,
         "unique_id": "1697503834583",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.garage_door_sensor_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2c85e35d22f236bdf285149858b68305",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000975eaa0_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.garage_door_sensor_contact",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fd29b271b27b1fe7b648db16fee5a07d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "door",
+        "original_icon": null,
+        "original_name": "contact",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000975eaa0_contact_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.garage_door_sensor_device_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d6c3686cc17d69357dbeb087697dac7c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "device temperature",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000975eaa0_device_temperature_zigbee2mqtt",
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.garage_door_sensor_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "03661bf180cd3428a3be30f45b2b7663",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000975eaa0_voltage_zigbee2mqtt",
+        "unit_of_measurement": "mV"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.garage_door_sensor_power_outage_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2b823465c897b9337361069d87ca60f6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "power outage count",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000975eaa0_power_outage_count_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "0bf36539db8d07d0911c6ef021a6f0b5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.garage_door_sensor_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a1602b5ccaf6009675cb616b2ea25378",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000975eaa0_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
       }
     ],
     "deleted_entities": [
