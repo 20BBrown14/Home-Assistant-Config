@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-60",
+        "original_icon": "mdi:battery-80",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -33249,7 +33249,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:robot-dead",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -45743,6 +45743,754 @@
         "translation_key": null,
         "unique_id": "0x00158d000975eaa0_linkquality_zigbee2mqtt",
         "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_capture_cpu_usage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ef3f34a7752866c02b3e570e056078bf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scoreboard-outline",
+        "original_name": "capture cpu usage",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:capture_cpu_usage:finnley_room",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_detect_cpu_usage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9f803d15f33cb7c6483ffd0b8f26796a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scoreboard-outline",
+        "original_name": "detect cpu usage",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:detect_cpu_usage:finnley_room",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_ffmpeg_cpu_usage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "59dace0e0e30d8284a4663cc4e4a9806",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scoreboard-outline",
+        "original_name": "ffmpeg cpu usage",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:ffmpeg_cpu_usage:finnley_room",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_camera_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d0ccb2148558a58476a9e6f40831b5e3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "camera fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:finnley_room_camera",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_detection_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "87e18c98242b3a56b12a1e541c9b8ef2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "detection fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:finnley_room_detection",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_process_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "39b511f1a6a1added9840ddd6d438504",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "process fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:finnley_room_process",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_skipped_fps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dacd1e50da35e1374a7c9dd09f192070",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "skipped fps",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:finnley_room_skipped",
+        "unit_of_measurement": "fps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5596ac353777233ca9c675204862ce36",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5ce573bf01f43c64e2e79754ff1b8908",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ade1d8fe27f55f91482aff25865a99e1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room",
+        "hidden_by": null,
+        "icon": null,
+        "id": "28b472b075ed1166fe1387fa4dcd88f9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "camera",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "frigate",
+        "supported_features": 2,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera:finnley_room",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_cat",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ae034af79dbf36378b91759ee7856a24",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Cat",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_person",
+        "hidden_by": null,
+        "icon": null,
+        "id": "30acc63624a80dc11e9c656e670dfc3d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Person",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 15,
+          "max": 50,
+          "step": 1,
+          "mode": "auto"
+        },
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.finnley_room_contour_area",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a402f930c4c3f6a7b6f9a5f71b430598",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Contour area",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:number:finnley_room_contour_area",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1,
+          "max": 255,
+          "step": 1,
+          "mode": "auto"
+        },
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.finnley_room_threshold",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7081f0aa54fcb3c0430b93270a1f25b9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Threshold",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:number:finnley_room_threshold",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.finnley_room_detect",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b999ed4f0e6b9d575cd54fa046191130",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motion-sensor",
+        "original_name": "Detect",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:finnley_room_detect",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.finnley_room_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "83234a5ed79b1956d44fada2ca29a760",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motion-sensor",
+        "original_name": "Motion",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:finnley_room_motion",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.finnley_room_recordings",
+        "hidden_by": null,
+        "icon": null,
+        "id": "be6ef5c9558fd705d7526a153430db76",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:filmstrip-box-multiple",
+        "original_name": "Recordings",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:finnley_room_recordings",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.finnley_room_snapshots",
+        "hidden_by": null,
+        "icon": null,
+        "id": "007ae64798adcc90a5f4999f613947e8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:image-multiple",
+        "original_name": "Snapshots",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:finnley_room_snapshots",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.finnley_room_improve_contrast",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c2b641da2ed0240431b8ab61eba05946",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:contrast-circle",
+        "original_name": "Improve Contrast",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:switch:finnley_room_improve_contrast",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "47b4151b0dc41f1aa4d5fbdda38d73da",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8f78a1ab1cdfbb736b5e248716684a38",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "34e30356c9ffedc2d223e34142e9da84",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8ac47f013dac26475217e9ba3bbdabe8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "motion",
+        "original_icon": null,
+        "original_name": "Motion",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:motion_sensor:finnley_room",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

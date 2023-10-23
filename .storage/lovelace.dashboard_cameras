@@ -9,66 +9,121 @@
           "title": "Home",
           "cards": [
             {
-              "type": "custom:frigate-card",
-              "cameras": [
-                {
-                  "camera_entity": "camera.front_door"
-                }
-              ],
-              "view": {
-                "default": "live",
-                "dark_mode": "off",
-                "update_force": true
-              },
-              "performance": {
-                "profile": "high",
-                "features": {
-                  "media_chunk_size": 1000
-                },
-                "style": {
-                  "border_radius": true,
-                  "box_shadow": true
-                }
-              }
-            },
-            {
-              "type": "grid",
               "square": false,
-              "columns": 1,
+              "type": "grid",
+              "columns": 2,
               "cards": [
                 {
-                  "type": "entities",
-                  "entities": [
+                  "type": "custom:frigate-card",
+                  "cameras": [
                     {
-                      "entity": "switch.front_door_detect"
+                      "camera_entity": "camera.front_door"
+                    }
+                  ],
+                  "view": {
+                    "default": "live",
+                    "dark_mode": "off",
+                    "update_force": true
+                  },
+                  "performance": {
+                    "profile": "high",
+                    "features": {
+                      "media_chunk_size": 1000
                     },
+                    "style": {
+                      "border_radius": true,
+                      "box_shadow": true
+                    }
+                  }
+                },
+                {
+                  "type": "grid",
+                  "square": false,
+                  "columns": 1,
+                  "cards": [
                     {
-                      "entity": "switch.front_door_motion"
-                    },
-                    {
-                      "entity": "sensor.front_door_cat_count"
-                    },
-                    {
-                      "entity": "binary_sensor.front_door_motion"
-                    },
-                    {
-                      "entity": "sensor.front_door_person_count"
-                    },
-                    {
-                      "entity": "switch.front_door_recordings"
-                    },
-                    {
-                      "entity": "switch.front_door_snapshots"
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "entity": "switch.front_door_detect"
+                        },
+                        {
+                          "entity": "switch.front_door_motion"
+                        },
+                        {
+                          "entity": "sensor.front_door_cat_count"
+                        },
+                        {
+                          "entity": "binary_sensor.front_door_motion"
+                        },
+                        {
+                          "entity": "sensor.front_door_person_count"
+                        },
+                        {
+                          "entity": "switch.front_door_recordings"
+                        },
+                        {
+                          "entity": "switch.front_door_snapshots"
+                        }
+                      ]
                     }
                   ]
                 },
                 {
-                  "type": "picture-entity",
-                  "entity": "camera.front_door_person"
+                  "type": "custom:frigate-card",
+                  "cameras": [
+                    {
+                      "camera_entity": "camera.finnley_room"
+                    }
+                  ],
+                  "view": {
+                    "default": "live",
+                    "dark_mode": "off",
+                    "update_force": true
+                  },
+                  "performance": {
+                    "profile": "high",
+                    "features": {
+                      "media_chunk_size": 1000
+                    },
+                    "style": {
+                      "border_radius": true,
+                      "box_shadow": true
+                    }
+                  }
                 },
                 {
-                  "type": "picture-entity",
-                  "entity": "camera.front_door_cat"
+                  "type": "grid",
+                  "square": false,
+                  "columns": 1,
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "entities": [
+                        {
+                          "entity": "switch.finnley_room_detect"
+                        },
+                        {
+                          "entity": "switch.finnley_room_motion"
+                        },
+                        {
+                          "entity": "sensor.finnley_room_cat_count"
+                        },
+                        {
+                          "entity": "binary_sensor.finnley_room_motion"
+                        },
+                        {
+                          "entity": "sensor.finnley_room_person_count"
+                        },
+                        {
+                          "entity": "switch.finnley_room_recordings"
+                        },
+                        {
+                          "entity": "switch.finnley_room_snapshots"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
