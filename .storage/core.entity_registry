@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-80",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -45670,6 +45670,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "voltage",
@@ -45733,6 +45736,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -45761,6 +45767,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45791,6 +45800,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -45819,6 +45831,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45849,6 +45864,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -45877,6 +45895,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -45907,6 +45928,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -45935,6 +45959,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -46162,6 +46189,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -46195,6 +46225,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -46353,6 +46386,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -46490,6 +46526,3424 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:motion_sensor:finnley_room",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_bicycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "351543b745f01b6aad402e2432df061f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bicycle",
+        "original_name": "bicycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_bicycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.side_yard_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "33d4b929609eb7ea6a6825704c42b80e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:side_yard_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_sports_ball_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "449a7467948816d784b3566e38849c51",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "sports ball count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_sports ball",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_backpack_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7ad5bdbafbd9f4d30e23bb2b904d55ba",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "backpack count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_backpack",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_bird_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e96918bb077e8439db26d750eb2c3d63",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "bird count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_bird",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_bicycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "106dacd782880df88c0e026f0866bb3c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bicycle",
+        "original_name": "bicycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_bicycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_bird_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0de5c4e23498873517ebaa9640d03bc3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "bird count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_bird",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3f34b2436ec6337cad8a79e0a0c7c264",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_sports_ball_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f57a6ecd9972a1060d5222dc9d255a1d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "sports ball count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_sports ball",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_car_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bbdb6be084764f2cfdf9f56bb57da76d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car",
+        "original_name": "car count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_car",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.frontdoor_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "94120a714de49f72bb51de2ad054f076",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:frontdoor_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a7e5a1dd15a3e04bd4b68f6edb7b8075",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3ddb9e379be4121eab0ab12aba45d246",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.side_yard_bird_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e57d0c3c24a3fce5adce6127400f042c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "bird count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:side_yard_bird",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "73963e1b8e8041da82638ba565491929",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2d942c735e5c6e3c2c45426105064fb4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.frontdoor_handbag_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8ddc0cbeefabb94d11010d17af229de7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "handbag count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:frontdoor_handbag",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f62f84609b359f1da54f746193ad6052",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d0331d5200a1cdc8b2ca48be398a8b19",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_handbag_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d6d754370dd756c783e2a8755c8640a5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "handbag count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_handbag",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.side_yard_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c24fbad4424ca439faa70e1a44e3fb10",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:side_yard_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_motorcycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "593811ccfee7eb6f147384fa1121087f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motorbike",
+        "original_name": "motorcycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_motorcycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.frontdoor_backpack_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "08af3ad3dd1f2f623b736a364b869703",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "backpack count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:frontdoor_backpack",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_handbag_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cca569236c081b73fd21117f5e732ef2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "handbag count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_handbag",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_backpack_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1da0db4244c6e3928375de34664797e5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "backpack count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_backpack",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f3f040ccd7c94d6a19b11d28b2030b27",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_bird_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5a6b5132f3fd3802c79195278d36f770",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "bird count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_bird",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.side_yard_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "20e21ed18e310bdf7d9d3f87fd2f93e1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:side_yard_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_car_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "48c0832bf645f93eec6c88a8d361fa8e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car",
+        "original_name": "car count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_car",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.frontdoor_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4fc1aa9dca3bc0d66356d11c412da6bf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:frontdoor_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_car_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "88287662f0f495b30fd75e51013240c6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car",
+        "original_name": "car count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_car",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_bird_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4433b9a5dc6d220da99bade0c084cc7c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "bird count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_bird",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_backpack_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "86df8683fad914418c970ac7c38fcf3a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "backpack count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_backpack",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "712129fd4e6d42dd75603dad1a124a92",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_sports_ball_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2481b1757a30043f8880bd417e5c2e29",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "sports ball count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_sports ball",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d484a3057609f412c35acafde31b8d47",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_car_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "619825af6c971999694c24809d92776f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car",
+        "original_name": "car count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_car",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.side_yard_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "490f0ae03479056059a5e34e39c63a70",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:side_yard_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "288995140b0eb2b0c0958b003216d311",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.frontdoor_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "40476366dab8219c6c8a015f3d58db32",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:frontdoor_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_dog_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c90c32213a4754220d171f281857575b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dog-side",
+        "original_name": "dog count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_dog",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "693e9b440aad58a2af10ce75068c88be",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_motorcycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "89ced7e50d783e7ccb7e9f7279cd0786",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motorbike",
+        "original_name": "motorcycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_motorcycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.side_yard_sports_ball_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8154eae44e33cb985f2d4cfca3c9dad6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "sports ball count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:side_yard_sports ball",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_yard_person_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d644628fe9efb758eaf87da8b18cfe92",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "person count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_yard_person",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.driveway_motorcycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b6223687acdf99381b64448249da3d54",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motorbike",
+        "original_name": "motorcycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:driveway_motorcycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.frontdoor_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b97a0df87f38b299132e54e576678616",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:frontdoor_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_porch_handbag_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "20f7b488fe09c8d6ab77f3353c636c70",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "handbag count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_porch_handbag",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.front_door_bicycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "04b58c60fe89b19019de56ece6f6da29",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bicycle",
+        "original_name": "bicycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:front_door_bicycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_motorcycle_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3eafa5975edadd7ffec88812d62fbccc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:motorbike",
+        "original_name": "motorcycle count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:finnley_room_motorcycle",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_sports_ball",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9105fdea174fb6b684c29a6431db4c31",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Sports Ball",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_sports ball",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_bicycle",
+        "hidden_by": null,
+        "icon": null,
+        "id": "58150d9de31bfe98426125729a1dfe61",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Bicycle",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_bicycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_sports_ball",
+        "hidden_by": null,
+        "icon": null,
+        "id": "88a0a6f16165b6fccb75ca887f6dc7ec",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Sports Ball",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_sports ball",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_handbag",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8619208469426d36d6ccd11d8ed361fa",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Handbag",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_handbag",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_handbag",
+        "hidden_by": null,
+        "icon": null,
+        "id": "972a312a1ff6fcbae10d70af3ac8319d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Handbag",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_handbag",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_backpack",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1f784d7e2ad3c7db55fe1601f52b2087",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Backpack",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_backpack",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_bird",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dca3950fd664c6e5962386bec84658cf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Bird",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_car",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a760997a212b1dc5760fab4f8dd9a445",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Car",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_car",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_bird",
+        "hidden_by": null,
+        "icon": null,
+        "id": "97e36004d42520a62ae6eabfd1e89eda",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Bird",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_backpack",
+        "hidden_by": null,
+        "icon": null,
+        "id": "079ca08921dbbfa9d412cc414d6493a2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Backpack",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_backpack",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_dog",
+        "hidden_by": null,
+        "icon": null,
+        "id": "49ce8105ab627d0826d73f6099760ba9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Dog",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_car",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dd072d8fdf523a814cd91cf66deb9e65",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Car",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_car",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_dog",
+        "hidden_by": null,
+        "icon": null,
+        "id": "73766bf5c5fb8dd152862d277f72b340",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Dog",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_motorcycle",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ceb514b1918976cda5b8c17b0a8f7d13",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Motorcycle",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_motorcycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.front_door_bicycle",
+        "hidden_by": null,
+        "icon": null,
+        "id": "033098f666405a073ca165a29947de2d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Bicycle",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:front_door_bicycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.finnley_room_motorcycle",
+        "hidden_by": null,
+        "icon": null,
+        "id": "418482d045474d6ac51f0d603955ace6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Motorcycle",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:camera_snapshots:finnley_room_motorcycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_bicycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d864347605ade675539acea90f0a06cf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bicycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_bicycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.side_yard_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c5addff289efad9dd9fbfa10921d5aae",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:side_yard_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_sports_ball_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "48a9f56163d5b6ed4855d327c937df8a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "sports ball occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_sports ball",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_backpack_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9ff1956540df5471e55f3ba0717b360c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "backpack occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_backpack",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_bird_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "485ce0bc703a019daa5d388e4245662e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bird occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_bicycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "780bf5fbc34ce3288661e25251f734b8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bicycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_bicycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_bird_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "77d420ec52abecc0938519262c034e8b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bird occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "15f749a4af8be73faae9aa693f1d3181",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_sports_ball_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0ca6dde863525451930f5de779a9815a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "sports ball occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_sports ball",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_car_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "df6f4d4cbf4a278e63d9adeed70a3f3a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:car-off",
+        "original_name": "car occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_car",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.frontdoor_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d894cd2c58fc117e2954fdc281f06884",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:frontdoor_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d6f4e02714e8cb2b06f6f31a04b49bd8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fbb545c097d99e4e71f35a3679dcc90c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.side_yard_bird_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "547e096dbfdd0a42097e514174f89dc7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bird occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:side_yard_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0fce3707d92a5fdc781a21e57b6dd449",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2587ed5ec97cda233bd5c0b7baa0278f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.frontdoor_handbag_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0090d2072da0fe8a4b857833fad8e48",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "handbag occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:frontdoor_handbag",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "755204515e0d4444d01e4b77f40f4a28",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "200eea98d7d374cb69bf07343e26c7f9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_handbag_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3ee9ad27a0f633b242a5ece486876cb2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "handbag occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_handbag",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.side_yard_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bff66c6b44eb4b622e4571b4bcecf498",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:side_yard_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_motorcycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2195c6e043d20952de9630d04d5c8081",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "motorcycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_motorcycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.frontdoor_backpack_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7593cf158e9fa03f34bdf4d6872ba24d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "backpack occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:frontdoor_backpack",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_handbag_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bc12a07dfde7d5fa592d7f0150361c70",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "handbag occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_handbag",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_backpack_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f7e0010844548631322bc71dafcba71d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "backpack occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_backpack",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4caadeb5fea59da20cbbed3d195cc8b9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_bird_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "28b29ab4d37ed67c611e6e73831c54b5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bird occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.side_yard_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f4cc1da0b1bbfb2ac88df62907da15fc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:side_yard_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_car_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "641935b3a6aab3342d98b18cc15d0731",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:car-off",
+        "original_name": "car occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_car",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.frontdoor_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c67dbb628ba2d14841599106e5d58207",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:frontdoor_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_car_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "01168e81ee954dcf7cd2c8c64b9ca210",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:car-off",
+        "original_name": "car occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_car",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_bird_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aea36bdf700de86cd41fb8159d940563",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bird occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_bird",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_backpack_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "177fd581be730bb32cad6307fd56714a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "backpack occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_backpack",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "adcf81a199f9bcb2e37f5d68f4e70a4a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_sports_ball_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a31a205df6dd4637538d4a5ded0ad527",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "sports ball occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_sports ball",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8b2219a53878ad94d3e9a5ad2adf8f80",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_car_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3deef83612f89238d17288c1053df270",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:car-off",
+        "original_name": "car occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_car",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.side_yard_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "53abdb28b96875dea3ea10ffa4c8f232",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:side_yard_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "390b7135c40bcb5cbf209afbba2600ef",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.frontdoor_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "06ed930f805ef7fe4f3823d507ffffb7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:frontdoor_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_dog_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e00ed1d547e4a22061a84d3e557bbc4c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:dog-side-off",
+        "original_name": "dog occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_dog",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "17809b3da47e5a70ff7d7f3894e68ed6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_motorcycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ba6c6002f08937201b5e77710b4661d6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "motorcycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_motorcycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.side_yard_sports_ball_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1dcae6852e97d7fde0d86de57da0947d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "sports ball occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:side_yard_sports ball",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_yard_person_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f8fa6ec66c6af48f5455c6b18b62962e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "person occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_yard_person",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "433553f598b0eab5b9a8545c057030e1",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.driveway_motorcycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a03d95d28084ffcebe3a5d1f44daf009",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "motorcycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:driveway_motorcycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.frontdoor_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7fca74f610f882fc64117c9e423ebfae",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:frontdoor_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "69addf860fb35d16749bd12785007e6d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_porch_handbag_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2af6e1b7376403b388ef1949c16bcd56",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "handbag occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_porch_handbag",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "a6cd9533de890cf493c2b7e118387674",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_bicycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a2431358ec11eea2243e68b2abc5a20c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "bicycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:front_door_bicycle",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "06f8607f38356872ccdb880cad78d6c5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.finnley_room_motorcycle_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d64cda497a485dae8fae554e29088dbe",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "motorcycle occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:finnley_room_motorcycle",
         "unit_of_measurement": null
       }
     ],

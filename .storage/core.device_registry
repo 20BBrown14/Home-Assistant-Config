@@ -69,11 +69,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-19"
+            "3343393661-19-99:18756:13111"
           ],
           [
             "zwave_js",
-            "3343393661-19-99:18756:13111"
+            "3343393661-19"
           ]
         ],
         "manufacturer": "Enbrighten",
@@ -86,8 +86,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "5036a3a11bba97d25eb9b82e8b69decf",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "5036a3a11bba97d25eb9b82e8b69decf"
         ],
         "configuration_url": null,
         "connections": [],
@@ -115,8 +115,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "4d198b0c52d3f21e86684be21461084f",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "4d198b0c52d3f21e86684be21461084f"
         ],
         "configuration_url": null,
         "connections": [],
@@ -211,11 +211,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-25"
+            "3343393661-25-12:17479:16439"
           ],
           [
             "zwave_js",
-            "3343393661-25-12:17479:16439"
+            "3343393661-25"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -267,11 +267,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-27-99:18770:12597"
+            "3343393661-27"
           ],
           [
             "zwave_js",
-            "3343393661-27"
+            "3343393661-27-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -285,8 +285,8 @@
         "area_id": "backyard",
         "config_entries": [
           "58e47bce27bf6aedbe7250e4c4716963",
-          "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "2c5ce0bfc343e83e40169c18d16cd1f0"
         ],
         "configuration_url": null,
         "connections": [],
@@ -297,11 +297,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-28-786:49152:49159"
+            "3343393661-28"
           ],
           [
             "zwave_js",
-            "3343393661-28"
+            "3343393661-28-786:49152:49159"
           ]
         ],
         "manufacturer": "EVA Logik",
@@ -757,11 +757,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-29-99:18770:12597"
+            "3343393661-29"
           ],
           [
             "zwave_js",
-            "3343393661-29"
+            "3343393661-29-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -785,11 +785,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-30"
+            "3343393661-30-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-30-99:18770:12597"
+            "3343393661-30"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -813,11 +813,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-31-99:18770:12597"
+            "3343393661-31"
           ],
           [
             "zwave_js",
-            "3343393661-31"
+            "3343393661-31-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -994,11 +994,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1122,11 +1122,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-35-99:18770:12597"
+            "3343393661-35"
           ],
           [
             "zwave_js",
-            "3343393661-35"
+            "3343393661-35-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1150,11 +1150,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-36"
+            "3343393661-36-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-36-881:258:187"
+            "3343393661-36"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1178,11 +1178,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-37-12:17479:16438"
+            "3343393661-37"
           ],
           [
             "zwave_js",
-            "3343393661-37"
+            "3343393661-37-12:17479:16438"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -1566,11 +1566,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-39"
+            "3343393661-39-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-39-881:258:187"
+            "3343393661-39"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1690,11 +1690,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-40-634:260:514"
+            "3343393661-40"
           ],
           [
             "zwave_js",
-            "3343393661-40"
+            "3343393661-40-634:260:514"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1790,11 +1790,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-41-634:28672:40962"
+            "3343393661-41"
           ],
           [
             "zwave_js",
-            "3343393661-41"
+            "3343393661-41-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1846,11 +1846,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-43"
+            "3343393661-43-634:2308:513"
           ],
           [
             "zwave_js",
-            "3343393661-43-634:2308:513"
+            "3343393661-43"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1902,11 +1902,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ],
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2282,6 +2282,126 @@
         "model": "4.0.0/0.12.1-367d724",
         "name_by_user": null,
         "name": "Finnley Room",
+        "sw_version": null,
+        "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "configuration_url": "http://192.168.86.21:5000/cameras/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "433553f598b0eab5b9a8545c057030e1",
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:driveway"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "4.0.0/0.12.1-367d724",
+        "name_by_user": null,
+        "name": "Driveway",
+        "sw_version": null,
+        "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "configuration_url": "http://192.168.86.21:5000/cameras/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4d2c389f7f86e2b1bab618148f82fa0c",
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:side_yard"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "4.0.0/0.12.1-367d724",
+        "name_by_user": null,
+        "name": "Side Yard",
+        "sw_version": null,
+        "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "configuration_url": "http://192.168.86.21:5000/cameras/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "69addf860fb35d16749bd12785007e6d",
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:front_porch"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "4.0.0/0.12.1-367d724",
+        "name_by_user": null,
+        "name": "Front Porch",
+        "sw_version": null,
+        "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "configuration_url": "http://192.168.86.21:5000/cameras/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c55b66bae80f577ce9e4cfbd10ddaa16",
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:front_yard"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "4.0.0/0.12.1-367d724",
+        "name_by_user": null,
+        "name": "Front Yard",
+        "sw_version": null,
+        "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "configuration_url": "http://192.168.86.21:5000/cameras/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "03e9678fa79bc3e6dcec17a98096df1e",
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:frontdoor"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "4.0.0/0.12.1-367d724",
+        "name_by_user": null,
+        "name": "Frontdoor",
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       }
