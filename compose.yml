@@ -6,7 +6,7 @@ services:
     volumes:
       - ~/Documents/home-assistant/:/config
       - /etc/localtime:/etc/localtime:ro
-      - /media/brandenbrown/18E1078E0C9541591:/frigate-drive
+      - /media/frigate:/frigate-drive
     restart: unless-stopped
     privileged: true
     ports:
