@@ -9,9 +9,9 @@
           "title": "Home",
           "cards": [
             {
-              "square": false,
+              "square": true,
               "type": "grid",
-              "columns": 2,
+              "columns": 1,
               "cards": [
                 {
                   "type": "custom:frigate-card",
@@ -37,39 +37,6 @@
                   }
                 },
                 {
-                  "type": "grid",
-                  "square": false,
-                  "columns": 1,
-                  "cards": [
-                    {
-                      "type": "entities",
-                      "entities": [
-                        {
-                          "entity": "switch.front_door_detect"
-                        },
-                        {
-                          "entity": "switch.front_door_motion"
-                        },
-                        {
-                          "entity": "sensor.front_door_cat_count"
-                        },
-                        {
-                          "entity": "binary_sensor.front_door_motion"
-                        },
-                        {
-                          "entity": "sensor.front_door_person_count"
-                        },
-                        {
-                          "entity": "switch.front_door_recordings"
-                        },
-                        {
-                          "entity": "switch.front_door_snapshots"
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
                   "type": "custom:frigate-card",
                   "cameras": [
                     {
@@ -91,39 +58,6 @@
                       "box_shadow": true
                     }
                   }
-                },
-                {
-                  "type": "grid",
-                  "square": false,
-                  "columns": 1,
-                  "cards": [
-                    {
-                      "type": "entities",
-                      "entities": [
-                        {
-                          "entity": "switch.finnley_room_detect"
-                        },
-                        {
-                          "entity": "switch.finnley_room_motion"
-                        },
-                        {
-                          "entity": "sensor.finnley_room_cat_count"
-                        },
-                        {
-                          "entity": "binary_sensor.finnley_room_motion"
-                        },
-                        {
-                          "entity": "sensor.finnley_room_person_count"
-                        },
-                        {
-                          "entity": "switch.finnley_room_recordings"
-                        },
-                        {
-                          "entity": "switch.finnley_room_snapshots"
-                        }
-                      ]
-                    }
-                  ]
                 }
               ]
             }

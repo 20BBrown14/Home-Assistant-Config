@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-70",
+        "original_icon": "mdi:battery-50",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
