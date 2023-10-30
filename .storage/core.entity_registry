@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-50",
+        "original_icon": "mdi:battery-90",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -33249,7 +33249,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:robot-dead",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -50268,6 +50268,380 @@
         "translation_key": null,
         "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:gpu_load:error-gpu",
         "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.disk_use_backup_drive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fa88c767d31c75cee3f59de07ebb30d7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": "mdi:harddisk",
+        "original_name": "Disk use /backup_drive",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "disk_use_backup_drive",
+        "unit_of_measurement": "GiB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.disk_free_backup_drive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f52b914a05256c0f4f08a5fa1d61681d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": "mdi:harddisk",
+        "original_name": "Disk free /backup_drive",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "disk_free_backup_drive",
+        "unit_of_measurement": "GiB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.load_1m",
+        "hidden_by": null,
+        "icon": null,
+        "id": "46d37820608ef0ccc99ab0b903356586",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "Load (1m)",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "load_1m",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.load_5m",
+        "hidden_by": null,
+        "icon": null,
+        "id": "101d473754051e027cb9085871b377df",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "Load (5m)",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "load_5m",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.load_15m",
+        "hidden_by": null,
+        "icon": null,
+        "id": "08a9f3a68e54516aed01fb32acab6d47",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "Load (15m)",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "load_15m",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.network_in_eth0",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0d124a3411bcd77ba92d9aa41d96f0f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": "mdi:server-network",
+        "original_name": "Network in eth0",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "network_in_eth0",
+        "unit_of_measurement": "MiB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.network_out_eth0",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1470478d049dcc8535448469c94d214f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": "mdi:server-network",
+        "original_name": "Network out eth0",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "network_out_eth0",
+        "unit_of_measurement": "MiB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.network_throughput_in_eth0",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7b60f414290e687a946d82afea632b60",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_rate",
+        "original_icon": null,
+        "original_name": "Network throughput in eth0",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "throughput_network_in_eth0",
+        "unit_of_measurement": "MB/s"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.network_throughput_out_eth0",
+        "hidden_by": null,
+        "icon": null,
+        "id": "55b3256e6429e34797a051543e12f28f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_rate",
+        "original_icon": null,
+        "original_name": "Network throughput out eth0",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "throughput_network_out_eth0",
+        "unit_of_measurement": "MB/s"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.packets_in_eth0",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d3fedf6361241263a257ad87c1c79c8a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:server-network",
+        "original_name": "Packets in eth0",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "packets_in_eth0",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.packets_out_eth0",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c3e4b9f13edcd074f2cdff57e797af92",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:server-network",
+        "original_name": "Packets out eth0",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "packets_out_eth0",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -50302,6 +50676,150 @@
         "orphaned_timestamp": 1697386707.258859,
         "platform": "automation",
         "unique_id": "1670669877104"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_in_enp1s0f0",
+        "id": "f5cda170102fd3bdc42ce2741519c78e",
+        "orphaned_timestamp": 1698563990.259127,
+        "platform": "systemmonitor",
+        "unique_id": "network_in_enp1s0f0"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_out_enp1s0f0",
+        "id": "a03183d22e9a86c29f09351358c760d1",
+        "orphaned_timestamp": 1698563990.2597723,
+        "platform": "systemmonitor",
+        "unique_id": "network_out_enp1s0f0"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_throughput_in_enp1s0f0",
+        "id": "a96ae76f441e7dbdbaf65b9edbdc6322",
+        "orphaned_timestamp": 1698563990.2602665,
+        "platform": "systemmonitor",
+        "unique_id": "throughput_network_in_enp1s0f0"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_throughput_out_enp1s0f0",
+        "id": "7330e9a66bf79bb8ea1c747a408acc4d",
+        "orphaned_timestamp": 1698563990.2607136,
+        "platform": "systemmonitor",
+        "unique_id": "throughput_network_out_enp1s0f0"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.packets_in_enp1s0f0",
+        "id": "ccc74c311c1a77fd53434c3380a38024",
+        "orphaned_timestamp": 1698563990.261287,
+        "platform": "systemmonitor",
+        "unique_id": "packets_in_enp1s0f0"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.packets_out_enp1s0f0",
+        "id": "c132c2da3b78ad73cced926b6f0250bc",
+        "orphaned_timestamp": 1698563990.2700512,
+        "platform": "systemmonitor",
+        "unique_id": "packets_out_enp1s0f0"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_in_enx40ed0002a61f",
+        "id": "d34d535520d80285e8acbdaef10533e1",
+        "orphaned_timestamp": 1698563990.27049,
+        "platform": "systemmonitor",
+        "unique_id": "network_in_enx40ed0002a61f"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_out_enx40ed0002a61f",
+        "id": "88138d1fac929c0c444ad96448c85d56",
+        "orphaned_timestamp": 1698563990.270868,
+        "platform": "systemmonitor",
+        "unique_id": "network_out_enx40ed0002a61f"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_throughput_in_enx40ed0002a61f",
+        "id": "5a423f36186ae64a0509badc63b0ee3e",
+        "orphaned_timestamp": 1698563990.2712266,
+        "platform": "systemmonitor",
+        "unique_id": "throughput_network_in_enx40ed0002a61f"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_throughput_out_enx40ed0002a61f",
+        "id": "398d708c2f7faff0fcfdaa2e78c3024b",
+        "orphaned_timestamp": 1698563990.2715633,
+        "platform": "systemmonitor",
+        "unique_id": "throughput_network_out_enx40ed0002a61f"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.packets_in_enx40ed0002a61f",
+        "id": "f611a5217dd38a45af55b93fe84748c9",
+        "orphaned_timestamp": 1698563990.2718933,
+        "platform": "systemmonitor",
+        "unique_id": "packets_in_enx40ed0002a61f"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.packets_out_enx40ed0002a61f",
+        "id": "21647f743bcca8d007e020fc891f9968",
+        "orphaned_timestamp": 1698563990.2722218,
+        "platform": "systemmonitor",
+        "unique_id": "packets_out_enx40ed0002a61f"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_in_camera_network",
+        "id": "8389b0cd9fed6ce08fb08a4e4f315584",
+        "orphaned_timestamp": 1698563990.2725503,
+        "platform": "systemmonitor",
+        "unique_id": "network_in_camera_network"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_out_camera_network",
+        "id": "0f95f63419375d44b73b788a4b1da61d",
+        "orphaned_timestamp": 1698563990.2728755,
+        "platform": "systemmonitor",
+        "unique_id": "network_out_camera_network"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_throughput_in_camera_network",
+        "id": "421f37d861f5c235081ce0f8e6f54608",
+        "orphaned_timestamp": 1698563990.2748468,
+        "platform": "systemmonitor",
+        "unique_id": "throughput_network_in_camera_network"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.network_throughput_out_camera_network",
+        "id": "09bcb003081af8b95d0d5ef0759e85ba",
+        "orphaned_timestamp": 1698563990.275298,
+        "platform": "systemmonitor",
+        "unique_id": "throughput_network_out_camera_network"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.packets_in_camera_network",
+        "id": "e8e5af84ca4ea0f02d1907a8fb58d097",
+        "orphaned_timestamp": 1698563990.2756546,
+        "platform": "systemmonitor",
+        "unique_id": "packets_in_camera_network"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.packets_out_camera_network",
+        "id": "a923fb4324df6442b1f8362ada332b14",
+        "orphaned_timestamp": 1698563990.275989,
+        "platform": "systemmonitor",
+        "unique_id": "packets_out_camera_network"
       }
     ]
   }

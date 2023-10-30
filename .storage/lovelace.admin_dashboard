@@ -119,6 +119,23 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "custom:history-explorer-card",
+                      "cardName": "PC",
+                      "graphs": [
+                        {
+                          "type": "line",
+                          "entities": [
+                            {
+                              "entity": "sensor.swap_free"
+                            },
+                            {
+                              "entity": "sensor.swap_use"
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 },
@@ -158,6 +175,12 @@
                           "entity": "sensor.disk_use_frigate_drive"
                         },
                         {
+                          "entity": "sensor.disk_free_backup_drive"
+                        },
+                        {
+                          "entity": "sensor.disk_use_backup_drive"
+                        },
+                        {
                           "entity": "sensor.memory_free"
                         },
                         {
@@ -168,6 +191,39 @@
                         },
                         {
                           "entity": "sensor.last_boot"
+                        },
+                        {
+                          "entity": "sensor.swap_free"
+                        },
+                        {
+                          "entity": "sensor.swap_use"
+                        },
+                        {
+                          "entity": "sensor.network_in_eth0"
+                        },
+                        {
+                          "entity": "sensor.packets_in_eth0"
+                        },
+                        {
+                          "entity": "sensor.network_out_eth0"
+                        },
+                        {
+                          "entity": "sensor.packets_out_eth0"
+                        },
+                        {
+                          "entity": "sensor.network_throughput_in_eth0"
+                        },
+                        {
+                          "entity": "sensor.network_throughput_out_eth0"
+                        },
+                        {
+                          "entity": "sensor.load_1m"
+                        },
+                        {
+                          "entity": "sensor.load_5m"
+                        },
+                        {
+                          "entity": "sensor.load_15m"
                         }
                       ]
                     }

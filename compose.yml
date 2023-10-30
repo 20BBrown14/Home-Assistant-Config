@@ -7,6 +7,7 @@ services:
       - ~/Documents/home-assistant/:/config
       - /etc/localtime:/etc/localtime:ro
       - /media/frigate:/frigate-drive
+      - /media/backup:/backup_drive
     restart: unless-stopped
     privileged: true
     ports:
