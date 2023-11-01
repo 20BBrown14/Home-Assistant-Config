@@ -1299,6 +1299,7 @@
     device_id: 171c8f1cbdc67a075d1170858166fd45
     entity_id: switch.wall_dimmer_switch_2
     domain: switch
+    enabled: true
   - if:
     - condition: sun
       before: sunrise
