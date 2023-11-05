@@ -50647,14 +50647,6 @@
     "deleted_entities": [
       {
         "config_entry_id": null,
-        "entity_id": "automation.upstairs_bath_humidity",
-        "id": "c42c1ecd0804e0dc705e8eb0e51996fe",
-        "orphaned_timestamp": 1696544471.9917862,
-        "platform": "automation",
-        "unique_id": "1692042872884"
-      },
-      {
-        "config_entry_id": null,
         "entity_id": "automation.git_push_backup",
         "id": "45bce496051a38a7709dc8fca5ad043b",
         "orphaned_timestamp": 1697386671.1504586,
