@@ -34883,853 +34883,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_node_status_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "d057108b095ebf10d0687f4e2dc27a28",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
-        "original_name": "Node status",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.node_status",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "button.master_bath_fan_ping_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "898e639db4ba17ed61155dedc91e93e3",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Ping",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.ping",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_successful_commands_rx_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "aaaf69ca9ef976113adf9b5574cb5310",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Successful commands (RX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_commandsRX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_successful_commands_tx_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "acfe3ed49f445a42f5f22a2c5b4916d5",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Successful commands (TX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_commandsTX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_commands_dropped_rx_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "3b73ee870b2584d39c77a9d4d428e4ba",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Commands dropped (RX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_commandsDroppedRX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_commands_dropped_tx_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "00930fde67dde878229f784770df4ca2",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Commands dropped (TX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_commandsDroppedTX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_timed_out_responses_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "a5bdf18f196e314dde540703a48c749c",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Timed out responses",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_timeoutResponse",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_round_trip_time_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "0f8d7e479ad0afb106a7534f84822606",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "duration",
-        "original_icon": null,
-        "original_name": "Round Trip Time",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_rtt",
-        "unit_of_measurement": "ms"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.master_bath_fan_rssi_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "2ee446026dee6afe815198208b4cbfe6",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "signal_strength",
-        "original_icon": null,
-        "original_name": "RSSI",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42.statistics_rssi",
-        "unit_of_measurement": "dBm"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "switch.master_bath_fan",
-        "hidden_by": null,
-        "icon": null,
-        "id": "80f040a30c02dba64cbb1d49c9da84af",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "conversation": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-37-0-currentValue",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Disable",
-            "Enable"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_led_indicator_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "c1718da09283afd6eb6a28e2fb4f9a8e",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "LED Indicator",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-1",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 65535.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.master_bath_fan_auto_turn_off_timer_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "174d02746f9d30df4f84b4062f0eb6c8",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto Turn-Off Timer",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-2",
-        "unit_of_measurement": "min/sec"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 65535.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.master_bath_fan_auto_turn_on_timer_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "63b8c4c22f9881eaf17cf192c3c0dcee",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto Turn-On Timer",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-3",
-        "unit_of_measurement": "min/sec"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 1.0,
-          "max": 2.0,
-          "step": 0.1,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.master_bath_fan_auto_timer_unit",
-        "hidden_by": null,
-        "icon": null,
-        "id": "68ad720ba41bb7bea35c0034e27e1fba",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto Timer Unit",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-10",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Always off",
-            "Always on",
-            "Previous state"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_state_after_power_failure_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "1ea9ed5bc2b55f615930aecf27749965",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "State After Power Failure",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-4",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Disable",
-            "Enable"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_enable_disable_scene_control_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "e484057e24d010af6ef2b70887d10aca",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Enable/Disable Scene Control",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-5",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Local control disabled",
-            "Local and Z-Wave control enabled",
-            "Local and Z-Wave control disabled"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_smart_switch_mode_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "1dc4180fb8028306d257cc74d079e7bc",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Smart Switch Mode",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-6",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Toggle switch",
-            "Momentary switch",
-            "Toggle switch with fixed actions",
-            "Split 3-Way",
-            "Garage door mode (momentary)"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_external_switch_type",
-        "hidden_by": null,
-        "icon": null,
-        "id": "80f6bfb60a58c9cdc32fd7e59bd8acf0",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "External Switch Type",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-7",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Binary Switch CC report (Z-Wave); Basic CC Set (Manual)",
-            "Binary Switch CC report (Z-Wave / Manual)"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_association_reports",
-        "hidden_by": null,
-        "icon": null,
-        "id": "edd5d272bea58b63c2a3df150035b1ba",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Association Reports",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-8",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Normally open (off when relay is open)",
-            "Normally closed"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.master_bath_fan_relay_type",
-        "hidden_by": null,
-        "icon": null,
-        "id": "7b3d47dc3cde15c7b02f36007715834a",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Relay Type",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-9",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 2.0,
-          "max": 200.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.master_bath_fan_impulse_duration",
-        "hidden_by": null,
-        "icon": null,
-        "id": "b153b704bca68f7231432559dbcb424b",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Impulse Duration",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-112-0-11",
-        "unit_of_measurement": "seconds"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 255.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "number.master_bath_fan_indicator_value_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "616fee83f31cce6e9a20f32112df0222",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Indicator value",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-135-0-value",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "button.master_bath_fan_identify_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "dd807f4b76ddff22701ded60448cd5c9",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Identify",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.42-135-0-identify",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "update.master_bath_fan_firmware_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "ecf73021b5a5ed9779ea32a5a3920d20",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "firmware",
-        "original_icon": null,
-        "original_name": "Firmware",
-        "platform": "zwave_js",
-        "supported_features": 21,
-        "translation_key": null,
-        "unique_id": "3343393661.42.firmware_update",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": {
           "supported_color_modes": [
             "brightness"
@@ -36480,7 +35633,7 @@
         },
         "original_device_class": null,
         "original_icon": null,
-        "original_name": "Enable/Disable Scene Control",
+        "original_name": "Scene Control",
         "platform": "zwave_js",
         "supported_features": 0,
         "translation_key": null,
@@ -37672,853 +36825,6 @@
         "capabilities": null,
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
         "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_node_status",
-        "hidden_by": null,
-        "icon": null,
-        "id": "be336366132188c9259b8d8b96f4b2bf",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
-        "original_name": "Node status",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.node_status",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "button.upstairs_bathroom_fan_ping",
-        "hidden_by": null,
-        "icon": null,
-        "id": "213a40b7bbbacc0969422fd759bd9dc7",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Ping",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.ping",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_rx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "5156a771c3ba0b2057262ff79866e0f4",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Successful commands (RX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_commandsRX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_tx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "82c8ae13b7794e155007b63286ad3756",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Successful commands (TX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_commandsTX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_rx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9110749a1365e86be60f8fb9e6e4988e",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Commands dropped (RX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_commandsDroppedRX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_tx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "c0b33ba570e9ff8f2d660acf895fab26",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Commands dropped (TX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_commandsDroppedTX",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_timed_out_responses",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9a7ec986a4b9f6a61053ae429b0209ae",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Timed out responses",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_timeoutResponse",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_round_trip_time",
-        "hidden_by": null,
-        "icon": null,
-        "id": "71db0d5ce3e282bed3ef6977fbab18f1",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "duration",
-        "original_icon": null,
-        "original_name": "Round Trip Time",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_rtt",
-        "unit_of_measurement": "ms"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.upstairs_bathroom_fan_rssi",
-        "hidden_by": null,
-        "icon": null,
-        "id": "e4436572cb8ec7ba6f3fc2e55c173289",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "signal_strength",
-        "original_icon": null,
-        "original_name": "RSSI",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43.statistics_rssi",
-        "unit_of_measurement": "dBm"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "switch.upstairs_bathroom_fan",
-        "hidden_by": null,
-        "icon": null,
-        "id": "7dadbc84e4d99a52ff4911bf2c71b892",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "conversation": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-37-0-currentValue",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Disable",
-            "Enable"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_led_indicator",
-        "hidden_by": null,
-        "icon": null,
-        "id": "1e85090570f6a96006720bb21adf8c78",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "LED Indicator",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-1",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 65535.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.upstairs_bathroom_fan_auto_turn_off_timer",
-        "hidden_by": null,
-        "icon": null,
-        "id": "adf38507a723797ed16ebe0aa08c9f9d",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto Turn-Off Timer",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-2",
-        "unit_of_measurement": "min/sec"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 65535.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.upstairs_bathroom_fan_auto_turn_on_timer",
-        "hidden_by": null,
-        "icon": null,
-        "id": "e880f96c7f0245b7fa8e2bb454481b91",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto Turn-On Timer",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-3",
-        "unit_of_measurement": "min/sec"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 1.0,
-          "max": 2.0,
-          "step": 0.1,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.upstairs_bathroom_fan_auto_timer_unit",
-        "hidden_by": null,
-        "icon": null,
-        "id": "5f621a63f14a81ac82b19e29fe8c604d",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto Timer Unit",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-10",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Always off",
-            "Always on",
-            "Previous state"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_state_after_power_failure",
-        "hidden_by": null,
-        "icon": null,
-        "id": "b4a984bf740f1897d49728d4ee8c539a",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "State After Power Failure",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-4",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Disable",
-            "Enable"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_enable_disable_scene_control",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9adc6e50160527999526df8c939f1e61",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Enable/Disable Scene Control",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-5",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Local control disabled",
-            "Local and Z-Wave control enabled",
-            "Local and Z-Wave control disabled"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_smart_switch_mode",
-        "hidden_by": null,
-        "icon": null,
-        "id": "4945dc9493f12f01595ca816707b5825",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Smart Switch Mode",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-6",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Toggle switch",
-            "Momentary switch",
-            "Toggle switch with fixed actions",
-            "Split 3-Way",
-            "Garage door mode (momentary)"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_external_switch_type",
-        "hidden_by": null,
-        "icon": null,
-        "id": "f8f8650ba6585deeb6700beec8af61b2",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "External Switch Type",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-7",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Binary Switch CC report (Z-Wave); Basic CC Set (Manual)",
-            "Binary Switch CC report (Z-Wave / Manual)"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_association_reports",
-        "hidden_by": null,
-        "icon": null,
-        "id": "12189f85537457c252209c391f10131d",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Association Reports",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-8",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "Normally open (off when relay is open)",
-            "Normally closed"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.upstairs_bathroom_fan_relay_type",
-        "hidden_by": null,
-        "icon": null,
-        "id": "f2e5af00e8868a8cdb2858510321aa1b",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Relay Type",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-9",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 2.0,
-          "max": 200.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.upstairs_bathroom_fan_impulse_duration",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9b5101aadf3c820d774e1f82025c24f5",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Impulse Duration",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-112-0-11",
-        "unit_of_measurement": "seconds"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 255.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "number.upstairs_bathroom_fan_indicator_value",
-        "hidden_by": null,
-        "icon": null,
-        "id": "024a1b72931bcb4a512ce8871a2daa8c",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Indicator value",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-135-0-value",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "button.upstairs_bathroom_fan_identify",
-        "hidden_by": null,
-        "icon": null,
-        "id": "2e7a138669d3b5a9a4ad4225ccc90013",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Identify",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.43-135-0-identify",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "210139e6bd0e25f06141a1d46ef27425",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "update.upstairs_bathroom_fan_firmware",
-        "hidden_by": null,
-        "icon": null,
-        "id": "631f9f61773fbe0fe5d8f1cc607e3d24",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "firmware",
-        "original_icon": null,
-        "original_name": "Firmware",
-        "platform": "zwave_js",
-        "supported_features": 21,
-        "translation_key": null,
-        "unique_id": "3343393661.43.firmware_update",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
         "device_id": "6d3f36694a2e5b4f48d6bd264219ca4d",
         "disabled_by": null,
         "entity_category": "diagnostic",
@@ -39595,7 +37901,7 @@
         },
         "original_device_class": null,
         "original_icon": null,
-        "original_name": "Enable/Disable Scene Control",
+        "original_name": "Scene Control",
         "platform": "zwave_js",
         "supported_features": 0,
         "translation_key": null,
@@ -50642,6 +48948,3149 @@
         "translation_key": null,
         "unique_id": "packets_out_eth0",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_node_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "99b7969d23c1565d9cfa035b67667bb1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:heart-pulse",
+        "original_name": "Node status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.node_status",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.office_ceiling_fan_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0d81598b63885c6cc2c57e99dfde4d16",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ping",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.ping",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "341144078c4c3a21b6168e7a1ac12ebd",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_commandsRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ba3e17e05c7f0f950e1634825fab8bd2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_commandsTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "091bb97b1fca08121b87035f9fa49978",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_commandsDroppedRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d1cd63679bdc1b931a31fff6ead52d6d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_commandsDroppedTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "34cb7899992e374e5322f776d35fe73d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_timeoutResponse",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5ef51eb1c7e3ac628c6cd410d4874543",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_rtt",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_ceiling_fan_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "612556b8dfc6133305f3d0fd1f63cacc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47.statistics_rssi",
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "number.office_ceiling_fan_basic",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2b33225ab3834e7b0a3ffd1a1efb88ee",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Basic",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47-32-0-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "preset_modes": []
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "fan.office_ceiling_fan",
+        "hidden_by": null,
+        "icon": null,
+        "id": "07ddd5fcf19843a0abd4599f2f315d0e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "3343393661.47-38-0-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_ceiling_fan_inverted_orientation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "707bb8fc8a387b23acc4ca8a7caa97da",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Inverted Orientation",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47-112-0-4",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.office_ceiling_fan_alternate_exclusion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6be856f6747bf6d48800cec9ccbe5fd6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Alternate Exclusion",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.47-112-0-19",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c2bd69a0ea73a8f67d00b9af076607aa",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.office_ceiling_fan_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "46c2d91a318fba741b296ddc56064241",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "zwave_js",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "3343393661.47.firmware_update",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_node_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8faf3e24c8a3cade05055860d59c9b09",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:heart-pulse",
+        "original_name": "Node status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.node_status",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.office_light_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6304471440624d578e12c8c9c16e37de",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ping",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.ping",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2b5ff11433b6d4383e8f0003da585489",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_commandsRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "81996aebee61c61b5f0989ff63fe0f57",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_commandsTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0423aee18ea7cd4c60e30feff6c8741a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_commandsDroppedRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "549bf2653c4ffc35e739cd7f0fb8a684",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_commandsDroppedTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "93df1cda13ad9ce09d4cbb3d1221ae30",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_timeoutResponse",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3175d119d73c7b42ea6f65e774e143ea",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_rtt",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.office_light_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cf9f95e8e478ff8c3afd0e30131f6c33",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48.statistics_rssi",
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "supported_color_modes": [
+            "brightness"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "light.office_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1e80fb6a4860f565266959252fa713af",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 32,
+        "translation_key": null,
+        "unique_id": "3343393661.48-38-0-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable",
+            "Momentary mode"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_inverted_orientation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "601b7c5c271c52c6fb67f8394cdaf2ca",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Inverted Orientation",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "On when load is off",
+            "On when load is on",
+            "Always off",
+            "Always on"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_led_indicator",
+        "hidden_by": null,
+        "icon": null,
+        "id": "978ce383577a9fbe8127af39422b5753",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-2",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "White",
+            "Blue",
+            "Green",
+            "Red"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_led_indicator_color",
+        "hidden_by": null,
+        "icon": null,
+        "id": "40e02724e800aa3a1a4c2763449755c6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator Color",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-23",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Bright (100%)",
+            "Medium (60%)",
+            "Low (30%)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_led_indicator_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4efd3a9e1c0a17b36fdf506af088eacf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-24",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_led_indicator_confirm_configuration_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8e8814c4250dc1c678c1eb228c2414ae",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Confirm Configuration Change",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-32",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_auto_turn_off_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "de02693037a676ada819aa40b74eb918",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-Off Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-3",
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_auto_turn_on_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c578c0bafb58ba1e240bf6e1e5e8e061",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-On Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-5",
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_send_status_change_report_local_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "df8cfda85e2f9b166f71ecfff74af67f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Local Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-7-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_send_status_change_report_3_way",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e61e045e07ad9186ead05934fba3e435",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: 3-Way",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-7-2",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_send_status_change_report_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7399d081e6ab130f9387585873e7eec3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Z-Wave",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-7-4",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_send_status_change_report_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b394757195045e2026ddcf561e6898fa",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-7-8",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Always off",
+            "Always on",
+            "Previous state"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_state_after_power_failure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ffe9b2510a89758d233115e1188a9f2c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "State After Power Failure",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-8",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_ramp_rate_on_manual_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aabd2c28b7f60303694f0831da773683",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate On (Manual Control)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-9",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_ramp_rate_off_manual_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "307494671fcbe7ba2f61536b38ea9a74",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate Off (Manual Control)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-27",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_ramp_rate_on_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ae48e54f55bfbdbcf795a7e6d98ef0df",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate On (Z-Wave)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-28",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_ramp_rate_off_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "21c9671a6b084ef304ccdfa3a020b277",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate Off (Z-Wave)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-29",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_minimum_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "378cade0e1b5e620379ed22c979bfd8e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Minimum Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-10",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_maximum_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "66e9e224e505ff8a2e4c14c7ef8e7372",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Maximum Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-11",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Full brightness",
+            "Configured custom brightness (parameter 18)",
+            "Configured maximum brightness",
+            "Double tap disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_double_tap_upper_paddle_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0f5b6343a7945a9e78c64b7bf785d61",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Double-Tap Upper Paddle Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-12",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Previous brightness",
+            "Configured custom brightness (parameter 18)",
+            "Configured maximum brightness",
+            "Full brightness"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_single_tap_upper_paddle_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cefd5542011b04781a0676ce84a6cc2d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Single-Tap Upper Paddle Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-25",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_scene_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d0f7873880f025601c86a25a0bf33be2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-13",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_scene_control_remote_3_way_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "298636b6926f45ca82091d54156e05b3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control: Remote 3-Way Switch",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-31",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Local control disabled",
+            "Local and Z-Wave control enabled",
+            "Local and Z-Wave control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_smart_switch_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b2c9cf1332dd90f58c5f4f4572bab0bc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Switch Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-15",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Toggle switch",
+            "Toggle switch (with dimming control)",
+            "Momentary switch (with dimming control)",
+            "Momentary switch (with dimming control, but reduce after double click)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_3_way_switch_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "af07cc88026e02dd3d63386f91672739",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "3-Way Switch Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-19",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Each brightness level / Final level",
+            "Final brightness level only for local dimming, regardless of control setting"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_smart_bulb_mode_dimming_reporting_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "13e0f9182caaa53404a9fc83a68920bc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Bulb Mode: Dimming Reporting Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-20",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Switch always reports status and changes LED state",
+            "No status or LED state change when physical (and Z-Wave) control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.office_light_smart_bulb_mode_reporting_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "09cc5fa39dfc0ec51911e1c7e268e539",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Bulb Mode: Reporting Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-21",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_local_dimming_speed",
+        "hidden_by": null,
+        "icon": null,
+        "id": "15e1b9dc6ec734b400942f0f27cde425",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Local Dimming Speed",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-16",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_custom_brightness_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d441584c8baea1febd105b5ac32a533f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Custom Brightness Level",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-18",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_night_light_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6bc18a447f5e944dcfa6ab6b578cfded",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Night Light Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-22",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.office_light_local_dimming_speed_dimmer_and_group_3_and_4",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0409579709d8420bcc42b1800aafeae1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Local Dimming Speed (Dimmer and Group 3 and 4)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-30",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.office_light_param026",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8ddc3cc4bddd15321ede2e0071a2ef13",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "param026",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-112-0-26",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 255.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.office_light_indicator_value",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bb51f11ceb0dc422eaa404563fc89934",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Indicator value",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-135-0-value",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.office_light_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2a2967fdb61e4b6e0358c16ffac7bef8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.48-135-0-identify",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6edb6b9d4cfda48a7096f47e2761d2e6",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.office_light_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e3a00341be2b1c9395629a9364cd1c3a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "zwave_js",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "3343393661.48.firmware_update",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6d3f36694a2e5b4f48d6bd264219ca4d",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_light_scene_control_remote_3_way_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7793e76a8f7b9d9823e8d23b849cb910",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control: Remote 3-Way Switch",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.44-112-0-31",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "6d3f36694a2e5b4f48d6bd264219ca4d",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_light_led_indicator_confirm_configuration_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "91d96a69018d1eae29883906020d8a7e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Confirm Configuration Change",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.44-112-0-32",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c29d2e813077036d4bab3e9b611dbfcc",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_light_scene_control_remote_3_way_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "99a787189759c3490bd902111c6055ab",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control: Remote 3-Way Switch",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.41-112-0-31",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "c29d2e813077036d4bab3e9b611dbfcc",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_light_led_indicator_confirm_configuration_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "729b66589373c739541e82e5cbe49c5d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Confirm Configuration Change",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.41-112-0-32",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.master_bath_fan",
+        "hidden_by": null,
+        "icon": null,
+        "id": "80f040a30c02dba64cbb1d49c9da84af",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-37-0-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_led_indicator",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c1718da09283afd6eb6a28e2fb4f9a8e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.master_bath_fan_auto_turn_off_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "174d02746f9d30df4f84b4062f0eb6c8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-Off Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-2",
+        "unit_of_measurement": "min/sec"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.master_bath_fan_auto_turn_on_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "63b8c4c22f9881eaf17cf192c3c0dcee",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-On Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-3",
+        "unit_of_measurement": "min/sec"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 2.0,
+          "step": 0.1,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.master_bath_fan_auto_timer_unit",
+        "hidden_by": null,
+        "icon": null,
+        "id": "68ad720ba41bb7bea35c0034e27e1fba",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Timer Unit",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-10",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Always off",
+            "Always on",
+            "Previous state"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_state_after_power_failure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1ea9ed5bc2b55f615930aecf27749965",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "State After Power Failure",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-4",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_scene_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e484057e24d010af6ef2b70887d10aca",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-5",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Local control disabled",
+            "Local and Z-Wave control enabled",
+            "Local and Z-Wave control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_smart_switch_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1dc4180fb8028306d257cc74d079e7bc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Switch Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-6",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Toggle switch",
+            "Momentary switch",
+            "Toggle switch with fixed actions",
+            "Split 3-Way",
+            "Garage door mode (momentary)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_external_switch_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "80f6bfb60a58c9cdc32fd7e59bd8acf0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "External Switch Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-7",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Binary Switch CC report (Z-Wave); Basic CC Set (Manual)",
+            "Binary Switch CC report (Z-Wave / Manual)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_association_reports",
+        "hidden_by": null,
+        "icon": null,
+        "id": "edd5d272bea58b63c2a3df150035b1ba",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Association Reports",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-8",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Normally open (off when relay is open)",
+            "Normally closed"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.master_bath_fan_relay_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7b3d47dc3cde15c7b02f36007715834a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Relay Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-9",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 2.0,
+          "max": 200.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.master_bath_fan_impulse_duration",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b153b704bca68f7231432559dbcb424b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Impulse Duration",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-11",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 255.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.master_bath_fan_indicator_value",
+        "hidden_by": null,
+        "icon": null,
+        "id": "616fee83f31cce6e9a20f32112df0222",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Indicator value",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-135-0-value",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.master_bath_fan_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dd807f4b76ddff22701ded60448cd5c9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-135-0-identify",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.master_bath_fan_external_switch_multiple_click_detection",
+        "hidden_by": null,
+        "icon": null,
+        "id": "add0cd0e01676f7355fe439021cd35fe",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "External switch multiple click detection",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42-112-0-12",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.master_bath_fan_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ecf73021b5a5ed9779ea32a5a3920d20",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "zwave_js",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "3343393661.42.firmware_update",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.upstairs_bathroom_fan",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7dadbc84e4d99a52ff4911bf2c71b892",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-37-0-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_led_indicator",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1e85090570f6a96006720bb21adf8c78",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.upstairs_bathroom_fan_auto_turn_off_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "adf38507a723797ed16ebe0aa08c9f9d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-Off Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-2",
+        "unit_of_measurement": "min/sec"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.upstairs_bathroom_fan_auto_turn_on_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e880f96c7f0245b7fa8e2bb454481b91",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-On Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-3",
+        "unit_of_measurement": "min/sec"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 2.0,
+          "step": 0.1,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.upstairs_bathroom_fan_auto_timer_unit",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5f621a63f14a81ac82b19e29fe8c604d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Timer Unit",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-10",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Always off",
+            "Always on",
+            "Previous state"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_state_after_power_failure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b4a984bf740f1897d49728d4ee8c539a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "State After Power Failure",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-4",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_scene_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9adc6e50160527999526df8c939f1e61",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-5",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Local control disabled",
+            "Local and Z-Wave control enabled",
+            "Local and Z-Wave control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_smart_switch_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4945dc9493f12f01595ca816707b5825",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Switch Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-6",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Toggle switch",
+            "Momentary switch",
+            "Toggle switch with fixed actions",
+            "Split 3-Way",
+            "Garage door mode (momentary)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_external_switch_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f8f8650ba6585deeb6700beec8af61b2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "External Switch Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-7",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Binary Switch CC report (Z-Wave); Basic CC Set (Manual)",
+            "Binary Switch CC report (Z-Wave / Manual)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_association_reports",
+        "hidden_by": null,
+        "icon": null,
+        "id": "12189f85537457c252209c391f10131d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Association Reports",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-8",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Normally open (off when relay is open)",
+            "Normally closed"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.upstairs_bathroom_fan_relay_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f2e5af00e8868a8cdb2858510321aa1b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Relay Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-9",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 2.0,
+          "max": 200.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.upstairs_bathroom_fan_impulse_duration",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9b5101aadf3c820d774e1f82025c24f5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Impulse Duration",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-11",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 255.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.upstairs_bathroom_fan_indicator_value",
+        "hidden_by": null,
+        "icon": null,
+        "id": "024a1b72931bcb4a512ce8871a2daa8c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Indicator value",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-135-0-value",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.upstairs_bathroom_fan_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2e7a138669d3b5a9a4ad4225ccc90013",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-135-0-identify",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.upstairs_bathroom_fan_external_switch_multiple_click_detection",
+        "hidden_by": null,
+        "icon": null,
+        "id": "23bb2e7d7bd83885ae7188bce5afc529",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "External switch multiple click detection",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43-112-0-12",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.upstairs_bathroom_fan_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "631f9f61773fbe0fe5d8f1cc607e3d24",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "zwave_js",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "3343393661.43.firmware_update",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -50812,6 +52261,150 @@
         "orphaned_timestamp": 1698563990.275989,
         "platform": "systemmonitor",
         "unique_id": "packets_out_camera_network"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_node_status_2",
+        "id": "d057108b095ebf10d0687f4e2dc27a28",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.node_status"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "button.master_bath_fan_ping_2",
+        "id": "898e639db4ba17ed61155dedc91e93e3",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.ping"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_successful_commands_rx_2",
+        "id": "aaaf69ca9ef976113adf9b5574cb5310",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_commandsRX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_successful_commands_tx_2",
+        "id": "acfe3ed49f445a42f5f22a2c5b4916d5",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_commandsTX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_commands_dropped_rx_2",
+        "id": "3b73ee870b2584d39c77a9d4d428e4ba",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_commandsDroppedRX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_commands_dropped_tx_2",
+        "id": "00930fde67dde878229f784770df4ca2",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_commandsDroppedTX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_timed_out_responses_2",
+        "id": "a5bdf18f196e314dde540703a48c749c",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_timeoutResponse"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_round_trip_time_2",
+        "id": "0f8d7e479ad0afb106a7534f84822606",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_rtt"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.master_bath_fan_rssi_2",
+        "id": "2ee446026dee6afe815198208b4cbfe6",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.42.statistics_rssi"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_node_status",
+        "id": "be336366132188c9259b8d8b96f4b2bf",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.node_status"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "button.upstairs_bathroom_fan_ping",
+        "id": "213a40b7bbbacc0969422fd759bd9dc7",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.ping"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_rx",
+        "id": "5156a771c3ba0b2057262ff79866e0f4",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_commandsRX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_tx",
+        "id": "82c8ae13b7794e155007b63286ad3756",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_commandsTX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_rx",
+        "id": "9110749a1365e86be60f8fb9e6e4988e",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_commandsDroppedRX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_tx",
+        "id": "c0b33ba570e9ff8f2d660acf895fab26",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_commandsDroppedTX"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_timed_out_responses",
+        "id": "9a7ec986a4b9f6a61053ae429b0209ae",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_timeoutResponse"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_round_trip_time",
+        "id": "71db0d5ce3e282bed3ef6977fbab18f1",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_rtt"
+      },
+      {
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "entity_id": "sensor.upstairs_bathroom_fan_rssi",
+        "id": "e4436572cb8ec7ba6f3fc2e55c173289",
+        "orphaned_timestamp": null,
+        "platform": "zwave_js",
+        "unique_id": "3343393661.43.statistics_rssi"
       }
     ]
   }

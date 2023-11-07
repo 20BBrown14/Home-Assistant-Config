@@ -117,6 +117,12 @@
         "name": "Basement Bathroom",
         "id": "basement_bathroom",
         "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Master Bath",
+        "id": "master_bath",
+        "picture": null
       }
     ]
   }
