@@ -2460,6 +2460,30 @@
         "name": "Upstairs Bathroom Fan",
         "sw_version": "1.70.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": "kitchen",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e88c8e7a77133cf97be6e17261b40573",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d0009f4cc01"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara water leak sensor (SJCGQ11LM)",
+        "name_by_user": null,
+        "name": "Fridge Leak Sensor",
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

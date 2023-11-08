@@ -52091,6 +52091,232 @@
         "translation_key": null,
         "unique_id": "3343393661.43.firmware_update",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.fridge_leak_sensor_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cc05663049839b1680e9cd6769d719a1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.fridge_leak_sensor_water_leak",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dc59594be61d8a90f686e3acf59ef36b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "moisture",
+        "original_icon": null,
+        "original_name": "water leak",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_water_leak_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.fridge_leak_sensor_battery_low",
+        "hidden_by": null,
+        "icon": null,
+        "id": "04ca148237292d9425fd79a586d35203",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery low",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_battery_low_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.fridge_leak_sensor_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "48f9d4b60737af32c6b98aa39c882e9b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_voltage_zigbee2mqtt",
+        "unit_of_measurement": "mV"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.fridge_leak_sensor_device_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bb4f2c5a1222c1282f59cf7c2e020b6b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "device temperature",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_device_temperature_zigbee2mqtt",
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.fridge_leak_sensor_power_outage_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1a54f476f1be26aff06b98609bba38c7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "power outage count",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_power_outage_count_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "e88c8e7a77133cf97be6e17261b40573",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.fridge_leak_sensor_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "291759bc1e93007ceaf6ed7d4ac020d7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d0009f4cc01_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
       }
     ],
     "deleted_entities": [
