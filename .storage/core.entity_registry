@@ -13315,7 +13315,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {},
+        "capabilities": {
+          "source_list": [
+            "Branden's Note20 Ultra"
+          ]
+        },
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -13342,7 +13346,7 @@
         "original_icon": "mdi:spotify",
         "original_name": null,
         "platform": "spotify",
-        "supported_features": 2048,
+        "supported_features": 444983,
         "translation_key": null,
         "unique_id": "20bbrown14",
         "unit_of_measurement": null
@@ -33249,7 +33253,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:robot-dead",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -49033,6 +49037,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49063,6 +49070,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49095,6 +49105,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49125,6 +49138,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49157,6 +49173,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49188,6 +49207,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "duration",
@@ -49218,6 +49240,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49252,6 +49277,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49321,6 +49349,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49349,6 +49380,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49477,6 +49511,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49507,6 +49544,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49539,6 +49579,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49569,6 +49612,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49601,6 +49647,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49632,6 +49681,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "duration",
@@ -49662,6 +49714,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49734,6 +49789,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49769,6 +49827,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49806,6 +49867,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49841,6 +49905,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49874,6 +49941,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49909,6 +49979,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -49942,6 +50015,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -49977,6 +50053,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50010,6 +50089,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50045,6 +50127,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50078,6 +50163,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50114,6 +50202,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50147,6 +50238,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50182,6 +50276,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50215,6 +50312,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50250,6 +50350,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50284,6 +50387,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50317,6 +50423,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50354,6 +50463,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50390,6 +50502,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50423,6 +50538,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50458,6 +50576,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50492,6 +50613,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50529,6 +50653,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50562,6 +50689,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50597,6 +50727,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50630,6 +50763,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50665,6 +50801,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50698,6 +50837,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50733,6 +50875,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50761,6 +50906,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50897,6 +51045,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50930,6 +51081,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -50965,6 +51119,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -50998,6 +51155,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51065,6 +51225,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51098,6 +51261,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51133,6 +51299,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51166,6 +51335,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51202,6 +51374,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51235,6 +51410,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51270,6 +51448,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51308,6 +51489,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51341,6 +51525,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51376,6 +51563,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51409,6 +51599,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51508,6 +51701,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51606,6 +51802,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51639,6 +51838,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51674,6 +51876,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51707,6 +51912,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51743,6 +51951,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51776,6 +51987,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51811,6 +52025,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51849,6 +52066,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51882,6 +52102,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -51917,6 +52140,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -51950,6 +52176,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -52048,6 +52277,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -52210,6 +52442,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "voltage",
@@ -52307,6 +52542,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -52317,6 +52555,506 @@
         "translation_key": null,
         "unique_id": "0x00158d0009f4cc01_linkquality_zigbee2mqtt",
         "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_node_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d057108b095ebf10d0687f4e2dc27a28",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:heart-pulse",
+        "original_name": "Node status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.node_status",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_node_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "be336366132188c9259b8d8b96f4b2bf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:heart-pulse",
+        "original_name": "Node status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.node_status",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.master_bath_fan_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "898e639db4ba17ed61155dedc91e93e3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ping",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.ping",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aaaf69ca9ef976113adf9b5574cb5310",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_commandsRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "acfe3ed49f445a42f5f22a2c5b4916d5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_commandsTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3b73ee870b2584d39c77a9d4d428e4ba",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_commandsDroppedRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "00930fde67dde878229f784770df4ca2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_commandsDroppedTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a5bdf18f196e314dde540703a48c749c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_timeoutResponse",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f8d7e479ad0afb106a7534f84822606",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_rtt",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "92803b34ad5be7b3ad7ef608c0825d5a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bath_fan_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2ee446026dee6afe815198208b4cbfe6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.42.statistics_rssi",
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.upstairs_bathroom_fan_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "213a40b7bbbacc0969422fd759bd9dc7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ping",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.ping",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5156a771c3ba0b2057262ff79866e0f4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_commandsRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "82c8ae13b7794e155007b63286ad3756",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_commandsTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9110749a1365e86be60f8fb9e6e4988e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_commandsDroppedRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0b33ba570e9ff8f2d660acf895fab26",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_commandsDroppedTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9a7ec986a4b9f6a61053ae429b0209ae",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_timeoutResponse",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "71db0d5ce3e282bed3ef6977fbab18f1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_rtt",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "210139e6bd0e25f06141a1d46ef27425",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.upstairs_bathroom_fan_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e4436572cb8ec7ba6f3fc2e55c173289",
+        "has_entity_name": true,
+        "name": null,
+        "options": {},
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.43.statistics_rssi",
+        "unit_of_measurement": "dBm"
       }
     ],
     "deleted_entities": [
@@ -52487,150 +53225,6 @@
         "orphaned_timestamp": 1698563990.275989,
         "platform": "systemmonitor",
         "unique_id": "packets_out_camera_network"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_node_status_2",
-        "id": "d057108b095ebf10d0687f4e2dc27a28",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.node_status"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "button.master_bath_fan_ping_2",
-        "id": "898e639db4ba17ed61155dedc91e93e3",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.ping"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_successful_commands_rx_2",
-        "id": "aaaf69ca9ef976113adf9b5574cb5310",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_commandsRX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_successful_commands_tx_2",
-        "id": "acfe3ed49f445a42f5f22a2c5b4916d5",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_commandsTX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_commands_dropped_rx_2",
-        "id": "3b73ee870b2584d39c77a9d4d428e4ba",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_commandsDroppedRX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_commands_dropped_tx_2",
-        "id": "00930fde67dde878229f784770df4ca2",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_commandsDroppedTX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_timed_out_responses_2",
-        "id": "a5bdf18f196e314dde540703a48c749c",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_timeoutResponse"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_round_trip_time_2",
-        "id": "0f8d7e479ad0afb106a7534f84822606",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_rtt"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.master_bath_fan_rssi_2",
-        "id": "2ee446026dee6afe815198208b4cbfe6",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.42.statistics_rssi"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_node_status",
-        "id": "be336366132188c9259b8d8b96f4b2bf",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.node_status"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "button.upstairs_bathroom_fan_ping",
-        "id": "213a40b7bbbacc0969422fd759bd9dc7",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.ping"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_rx",
-        "id": "5156a771c3ba0b2057262ff79866e0f4",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_commandsRX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_successful_commands_tx",
-        "id": "82c8ae13b7794e155007b63286ad3756",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_commandsTX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_rx",
-        "id": "9110749a1365e86be60f8fb9e6e4988e",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_commandsDroppedRX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_commands_dropped_tx",
-        "id": "c0b33ba570e9ff8f2d660acf895fab26",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_commandsDroppedTX"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_timed_out_responses",
-        "id": "9a7ec986a4b9f6a61053ae429b0209ae",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_timeoutResponse"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_round_trip_time",
-        "id": "71db0d5ce3e282bed3ef6977fbab18f1",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_rtt"
-      },
-      {
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "entity_id": "sensor.upstairs_bathroom_fan_rssi",
-        "id": "e4436572cb8ec7ba6f3fc2e55c173289",
-        "orphaned_timestamp": null,
-        "platform": "zwave_js",
-        "unique_id": "3343393661.43.statistics_rssi"
       }
     ]
   }
