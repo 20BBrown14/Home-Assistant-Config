@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-90",
+        "original_icon": "mdi:battery-charging-70",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8257,7 +8257,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8292,7 +8292,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug-off",
+        "original_icon": "mdi:power-plug",
         "original_name": "Samantha's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8327,7 +8327,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery",
+        "original_icon": "mdi:power-plug",
         "original_name": "Samantha's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8435,7 +8435,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -13315,11 +13315,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "source_list": [
-            "Branden's Note20 Ultra"
-          ]
-        },
+        "capabilities": {},
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -13346,7 +13342,7 @@
         "original_icon": "mdi:spotify",
         "original_name": null,
         "platform": "spotify",
-        "supported_features": 444983,
+        "supported_features": 2048,
         "translation_key": null,
         "unique_id": "20bbrown14",
         "unit_of_measurement": null
@@ -52663,7 +52659,11 @@
         "id": "aaaf69ca9ef976113adf9b5574cb5310",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Successful commands (RX)",
@@ -52690,7 +52690,11 @@
         "id": "acfe3ed49f445a42f5f22a2c5b4916d5",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Successful commands (TX)",
@@ -52717,7 +52721,11 @@
         "id": "3b73ee870b2584d39c77a9d4d428e4ba",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Commands dropped (RX)",
@@ -52744,7 +52752,11 @@
         "id": "00930fde67dde878229f784770df4ca2",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Commands dropped (TX)",
@@ -52771,7 +52783,11 @@
         "id": "a5bdf18f196e314dde540703a48c749c",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Timed out responses",
@@ -52798,7 +52814,11 @@
         "id": "0f8d7e479ad0afb106a7534f84822606",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "duration",
         "original_icon": null,
         "original_name": "Round Trip Time",
@@ -52825,7 +52845,11 @@
         "id": "2ee446026dee6afe815198208b4cbfe6",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "signal_strength",
         "original_icon": null,
         "original_name": "RSSI",
@@ -52884,7 +52908,11 @@
         "id": "5156a771c3ba0b2057262ff79866e0f4",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Successful commands (RX)",
@@ -52911,7 +52939,11 @@
         "id": "82c8ae13b7794e155007b63286ad3756",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Successful commands (TX)",
@@ -52938,7 +52970,11 @@
         "id": "9110749a1365e86be60f8fb9e6e4988e",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Commands dropped (RX)",
@@ -52965,7 +53001,11 @@
         "id": "c0b33ba570e9ff8f2d660acf895fab26",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Commands dropped (TX)",
@@ -52992,7 +53032,11 @@
         "id": "9a7ec986a4b9f6a61053ae429b0209ae",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Timed out responses",
@@ -53019,7 +53063,11 @@
         "id": "71db0d5ce3e282bed3ef6977fbab18f1",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "duration",
         "original_icon": null,
         "original_name": "Round Trip Time",
@@ -53046,7 +53094,11 @@
         "id": "e4436572cb8ec7ba6f3fc2e55c173289",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "signal_strength",
         "original_icon": null,
         "original_name": "RSSI",
