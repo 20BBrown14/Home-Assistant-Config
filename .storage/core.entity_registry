@@ -48973,7 +48973,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -49447,7 +49447,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:heart-pulse",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -52570,6 +52570,9 @@
         "options": {
           "conversation": {
             "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -52598,6 +52601,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
