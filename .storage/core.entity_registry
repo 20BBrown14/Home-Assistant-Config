@@ -4256,7 +4256,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -53113,33 +53113,75 @@
         "translation_key": null,
         "unique_id": "3343393661.43.statistics_rssi",
         "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fca99568470cc7153361128ae5404e55",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.stale_sensors",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ba06be625de6aeebf2ed80cea9cbe94f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Stale Sensors",
+        "platform": "template",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "fca99568470cc7153361128ae5404e55",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1699998458086"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.stale_sensors",
+        "hidden_by": null,
+        "icon": null,
+        "id": "00b93d9c63a0bfd48509c3a07c65e28f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Stale Sensors",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1699998458086",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.git_push_backup",
-        "id": "45bce496051a38a7709dc8fca5ad043b",
-        "orphaned_timestamp": 1697386671.1504586,
-        "platform": "automation",
-        "unique_id": "1695245865186"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.new_automation",
-        "id": "a8bd9eab203fc35fcb7962d49d541afd",
-        "orphaned_timestamp": 1697386692.3453276,
-        "platform": "automation",
-        "unique_id": "1674374816162"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.automation_30",
-        "id": "0812ea5ce758e59f65245bb21a6012d9",
-        "orphaned_timestamp": 1697386707.258859,
-        "platform": "automation",
-        "unique_id": "1670669877104"
-      },
       {
         "config_entry_id": null,
         "entity_id": "sensor.network_in_enp1s0f0",
@@ -53283,6 +53325,14 @@
         "orphaned_timestamp": 1698563990.275989,
         "platform": "systemmonitor",
         "unique_id": "packets_out_camera_network"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.stale_entities",
+        "id": "3a1979832fce1908019b9bd2f28a8039",
+        "orphaned_timestamp": 1700008799.948205,
+        "platform": "automation",
+        "unique_id": "1699992781118"
       }
     ]
   }

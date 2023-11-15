@@ -2122,3 +2122,18 @@
       - cat
       - car
       cooldown: 120
+- id: '1699998458086'
+  alias: Stale Sensors
+  description: ''
+  trigger:
+  - platform: time
+    at: '19:00:00'
+  condition:
+  - condition: template
+    value_template: '{{states.sensor.stale_sensors.state | length > 0}}'
+  action:
+  - service: notify.mobile_app_branden_s_phone
+    data:
+      message: '{{states.sensor.stale_sensors.state}}'
+      title: Stale Sensors
+  mode: single
