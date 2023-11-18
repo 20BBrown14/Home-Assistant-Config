@@ -324,17 +324,14 @@ turn_on_holiday_lights:
       entity_id: switch.holiday_lights
   - service: light.turn_on
     data:
-      color_name: orange
+      color_name: green
       brightness_pct: 100
     target:
       entity_id: light.outdoor_sconce_lights
   - service: light.turn_on
     data:
       brightness_pct: 63
-      rgb_color:
-      - 147
-      - 4
-      - 149
+      effect: Christmas
     target:
       entity_id: light.porch_light
   - type: turn_on

@@ -43826,40 +43826,6 @@
         "aliases": [],
         "area_id": null,
         "capabilities": {
-          "id": "1697503834583"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.frigate_test",
-        "hidden_by": null,
-        "icon": null,
-        "id": "e2791bb15cae806e0e06053b0e6dbabe",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Frigate -test",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1697503834583",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
           "state_class": "measurement"
         },
         "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
@@ -53178,6 +53144,74 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "1699998458086",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1697503834583"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frigate_front_porch_notifications",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e2791bb15cae806e0e06053b0e6dbabe",
+        "has_entity_name": false,
+        "name": "Frigate: Front Porch Notifications",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frigate -test",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1697503834583",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1700274116436"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frigate_finnley_room_cats_notifications",
+        "hidden_by": null,
+        "icon": null,
+        "id": "210bea6df19ee5a066632e32cbc8fa17",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frigate: Finnley Room Cats Notifications",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1700274116436",
         "unit_of_measurement": null
       }
     ],
