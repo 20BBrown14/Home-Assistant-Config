@@ -2122,6 +2122,7 @@
       - cat
       - car
       cooldown: 120
+      icon: mdi:cctv
 - id: '1699998458086'
   alias: Stale Sensors
   description: ''
