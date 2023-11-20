@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-70",
+        "original_icon": "mdi:battery-80",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8257,7 +8257,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8292,7 +8292,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug",
+        "original_icon": "mdi:power-plug-off",
         "original_name": "Samantha's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8327,7 +8327,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:power-plug",
+        "original_icon": "mdi:battery",
         "original_name": "Samantha's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8435,7 +8435,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Samantha's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -48939,7 +48939,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -49413,7 +49413,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -53212,6 +53212,238 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "1700274116436",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "35177b0e67470a0ee4a5ce1a240acd1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.crib_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c15d5d387d5fa1cb7077bb583a885c7b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:crib_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "35177b0e67470a0ee4a5ce1a240acd1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.crib_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dd53b57d6e52f3c04b60d96f30853051",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:crib_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "297495fd61aef6a04b6a682fac905b52",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.changing_table_all_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "28e2fbf9a384b3d3f8563c532dd846e1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:shield-alert",
+        "original_name": "all count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:changing_table_all",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "297495fd61aef6a04b6a682fac905b52",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.changing_table_cat_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "403b922692423e3dcbfb5bf5851bf431",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cat",
+        "original_name": "cat count",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_object_count:changing_table_cat",
+        "unit_of_measurement": "objects"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "35177b0e67470a0ee4a5ce1a240acd1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.crib_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8e3d294691ac0e6b7390d15cf6677dcc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:crib_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "35177b0e67470a0ee4a5ce1a240acd1e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.crib_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e6a1ec97a1aa83623c1d7ea252aba334",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:crib_cat",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "297495fd61aef6a04b6a682fac905b52",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.changing_table_all_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "214fbed91ff76bd6caa3710f715f2636",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "all occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:changing_table_all",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
+        "device_class": null,
+        "device_id": "297495fd61aef6a04b6a682fac905b52",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.changing_table_cat_occupancy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a9ceb9e536f1bb293b35243f5ff7f7b1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "occupancy",
+        "original_icon": "mdi:home-outline",
+        "original_name": "cat occupancy",
+        "platform": "frigate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:changing_table_cat",
         "unit_of_measurement": null
       }
     ],
