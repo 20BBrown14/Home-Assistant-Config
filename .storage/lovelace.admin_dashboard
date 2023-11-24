@@ -58,6 +58,12 @@
                 "reverse": true,
                 "numeric": true
               }
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.stale_sensors"
+              ]
             }
           ]
         },
