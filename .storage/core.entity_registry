@@ -11084,43 +11084,6 @@
         "aliases": [],
         "area_id": null,
         "capabilities": {
-          "id": "1669149028048"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.low_battery_notifications",
-        "hidden_by": null,
-        "icon": null,
-        "id": "86c3f21e25e4d05a12232154b5a1122e",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "cloud.alexa": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Low Battery Notifications",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1669149028048",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
           "state_class": "measurement"
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
@@ -13603,41 +13566,6 @@
         "device_id": null,
         "disabled_by": null,
         "entity_category": null,
-        "entity_id": "script.new_script_3",
-        "hidden_by": null,
-        "icon": null,
-        "id": "3692b94dacda460a77e5cf1e226cade8",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": true
-          },
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "cloud.alexa": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "tts test",
-        "platform": "script",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "new_script_3",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
         "entity_id": "script.weather_radio_announcement",
         "hidden_by": null,
         "icon": null,
@@ -13983,43 +13911,6 @@
         "translation_key": null,
         "unique_id": "0x00158d000879d420_linkquality_zigbee2mqtt",
         "unit_of_measurement": "lqi"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "id": "1672032565019"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.water_sensor",
-        "hidden_by": null,
-        "icon": null,
-        "id": "ddec56c74d50b6d4d7f4332f2919c5e2",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "cloud.alexa": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Water Sensor",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1672032565019",
-        "unit_of_measurement": null
       },
       {
         "aliases": [],
@@ -14492,43 +14383,6 @@
         "supported_features": 3,
         "translation_key": null,
         "unique_id": "ec0baed8a2f8",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "id": "1672945679380"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.universal_remote_test",
-        "hidden_by": null,
-        "icon": null,
-        "id": "da83c0953a6950832cc8461f8359a24b",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "cloud.alexa": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Universal Remote Test",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1672945679380",
         "unit_of_measurement": null
       },
       {
@@ -33249,7 +33103,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:robot-dead",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -53445,6 +53299,40 @@
         "translation_key": null,
         "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:occupancy_sensor:changing_table_cat",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1700855976243"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.turn_off_goodnight_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7a8214a76c88db057da9d98b46c9c75",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Turn off Goodnight Mode",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1700855976243",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -53599,6 +53487,38 @@
         "orphaned_timestamp": 1700008799.948205,
         "platform": "automation",
         "unique_id": "1699992781118"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.universal_remote_test",
+        "id": "da83c0953a6950832cc8461f8359a24b",
+        "orphaned_timestamp": 1700856032.7637734,
+        "platform": "automation",
+        "unique_id": "1672945679380"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.water_sensor",
+        "id": "ddec56c74d50b6d4d7f4332f2919c5e2",
+        "orphaned_timestamp": 1700856039.3866277,
+        "platform": "automation",
+        "unique_id": "1672032565019"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.low_battery_notifications",
+        "id": "86c3f21e25e4d05a12232154b5a1122e",
+        "orphaned_timestamp": 1700856054.7229671,
+        "platform": "automation",
+        "unique_id": "1669149028048"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "script.new_script_3",
+        "id": "3692b94dacda460a77e5cf1e226cade8",
+        "orphaned_timestamp": 1700856145.3868895,
+        "platform": "script",
+        "unique_id": "new_script_3"
       }
     ]
   }

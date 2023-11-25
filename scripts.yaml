@@ -502,26 +502,6 @@ new_script_2:
         data:
           entity_id: '{{ media_player.basement_speaker }}'
   mode: single
-new_script_3:
-  alias: tts test
-  sequence:
-  - service: media_player.play_media
-    data:
-      media_content_id: media-source://tts/google_translate?message={{"fat test"}}
-      media_content_type: provider
-    target:
-      entity_id: media_player.all_speakers
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 5
-      milliseconds: 0
-  - parallel:
-    - service: spotcast.start
-      data:
-        entity_id: media_player.basement_speaker
-        force_playback: false
-  mode: single
 weather_radio_announcement:
   alias: Weather Radio Announcement
   sequence:
