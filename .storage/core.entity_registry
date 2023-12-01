@@ -53016,7 +53016,7 @@
         "icon": null,
         "id": "e2791bb15cae806e0e06053b0e6dbabe",
         "has_entity_name": false,
-        "name": "Frigate: Front Porch Notifications",
+        "name": null,
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
@@ -53027,7 +53027,7 @@
         },
         "original_device_class": null,
         "original_icon": null,
-        "original_name": "Frigate -test",
+        "original_name": "Frigate: Front Porch Notifications (Mobile)",
         "platform": "automation",
         "supported_features": 0,
         "translation_key": null,
@@ -53384,6 +53384,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -53454,6 +53457,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -53483,6 +53489,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -53511,6 +53520,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -53553,6 +53565,172 @@
         "supported_features": 1,
         "translation_key": null,
         "unique_id": "0x00124b0029e85a51_update_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {},
+        "config_entry_id": "e046abc2b3f8a20e14c49c9664fe5ae4",
+        "device_class": null,
+        "device_id": "1a7eb20d94d4fcb69bbd0911eb6806f6",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.branden_desktop",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9a27c07cd26dcb4b640f90ebdc925fe0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": null,
+        "original_name": "Branden_Desktop",
+        "platform": "hass_agent",
+        "supported_features": 153151,
+        "translation_key": null,
+        "unique_id": "media_player_200c5ad2-38c4-4d63-98cf-341aa8c21b83",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1701397757785"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.automation_49",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6772cd5fa4107af140e5f791d2c329d9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "automation 49",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1701397757785",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1701399650903"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frigate_front_door_notification_pc",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9740abafd4d25755e1f6e94b2105f405",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frigate: Front Porch Notifications (PC)",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1701399650903",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "9969a305e5424bc4ee38402562677bd0",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.branden_desktop_launch_frigate_notification_clip",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f734e44dea14e8f0a00c3e7cd0e43ed0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "-launch_frigate_notification_clip",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "62a7b269-b11a-4277-9157-26902958e590",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1701399982576"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.hass_agent_commands",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1fa68636aa8e582802c0ab31d9e19d30",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "HASS.agent Commands",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1701399982576",
         "unit_of_measurement": null
       }
     ],

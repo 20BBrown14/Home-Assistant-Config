@@ -41,11 +41,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-1"
+            "3343393661-1-0:4:4"
           ],
           [
             "zwave_js",
-            "3343393661-1-0:4:4"
+            "3343393661-1"
           ]
         ],
         "manufacturer": "Silicon Labs",
@@ -86,8 +86,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
-          "5036a3a11bba97d25eb9b82e8b69decf"
+          "5036a3a11bba97d25eb9b82e8b69decf",
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -98,11 +98,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-21"
+            "3343393661-21-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-21-786:65280:65292"
+            "3343393661-21"
           ]
         ],
         "manufacturer": "Minoston",
@@ -127,11 +127,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-22"
+            "3343393661-22-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-22-786:65280:65292"
+            "3343393661-22"
           ]
         ],
         "manufacturer": "Minoston",
@@ -183,11 +183,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-24-330:4:1"
+            "3343393661-24"
           ],
           [
             "zwave_js",
-            "3343393661-24"
+            "3343393661-24-330:4:1"
           ]
         ],
         "manufacturer": "Ecolink",
@@ -211,11 +211,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-25"
+            "3343393661-25-12:17479:16439"
           ],
           [
             "zwave_js",
-            "3343393661-25-12:17479:16439"
+            "3343393661-25"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -284,9 +284,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
+          "58e47bce27bf6aedbe7250e4c4716963",
           "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "c360373dda801e0ca73ccd582d53d98d",
-          "58e47bce27bf6aedbe7250e4c4716963"
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -297,11 +297,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-28"
+            "3343393661-28-786:49152:49159"
           ],
           [
             "zwave_js",
-            "3343393661-28-786:49152:49159"
+            "3343393661-28"
           ]
         ],
         "manufacturer": "EVA Logik",
@@ -757,11 +757,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-29-99:18770:12597"
+            "3343393661-29"
           ],
           [
             "zwave_js",
-            "3343393661-29"
+            "3343393661-29-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -785,11 +785,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-30"
+            "3343393661-30-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-30-99:18770:12597"
+            "3343393661-30"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -813,11 +813,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-31"
+            "3343393661-31-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-31-99:18770:12597"
+            "3343393661-31"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1094,11 +1094,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-34"
+            "3343393661-34-99:18756:12853"
           ],
           [
             "zwave_js",
-            "3343393661-34-99:18756:12853"
+            "3343393661-34"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1122,11 +1122,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-35-99:18770:12597"
+            "3343393661-35"
           ],
           [
             "zwave_js",
-            "3343393661-35"
+            "3343393661-35-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1178,11 +1178,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-37-12:17479:16438"
+            "3343393661-37"
           ],
           [
             "zwave_js",
-            "3343393661-37"
+            "3343393661-37-12:17479:16438"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -1846,11 +1846,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ],
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2419,11 +2419,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-42"
+            "3343393661-42-634:260:513"
           ],
           [
             "zwave_js",
-            "3343393661-42-634:260:513"
+            "3343393661-42"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2555,6 +2555,54 @@
         "name_by_user": null,
         "name": "Coffee Pot",
         "sw_version": "1.1.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "basement",
+        "config_entries": [
+          "e046abc2b3f8a20e14c49c9664fe5ae4"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1a7eb20d94d4fcb69bbd0911eb6806f6",
+        "identifiers": [
+          [
+            "hass_agent",
+            "200c5ad2-38c4-4d63-98cf-341aa8c21b83"
+          ]
+        ],
+        "manufacturer": "LAB02 Research",
+        "model": "Microsoft Windows NT 10.0.19045.0",
+        "name_by_user": null,
+        "name": "Branden_Desktop",
+        "sw_version": "2022.14.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9969a305e5424bc4ee38402562677bd0",
+        "identifiers": [
+          [
+            "mqtt",
+            "hass.agent-Branden_Desktop"
+          ]
+        ],
+        "manufacturer": "LAB02 Research",
+        "model": "Microsoft Windows NT 10.0.19045.0",
+        "name_by_user": null,
+        "name": "Branden_Desktop",
+        "sw_version": "2022.14.0",
         "via_device_id": null
       }
     ],

@@ -47,4 +47,10 @@ sensor: !include sensors.yaml
 
 input_select: !include input_selects.yaml
 
+notify:
+  - platform: group
+    name: "branden_desktop_group"
+    services:
+      - service: branden_desktop
+
 #test comment8

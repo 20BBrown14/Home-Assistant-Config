@@ -2001,7 +2001,7 @@
     domain: switch
   mode: single
 - id: '1697503834583'
-  alias: Frigate -test
+  alias: 'Frigate: Front Porch Notifications (Mobile)'
   description: ''
   use_blueprint:
     path: SgtBatten/Stable.yaml
@@ -2019,6 +2019,7 @@
       - car
       cooldown: 120
       icon: mdi:cctv
+      update_thumbnail: true
 - id: '1699998458086'
   alias: Stale Sensors
   description: ''
@@ -2089,4 +2090,54 @@
     data: {}
     target:
       entity_id: input_boolean.good_night_mode
+  mode: single
+- id: '1701397757785'
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - service: notify.branden_desktop
+    data:
+      message: test
+  mode: single
+- id: '1701399650903'
+  alias: 'Frigate: Front Porch Notifications (PC)'
+  description: ''
+  use_blueprint:
+    path: SgtBatten/Stable.yaml
+    input:
+      camera: camera.front_door
+      message: '{{ label }} detected - {{ camera_name }}'
+      zones:
+      - porch
+      - driveway
+      labels:
+      - person
+      - package
+      - cat
+      - car
+      cooldown: 120
+      icon: mdi:cctv
+      notify_group: branden_desktop_group
+      update_thumbnail: true
+- id: '1701399982576'
+  alias: HASS.agent Commands
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 9969a305e5424bc4ee38402562677bd0
+    domain: button
+    entity_id: f734e44dea14e8f0a00c3e7cd0e43ed0
+    type: pressed
+    id: launch_frigate_notification_clip
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - launch_frigate_notification_clip
+    then:
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/button/Branden_Desktop/Branden_Desktop-launch_frigate_notification_clip/action
   mode: single
