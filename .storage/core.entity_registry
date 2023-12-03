@@ -53732,6 +53732,104 @@
         "translation_key": null,
         "unique_id": "1701399982576",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1701562649842"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frigate_notifications_pc",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c53d60cabd9466a3805b6b1eb9fb433d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frigate Notifications (PC)",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1701562649842",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.external_url",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a1f4775fec838000facb97d2e32583e5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "External URL",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "external_url",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.local_url",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e75b3d23e7e3ce5ab64aa2695835c3e4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Local URL",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "local_url",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -53774,6 +53872,14 @@
         "orphaned_timestamp": 1700856145.3868895,
         "platform": "script",
         "unique_id": "new_script_3"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.frigate_notification_pc_test",
+        "id": "37cd8cdb9736abd82cb405b1fca86f32",
+        "orphaned_timestamp": 1701562151.2041583,
+        "platform": "automation",
+        "unique_id": "1701561680820"
       }
     ]
   }

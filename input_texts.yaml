@@ -1,0 +1,6 @@
+external_url:
+  name: External URL
+  initial: !secret external_url
+local_url:
+  name: Local URL
+  initial: !secret local_url

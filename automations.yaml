@@ -2141,3 +2141,36 @@
       data:
         topic: homeassistant/button/Branden_Desktop/Branden_Desktop-launch_frigate_notification_clip/action
   mode: single
+- id: '1701562649842'
+  alias: Frigate Notifications (PC)
+  description: ''
+  trigger:
+  - platform: mqtt
+    topic: frigate/events
+  condition:
+  - condition: or
+    conditions:
+    - condition: template
+      value_template: '{{trigger.payload_json[''after''][''camera''] == ''front_door''
+        and trigger.payload_json[''after''][''label''] in [''person'', ''cat'', ''car'',
+        ''dog'']}}'
+    - condition: template
+      value_template: "{% set enteredZones = trigger.payload_json['after']['entered_zones']
+        %} {% set watchedZones = ['crib', 'changing_table'] %} {% set isWatchedZones_ns
+        = namespace(isWatchedZones=False) %} {% for zone in enteredZones %}\n  {%
+        if zone in watchedZones %}\n      {% set isWatchedZones_ns.isWatchedZones
+        = True %}\n  {% endif %}\n{% endfor %} {{trigger.payload_json['after']['camera']
+        == 'finnley_room' and trigger.payload_json['after']['label'] in ['cat', 'dog',
+        'bird'] and isWatchedZones_ns.isWatchedZones}}"
+  action:
+  - service: notify.branden_desktop
+    data:
+      message: A {{trigger.payload_json['after']['label']}} was detected on the Front
+        Door Camera
+      title: '{{trigger.payload_json[''after''][''label'']}} Detected'
+      data:
+        image: '{{states(''input_text.local_url'')}}{{state_attr("camera." + trigger.payload_json[''after''][''camera''],
+          "entity_picture")}}'
+        duration: 3
+  mode: queued
+  max: 10
