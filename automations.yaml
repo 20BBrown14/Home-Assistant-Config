@@ -2148,21 +2148,30 @@
   - platform: mqtt
     topic: frigate/events
   condition:
-  - condition: or
+  - condition: and
     conditions:
+    - condition: or
+      conditions:
+      - condition: template
+        value_template: '{{trigger.payload_json[''after''][''camera''] == ''front_door''
+          and trigger.payload_json[''after''][''label''] in [''person'', ''cat'',
+          ''car'', ''dog'']}}'
+      - condition: template
+        value_template: "{% set enteredZones = trigger.payload_json['after']['entered_zones']
+          %} {% set watchedZones = ['crib', 'changing_table'] %} {% set isWatchedZones_ns
+          = namespace(isWatchedZones=False) %} {% for zone in enteredZones %}\n  {%
+          if zone in watchedZones %}\n      {% set isWatchedZones_ns.isWatchedZones
+          = True %}\n  {% endif %}\n{% endfor %} {{trigger.payload_json['after']['camera']
+          == 'finnley_room' and trigger.payload_json['after']['label'] in ['cat',
+          'dog', 'bird'] and isWatchedZones_ns.isWatchedZones}}"
     - condition: template
-      value_template: '{{trigger.payload_json[''after''][''camera''] == ''front_door''
-        and trigger.payload_json[''after''][''label''] in [''person'', ''cat'', ''car'',
-        ''dog'']}}'
-    - condition: template
-      value_template: "{% set enteredZones = trigger.payload_json['after']['entered_zones']
-        %} {% set watchedZones = ['crib', 'changing_table'] %} {% set isWatchedZones_ns
-        = namespace(isWatchedZones=False) %} {% for zone in enteredZones %}\n  {%
-        if zone in watchedZones %}\n      {% set isWatchedZones_ns.isWatchedZones
-        = True %}\n  {% endif %}\n{% endfor %} {{trigger.payload_json['after']['camera']
-        == 'finnley_room' and trigger.payload_json['after']['label'] in ['cat', 'dog',
-        'bird'] and isWatchedZones_ns.isWatchedZones}}"
+      value_template: '{{states(''input_text.last_frigate_event_id'') != trigger.payload_json[''after''][''id'']}}'
   action:
+  - service: input_text.set_value
+    data:
+      value: '{{trigger.payload_json[''after''][''id'']}}'
+    target:
+      entity_id: input_text.last_frigate_event_id
   - service: notify.branden_desktop
     data:
       message: A {{trigger.payload_json['after']['label']}} was detected on the Front
@@ -2172,5 +2181,12 @@
         image: '{{states(''input_text.local_url'')}}{{state_attr("camera." + trigger.payload_json[''after''][''camera''],
           "entity_picture")}}'
         duration: 3
+  - service: notify.branden_desktop
+    data:
+      message: Message
+      title: title
+      data:
+        delay:
+          seconds: 15
   mode: queued
   max: 10
