@@ -2130,17 +2130,20 @@
     entity_id: f734e44dea14e8f0a00c3e7cd0e43ed0
     type: pressed
     id: launch_frigate_notification_clip
+    enabled: false
+  - platform: event
+    event_type: hass_agent_notifications
   condition: []
   action:
   - if:
-    - condition: trigger
-      id:
-      - launch_frigate_notification_clip
+    - condition: template
+      value_template: '{{''VIEW_CLIP'' in trigger[''event''][''data''][''action'']}}'
     then:
     - service: mqtt.publish
       data:
         topic: homeassistant/button/Branden_Desktop/Branden_Desktop-launch_frigate_notification_clip/action
-  mode: single
+        payload: '{{states(''input_text.local_url'')}}/api/frigate/notifications/{{trigger[''event''][''data''][''action''].split(''_'')[2]}}/clip.mp4'
+  mode: restart
 - id: '1701562649842'
   alias: Frigate Notifications (PC)
   description: ''
@@ -2165,28 +2168,33 @@
           == 'finnley_room' and trigger.payload_json['after']['label'] in ['cat',
           'dog', 'bird'] and isWatchedZones_ns.isWatchedZones}}"
     - condition: template
-      value_template: '{{states(''input_text.last_frigate_event_id'') != trigger.payload_json[''after''][''id'']}}'
+      value_template: '{{trigger.payload_json[''before''][''id''] != trigger.payload_json[''after''][''id'']}}'
+      enabled: true
   action:
-  - service: input_text.set_value
-    data:
-      value: '{{trigger.payload_json[''after''][''id'']}}'
-    target:
-      entity_id: input_text.last_frigate_event_id
   - service: notify.branden_desktop
     data:
       message: A {{trigger.payload_json['after']['label']}} was detected on the Front
         Door Camera
       title: '{{trigger.payload_json[''after''][''label'']}} Detected'
       data:
-        image: '{{states(''input_text.local_url'')}}{{state_attr("camera." + trigger.payload_json[''after''][''camera''],
-          "entity_picture")}}'
+        actions:
+        - action: VIEW_CLIP_{{trigger.payload_json['after']['id']}}
+          title: View Clip
+        image: '{{states(''input_text.local_url'')}}/api/frigate/notifications/{{trigger.payload_json[''after''][''id'']}}/thumbnail.jpg'
         duration: 3
   - service: notify.branden_desktop
     data:
       message: Message
       title: title
       data:
-        delay:
-          seconds: 15
+        image: '{{states(''input_text.local_url'')}}/api/frigate/notifications/1701727174.148972-2bkwle/thumbnail.jpg'
+    enabled: false
+  - service: mqtt.publish
+    data:
+      qos: 0
+      retain: false
+      topic: homeassistant/button/Branden_Desktop/Branden_Desktop-launch_frigate_notification_clip/action
+      payload: http://192.168.86.21:8123
+    enabled: false
   mode: queued
   max: 10
