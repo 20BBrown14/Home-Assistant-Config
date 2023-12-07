@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless",
+        "original_icon": "mdi:battery-90",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4113,7 +4113,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug",
+        "original_icon": "mdi:power-plug-off",
         "original_name": "Branden's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4148,7 +4148,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-charging-wireless",
+        "original_icon": "mdi:battery",
         "original_name": "Branden's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4256,7 +4256,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -33103,7 +33103,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:robot-dead",
+        "original_icon": "mdi:help-rhombus",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
