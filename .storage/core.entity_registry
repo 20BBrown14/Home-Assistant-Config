@@ -33103,7 +33103,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:heart-pulse",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -34159,70 +34159,6 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "3343393661.40-135-0-identify",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "12356bc6f057627c71644c188fcb5183",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "switch.master_bath_relay",
-        "hidden_by": null,
-        "icon": null,
-        "id": "31d4aefc519dec5cc347f4d9239fa84e",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "conversation": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.40-37-1-currentValue",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "12356bc6f057627c71644c188fcb5183",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "switch.master_bath_relay_2",
-        "hidden_by": null,
-        "icon": null,
-        "id": "7b797aca3d7fdc94fbd9e14cb939bdf0",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "conversation": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": " (2)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.40-37-2-currentValue",
         "unit_of_measurement": null
       },
       {
@@ -53853,6 +53789,1619 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "local_url",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_node_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "170d42c7b408860fabe905a69b8e81e7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:heart-pulse",
+        "original_name": "Node status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.node_status",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.basement_bath_light_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9c2aeb2a9e112400c74efafed2b0c3ed",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ping",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.ping",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "053f078c2bac5c9d31eb73fcac3328a4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_commandsRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "72e0475f8cded3e71017f6318fffd7a7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_commandsTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "412b03d4e8969736b5e37e74e871f231",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_commandsDroppedRX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cb854a688a3793ee8866033e6d9cd620",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_commandsDroppedTX",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "212b6dd2d93fc15bac87660a95969bd6",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_timeoutResponse",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "581ddb79ddd119bf3e711e89ae20a9af",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_rtt",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_bath_light_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2f911c69ebeaa7e59df75e43bfc323fe",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49.statistics_rssi",
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "supported_color_modes": [
+            "brightness"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "light.basement_bath_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "99b5b47d2bfea6921c4c37e80f82315e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 32,
+        "translation_key": null,
+        "unique_id": "3343393661.49-38-0-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable",
+            "Momentary mode"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_inverted_orientation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e841c03a86f84f7e92e602ce23dfde2d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Inverted Orientation",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "On when load is off",
+            "On when load is on",
+            "Always off",
+            "Always on"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_led_indicator",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2fb449ece0704e3ddc463e3f668a2543",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-2",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "White",
+            "Blue",
+            "Green",
+            "Red"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_led_indicator_color",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b1ee2763410b3ac414b3171f310d8041",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator Color",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-23",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Bright (100%)",
+            "Medium (60%)",
+            "Low (30%)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_led_indicator_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "acf92f0a71f4ed6e2856e0448796eae7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-24",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_led_indicator_confirm_configuration_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5d284c639d8cc7aa594cc0c466b7a625",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Confirm Configuration Change",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-32",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_auto_turn_off_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "85ca3eb5ec0bb576e6209ef00fe2a427",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-Off Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-3",
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_auto_turn_on_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "37b8058d9ede4be91021c420103273f1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-On Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-5",
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_send_status_change_report_local_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "59abdca9e349a27129e7bc0af796db42",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Local Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-7-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_send_status_change_report_3_way",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7a97ac3019af94024a9ed5e371cf3957",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: 3-Way",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-7-2",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_send_status_change_report_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "caeb231e0fb46b757f3dd5d7f9ed3a0e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Z-Wave",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-7-4",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_send_status_change_report_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "22f67bb006e5af5477c0e330d3fe334c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-7-8",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Always off",
+            "Always on",
+            "Previous state"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_state_after_power_failure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e67c4077eebc814e9697948f74378cb4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "State After Power Failure",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-8",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_ramp_rate_on_manual_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "03186f2a0f96ed3603cd4587507ce376",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate On (Manual Control)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-9",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_ramp_rate_off_manual_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4a52cac8dfa52fdcf5adc2b1c4fa79b0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate Off (Manual Control)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-27",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_ramp_rate_on_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "974eafca79e264645bf56ec1c5631f9c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate On (Z-Wave)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-28",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_ramp_rate_off_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4b7823608d3dac9813b241a89ce34a6f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ramp Rate Off (Z-Wave)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-29",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_minimum_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bda1452c4c87be133c917435b9b9a1cf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Minimum Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-10",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_maximum_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "98fd43ed2caf881235df0c09e42f40c7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Maximum Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-11",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Full brightness",
+            "Configured custom brightness (parameter 18)",
+            "Configured maximum brightness",
+            "Double tap disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_double_tap_upper_paddle_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f02488b5b8d986353988bdd9247cc1ae",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Double-Tap Upper Paddle Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-12",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Previous brightness",
+            "Configured custom brightness (parameter 18)",
+            "Configured maximum brightness",
+            "Full brightness"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_single_tap_upper_paddle_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "905187a85fe36ccaf16ebbadcfff0499",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Single-Tap Upper Paddle Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-25",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_scene_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "44dd774255c2e50655f4dcd8756b1c19",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-13",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_scene_control_remote_3_way_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e17c2f1cfd7777d6cd556dd2ae41e5c7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control: Remote 3-Way Switch",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-31",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Local control disabled",
+            "Local and Z-Wave control enabled",
+            "Local and Z-Wave control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_smart_switch_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f625c4ab056a30edc2e1cbd76b4a7029",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Switch Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-15",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Toggle switch",
+            "Toggle switch (with dimming control)",
+            "Momentary switch (with dimming control)",
+            "Momentary switch (with dimming control, but reduce after double click)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_3_way_switch_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "06295134845fd5f99ac104e3789f31ec",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "3-Way Switch Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-19",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Each brightness level / Final level",
+            "Final brightness level only for local dimming, regardless of control setting"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_smart_bulb_mode_dimming_reporting_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "87bb9545952062ed85e133224893a125",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Bulb Mode: Dimming Reporting Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-20",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Switch always reports status and changes LED state",
+            "No status or LED state change when physical (and Z-Wave) control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.basement_bath_light_smart_bulb_mode_reporting_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4b44d1d379b7740206765f4876125611",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Bulb Mode: Reporting Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-21",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_local_dimming_speed",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6257c5579f5edfc2465b28e96499f5d0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Local Dimming Speed",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-16",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_custom_brightness_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "57f42bc29f726357aa98b5e77ed9f72b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Custom Brightness Level",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-18",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_night_light_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6a1f7d8cc734c3ef9f0bb338dce45cac",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Night Light Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-22",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 1.0,
+          "max": 99.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_local_dimming_speed_dimmer_and_group_3_and_4",
+        "hidden_by": null,
+        "icon": null,
+        "id": "20cfac0c84e5fbac597da86b02fb29bc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Local Dimming Speed (Dimmer and Group 3 and 4)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-30",
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "switch.basement_bath_light_param026",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5faa2d1ee12a0fb0addd77119101153b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "param026",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-112-0-26",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 255.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.basement_bath_light_indicator_value",
+        "hidden_by": null,
+        "icon": null,
+        "id": "734b63112b8895f9d8ff196540c9005b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Indicator value",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-135-0-value",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.basement_bath_light_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3d612214a408a4376f98ff68488da639",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.49-135-0-identify",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "1aa9820eed11390c48d4cd68b2075c05",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.basement_bath_light_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a3028da589b9b92e5835fedf23222941",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "zwave_js",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "3343393661.49.firmware_update",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "12356bc6f057627c71644c188fcb5183",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.basement_bathroom_shower_light",
+        "hidden_by": null,
+        "icon": "mdi:lightbulb",
+        "id": "31d4aefc519dec5cc347f4d9239fa84e",
+        "has_entity_name": true,
+        "name": "Basement Bathroom Shower Light",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.40-37-1-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "12356bc6f057627c71644c188fcb5183",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.basement_bathroom_fan",
+        "hidden_by": null,
+        "icon": "mdi:fan",
+        "id": "7b797aca3d7fdc94fbd9e14cb939bdf0",
+        "has_entity_name": true,
+        "name": "Basement Bathroom Fan",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": " (2)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.40-37-2-currentValue",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1702177508628"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.basement_bathroom_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cae34cd3f795dc8f72c0b053e07dbfcb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Basement Bathroom Humidity",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1702177508628",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1702177691825"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.home_assistant_starts",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a76b8642975f268dda9e359892ef2997",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Home Assistant Starts",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1702177691825",
         "unit_of_measurement": null
       }
     ],
