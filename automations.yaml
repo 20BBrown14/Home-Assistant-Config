@@ -1976,8 +1976,8 @@
         | float * 1.05}}'
       continue_on_timeout: true
     - type: turn_off
-      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
-      entity_id: switch.master_bath_fan
+      device_id: 210139e6bd0e25f06141a1d46ef27425
+      entity_id: 7dadbc84e4d99a52ff4911bf2c71b892
       domain: switch
   mode: restart
 - id: '1697148506924'
