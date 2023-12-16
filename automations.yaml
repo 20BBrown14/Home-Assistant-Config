@@ -2020,6 +2020,7 @@
       cooldown: 120
       icon: mdi:cctv
       update_thumbnail: true
+      critical: 'true'
 - id: '1699998458086'
   alias: Stale Sensors
   description: ''
@@ -2050,6 +2051,7 @@
       zones:
       - crib
       - changing_table
+      critical: 'true'
 - id: '1700855976243'
   alias: Turn off Goodnight Mode
   description: ''

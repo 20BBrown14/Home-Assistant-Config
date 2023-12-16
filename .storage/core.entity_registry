@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-90",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4113,7 +4113,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug-off",
+        "original_icon": "mdi:power-plug",
         "original_name": "Branden's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4148,7 +4148,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Branden's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4256,7 +4256,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -55403,17 +55403,38 @@
         "translation_key": null,
         "unique_id": "1702177691825",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
+        "device_class": null,
+        "device_id": "86b1b485f0e733b3962457c610d02eae",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.branden_s_phone_hotspot_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1356bba42251d312f0e79a4af6d5af0d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:access-point",
+        "original_name": "Branden's Phone Hotspot state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "43decfd0a90b302918d57e17c32715f1dbff11f381e1165579a84cf418b41c5b_hotspot_state",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.stale_entities",
-        "id": "3a1979832fce1908019b9bd2f28a8039",
-        "orphaned_timestamp": 1700008799.948205,
-        "platform": "automation",
-        "unique_id": "1699992781118"
-      },
       {
         "config_entry_id": null,
         "entity_id": "automation.universal_remote_test",

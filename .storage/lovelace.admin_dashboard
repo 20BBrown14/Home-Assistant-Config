@@ -258,7 +258,7 @@
                       "entity": "sensor.outside_temp_sensor_temperature"
                     },
                     {
-                      "entity": "cover.garage_door"
+                      "entity": "binary_sensor.garage_door_window_door_is_open"
                     }
                   ]
                 }
