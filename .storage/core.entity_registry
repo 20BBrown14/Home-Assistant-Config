@@ -53563,40 +53563,6 @@
         "aliases": [],
         "area_id": null,
         "capabilities": {
-          "id": "1701397757785"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.automation_49",
-        "hidden_by": null,
-        "icon": null,
-        "id": "6772cd5fa4107af140e5f791d2c329d9",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "automation 49",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1701397757785",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
           "id": "1701399650903"
         },
         "config_entry_id": null,
@@ -55432,6 +55398,106 @@
         "translation_key": null,
         "unique_id": "43decfd0a90b302918d57e17c32715f1dbff11f381e1165579a84cf418b41c5b_hotspot_state",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.frontyard_visibility",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4cfa85a409515ab80aeffe42f27e23bc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:lightbulb-alert",
+        "original_name": "Frontyard Visibility",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "frontyard_visibility",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1702764881465"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frontyard_visibilty_changed",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7915a0cb7100a0735dd27503fab5a52a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frontyard Visibilty Changed",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1702764881465",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1702765706909"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frontporch_driveway_person_car",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ed748a7df5d693e1ba2684776c4d4e80",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frontporch / driveway person/car",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1702765706909",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -55482,6 +55548,14 @@
         "orphaned_timestamp": 1701729651.3690534,
         "platform": "input_text",
         "unique_id": "last_frigate_event_id"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.automation_49",
+        "id": "6772cd5fa4107af140e5f791d2c329d9",
+        "orphaned_timestamp": 1702764686.4827104,
+        "platform": "automation",
+        "unique_id": "1701397757785"
       }
     ]
   }

@@ -43,6 +43,11 @@
         "id": "security_system",
         "name": "Security System",
         "icon": "mdi:security"
+      },
+      {
+        "id": "frontyard_visibility",
+        "name": "Frontyard Visibility",
+        "icon": "mdi:lightbulb-alert"
       }
     ]
   }
