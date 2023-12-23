@@ -1762,18 +1762,27 @@
     device_id: c29d2e813077036d4bab3e9b611dbfcc
     entity_id: light.master_bath_light
     domain: light
+    id: light
   condition:
-  - condition: or
+  - condition: and
     conditions:
-    - condition: device
-      type: is_on
-      device_id: 92803b34ad5be7b3ad7ef608c0825d5a
-      entity_id: switch.master_bath_fan
-      domain: switch
-    - condition: template
-      value_template: '{{states.sensor.master_bath_humidity_sensor_humidity.state
-        | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
-        | float * 1.10}}'
+    - condition: trigger
+      id:
+      - light
+    - condition: or
+      conditions:
+      - condition: device
+        type: is_on
+        device_id: 92803b34ad5be7b3ad7ef608c0825d5a
+        entity_id: switch.master_bath_fan
+        domain: switch
+      - condition: template
+        value_template: '{{states.sensor.master_bath_humidity_sensor_humidity.state
+          | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
+          | float * 1.10}}'
+      - condition: template
+        value_template: '{{ (now() -  states.switch.master_bath_fan.last_changed).seconds
+          < 8 }}'
   action:
   - type: turn_on
     device_id: 92803b34ad5be7b3ad7ef608c0825d5a
@@ -1936,18 +1945,27 @@
     device_id: 6d3f36694a2e5b4f48d6bd264219ca4d
     entity_id: adbd87702f118df28d708438bf52165d
     domain: light
+    id: light
   condition:
-  - condition: or
+  - condition: and
     conditions:
-    - condition: device
-      type: is_on
-      device_id: 210139e6bd0e25f06141a1d46ef27425
-      entity_id: 7dadbc84e4d99a52ff4911bf2c71b892
-      domain: switch
-    - condition: template
-      value_template: '{{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
-        | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
-        | float * 1.10}}'
+    - condition: trigger
+      id:
+      - light
+    - condition: or
+      conditions:
+      - condition: device
+        type: is_on
+        device_id: 210139e6bd0e25f06141a1d46ef27425
+        entity_id: 7dadbc84e4d99a52ff4911bf2c71b892
+        domain: switch
+      - condition: template
+        value_template: '{{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
+          | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
+          | float * 1.10}}'
+      - condition: template
+        value_template: '{{ (now() -  states.switch.upstairs_bathroom_fan.last_changed).seconds
+          < 8 }}'
   action:
   - type: turn_on
     device_id: 210139e6bd0e25f06141a1d46ef27425
@@ -2159,7 +2177,8 @@
           == 'finnley_room' and trigger.payload_json['after']['label'] in ['cat',
           'dog', 'bird'] and isWatchedZones_ns.isWatchedZones}}"
     - condition: template
-      value_template: '{{trigger.payload_json[''before''][''id''] != trigger.payload_json[''after''][''id'']}}'
+      value_template: '{{trigger.payload_json[''before''][''id''] != trigger.payload_json[''after''][''id'']
+        or trigger.payload_json[''before''][''end_time''] == null}}'
       enabled: true
   action:
   - service: notify.branden_desktop
@@ -2184,19 +2203,28 @@
     device_id: 1aa9820eed11390c48d4cd68b2075c05
     entity_id: 99b5b47d2bfea6921c4c37e80f82315e
     domain: light
+    id: light
   condition:
-  - condition: or
+  - condition: and
     conditions:
-    - condition: device
-      type: is_on
-      device_id: 12356bc6f057627c71644c188fcb5183
-      entity_id: 7b797aca3d7fdc94fbd9e14cb939bdf0
-      domain: switch
-    - condition: template
-      value_template: '{{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
-        | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
-        | float * 1.10}}'
-      enabled: false
+    - condition: trigger
+      id:
+      - light
+    - condition: or
+      conditions:
+      - condition: device
+        type: is_on
+        device_id: 12356bc6f057627c71644c188fcb5183
+        entity_id: 7b797aca3d7fdc94fbd9e14cb939bdf0
+        domain: switch
+      - condition: template
+        value_template: '{{states.sensor.upstairs_bathroom_temperature_sensor_humidity.state
+          | float > states.sensor.average_climate_controlled_humidity_bathrooms.state
+          | float * 1.10}}'
+        enabled: false
+      - condition: template
+        value_template: '{{ (now() -  states.switch.basement_bathroom_fan.last_changed).seconds
+          < 8 }}'
   action:
   - type: turn_on
     device_id: 12356bc6f057627c71644c188fcb5183
