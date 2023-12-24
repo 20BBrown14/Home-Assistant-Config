@@ -2037,6 +2037,7 @@
       icon: mdi:cctv
       update_thumbnail: true
       critical: 'true'
+      silence_timer: 45
 - id: '1699998458086'
   alias: Stale Sensors
   description: ''
@@ -2178,8 +2179,11 @@
           'dog', 'bird'] and isWatchedZones_ns.isWatchedZones}}"
     - condition: template
       value_template: '{{trigger.payload_json[''before''][''id''] != trigger.payload_json[''after''][''id'']
-        or trigger.payload_json[''before''][''end_time''] == null}}'
+        or trigger.payload_json[''before''][''end_time''] == None}}'
       enabled: true
+    - condition: state
+      entity_id: input_boolean.snoozed_frigate_pc_notifications
+      state: 'off'
   action:
   - service: notify.branden_desktop
     data:

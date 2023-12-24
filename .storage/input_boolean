@@ -48,6 +48,11 @@
         "id": "frontyard_visibility",
         "name": "Frontyard Visibility",
         "icon": "mdi:lightbulb-alert"
+      },
+      {
+        "id": "snoozed_frigate_pc_notifications",
+        "name": "Snoozed Frigate PC Notifications",
+        "icon": "mdi:alarm-snooze"
       }
     ]
   }
