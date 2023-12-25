@@ -55535,38 +55535,6 @@
     "deleted_entities": [
       {
         "config_entry_id": null,
-        "entity_id": "automation.universal_remote_test",
-        "id": "da83c0953a6950832cc8461f8359a24b",
-        "orphaned_timestamp": 1700856032.7637734,
-        "platform": "automation",
-        "unique_id": "1672945679380"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.water_sensor",
-        "id": "ddec56c74d50b6d4d7f4332f2919c5e2",
-        "orphaned_timestamp": 1700856039.3866277,
-        "platform": "automation",
-        "unique_id": "1672032565019"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.low_battery_notifications",
-        "id": "86c3f21e25e4d05a12232154b5a1122e",
-        "orphaned_timestamp": 1700856054.7229671,
-        "platform": "automation",
-        "unique_id": "1669149028048"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "script.new_script_3",
-        "id": "3692b94dacda460a77e5cf1e226cade8",
-        "orphaned_timestamp": 1700856145.3868895,
-        "platform": "script",
-        "unique_id": "new_script_3"
-      },
-      {
-        "config_entry_id": null,
         "entity_id": "automation.frigate_notification_pc_test",
         "id": "37cd8cdb9736abd82cb405b1fca86f32",
         "orphaned_timestamp": 1701562151.2041583,
