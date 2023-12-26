@@ -53,6 +53,11 @@
         "id": "snoozed_frigate_pc_notifications",
         "name": "Snoozed Frigate PC Notifications",
         "icon": "mdi:alarm-snooze"
+      },
+      {
+        "id": "disable_frontyard_visibility",
+        "name": "Disable Frontyard Visibility ",
+        "icon": "mdi:lightbulb-off"
       }
     ]
   }

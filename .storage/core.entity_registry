@@ -55530,6 +55530,38 @@
         "translation_key": null,
         "unique_id": "snoozed_frigate_pc_notifications",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.disable_frontyard_visibility",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e6cd68bcdda1160efc67862fe15d7f91",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:lightbulb-off",
+        "original_name": "Disable Frontyard Visibility ",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "disable_frontyard_visibility",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

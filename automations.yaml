@@ -2344,6 +2344,9 @@
     after: sunset
     before_offset: '1:00:00'
     after_offset: '-1:00:00'
+  - condition: state
+    entity_id: input_boolean.disable_frontyard_visibility
+    state: 'off'
   action:
   - service: input_boolean.turn_on
     data: {}

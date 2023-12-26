@@ -371,6 +371,12 @@ set_front_yard_lights_for_visibility:
   alias: Set Front Yard Lights for Visibility
   sequence:
   - if:
+    - condition: state
+      entity_id: input_boolean.disable_frontyard_visibility
+      state: 'on'
+    then:
+    - stop: Frontlight Visibility is Disabled
+  - if:
     - condition: device
       type: is_off
       device_id: 7667289dac32e9792162b70cc2af7484
