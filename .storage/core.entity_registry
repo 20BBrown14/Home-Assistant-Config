@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless",
+        "original_icon": "mdi:battery-charging-wireless-60",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8222,7 +8222,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-60",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8257,7 +8257,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-charging",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8292,7 +8292,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug-off",
+        "original_icon": "mdi:power-plug",
         "original_name": "Samantha's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8327,7 +8327,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Samantha's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8435,7 +8435,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -55561,6 +55561,35 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "disable_frontyard_visibility",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
+        "device_class": null,
+        "device_id": "6636b1f64974c361328efbc239dceb84",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.samantha_s_phone_hotspot_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bee443f7c6ec50f080d493b31d6d8b8f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:access-point",
+        "original_name": "Samantha's Phone Hotspot state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0dfb818836402d406b9696502e029d26399230aa6ccff73f8373c9f4b5f3d480_hotspot_state",
         "unit_of_measurement": null
       }
     ],
