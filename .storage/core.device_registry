@@ -86,8 +86,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "5036a3a11bba97d25eb9b82e8b69decf",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "5036a3a11bba97d25eb9b82e8b69decf"
         ],
         "configuration_url": null,
         "connections": [],
@@ -115,8 +115,8 @@
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "4d198b0c52d3f21e86684be21461084f",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "c360373dda801e0ca73ccd582d53d98d",
+          "4d198b0c52d3f21e86684be21461084f"
         ],
         "configuration_url": null,
         "connections": [],
@@ -127,11 +127,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-22"
+            "3343393661-22-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-22-786:65280:65292"
+            "3343393661-22"
           ]
         ],
         "manufacturer": "Minoston",
@@ -239,11 +239,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-26"
+            "3343393661-26-634:2306:8192"
           ],
           [
             "zwave_js",
-            "3343393661-26-634:2306:8192"
+            "3343393661-26"
           ]
         ],
         "manufacturer": "Zooz",
@@ -284,9 +284,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d",
           "58e47bce27bf6aedbe7250e4c4716963",
-          "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "c360373dda801e0ca73ccd582d53d98d"
+          "2c5ce0bfc343e83e40169c18d16cd1f0"
         ],
         "configuration_url": null,
         "connections": [],
@@ -757,11 +757,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-29"
+            "3343393661-29-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-29-99:18770:12597"
+            "3343393661-29"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -841,11 +841,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-32-99:18770:12597"
+            "3343393661-32"
           ],
           [
             "zwave_js",
-            "3343393661-32"
+            "3343393661-32-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1094,11 +1094,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-34-99:18756:12853"
+            "3343393661-34"
           ],
           [
             "zwave_js",
-            "3343393661-34"
+            "3343393661-34-99:18756:12853"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1178,11 +1178,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-37"
+            "3343393661-37-12:17479:16438"
           ],
           [
             "zwave_js",
-            "3343393661-37-12:17479:16438"
+            "3343393661-37"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
@@ -1690,11 +1690,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-40-634:260:514"
+            "3343393661-40"
           ],
           [
             "zwave_js",
-            "3343393661-40"
+            "3343393661-40-634:260:514"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1846,11 +1846,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1874,11 +1874,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-46-99:18756:12593"
+            "3343393661-46"
           ],
           [
             "zwave_js",
-            "3343393661-46"
+            "3343393661-46-99:18756:12593"
           ]
         ],
         "manufacturer": "GE",
@@ -2363,11 +2363,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-47-99:18756:13111"
+            "3343393661-47"
           ],
           [
             "zwave_js",
-            "3343393661-47"
+            "3343393661-47-99:18756:13111"
           ]
         ],
         "manufacturer": "Enbrighten",
@@ -2447,11 +2447,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-43"
+            "3343393661-43-634:260:513"
           ],
           [
             "zwave_js",
-            "3343393661-43-634:260:513"
+            "3343393661-43"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2632,6 +2632,54 @@
         "name": "Basement Bath Light",
         "sw_version": "3.20.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "80c996aef1daadbad8c4ffc3926a0921",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x4c5bb3fffe4c336b"
+          ]
+        ],
+        "manufacturer": "IKEA",
+        "model": "STYRBAR remote control (E2001/E2002)",
+        "name_by_user": null,
+        "name": "0x4c5bb3fffe4c336b",
+        "sw_version": "1.0.024",
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "482bdbbc583dd3d473067e9f71cef136"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "e0:5a:1b:e3:fd:70"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "fd44d9316525d7e8e2c66fa38a70c1c6",
+        "identifiers": [],
+        "manufacturer": "Espressif",
+        "model": "esp32dev",
+        "name_by_user": null,
+        "name": "Master Bedroom Underbed Motion Sensor",
+        "sw_version": "2023.12.5 (Dec 30 2023, 22:51:17)",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
@@ -2643,11 +2691,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-20"
+            "3343393661-20-12:17479:16439"
           ],
           [
             "zwave_js",
-            "3343393661-20-12:17479:16439"
+            "3343393661-20"
           ]
         ],
         "id": "63731068bce97381e2cce1c4a43b9c6c",

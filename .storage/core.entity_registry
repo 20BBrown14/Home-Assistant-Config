@@ -53841,6 +53841,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -53871,6 +53874,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -53903,6 +53909,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -53933,6 +53942,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -53965,6 +53977,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -53996,6 +54011,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "duration",
@@ -54026,6 +54044,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54098,6 +54119,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54133,6 +54157,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54170,6 +54197,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54205,6 +54235,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54238,6 +54271,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54273,6 +54309,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54306,6 +54345,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54341,6 +54383,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54374,6 +54419,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54409,6 +54457,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54442,6 +54493,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54478,6 +54532,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54511,6 +54568,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54546,6 +54606,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54579,6 +54642,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54614,6 +54680,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54648,6 +54717,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54681,6 +54753,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54718,6 +54793,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54754,6 +54832,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54787,6 +54868,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54822,6 +54906,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54856,6 +54943,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54893,6 +54983,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54926,6 +55019,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -54961,6 +55057,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -54994,6 +55093,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -55029,6 +55131,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -55062,6 +55167,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -55097,6 +55205,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -55125,6 +55236,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -55388,6 +55502,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -55581,6 +55698,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -55590,6 +55710,234 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "0dfb818836402d406b9696502e029d26399230aa6ccff73f8373c9f4b5f3d480_hotspot_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.0x4c5bb3fffe4c336b_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ccf5163c0ab94549fe72538b5b2fd271",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.0x4c5bb3fffe4c336b_action",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b0bad59eedf80087453a62e7eba02c63",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gesture-double-tap",
+        "original_name": "action",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_action_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.0x4c5bb3fffe4c336b_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7b732e48df0e72325d813792f636f3e4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_linkquality_zigbee2mqtt",
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.0x4c5bb3fffe4c336b_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5f5d59e8fc53b425c9a1afaa0a1bc571",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_update_state_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.0x4c5bb3fffe4c336b_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "abbb5037e5422e17df1db09f5b6504dc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_update_available_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.0x4c5bb3fffe4c336b",
+        "hidden_by": null,
+        "icon": null,
+        "id": "787c461c96e192a49eb26f8a0d06b44d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_update_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "482bdbbc583dd3d473067e9f71cef136",
+        "device_class": null,
+        "device_id": "fd44d9316525d7e8e2c66fa38a70c1c6",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.master_underbed_motion_sensor_pir_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d27e19d8c3949780e507f909b9504c3b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "motion",
+        "original_icon": null,
+        "original_name": "PIR Sensor",
+        "platform": "esphome",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "master-underbed-motion-sensorbinary_sensorpir_sensor",
         "unit_of_measurement": null
       }
     ],
