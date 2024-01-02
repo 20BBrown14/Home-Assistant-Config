@@ -4046,7 +4046,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-60",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4256,7 +4256,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -53562,40 +53562,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "id": "1701399650903"
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "automation.frigate_front_door_notification_pc",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9740abafd4d25755e1f6e94b2105f405",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Frigate: Front Porch Notifications (PC)",
-        "platform": "automation",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "1701399650903",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": null,
         "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
         "device_class": null,
@@ -55939,6 +55905,591 @@
         "translation_key": null,
         "unique_id": "master-underbed-motion-sensorbinary_sensorpir_sensor",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "1d0818ee2933eee628176bd174a58c84",
+        "device_class": null,
+        "device_id": "b4f27ae4844874a563008559d106f098",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.heated_blanket_switch_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ca846acf43daf73742e21dc92c89b7ca",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "Battery",
+        "platform": "switchbot",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cf3533351867-battery",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1d0818ee2933eee628176bd174a58c84",
+        "device_class": null,
+        "device_id": "b4f27ae4844874a563008559d106f098",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.heated_blanket_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0cdcf3c199fe52b2c1e230e8e57b5276",
+        "has_entity_name": true,
+        "name": "Heated Blanket Switchbot",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "switch",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "switchbot",
+        "supported_features": 0,
+        "translation_key": "bot",
+        "unique_id": "cf3533351867",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "1d0818ee2933eee628176bd174a58c84",
+        "device_class": null,
+        "device_id": "b4f27ae4844874a563008559d106f098",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.heated_blanket_switch_bluetooth_signal",
+        "hidden_by": null,
+        "icon": null,
+        "id": "28f7a2dd5a574c74ab91908e2613ec59",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "Bluetooth signal",
+        "platform": "switchbot",
+        "supported_features": 0,
+        "translation_key": "bluetooth_signal",
+        "unique_id": "cf3533351867-rssi",
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1704146876849"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.heated_blanket",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6834d4423d3c7c2e40e069cd28d486da",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Heated Blanket",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1704146876849",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": "basement",
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.turn_heated_blanket_to_1",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e4ab9fecab51d12bcb2f3123865317dd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Turn Heated Blanket to 1",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "turn_heated_blanket_to_1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": "basement",
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.turn_heated_blanket_to_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "45e2cb745338fa3d22f6cc0d37e3a247",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Turn Heated Blanket to 2",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "turn_heated_blanket_to_2",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.baby_finnley_brown",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bc1763891c2eae93b8eb79cebdf38d67",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "babybuddy_child",
+        "original_icon": "mdi:baby-face-outline",
+        "original_name": "Baby Finnley Brown",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cb2755228fe71e3ae9bf9a590b4bfeb6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:paper-roll-outline",
+        "original_name": "Finnley Brown last change",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-changes",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_sleep",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8d7e13274a95a44b1cf463e0ba5400f6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Finnley Brown last sleep",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-sleep",
+        "unit_of_measurement": "min"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6a562bbbc43e79453296f6de6c15424a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:timer-sand",
+        "original_name": "Finnley Brown last timer",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-timers",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Black",
+            "Brown",
+            "Green",
+            "Yellow"
+          ]
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "select.baby_buddy_diaper_color",
+        "hidden_by": null,
+        "icon": null,
+        "id": "12d8cb201bd0db5c9673438207f57453",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:paper-roll-outline",
+        "original_name": "Baby Buddy Diaper color",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-diaper_color",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Wet",
+            "Solid",
+            "Wet and Solid"
+          ]
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "select.baby_buddy_diaper_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4ae62fcd99783935256616921eb6d383",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:paper-roll-outline",
+        "original_name": "Baby Buddy Diaper type",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-change_type",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Bottle",
+            "Left breast",
+            "Right breast",
+            "Both breasts",
+            "Parent fed",
+            "Self fed"
+          ]
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "select.baby_buddy_feeding_method",
+        "hidden_by": null,
+        "icon": null,
+        "id": "973c3c09ebfb66de5dac70fbe95a0454",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:baby-bottle-outline",
+        "original_name": "Baby Buddy Feeding method",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-feeding_method",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Breast milk",
+            "Formula",
+            "Fortified breast milk",
+            "Solid food"
+          ]
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "select.baby_buddy_feeding_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4fdeb58afdd7b5a6aa91700e832c9e30",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:baby-bottle-outline",
+        "original_name": "Baby Buddy Feeding type",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-feeding_type",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.finnley_brown_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c97d60a2124ee323f4f7655c04279bff",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-sand",
+        "original_name": "Finnley Brown timer",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-timer",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1704154185925"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.baby_buddy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "14822474d879e9b6ecf4e46cfef6ca7f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Baby Buddy",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1704154185925",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1704164614912"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.reset_snoozed_frigate_notifications",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bfd57d98e27a90ff66ebedfb24dbaa96",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Reset Snoozed Frigate Notifications",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1704164614912",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -55965,6 +56516,14 @@
         "orphaned_timestamp": 1702764686.4827104,
         "platform": "automation",
         "unique_id": "1701397757785"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "automation.frigate_front_door_notification_pc",
+        "id": "9740abafd4d25755e1f6e94b2105f405",
+        "orphaned_timestamp": 1704163645.1757553,
+        "platform": "automation",
+        "unique_id": "1701399650903"
       }
     ]
   }

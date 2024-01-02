@@ -2110,26 +2110,6 @@
     target:
       entity_id: input_boolean.good_night_mode
   mode: single
-- id: '1701399650903'
-  alias: 'Frigate: Front Porch Notifications (PC)'
-  description: ''
-  use_blueprint:
-    path: SgtBatten/Stable.yaml
-    input:
-      camera: camera.front_door
-      message: '{{ label }} detected - {{ camera_name }}'
-      zones:
-      - porch
-      - driveway
-      labels:
-      - person
-      - package
-      - cat
-      - car
-      cooldown: 120
-      icon: mdi:cctv
-      notify_group: branden_desktop_group
-      update_thumbnail: true
 - id: '1701399982576'
   alias: HASS.agent Commands
   description: ''
@@ -2153,6 +2133,14 @@
       data:
         topic: homeassistant/button/Branden_Desktop/Branden_Desktop-launch_frigate_notification_clip/action
         payload: '{{states(''input_text.local_url'')}}/api/frigate/notifications/{{trigger[''event''][''data''][''action''].split(''_'')[2]}}/clip.mp4'
+  - if:
+    - condition: template
+      value_template: '{{''SNOOZE_PC_NOTIFICATIONS'' == trigger[''event''][''data''][''action'']}}'
+    then:
+    - service: input_boolean.turn_on
+      data: {}
+      target:
+        entity_id: input_boolean.snoozed_frigate_pc_notifications
   mode: restart
 - id: '1701562649842'
   alias: Frigate Notifications (PC)
@@ -2194,6 +2182,8 @@
         actions:
         - action: VIEW_CLIP_{{trigger.payload_json['after']['id']}}
           title: View Clip
+        - action: SNOOZE_PC_NOTIFICATIONS
+          title: Snooze Notifications
         image: '{{states(''input_text.local_url'')}}/api/frigate/notifications/{{trigger.payload_json[''after''][''id'']}}/thumbnail.jpg'
         duration: 3
   mode: queued
@@ -2365,3 +2355,50 @@
     target:
       entity_id: input_boolean.frontyard_visibility
   mode: restart
+- id: '1704146876849'
+  alias: Heated Blanket
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 5
+      milliseconds: 0
+  - type: turn_on
+    device_id: b4f27ae4844874a563008559d106f098
+    entity_id: 0cdcf3c199fe52b2c1e230e8e57b5276
+    domain: switch
+  mode: single
+- id: '1704154185925'
+  alias: Baby Buddy
+  description: ''
+  trigger: []
+  condition: []
+  action: []
+  mode: single
+- id: '1704164614912'
+  alias: Reset Snoozed Frigate Notifications
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.snoozed_frigate_pc_notifications
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 30
+      seconds: 0
+  condition: []
+  action:
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.snoozed_frigate_pc_notifications
+  mode: single

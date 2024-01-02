@@ -867,3 +867,46 @@ living_room_ceiling_fan_turn_on:
   mode: parallel
   icon: mdi:fan-on
   max: 10
+turn_heated_blanket_to_1:
+  alias: Turn Heated Blanket to 1
+  sequence:
+  - type: turn_off
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - type: turn_on
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+  mode: single
+turn_heated_blanket_to_2:
+  alias: Turn Heated Blanket to 2
+  sequence:
+  - type: turn_off
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - type: turn_on
+    device_id: 876ccfa73e96c6e92bbdbfc4cc139003
+    entity_id: a07f5f1dec6204bc94bfd0b5a3c529ec
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 10
+      milliseconds: 0
+  - type: turn_on
+    device_id: b4f27ae4844874a563008559d106f098
+    entity_id: 0cdcf3c199fe52b2c1e230e8e57b5276
+    domain: switch
+  mode: single
