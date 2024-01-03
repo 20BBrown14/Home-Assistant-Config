@@ -48,6 +48,15 @@
         "require_admin": false,
         "mode": "storage",
         "url_path": "dashboard-cameras"
+      },
+      {
+        "id": "baby_buddy",
+        "show_in_sidebar": true,
+        "icon": "mdi:baby",
+        "title": "Baby Buddy",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "baby-buddy"
       }
     ]
   }

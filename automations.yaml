@@ -680,30 +680,34 @@
       - device_id: fc14d585e20bc18f0fae2b868f5849f3
         domain: zwave_js
         type: set_config_parameter
+        endpoint: 0
         parameter: 24
         bitmask:
-        subtype: 24 (Status LED 4 Color)
+        subtype: 24 (Status LED 4 Color) on endpoint 0
         value: 5
       - device_id: fc14d585e20bc18f0fae2b868f5849f3
         domain: zwave_js
         type: set_config_parameter
+        endpoint: 0
         parameter: 31
-        bitmask: 1
-        subtype: 31[0x1] (LED 1 Blink Status)
+        bitmask: 8
+        subtype: 31[0x8] on endpoint 0 (LED 4 Blink Status) on endpoint 0
         value: 1
       - device_id: 171c8f1cbdc67a075d1170858166fd45
         domain: zwave_js
         type: set_config_parameter
+        endpoint: 0
         parameter: 24
         bitmask:
-        subtype: 24 (Status LED 4 Color)
+        subtype: 24 (Status LED 4 Color) on endpoint 0
         value: 5
       - device_id: 171c8f1cbdc67a075d1170858166fd45
         domain: zwave_js
         type: set_config_parameter
+        endpoint: 0
         parameter: 31
         bitmask: 8
-        subtype: 31[0x8] (LED 4 Blink Status)
+        subtype: 31[0x8] on endpoint 0 (LED 4 Blink Status) on endpoint 0
         value: 1
       - repeat:
           until:
@@ -731,6 +735,7 @@
             message: Don't forget to take the trash out!
             title: Trash Day Reminder
             data:
+              tag: trash_reminder
               color: green
               actions:
               - action: TRASH_TAKEN_OUT
@@ -741,14 +746,15 @@
             message: Don't forget to take the trash out!
             title: Trash Day Reminder
             data:
+              tag: trash_reminder
               color: purple
               actions:
               - action: TRASH_TAKEN_OUT
                 title: Confirm trash has been taken out
             enabled: true
           - delay:
-              hours: 0
-              minutes: 45
+              hours: 1
+              minutes: 0
               seconds: 0
               milliseconds: 0
     - if:
@@ -802,6 +808,7 @@
             message: Don't forget to take the recycling out!
             title: Recycling Day Reminder
             data:
+              tag: recycling_reminder
               actions:
               - action: RECYCLING_TAKEN_OUT
                 title: Confirm recycling has been taken out
@@ -811,12 +818,13 @@
             message: Don't forget to take the recycling out!
             title: Recycling Day Reminder
             data:
+              tag: recycling_reminder
               actions:
               - action: RECYCLING_TAKEN_OUT
                 title: Confirm recycling has been taken out
           - delay:
-              hours: 0
-              minutes: 45
+              hours: 1
+              minutes: 0
               seconds: 0
               milliseconds: 0
   mode: single
@@ -848,6 +856,11 @@
     bitmask:
     subtype: 24 (Status LED 4 Color)
     value: 0
+  - service: notify.all_mobile_phones
+    data:
+      message: clear_notification
+      data:
+        tag: trash_reminder
   mode: single
 - id: '1668465562267'
   alias: Confirm Recycling Taken Out
@@ -863,6 +876,11 @@
     data: {}
     target:
       entity_id: input_boolean.recycling_has_been_taken_out
+  - service: notify.all_mobile_phones
+    data:
+      message: clear_notification
+      data:
+        tag: trash_reminder
   mode: single
 - id: '1668467112500'
   alias: Weather Radio
@@ -2185,7 +2203,6 @@
         - action: SNOOZE_PC_NOTIFICATIONS
           title: Snooze Notifications
         image: '{{states(''input_text.local_url'')}}/api/frigate/notifications/{{trigger.payload_json[''after''][''id'']}}/thumbnail.jpg'
-        duration: 3
   mode: queued
   max: 10
 - id: '1702177508628'
@@ -2379,9 +2396,17 @@
 - id: '1704154185925'
   alias: Baby Buddy
   description: ''
-  trigger: []
+  trigger:
+  - platform: device
+    domain: mqtt
+    device_id: 80c996aef1daadbad8c4ffc3926a0921
+    type: action
+    subtype: 'on'
+    discovery_id: 0x4c5bb3fffe4c336b action_on
   condition: []
-  action: []
+  action:
+  - service: script.baby_buddy_test
+    data: {}
   mode: single
 - id: '1704164614912'
   alias: Reset Snoozed Frigate Notifications

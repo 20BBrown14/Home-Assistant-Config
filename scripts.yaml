@@ -910,3 +910,165 @@ turn_heated_blanket_to_2:
     entity_id: 0cdcf3c199fe52b2c1e230e8e57b5276
     domain: switch
   mode: single
+baby_buddy_test:
+  alias: Baby Buddy - Finnley - Feeding
+  sequence:
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_branden_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Feeding for Finnely Added!
+        data:
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_feeding
+          actions:
+          - action: NO_ADDITIONAL_FEEDING_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/feeding
+      enabled: true
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
+  - wait_for_trigger:
+    - platform: event
+      event_type: FINNLEY_FEEDING_CONFIRMED
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: NO_ADDITIONAL_FEEDING_INFORMATION
+    - platform: state
+      entity_id:
+      - input_boolean.waiting_for_finnley_feeding_confirmation
+      to: 'off'
+    timeout:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - service: babybuddy.add_feeding
+    data:
+      type: '{{states(''select.baby_buddy_feeding_type'')}}'
+      method: '{{states(''select.baby_buddy_feeding_method'')}}'
+      amount: '{% if states(''input_number.finnley_feeding_amount'') | float == 0
+        %} 0 {% else %} {{states(''input_number.finnley_feeding_amount'') | float}}
+        {% endif %}'
+      notes: '{{states(''input_text.finnley_feeding_notes'') or ''Added without additional
+        information from HA Automation(s)''}}'
+    target:
+      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
+  - service: input_number.set_value
+    data:
+      value: 0
+    target:
+      entity_id: input_number.finnley_feeding_amount
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id: input_text.finnley_feeding_notes
+  - service: notify.all_mobile_phones
+    data:
+      data:
+        tag: confirm_finnley_feeding
+      message: clear_notification
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
+  mode: restart
+  icon: mdi:food
+finnley_confirm_feeding_details:
+  alias: Finnley Confirm Feeding Details
+  sequence:
+  - event: FINNLEY_FEEDING_CONFIRMED
+    event_data: {}
+  mode: single
+finnley_confirm_diaper_change_details:
+  alias: Finnley Confirm Diaper Change Details
+  sequence:
+  - event: FINNLEY_DIAPER_CHANGE_CONFIRMED
+    event_data: {}
+  mode: single
+baby_buddy_finnley_diaper_change:
+  alias: Baby Buddy - Finnley - Diaper Change
+  sequence:
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_branden_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Feeding for Finnely Added!
+        data:
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_diaper_change
+          actions:
+          - action: NO_ADDITIONAL_DIAPER_CHANGE_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/diaper
+      enabled: true
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_diaper_change_confirmation
+  - wait_for_trigger:
+    - platform: event
+      event_type: FINNLEY_DIAPER_CHANGE_CONFIRMED
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: NO_ADDITIONAL_DIAPER_CHANGE_INFORMATION
+    - platform: state
+      entity_id:
+      - input_boolean.waiting_for_finnley_diaper_change_confirmation
+      to: 'off'
+    timeout:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - service: babybuddy.add_feeding
+    data:
+      type: '{{states(''select.baby_buddy_diaper_type'')}}'
+      color: '{{states(''select.baby_buddy_diaper_color'')}}'
+      amount: '{% if states(''input_number.finnley_diaper_amount'') | float == 0 %}
+        0 {% else %} {{states(''input_number.finnley_diaper_amount'') | float}} {%
+        endif %}'
+      notes: '{{states(''input_text.finnley_diaper_change_notes'') or ''Added without
+        additional information from HA Automation(s)''}}'
+    target:
+      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
+  - service: input_number.set_value
+    data:
+      value: 0
+    target:
+      entity_id: input_number.finnley_diaper_amount
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id: input_text.finnley_diaper_change_notes
+  - service: notify.all_mobile_phones
+    data:
+      data:
+        tag: confirm_finnley_diaper_change
+      message: clear_notification
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_diaper_change_confirmation
+  mode: restart
+  icon: mdi:human-baby-changing-table

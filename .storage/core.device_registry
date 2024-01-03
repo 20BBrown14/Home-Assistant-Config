@@ -155,11 +155,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-23-99:18770:12597"
+            "3343393661-23"
           ],
           [
             "zwave_js",
-            "3343393661-23"
+            "3343393661-23-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -183,11 +183,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-24-330:4:1"
+            "3343393661-24"
           ],
           [
             "zwave_js",
-            "3343393661-24"
+            "3343393661-24-330:4:1"
           ]
         ],
         "manufacturer": "Ecolink",
@@ -239,11 +239,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-26-634:2306:8192"
+            "3343393661-26"
           ],
           [
             "zwave_js",
-            "3343393661-26"
+            "3343393661-26-634:2306:8192"
           ]
         ],
         "manufacturer": "Zooz",
@@ -267,11 +267,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-27-99:18770:12597"
+            "3343393661-27"
           ],
           [
             "zwave_js",
-            "3343393661-27"
+            "3343393661-27-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -284,9 +284,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
           "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "58e47bce27bf6aedbe7250e4c4716963"
+          "58e47bce27bf6aedbe7250e4c4716963",
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -785,11 +785,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-30"
+            "3343393661-30-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-30-99:18770:12597"
+            "3343393661-30"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -994,11 +994,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1094,11 +1094,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-34"
+            "3343393661-34-99:18756:12853"
           ],
           [
             "zwave_js",
-            "3343393661-34-99:18756:12853"
+            "3343393661-34"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1122,11 +1122,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-35-99:18770:12597"
+            "3343393661-35"
           ],
           [
             "zwave_js",
-            "3343393661-35"
+            "3343393661-35-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1818,11 +1818,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-44"
+            "3343393661-44-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-44-634:28672:40962"
+            "3343393661-44"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1846,11 +1846,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ],
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2391,11 +2391,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-48"
+            "3343393661-48-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-48-634:28672:40962"
+            "3343393661-48"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2619,11 +2619,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-49-634:28672:40962"
+            "3343393661-49"
           ],
           [
             "zwave_js",
-            "3343393661-49"
+            "3343393661-49-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2653,7 +2653,7 @@
         "manufacturer": "IKEA",
         "model": "STYRBAR remote control (E2001/E2002)",
         "name_by_user": null,
-        "name": "0x4c5bb3fffe4c336b",
+        "name": "Finnley Room Baby Buddy Buttons",
         "sw_version": "1.0.024",
         "via_device_id": null
       },
@@ -2713,12 +2713,12 @@
         "configuration_url": null,
         "connections": [
           [
-            "bluetooth",
-            "CF:35:33:35:18:67"
-          ],
-          [
             "mac",
             "cf:35:33:35:18:67"
+          ],
+          [
+            "bluetooth",
+            "CF:35:33:35:18:67"
           ]
         ],
         "disabled_by": null,

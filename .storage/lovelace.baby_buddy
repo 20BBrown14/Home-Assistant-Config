@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.baby_buddy",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Feed",
+          "icon": "mdi:food",
+          "path": "feeding",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "input_boolean.waiting_for_finnley_feeding_confirmation"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "select.baby_buddy_feeding_method"
+                },
+                {
+                  "entity": "select.baby_buddy_feeding_type"
+                },
+                {
+                  "entity": "input_text.finnley_feeding_notes"
+                },
+                {
+                  "entity": "input_number.finnley_feeding_amount"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "Confirm Finnley Feeding",
+                  "icon": "mdi:button-cursor",
+                  "action_name": "Confirm",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.finnley_confirm_feeding_details"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Diaper",
+          "path": "diaper",
+          "icon": "mdi:emoticon-poop",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "input_boolean.waiting_for_finnley_diaper_change_confirmation"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "select.baby_buddy_diaper_type"
+                },
+                {
+                  "entity": "select.baby_buddy_diaper_color"
+                },
+                {
+                  "entity": "input_text.finnley_diaper_change_notes"
+                },
+                {
+                  "entity": "input_number.finnley_diaper_amount"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "Confirm Finnley Diaper Change",
+                  "icon": "mdi:button-cursor",
+                  "action_name": "Confirm",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.finnley_confirm_diaper_change_details"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

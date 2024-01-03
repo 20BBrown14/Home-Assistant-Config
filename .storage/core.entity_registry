@@ -9126,7 +9126,7 @@
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.samantha_s_phone_wifi_connection",
         "hidden_by": null,
@@ -9158,7 +9158,7 @@
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.samantha_s_phone_wifi_bssid",
         "hidden_by": null,
@@ -9168,6 +9168,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -9187,7 +9190,7 @@
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.samantha_s_phone_wifi_ip_address",
         "hidden_by": null,
@@ -9215,13 +9218,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.samantha_s_phone_wifi_link_speed",
         "hidden_by": null,
@@ -9253,7 +9254,7 @@
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "binary_sensor.samantha_s_phone_wifi_state",
         "hidden_by": null,
@@ -9281,13 +9282,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.samantha_s_phone_wifi_frequency",
         "hidden_by": null,
@@ -9315,13 +9314,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "signal_strength",
         "device_id": "6636b1f64974c361328efbc239dceb84",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.samantha_s_phone_wifi_signal_strength",
         "hidden_by": null,
@@ -55687,72 +55684,6 @@
         "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
         "device_class": null,
         "device_id": "80c996aef1daadbad8c4ffc3926a0921",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.0x4c5bb3fffe4c336b_battery",
-        "hidden_by": null,
-        "icon": null,
-        "id": "ccf5163c0ab94549fe72538b5b2fd271",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "battery",
-        "original_icon": null,
-        "original_name": "battery",
-        "platform": "mqtt",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "0x4c5bb3fffe4c336b_battery_zigbee2mqtt",
-        "unit_of_measurement": "%"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
-        "device_class": null,
-        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.0x4c5bb3fffe4c336b_action",
-        "hidden_by": null,
-        "icon": null,
-        "id": "b0bad59eedf80087453a62e7eba02c63",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:gesture-double-tap",
-        "original_name": "action",
-        "platform": "mqtt",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "0x4c5bb3fffe4c336b_action_zigbee2mqtt",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
-        "device_class": null,
-        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
         "entity_id": "sensor.0x4c5bb3fffe4c336b_linkquality",
@@ -55840,38 +55771,6 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "0x4c5bb3fffe4c336b_update_available_zigbee2mqtt",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
-        "device_class": null,
-        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "update.0x4c5bb3fffe4c336b",
-        "hidden_by": null,
-        "icon": null,
-        "id": "787c461c96e192a49eb26f8a0d06b44d",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "firmware",
-        "original_icon": null,
-        "original_name": null,
-        "platform": "mqtt",
-        "supported_features": 1,
-        "translation_key": null,
-        "unique_id": "0x4c5bb3fffe4c336b_update_zigbee2mqtt",
         "unit_of_measurement": null
       },
       {
@@ -56489,6 +56388,554 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "1704164614912",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.baby_buddy_test",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fc7a404792ff41b312989afb7fa3710f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:food",
+        "original_name": "Baby Buddy - Finnley - Feeding",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "baby_buddy_test",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "2388b455234eaf15db7bf88bd2bab821",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.is_branden_home",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fd443908ec69399428490a4259ca2444",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "presence",
+        "original_icon": null,
+        "original_name": "Is Branden Home",
+        "platform": "template",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "2388b455234eaf15db7bf88bd2bab821",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1075d3552fa619588d01a4ab4650018f",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.is_samantha_home",
+        "hidden_by": null,
+        "icon": null,
+        "id": "39b702b23aa060b140ee993653067224",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "presence",
+        "original_icon": null,
+        "original_name": "Is Samantha home",
+        "platform": "template",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1075d3552fa619588d01a4ab4650018f",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_button.confirm_finnley_feeding",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7f198b8ce1299e127bccf09e91003edd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radiobox-marked",
+        "original_name": "Confirm Finnley Feeding",
+        "platform": "input_button",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "confirm_finnley_feeding",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.waiting_for_finnley_feeding_confirmation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "38d9ad420dde38f58c50928a6d051bfd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-star",
+        "original_name": "Waiting for Finnley Feeding Confirmation",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "waiting_for_finnley_feeding_confirmation",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.finnley_feeding_amount",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ca67bcb8f4ca0701564e36b4f59b1cfb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:baby-bottle",
+        "original_name": "Finnley Feeding Amount",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_feeding_amount",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_feeding_notes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "16b21cd72ae12b7cf936596ae017cd65",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:baby-bottle-outline",
+        "original_name": "Finnley Feeding Notes",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_feeding_notes",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_confirm_feeding_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f6a552392f52636e9b8a852dd334c372",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Confirm Feeding Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_confirm_feeding_details",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_feeding",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7652d4722d7d9e7f55e51b5f922aa2dc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:baby-bottle-outline",
+        "original_name": "Finnley Brown last feeding",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-feedings",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.finnley_diaper_amount",
+        "hidden_by": null,
+        "icon": null,
+        "id": "71a01bf4e5c8212876e7b1aa379a587e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human-baby-changing-table",
+        "original_name": "Finnley Diaper Amount",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_diaper_amount",
+        "unit_of_measurement": "count"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_diaper_change_notes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e1980a4feb08e15b1f79f193520ad7ac",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human-baby-changing-table",
+        "original_name": "Finnley Diaper Change Notes",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_diaper_change_notes",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.waiting_for_finnley_diaper_change_confirmation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "21c996e84520ffe872f06cc28c3ae499",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human-baby-changing-table",
+        "original_name": "Waiting for Finnley Diaper Change Confirmation",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "waiting_for_finnley_diaper_change_confirmation",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_confirm_diaper_change_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4b4d89ac61058791c73a84b0540d51bd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Confirm Diaper Change Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_confirm_diaper_change_details",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.baby_buddy_finnley_diaper_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f5e3e096e4dcd6d00293b0d0269dcd01",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human-baby-changing-table",
+        "original_name": "Baby Buddy - Finnley - Diaper Change",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "baby_buddy_finnley_diaper_change",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_baby_buddy_buttons_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ccf5163c0ab94549fe72538b5b2fd271",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_battery_zigbee2mqtt",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_room_baby_buddy_buttons_action",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b0bad59eedf80087453a62e7eba02c63",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gesture-double-tap",
+        "original_name": "action",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_action_zigbee2mqtt",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "80c996aef1daadbad8c4ffc3926a0921",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.finnley_room_baby_buddy_buttons",
+        "hidden_by": null,
+        "icon": null,
+        "id": "787c461c96e192a49eb26f8a0d06b44d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe4c336b_update_zigbee2mqtt",
         "unit_of_measurement": null
       }
     ],
