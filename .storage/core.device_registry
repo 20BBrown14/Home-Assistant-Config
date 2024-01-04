@@ -2678,7 +2678,7 @@
         "model": "esp32dev",
         "name_by_user": null,
         "name": "Master Bedroom Underbed Motion Sensor",
-        "sw_version": "2023.12.5 (Dec 30 2023, 22:51:17)",
+        "sw_version": "2023.12.5 (Jan  3 2024, 19:51:15)",
         "via_device_id": null
       },
       {
@@ -2755,6 +2755,30 @@
         "name_by_user": null,
         "name": "Finnley Brown",
         "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "763020555073f3d24c357ff46f010b2b"
+        ],
+        "configuration_url": "http://192.168.86.135",
+        "connections": [
+          [
+            "mac",
+            "e8:68:e7:f2:d2:93"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1 (SHRGBW2)",
+        "id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "identifiers": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "name_by_user": null,
+        "name": "shellyrgbw2-E868E7F2D293",
+        "sw_version": "20221013-134509/v1.12-1-g1abbae93c-rgbw2-prod",
         "via_device_id": null
       }
     ],

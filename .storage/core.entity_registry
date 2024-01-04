@@ -56937,17 +56937,454 @@
         "translation_key": null,
         "unique_id": "0x4c5bb3fffe4c336b_update_zigbee2mqtt",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "482bdbbc583dd3d473067e9f71cef136",
+        "device_class": null,
+        "device_id": "fd44d9316525d7e8e2c66fa38a70c1c6",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.master_underbed_motion_sensor_branden_side_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "71679ed1badaf26f72fc2a08d2fe1411",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "motion",
+        "original_icon": null,
+        "original_name": "Branden Side Motion",
+        "platform": "esphome",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "master-underbed-motion-sensorbinary_sensorbranden_side_motion",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "482bdbbc583dd3d473067e9f71cef136",
+        "device_class": null,
+        "device_id": "fd44d9316525d7e8e2c66fa38a70c1c6",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.master_underbed_motion_sensor_samantha_side_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6aa2cdad73ed899af65eb9f9217bc7a0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "motion",
+        "original_icon": null,
+        "original_name": "Samantha Side Motion",
+        "platform": "esphome",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "master-underbed-motion-sensorbinary_sensorsamantha_side_motion",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.shellyrgbw2_e868e7f2d293_overpowering",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6b89fe1c4472c0ff6990726dd2436b85",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "problem",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 overpowering",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-light_0-overpower",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.shellyrgbw2_e868e7f2d293_input",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8cbf8f3dac2b0ff1c6647500fd6a72fb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 input",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-device-input",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.shellyrgbw2_e868e7f2d293_cloud",
+        "hidden_by": null,
+        "icon": null,
+        "id": "93bd808689d6cc4c7c68f4e456be0f5b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "connectivity",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 cloud",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-cloud",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.shellyrgbw2_e868e7f2d293_reboot",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f3e0bcca6fa6bb72dbca8a08cf4b862c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "restart",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 Reboot",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293_reboot",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "effect_list": [
+            "Off",
+            "Meteor Shower",
+            "Gradual Change",
+            "Flash"
+          ],
+          "supported_color_modes": [
+            "rgbw"
+          ]
+        },
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "light.shellyrgbw2_e868e7f2d293",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f134af8facf63fbd170622fcd6275e7e",
+        "has_entity_name": false,
+        "name": "Master Bedroom LED Controller",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293",
+        "platform": "shelly",
+        "supported_features": 36,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-light_0",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.shellyrgbw2_e868e7f2d293_power",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4a2a35a057e5d058b78f0c7a459bb08a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 power",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-light_0-power",
+        "unit_of_measurement": "W"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.shellyrgbw2_e868e7f2d293_energy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "72f9015f537d173f8a673f822bc8d7bb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "kWh"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "energy",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 energy",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-light_0-energy",
+        "unit_of_measurement": "kWh"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.shellyrgbw2_e868e7f2d293_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1a8b6a79dd091368c0764052fe089f77",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 rssi",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-rssi",
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.shellyrgbw2_e868e7f2d293_uptime",
+        "hidden_by": null,
+        "icon": null,
+        "id": "169bc40b51577d02d361461d8534ea0d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 uptime",
+        "platform": "shelly",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-uptime",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "update.shellyrgbw2_e868e7f2d293_firmware_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9c352c9de0b05f9e53619a5ab56c6b8b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 firmware update",
+        "platform": "shelly",
+        "supported_features": 5,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-fwupdate",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "763020555073f3d24c357ff46f010b2b",
+        "device_class": null,
+        "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "update.shellyrgbw2_e868e7f2d293_beta_firmware_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "74b44926041994186c0c582b7da634fc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "shellyrgbw2-E868E7F2D293 beta firmware update",
+        "platform": "shelly",
+        "supported_features": 5,
+        "translation_key": null,
+        "unique_id": "E868E7F2D293-fwupdate_beta",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1704343770899"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.master_bedroom_bed_motion",
+        "hidden_by": null,
+        "icon": null,
+        "id": "38b4afbccf4c7f1a03d30c4466214513",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Master Bedroom Bed Motion",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1704343770899",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.frigate_notification_pc_test",
-        "id": "37cd8cdb9736abd82cb405b1fca86f32",
-        "orphaned_timestamp": 1701562151.2041583,
-        "platform": "automation",
-        "unique_id": "1701561680820"
-      },
       {
         "config_entry_id": null,
         "entity_id": "input_text.last_frigate_event_id",
