@@ -2184,8 +2184,7 @@
           == 'finnley_room' and trigger.payload_json['after']['label'] in ['cat',
           'dog', 'bird'] and isWatchedZones_ns.isWatchedZones}}"
     - condition: template
-      value_template: '{{trigger.payload_json[''before''][''id''] != trigger.payload_json[''after''][''id'']
-        or trigger.payload_json[''before''][''end_time''] == None}}'
+      value_template: '{{trigger.payload_json[''type'']|lower == ''new''}}'
       enabled: true
     - condition: state
       entity_id: input_boolean.snoozed_frigate_pc_notifications
@@ -2446,6 +2445,11 @@
       device_id: fc14d585e20bc18f0fae2b868f5849f3
       entity_id: c6e3361713d1b57b3eb8fc217f9c08b4
       domain: light
+    - condition: sun
+      before: sunrise
+      before_offset: '1:00:00'
+      after: sunset
+      after_offset: '-1:00:00'
   action:
   - type: turn_on
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a

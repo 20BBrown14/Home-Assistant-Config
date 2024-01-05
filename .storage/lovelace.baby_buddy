@@ -36,6 +36,9 @@
                   "entity": "input_number.finnley_feeding_amount"
                 },
                 {
+                  "entity": "input_number.finnley_feeding_time"
+                },
+                {
                   "type": "divider",
                   "style": {
                     "height": "2px"

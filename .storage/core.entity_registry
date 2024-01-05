@@ -57382,17 +57382,73 @@
         "translation_key": null,
         "unique_id": "1704343770899",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.finnley_feeding_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c39825e0dea77b90b64d60b35cd241c6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:av-timer",
+        "original_name": "Finnley Feeding Time",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_feeding_time",
+        "unit_of_measurement": "min"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.reset_finnley_feeding_form",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e1fb8e22ae3af7d07ee43c74106e38c6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Finnley Feeding Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reset_finnley_feeding_form",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
-      {
-        "config_entry_id": null,
-        "entity_id": "input_text.last_frigate_event_id",
-        "id": "ad3c0da94fcf2da2789c3a5720653aaa",
-        "orphaned_timestamp": 1701729651.3690534,
-        "platform": "input_text",
-        "unique_id": "last_frigate_event_id"
-      },
       {
         "config_entry_id": null,
         "entity_id": "automation.automation_49",
@@ -57408,6 +57464,22 @@
         "orphaned_timestamp": 1704163645.1757553,
         "platform": "automation",
         "unique_id": "1701399650903"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "input_datetime.finnley_feeding_time",
+        "id": "b6616946d28e58b83636eac426690cd6",
+        "orphaned_timestamp": 1704413911.7085488,
+        "platform": "input_datetime",
+        "unique_id": "finnley_feeding_time"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "timer.finnley_feeding_timer",
+        "id": "5b180a05a3c172fe1dc951e9126adf26",
+        "orphaned_timestamp": 1704413941.9514456,
+        "platform": "timer",
+        "unique_id": "finnley_feeding_timer"
       }
     ]
   }

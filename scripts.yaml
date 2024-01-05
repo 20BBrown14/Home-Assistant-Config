@@ -933,6 +933,27 @@ baby_buddy_test:
             title: 'Yes'
             uri: /baby-buddy/feeding
       enabled: true
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_samantha_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_samantha_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Feeding for Finnely Added!
+        data:
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_feeding
+          actions:
+          - action: NO_ADDITIONAL_FEEDING_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/feeding
+      enabled: true
+    enabled: false
   - service: input_boolean.turn_on
     data: {}
     target:
@@ -948,11 +969,19 @@ baby_buddy_test:
       entity_id:
       - input_boolean.waiting_for_finnley_feeding_confirmation
       to: 'off'
+    - platform: device
+      domain: mqtt
+      device_id: 80c996aef1daadbad8c4ffc3926a0921
+      type: action
+      subtype: 'on'
+      discovery_id: 0x4c5bb3fffe4c336b action_on
     timeout:
       hours: 0
       minutes: 30
       seconds: 0
       milliseconds: 0
+  - service: script.reset_finnley_feeding_form
+    data: {}
   - service: babybuddy.add_feeding
     data:
       type: '{{states(''select.baby_buddy_feeding_type'')}}'
@@ -964,16 +993,6 @@ baby_buddy_test:
         information from HA Automation(s)''}}'
     target:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
-  - service: input_number.set_value
-    data:
-      value: 0
-    target:
-      entity_id: input_number.finnley_feeding_amount
-  - service: input_text.set_value
-    data:
-      value: ''
-    target:
-      entity_id: input_text.finnley_feeding_notes
   - service: notify.all_mobile_phones
     data:
       data:
@@ -983,8 +1002,9 @@ baby_buddy_test:
     data: {}
     target:
       entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
-  mode: restart
+  mode: queued
   icon: mdi:food
+  max: 5
 finnley_confirm_feeding_details:
   alias: Finnley Confirm Feeding Details
   sequence:
@@ -1072,3 +1092,20 @@ baby_buddy_finnley_diaper_change:
       entity_id: input_boolean.waiting_for_finnley_diaper_change_confirmation
   mode: restart
   icon: mdi:human-baby-changing-table
+reset_finnley_feeding_form:
+  alias: Reset Finnley Feeding Form
+  sequence:
+  - service: input_number.set_value
+    data:
+      value: 0
+    target:
+      entity_id:
+      - input_number.finnley_feeding_time
+      - input_number.finnley_feeding_amount
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id: input_text.finnley_feeding_notes
+  mode: single
+  icon: mdi:format-clear
