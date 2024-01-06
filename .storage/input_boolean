@@ -68,6 +68,11 @@
         "id": "waiting_for_finnley_diaper_change_confirmation",
         "name": "Waiting for Finnley Diaper Change Confirmation",
         "icon": "mdi:timer-star"
+      },
+      {
+        "id": "finnley_feeding_use_timer",
+        "name": "Finnley Feeding Use Timer",
+        "icon": "mdi:timer"
       }
     ]
   }

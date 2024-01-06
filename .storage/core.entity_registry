@@ -56811,38 +56811,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "script.baby_buddy_finnley_diaper_change",
-        "hidden_by": null,
-        "icon": null,
-        "id": "f5e3e096e4dcd6d00293b0d0269dcd01",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": true
-          },
-          "conversation": {
-            "should_expose": true
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:human-baby-changing-table",
-        "original_name": "Baby Buddy - Finnley - Diaper Change",
-        "platform": "script",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "baby_buddy_finnley_diaper_change",
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": {
           "state_class": "measurement"
         },
@@ -57446,6 +57414,136 @@
         "translation_key": null,
         "unique_id": "reset_finnley_feeding_form",
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.reset_finnley_diaper_changer_form",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0872d5c167de46b94312f290f983cff2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Finnley Diaper Change Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reset_finnley_diaper_changer_form",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.baby_buddy_finnley_diaper_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f5e3e096e4dcd6d00293b0d0269dcd01",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:food",
+        "original_name": "Baby Buddy - Finnley - Diaper Change",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "baby_buddy_finnley_diaper_change",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.finnley_feeding_use_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "75ef1282625ae3df7c66118b267a7423",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer",
+        "original_name": "Finnley Feeding Use Timer",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_feeding_use_timer",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1704508016555"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.coffee_pot",
+        "hidden_by": null,
+        "icon": null,
+        "id": "81eb7a170f8c2267cfbbb3aad9bb1017",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Coffee Pot",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1704508016555",
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -57480,6 +57578,22 @@
         "orphaned_timestamp": 1704413941.9514456,
         "platform": "timer",
         "unique_id": "finnley_feeding_timer"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "input_datetime.finnley_feeding_stop_time",
+        "id": "ca59f8975e2b5d4dbc080a8cf7768c1b",
+        "orphaned_timestamp": 1704488921.3862703,
+        "platform": "input_datetime",
+        "unique_id": "finnley_feeding_stop_time"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "input_datetime.finnley_feeding_start_time",
+        "id": "f79fa169d4ebbadf8bf3968880546626",
+        "orphaned_timestamp": 1704488925.9540057,
+        "platform": "input_datetime",
+        "unique_id": "finnley_feeding_start_time"
       }
     ]
   }

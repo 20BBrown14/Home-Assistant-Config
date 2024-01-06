@@ -18,6 +18,9 @@
                   "entity": "input_boolean.waiting_for_finnley_feeding_confirmation"
                 },
                 {
+                  "entity": "sensor.finnley_brown_last_timer"
+                },
+                {
                   "type": "divider",
                   "style": {
                     "height": "2px"
@@ -37,6 +40,9 @@
                 },
                 {
                   "entity": "input_number.finnley_feeding_time"
+                },
+                {
+                  "entity": "input_boolean.finnley_feeding_use_timer"
                 },
                 {
                   "type": "divider",

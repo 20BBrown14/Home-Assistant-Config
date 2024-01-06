@@ -2402,11 +2402,72 @@
     type: action
     subtype: 'on'
     discovery_id: 0x4c5bb3fffe4c336b action_on
+    id: feeding_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 80c996aef1daadbad8c4ffc3926a0921
+    type: action
+    subtype: arrow_left_click
+    discovery_id: 0x4c5bb3fffe4c336b action_arrow_left_click
+    id: wet_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 80c996aef1daadbad8c4ffc3926a0921
+    type: action
+    subtype: arrow_right_click
+    discovery_id: 0x4c5bb3fffe4c336b action_arrow_right_click
+    id: solid_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 80c996aef1daadbad8c4ffc3926a0921
+    type: action
+    subtype: 'off'
+    discovery_id: 0x4c5bb3fffe4c336b action_off
+    id: wet_solid_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 80c996aef1daadbad8c4ffc3926a0921
+    type: action
+    subtype: brightness_move_down
+    discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_down
+    id: timer_toggle_trigger
   condition: []
   action:
-  - service: script.baby_buddy_test
-    data: {}
-  mode: single
+  - if:
+    - condition: trigger
+      id:
+      - feeding_trigger
+    then:
+    - service: script.baby_buddy_test
+      data: {}
+  - if:
+    - condition: trigger
+      id:
+      - wet_diaper_trigger
+      - solid_diaper_trigger
+      - wet_solid_diaper_trigger
+    then:
+    - service: select.select_option
+      data:
+        option: '{% if trigger.id == ''wet_diaper_trigger'' %} Wet {% elif trigger.id
+          == ''solid_diaper_trigger'' %} Solid {% elif trigger.id == ''wet_solid_diaper_trigger''
+          %} Wet and Solid {%endif%}'
+      target:
+        entity_id: select.baby_buddy_diaper_type
+    - service: script.baby_buddy_finnley_diaper_change
+      data: {}
+    enabled: true
+  - if:
+    - condition: trigger
+      id:
+      - timer_toggle_trigger
+    then:
+    - service: switch.turn_on
+      data: {}
+      target:
+        entity_id: switch.finnley_brown_timer
+  mode: parallel
+  max: 10
 - id: '1704164614912'
   alias: Reset Snoozed Frigate Notifications
   description: ''
@@ -2455,12 +2516,40 @@
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
     entity_id: f134af8facf63fbd170622fcd6275e7e
     domain: light
-  - wait_template: '{{states(''binary_sensor.master_underbed_motion_sensor_samantha_side_motion'')|lower
-      in [''unavailable'', ''off''] and states(''binary_sensor.master_underbed_motion_sensor_branden_side_motion'')|lower
-      in [''unavailable'', ''off'']}}'
-    continue_on_timeout: true
+  - repeat:
+      sequence:
+      - delay:
+          hours: 0
+          minutes: 0
+          seconds: 30
+          milliseconds: 0
+      while:
+      - condition: template
+        value_template: '{{states(''binary_sensor.master_underbed_motion_sensor_samantha_side_motion'')|lower
+          not in [''unavailable'', ''off''] or states(''binary_sensor.master_underbed_motion_sensor_branden_side_motion'')|lower
+          not in [''unavailable'', ''off'']}}'
   - type: turn_off
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
     entity_id: f134af8facf63fbd170622fcd6275e7e
     domain: light
+  mode: single
+- id: '1704508016555'
+  alias: Coffee Pot
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 94f08c0f4eea821bff6fee7adc81377b
+    entity_id: 6a800b3343e78cd9c31455ab829ec30f
+    domain: switch
+    for:
+      hours: 0
+      minutes: 30
+      seconds: 0
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 94f08c0f4eea821bff6fee7adc81377b
+    entity_id: 6a800b3343e78cd9c31455ab829ec30f
+    domain: switch
   mode: single
