@@ -55880,7 +55880,7 @@
         "config_entry_id": "1d0818ee2933eee628176bd174a58c84",
         "device_class": null,
         "device_id": "b4f27ae4844874a563008559d106f098",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.heated_blanket_switch_bluetooth_signal",
         "hidden_by": null,
