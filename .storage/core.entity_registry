@@ -57009,7 +57009,7 @@
         "config_entry_id": "763020555073f3d24c357ff46f010b2b",
         "device_class": null,
         "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": null,
         "entity_id": "binary_sensor.shellyrgbw2_e868e7f2d293_input",
         "hidden_by": null,
@@ -57019,6 +57019,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -57038,7 +57041,7 @@
         "config_entry_id": "763020555073f3d24c357ff46f010b2b",
         "device_class": null,
         "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "binary_sensor.shellyrgbw2_e868e7f2d293_cloud",
         "hidden_by": null,
@@ -57048,6 +57051,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -57143,7 +57149,7 @@
         "config_entry_id": "763020555073f3d24c357ff46f010b2b",
         "device_class": null,
         "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": null,
         "entity_id": "sensor.shellyrgbw2_e868e7f2d293_power",
         "hidden_by": null,
@@ -57153,6 +57159,13 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "sensor": {
+            "display_precision": null,
+            "suggested_display_precision": 1
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -57174,7 +57187,7 @@
         "config_entry_id": "763020555073f3d24c357ff46f010b2b",
         "device_class": null,
         "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": null,
         "entity_id": "sensor.shellyrgbw2_e868e7f2d293_energy",
         "hidden_by": null,
@@ -57187,6 +57200,13 @@
             "suggested_unit_of_measurement": "kWh"
           },
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "sensor": {
+            "display_precision": null,
+            "suggested_display_precision": 2
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -57208,7 +57228,7 @@
         "config_entry_id": "763020555073f3d24c357ff46f010b2b",
         "device_class": null,
         "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.shellyrgbw2_e868e7f2d293_rssi",
         "hidden_by": null,
@@ -57218,6 +57238,12 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "sensor": {
+            "display_precision": null
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -57237,7 +57263,7 @@
         "config_entry_id": "763020555073f3d24c357ff46f010b2b",
         "device_class": null,
         "device_id": "c7d0f87a2a9d9c765892a9d5e9f5924a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.shellyrgbw2_e868e7f2d293_uptime",
         "hidden_by": null,
@@ -57247,6 +57273,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },

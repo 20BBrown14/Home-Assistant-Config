@@ -2778,7 +2778,7 @@
         "model": "Shelly RGBW2",
         "name_by_user": null,
         "name": "shellyrgbw2-E868E7F2D293",
-        "sw_version": "20221013-134509/v1.12-1-g1abbae93c-rgbw2-prod",
+        "sw_version": "20231107-164040/v1.14.1-rc1-g0617c15",
         "via_device_id": null
       }
     ],
