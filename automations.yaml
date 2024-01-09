@@ -2428,8 +2428,8 @@
     domain: mqtt
     device_id: 80c996aef1daadbad8c4ffc3926a0921
     type: action
-    subtype: brightness_move_down
-    discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_down
+    subtype: brightness_move_up
+    discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_up
     id: timer_toggle_trigger
   condition: []
   action:
@@ -2462,10 +2462,8 @@
       id:
       - timer_toggle_trigger
     then:
-    - service: switch.turn_on
+    - service: script.toggle_finnley_feeding_timer
       data: {}
-      target:
-        entity_id: switch.finnley_brown_timer
   mode: parallel
   max: 10
 - id: '1704164614912'
@@ -2552,4 +2550,72 @@
     device_id: 94f08c0f4eea821bff6fee7adc81377b
     entity_id: 6a800b3343e78cd9c31455ab829ec30f
     domain: switch
+  mode: single
+- id: '1704749961418'
+  alias: Baby Buddy - Forms
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - timer.finnley_feeding_timer
+    to: active
+    id: finnley_feeding_timer_started
+  - platform: state
+    entity_id:
+    - timer.finnley_feeding_timer
+    to: idle
+    id: finnley_feeding_timer_stopped
+  - platform: event
+    event_type: FINNLEY_FEEDING_CONFIRMED
+    id: submit_feeding_form
+  - platform: event
+    event_type: FINNLEY_DIAPER_CHANGE_CONFIRMED
+    id: submit_diaper_change
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - finnley_feeding_timer_started
+    then:
+    - service: input_boolean.turn_on
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.finnley_feeding_use_timer
+  - if:
+    - condition: trigger
+      id:
+      - finnley_feeding_timer_stopped
+    then:
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.finnley_feeding_use_timer
+  - if:
+    - condition: and
+      conditions:
+      - condition: trigger
+        id:
+        - submit_diaper_change
+      - condition: state
+        entity_id: input_boolean.waiting_for_finnley_diaper_change_confirmation
+        state: 'off'
+    then:
+    - service: script.submit_baby_buddy_diaper_change
+      data: {}
+  - if:
+    - condition: and
+      conditions:
+      - condition: trigger
+        id:
+        - submit_feeding_form
+      - condition: state
+        entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
+        state: 'off'
+    then:
+    - service: script.submit_baby_buddy_feeding
+      metadata: {}
+      data: {}
   mode: single

@@ -54,16 +54,18 @@ reset_garage_light_status_leds:
   - device_id: fc14d585e20bc18f0fae2b868f5849f3
     domain: zwave_js
     type: set_config_parameter
+    endpoint: 0
     parameter: 21
     bitmask:
-    subtype: 21 (Status LED 1 Color)
+    subtype: 21 (Status LED 1 Color) on endpoint 0
     value: 0
   - device_id: 171c8f1cbdc67a075d1170858166fd45
     domain: zwave_js
     type: set_config_parameter
+    endpoint: 0
     parameter: 21
     bitmask:
-    subtype: 21 (Status LED 1 Color)
+    subtype: 21 (Status LED 1 Color) on endpoint 0
     value: 0
   mode: single
 set_garage_light_status_leds:
@@ -953,9 +955,10 @@ baby_buddy_test:
             title: 'Yes'
             uri: /baby-buddy/feeding
       enabled: true
-    enabled: true
+    enabled: false
   - service: script.reset_finnley_feeding_form
     data: {}
+    enabled: true
   - service: input_boolean.turn_on
     data: {}
     target:
@@ -982,31 +985,14 @@ baby_buddy_test:
       minutes: 30
       seconds: 0
       milliseconds: 0
-  - service: babybuddy.add_feeding
-    data:
-      type: '{{states(''select.baby_buddy_feeding_type'')}}'
-      method: '{{states(''select.baby_buddy_feeding_method'')}}'
-      timer: '{{states(''input_boolean.finnley_feeding_use_timer'') == ''on''}}'
-      amount: '{% if states(''input_number.finnley_feeding_amount'') | float == 0
-        %} 0 {% else %} {{states(''input_number.finnley_feeding_amount'') | float}}
-        {% endif %}'
-      notes: '{{states(''input_text.finnley_feeding_notes'') or ''Added without additional
-        information from HA Automation(s)''}}'
-      start: '{{(now() - timedelta(minutes=(states(''input_number.finnley_feeding_time'')|int))).strftime(''%H:%M:%S'')}}'
-      end: '{{now().strftime(''%H:%M:%S'')}}'
-    target:
-      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
-  - service: script.reset_finnley_feeding_form
+  - service: script.submit_baby_buddy_feeding
+    metadata: {}
     data: {}
   - service: notify.all_mobile_phones
     data:
       data:
         tag: confirm_finnley_feeding
       message: clear_notification
-  - service: input_boolean.turn_off
-    data: {}
-    target:
-      entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
   mode: queued
   icon: mdi:food
   max: 5
@@ -1047,10 +1033,6 @@ reset_finnley_feeding_form:
       option: Breast milk
     target:
       entity_id: select.baby_buddy_feeding_type
-  - service: input_boolean.turn_off
-    data: {}
-    target:
-      entity_id: input_boolean.finnley_feeding_use_timer
   mode: single
   icon: mdi:format-clear
 reset_finnley_diaper_changer_form:
@@ -1058,7 +1040,7 @@ reset_finnley_diaper_changer_form:
   sequence:
   - service: input_number.set_value
     data:
-      value: 0
+      value: 1
     target:
       entity_id: input_number.finnley_diaper_amount
   - service: input_text.set_value
@@ -1158,6 +1140,85 @@ baby_buddy_finnley_diaper_change:
       minutes: 30
       seconds: 0
       milliseconds: 0
+  - service: script.submit_baby_buddy_diaper_change
+    metadata: {}
+    data: {}
+  - service: notify.all_mobile_phones
+    data:
+      data:
+        tag: confirm_finnley_diaper_change
+      message: clear_notification
+  mode: queued
+  icon: mdi:food
+  max: 5
+toggle_finnley_feeding_timer:
+  alias: Toggle Finnley Feeding Timer
+  sequence:
+  - if:
+    - condition: state
+      entity_id: timer.finnley_feeding_timer
+      state: active
+    then:
+    - service: timer.pause
+      metadata: {}
+      data: {}
+      target:
+        entity_id: timer.finnley_feeding_timer
+    else:
+    - service: timer.start
+      metadata: {}
+      data: {}
+      target:
+        entity_id: timer.finnley_feeding_timer
+  mode: single
+  icon: mdi:timer
+submit_baby_buddy_feeding:
+  alias: Submit Baby Buddy Feeding
+  sequence:
+  - service: babybuddy.add_feeding
+    data:
+      type: '{{states(''select.baby_buddy_feeding_type'')}}'
+      method: '{{states(''select.baby_buddy_feeding_method'')}}'
+      amount: '{% if states(''input_number.finnley_feeding_amount'') | float == 0
+        %} 0 {% else %} {{states(''input_number.finnley_feeding_amount'') | float}}
+        {% endif %}'
+      notes: '{{states(''input_text.finnley_feeding_notes'') or ''Added without additional
+        information from HA Automation(s)''}}'
+      start: "{% if states('input_boolean.finnley_feeding_use_timer') == 'on' and
+        states('timer.finnley_feeding_timer') != 'idle' %}\n  {% set t = 'timer.finnley_feeding_timer'
+        %}\n  {% if is_state(t, 'active') %}\n    {% set d = state_attr(t,'duration')
+        | as_timedelta %}\n    {% set f = state_attr(t, 'finishes_at') | as_datetime
+        %}\n    {% set duration = ( d.total_seconds() - ( f  - now()).total_seconds())
+        \ | timestamp_custom('%H:%M:%S', false) %}\n  {% elif is_state(t, 'paused')
+        %}\n    {% set d = state_attr(t,'duration') | as_timedelta %}\n    {% set
+        f = state_attr(t, 'remaining') | as_timedelta %}\n    {% set duration = (
+        d.total_seconds() - f.total_seconds())  | timestamp_custom('%H:%M:%S', false)
+        %}\n  {% else %}\n    00:00:00\n  {% endif %}\n  {{(now() - duration|as_timedelta).strftime('%H:%M:%S')}}\n{%
+        else %}\n  {{(now() - timedelta(minutes=(states('input_number.finnley_feeding_time')|int))).strftime('%H:%M:%S')}}\n{%
+        endif %}"
+      end: '{{now().strftime(''%H:%M:%S'')}}'
+    target:
+      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
+  - service: script.reset_finnley_feeding_form
+    data: {}
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
+  - service: timer.cancel
+    metadata: {}
+    data: {}
+    target:
+      entity_id: timer.finnley_feeding_timer
+  - service: input_boolean.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.finnley_feeding_use_timer
+  mode: queued
+submit_baby_buddy_diaper_change:
+  alias: Submit Baby Buddy Diaper Change
+  sequence:
   - service: babybuddy.add_diaper_change
     data:
       type: '{{states(''select.baby_buddy_diaper_type'')}}'
@@ -1170,16 +1231,9 @@ baby_buddy_finnley_diaper_change:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
   - service: script.reset_finnley_diaper_changer_form
     data: {}
-  - service: notify.all_mobile_phones
-    data:
-      data:
-        tag: confirm_finnley_diaper_change
-      message: clear_notification
   - service: input_boolean.turn_off
     data: {}
     target:
       entity_id:
       - input_boolean.waiting_for_finnley_diaper_change_confirmation
   mode: queued
-  icon: mdi:food
-  max: 5

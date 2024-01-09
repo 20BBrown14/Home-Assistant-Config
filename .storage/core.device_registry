@@ -1,32 +1,9 @@
 {
   "version": 1,
-  "minor_version": 3,
+  "minor_version": 4,
   "key": "core.device_registry",
   "data": {
     "devices": [
-      {
-        "area_id": null,
-        "config_entries": [
-          "9f0e41bbe33813c288826b857bc76d90"
-        ],
-        "configuration_url": "https://www.met.no/en",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": "service",
-        "hw_version": null,
-        "id": "36e6b3cf994c47d3ca7a47bb4454334e",
-        "identifiers": [
-          [
-            "met"
-          ]
-        ],
-        "manufacturer": "Met.no",
-        "model": "Forecast",
-        "name_by_user": null,
-        "name": "Forecast",
-        "sw_version": null,
-        "via_device_id": null
-      },
       {
         "area_id": null,
         "config_entries": [
@@ -52,6 +29,7 @@
         "model": "700 Series",
         "name_by_user": null,
         "name": "USB Controller",
+        "serial_number": null,
         "sw_version": "7.18.1",
         "via_device_id": null
       },
@@ -69,17 +47,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-19-99:18756:13111"
+            "3343393661-19"
           ],
           [
             "zwave_js",
-            "3343393661-19"
+            "3343393661-19-99:18756:13111"
           ]
         ],
         "manufacturer": "Enbrighten",
         "model": "55258 / ZW4002",
         "name_by_user": null,
         "name": "Ceiling Fan",
+        "serial_number": null,
         "sw_version": "5.50",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -98,25 +77,26 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-21-786:65280:65292"
+            "3343393661-21"
           ],
           [
             "zwave_js",
-            "3343393661-21"
+            "3343393661-21-786:65280:65292"
           ]
         ],
         "manufacturer": "Minoston",
         "model": "MP21Z / MP31Z",
         "name_by_user": null,
         "name": "Bedside Fan",
+        "serial_number": null,
         "sw_version": "1.0.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
       {
         "area_id": "master_bedroom",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
-          "4d198b0c52d3f21e86684be21461084f"
+          "4d198b0c52d3f21e86684be21461084f",
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -138,6 +118,7 @@
         "model": "MP21Z / MP31Z",
         "name_by_user": "Bedside Lamp",
         "name": "Bedside Lamp",
+        "serial_number": null,
         "sw_version": "1.0.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -155,17 +136,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-23"
+            "3343393661-23-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-23-99:18770:12597"
+            "3343393661-23"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Dining Room Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -194,6 +176,7 @@
         "model": "PIR Motion Sensor v2.5",
         "name_by_user": null,
         "name": "Garage Motion Sensor",
+        "serial_number": null,
         "sw_version": "10.1",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -211,17 +194,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-25-12:17479:16439"
+            "3343393661-25"
           ],
           [
             "zwave_js",
-            "3343393661-25"
+            "3343393661-25-12:17479:16439"
           ]
         ],
         "manufacturer": "HomeSeer Technologies",
         "model": "HS-WX300",
         "name_by_user": null,
         "name": "Garage Light",
+        "serial_number": null,
         "sw_version": "1.13.6",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -250,6 +234,7 @@
         "model": "ZEN31",
         "name_by_user": null,
         "name": "LED Controller",
+        "serial_number": null,
         "sw_version": "5.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -278,6 +263,7 @@
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Kitchen Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -308,6 +294,7 @@
         "model": "ZW97",
         "name_by_user": null,
         "name": "Deck Lights",
+        "serial_number": null,
         "sw_version": "1.1.1",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -332,6 +319,7 @@
         "model": "Aqara wireless switch (WXKG11LM)",
         "name_by_user": null,
         "name": "Bedside Lamp Light Button",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -356,6 +344,7 @@
         "model": "Aqara wireless switch (WXKG11LM)",
         "name_by_user": null,
         "name": "Garage Light Button",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -380,6 +369,7 @@
         "model": "Google Nest Mini",
         "name_by_user": null,
         "name": "Master Bedroom speaker",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -404,6 +394,7 @@
         "model": "Google Nest Mini",
         "name_by_user": null,
         "name": "Basement speaker",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -428,6 +419,7 @@
         "model": "Nest Audio",
         "name_by_user": null,
         "name": "Kitchen speaker",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -452,6 +444,7 @@
         "model": "SM-N986U",
         "name_by_user": null,
         "name": "Branden's Phone",
+        "serial_number": null,
         "sw_version": "33",
         "via_device_id": null
       },
@@ -476,6 +469,7 @@
         "model": "SM-G991U",
         "name_by_user": null,
         "name": "Samantha's Phone",
+        "serial_number": null,
         "sw_version": "34",
         "via_device_id": null
       },
@@ -500,6 +494,7 @@
         "model": "SHRGBC",
         "name_by_user": null,
         "name": "WiZ RGBW Tunable DA095C",
+        "serial_number": null,
         "sw_version": "1.30.1",
         "via_device_id": null
       },
@@ -524,6 +519,7 @@
         "model": "ecobee Room Sensor",
         "name_by_user": null,
         "name": "Master Bedroom",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -548,6 +544,7 @@
         "model": "ecobee Room Sensor",
         "name_by_user": null,
         "name": "Basement",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -572,6 +569,7 @@
         "model": "ecobee Room Sensor",
         "name_by_user": null,
         "name": "Living Room",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -596,6 +594,7 @@
         "model": "ecobee4 Smart Thermostat",
         "name_by_user": null,
         "name": "Thermostat",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -620,6 +619,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Wax Warmer",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -644,6 +644,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Left Bush Lights",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -668,6 +669,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Right Bush Lights",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -692,6 +694,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Christmas Tree",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -716,6 +719,7 @@
         "model": "Element color plus E12 (E1F-N5E)",
         "name_by_user": null,
         "name": "Outdoor Sconce Light 4",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -740,6 +744,7 @@
         "model": "Element color plus E12 (E1F-N5E)",
         "name_by_user": null,
         "name": "Outdoor Sconce Light 3",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -757,17 +762,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-29-99:18770:12597"
+            "3343393661-29"
           ],
           [
             "zwave_js",
-            "3343393661-29"
+            "3343393661-29-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Entry Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -796,6 +802,7 @@
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Hallway Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -824,6 +831,7 @@
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Front Yard Lights",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -841,17 +849,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-32-99:18770:12597"
+            "3343393661-32"
           ],
           [
             "zwave_js",
-            "3343393661-32"
+            "3343393661-32-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Living Room Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -876,6 +885,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Upstairs Window Decoration",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -900,6 +910,7 @@
         "model": "Spotify premium",
         "name_by_user": null,
         "name": "Spotify Branden Brown",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -924,6 +935,7 @@
         "model": "Aqara water leak sensor (SJCGQ11LM)",
         "name_by_user": null,
         "name": "Sump Pump Leak Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -948,6 +960,7 @@
         "model": "",
         "name_by_user": null,
         "name": "HACS",
+        "serial_number": null,
         "sw_version": "1.33.0",
         "via_device_id": null
       },
@@ -977,6 +990,7 @@
         "model": "RM4 pro",
         "name_by_user": null,
         "name": "Basement Universal Remote",
+        "serial_number": null,
         "sw_version": 62092,
         "via_device_id": null
       },
@@ -994,17 +1008,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ],
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
         "model": "ZW187",
         "name_by_user": null,
         "name": "Garage Entry",
+        "serial_number": null,
         "sw_version": "1.5.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1029,6 +1044,7 @@
         "model": "Aqara water leak sensor (SJCGQ11LM)",
         "name_by_user": null,
         "name": "Water Heater Leak Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1053,6 +1069,7 @@
         "model": "Aqara water leak sensor (SJCGQ11LM)",
         "name_by_user": null,
         "name": "Kitchen Sink Leak Sensor",
+        "serial_number": null,
         "sw_version": "3000-0001",
         "via_device_id": null
       },
@@ -1077,6 +1094,7 @@
         "model": "Aqara water leak sensor (SJCGQ11LM)",
         "name_by_user": null,
         "name": "Upstairs Bathroom Sink Leak Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1105,6 +1123,7 @@
         "model": "46203 / ZW3010",
         "name_by_user": null,
         "name": "Basement Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1133,6 +1152,7 @@
         "model": "46201 / ZW4008",
         "name_by_user": null,
         "name": "Flood Light",
+        "serial_number": null,
         "sw_version": "5.54",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1161,6 +1181,7 @@
         "model": "ZW187",
         "name_by_user": null,
         "name": "Front Door",
+        "serial_number": null,
         "sw_version": "1.5.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1189,6 +1210,7 @@
         "model": "HS-WX300",
         "name_by_user": null,
         "name": "Master Bedroom Light",
+        "serial_number": null,
         "sw_version": "1.13.6",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1213,6 +1235,7 @@
         "model": "Element color plus E12 (E1F-N5E)",
         "name_by_user": null,
         "name": "Outdoor Sconce Light 1",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1237,6 +1260,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Subbasement Filter",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -1261,6 +1285,7 @@
         "model": "Element color plus E12 (E1F-N5E)",
         "name_by_user": null,
         "name": "Outdoor Sconce Light 2",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1285,6 +1310,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Basement Window 4",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1309,6 +1335,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Living Room Window 3",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1333,6 +1360,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Living Room Window 2",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1357,6 +1385,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Living Room Window 1",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1381,6 +1410,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Master Bedroom Window 2",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1405,6 +1435,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Master Bedroom Window 1",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1429,6 +1460,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Bedroom Window",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1453,6 +1485,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Office Window",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1477,6 +1510,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Basement Window 3",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1501,6 +1535,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Basement Window 2",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1525,6 +1560,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Basement Window 1",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1549,6 +1585,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Subbasement Window",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1566,17 +1603,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-39"
+            "3343393661-39-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-39-881:258:187"
+            "3343393661-39"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
         "model": "ZW187",
         "name_by_user": null,
         "name": "Kitchen Door",
+        "serial_number": null,
         "sw_version": "1.5.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1601,6 +1639,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Garage LED Bar",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -1625,6 +1664,7 @@
         "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
         "name_by_user": null,
         "name": "Garage Temp Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1649,6 +1689,7 @@
         "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
         "name_by_user": null,
         "name": "Master Bath Humidity Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1673,6 +1714,7 @@
         "model": null,
         "name_by_user": null,
         "name": "Sun",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1701,6 +1743,7 @@
         "model": "ZEN52",
         "name_by_user": "Basement Bathroom Relay",
         "name": "Basement Bath Relay",
+        "serial_number": null,
         "sw_version": "1.40.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1725,6 +1768,7 @@
         "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
         "name_by_user": null,
         "name": "Outside Temp Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1749,6 +1793,7 @@
         "model": "Temperature and humidity sensor (SNZB-02)",
         "name_by_user": "Finnley's Room Temperature Sensor",
         "name": "Finnley's Room Temperature Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1773,6 +1818,7 @@
         "model": "Temperature and humidity sensor (SNZB-02)",
         "name_by_user": null,
         "name": "Office Temperature Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1790,17 +1836,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-41"
+            "3343393661-41-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-41-634:28672:40962"
+            "3343393661-41"
           ]
         ],
         "manufacturer": "Zooz",
         "model": "ZEN72 800LR",
         "name_by_user": "Master Bath Light",
         "name": "Master Bath Light",
+        "serial_number": null,
         "sw_version": "3.30.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1818,17 +1865,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-44-634:28672:40962"
+            "3343393661-44"
           ],
           [
             "zwave_js",
-            "3343393661-44"
+            "3343393661-44-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
         "model": "ZEN72 800LR",
         "name_by_user": null,
         "name": "Upstairs Bathroom Light",
+        "serial_number": null,
         "sw_version": "3.30.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1846,17 +1894,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ]
         ],
         "manufacturer": "Zooz",
         "model": "ZEN72 800LR",
         "name_by_user": null,
         "name": "Finnley's Room Light",
+        "serial_number": null,
         "sw_version": "3.30.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1874,17 +1923,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-46"
+            "3343393661-46-99:18756:12593"
           ],
           [
             "zwave_js",
-            "3343393661-46-99:18756:12593"
+            "3343393661-46"
           ]
         ],
         "manufacturer": "GE",
         "model": "14287 / ZW4002",
         "name_by_user": null,
         "name": "Finnley's Room Ceilling Fan",
+        "serial_number": null,
         "sw_version": "5.24",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -1914,6 +1964,7 @@
         "model": "i155220",
         "name_by_user": null,
         "name": "Roomba",
+        "serial_number": "FCM0124025D4",
         "sw_version": "daredevil+2.6.0+daredevil-release+163",
         "via_device_id": null
       },
@@ -1938,6 +1989,7 @@
         "model": "Zigbee smart plug (US version) (S31ZB)",
         "name_by_user": null,
         "name": "Office Zigbee Router",
+        "serial_number": null,
         "sw_version": "1.0.7",
         "via_device_id": null
       },
@@ -1962,6 +2014,7 @@
         "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
         "name_by_user": null,
         "name": "Subbasement Temperature Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -1986,6 +2039,7 @@
         "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
         "name_by_user": null,
         "name": "Storage Room Temperature Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -2010,6 +2064,7 @@
         "model": "Aqara temperature, humidity and pressure sensor (WSDCGQ11LM)",
         "name_by_user": null,
         "name": "Upstairs Bathroom Temperature Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -2034,6 +2089,7 @@
         "model": "LiftMaster Wi-Fi GDO DC w/Battery Backup",
         "name_by_user": null,
         "name": "Garage Door",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "4bda6147c8298250f44d8ec9ca5bf4ba"
       },
@@ -2058,6 +2114,7 @@
         "model": "LiftMaster Wi-Fi GDO DC w/Battery Backup",
         "name_by_user": "Hannah's Garage Door",
         "name": "Garage Door",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "f676be4320b2383a1d5f5599487193e7"
       },
@@ -2082,6 +2139,7 @@
         "model": "Chamberlain Wi-Fi GDO DC 3/4HP",
         "name_by_user": null,
         "name": "Garage Door",
+        "serial_number": null,
         "sw_version": "3.13",
         "via_device_id": null
       },
@@ -2106,6 +2164,7 @@
         "model": "Chamberlain Smart Garage Hub",
         "name_by_user": null,
         "name": "Garage Door",
+        "serial_number": null,
         "sw_version": "3.14",
         "via_device_id": null
       },
@@ -2130,6 +2189,7 @@
         "model": "15A Zigbee smart plug (S40ZBTPB)",
         "name_by_user": null,
         "name": "Heated Blanket",
+        "serial_number": null,
         "sw_version": "1.1.0",
         "via_device_id": null
       },
@@ -2151,9 +2211,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Front Door",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2175,9 +2236,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Frigate",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2202,6 +2264,7 @@
         "model": "Aqara door & window contact sensor (MCCGQ11LM)",
         "name_by_user": null,
         "name": "Garage Door Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -2223,9 +2286,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Finnley Room",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2247,9 +2311,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Driveway",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2271,9 +2336,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Side Yard",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2295,9 +2361,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Front Porch",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2319,9 +2386,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Front Yard",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2343,9 +2411,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Frontdoor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2363,17 +2432,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-47"
+            "3343393661-47-99:18756:13111"
           ],
           [
             "zwave_js",
-            "3343393661-47-99:18756:13111"
+            "3343393661-47"
           ]
         ],
         "manufacturer": "Enbrighten",
         "model": "55258 / ZW4002",
         "name_by_user": null,
         "name": "Office Ceiling Fan",
+        "serial_number": null,
         "sw_version": "5.50",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -2391,17 +2461,18 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-48-634:28672:40962"
+            "3343393661-48"
           ],
           [
             "zwave_js",
-            "3343393661-48"
+            "3343393661-48-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
         "model": "ZEN72 800LR",
         "name_by_user": null,
         "name": "Office Light",
+        "serial_number": null,
         "sw_version": "3.30.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -2430,6 +2501,7 @@
         "model": "ZEN51",
         "name_by_user": null,
         "name": "Master Bath Fan",
+        "serial_number": null,
         "sw_version": "1.70.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -2458,6 +2530,7 @@
         "model": "ZEN51",
         "name_by_user": null,
         "name": "Upstairs Bathroom Fan",
+        "serial_number": null,
         "sw_version": "1.70.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -2482,6 +2555,7 @@
         "model": "Aqara water leak sensor (SJCGQ11LM)",
         "name_by_user": null,
         "name": "Fridge Leak Sensor",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -2503,9 +2577,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Crib",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2527,9 +2602,10 @@
           ]
         ],
         "manufacturer": "Frigate",
-        "model": "4.0.1/0.12.1-367d724",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
         "name_by_user": null,
         "name": "Changing Table",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       },
@@ -2554,6 +2630,7 @@
         "model": "15A Zigbee smart plug (S40ZBTPB)",
         "name_by_user": null,
         "name": "Coffee Pot",
+        "serial_number": null,
         "sw_version": "1.1.0",
         "via_device_id": null
       },
@@ -2578,6 +2655,7 @@
         "model": "Microsoft Windows NT 10.0.19045.0",
         "name_by_user": null,
         "name": "Branden_Desktop",
+        "serial_number": null,
         "sw_version": "2022.14.0",
         "via_device_id": null
       },
@@ -2602,6 +2680,7 @@
         "model": "Microsoft Windows NT 10.0.19045.0",
         "name_by_user": null,
         "name": "Branden_Desktop",
+        "serial_number": null,
         "sw_version": "2022.14.0",
         "via_device_id": null
       },
@@ -2630,6 +2709,7 @@
         "model": "ZEN72 800LR",
         "name_by_user": null,
         "name": "Basement Bath Light",
+        "serial_number": null,
         "sw_version": "3.20.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
@@ -2654,6 +2734,7 @@
         "model": "STYRBAR remote control (E2001/E2002)",
         "name_by_user": null,
         "name": "Finnley Room Baby Buddy Buttons",
+        "serial_number": null,
         "sw_version": "1.0.024",
         "via_device_id": null
       },
@@ -2678,6 +2759,7 @@
         "model": "esp32dev",
         "name_by_user": null,
         "name": "Master Bedroom Underbed Motion Sensor",
+        "serial_number": null,
         "sw_version": "2023.12.5 (Jan  3 2024, 19:51:15)",
         "via_device_id": null
       },
@@ -2702,6 +2784,7 @@
         "model": "esp32dev",
         "name_by_user": null,
         "name": "bluetooth_proxy",
+        "serial_number": null,
         "sw_version": "2023.12.5 (Jan  1 2024, 15:48:29)",
         "via_device_id": null
       },
@@ -2713,12 +2796,12 @@
         "configuration_url": null,
         "connections": [
           [
-            "mac",
-            "cf:35:33:35:18:67"
-          ],
-          [
             "bluetooth",
             "CF:35:33:35:18:67"
+          ],
+          [
+            "mac",
+            "cf:35:33:35:18:67"
           ]
         ],
         "disabled_by": null,
@@ -2730,6 +2813,7 @@
         "model": "WoHand",
         "name_by_user": "Heated Blanket Switch",
         "name": "Bot 1867",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -2754,6 +2838,7 @@
         "model": null,
         "name_by_user": null,
         "name": "Finnley Brown",
+        "serial_number": null,
         "sw_version": null,
         "via_device_id": null
       },
@@ -2778,7 +2863,58 @@
         "model": "Shelly RGBW2",
         "name_by_user": null,
         "name": "shellyrgbw2-E868E7F2D293",
+        "serial_number": null,
         "sw_version": "20231107-164040/v1.14.1-rc1-g0617c15",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "9f0e41bbe33813c288826b857bc76d90"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "cde6475cb4e1e7568abc90d4f7d0da45",
+        "identifiers": [
+          [
+            "met",
+            "9f0e41bbe33813c288826b857bc76d90"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "99ca1977f36f35a52f277f04783802a3"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "39cf0653008dc782c3b7cfe46a1f13f5",
+        "identifiers": [
+          [
+            "systemmonitor",
+            "99ca1977f36f35a52f277f04783802a3"
+          ]
+        ],
+        "manufacturer": "System Monitor",
+        "model": null,
+        "name_by_user": null,
+        "name": "System Monitor",
+        "serial_number": null,
+        "sw_version": null,
         "via_device_id": null
       }
     ],
@@ -2791,11 +2927,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-20-12:17479:16439"
+            "3343393661-20"
           ],
           [
             "zwave_js",
-            "3343393661-20"
+            "3343393661-20-12:17479:16439"
           ]
         ],
         "id": "63731068bce97381e2cce1c4a43b9c6c",
@@ -2813,6 +2949,47 @@
           ]
         ],
         "id": "36193dab9a7864c50339dcbd9a28eb90",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "9f0e41bbe33813c288826b857bc76d90"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "id": "36e6b3cf994c47d3ca7a47bb4454334e",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:cameras"
+          ]
+        ],
+        "id": "631aa18c54334be6ff6af2a720ee41bd",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:processes"
+          ]
+        ],
+        "id": "81c3e8929ca754ee9cf1c168f16db573",
         "orphaned_timestamp": null
       }
     ]

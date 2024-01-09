@@ -25,6 +25,16 @@ recorder:
   purge_keep_days: 400
   auto_purge: true
   db_url: !secret db_url
+  exclude:
+    entity_globs:
+      - automation.*stopwatch
+      - input_boolean.*stopwatch
+      - sensor.*stopwatch
+      - select.baby_buddy*
+      - input_boolean.waiting_for*
+      - input_button.confirm_*
+      - input_text.finnley_*
+      - input_number.finnley_*
 
 # Spotcast
 spotcast:

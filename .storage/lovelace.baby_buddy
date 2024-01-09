@@ -12,53 +12,85 @@
           "badges": [],
           "cards": [
             {
-              "type": "entities",
-              "entities": [
+              "type": "vertical-stack",
+              "cards": [
                 {
-                  "entity": "input_boolean.waiting_for_finnley_feeding_confirmation"
-                },
-                {
-                  "entity": "sensor.finnley_brown_last_timer"
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "2px"
-                  }
-                },
-                {
-                  "entity": "select.baby_buddy_feeding_method"
-                },
-                {
-                  "entity": "select.baby_buddy_feeding_type"
-                },
-                {
-                  "entity": "input_text.finnley_feeding_notes"
-                },
-                {
-                  "entity": "input_number.finnley_feeding_amount"
-                },
-                {
-                  "entity": "input_number.finnley_feeding_time"
-                },
-                {
-                  "entity": "input_boolean.finnley_feeding_use_timer"
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "2px"
-                  }
-                },
-                {
+                  "show_name": true,
+                  "show_icon": true,
                   "type": "button",
-                  "name": "Confirm Finnley Feeding",
-                  "icon": "mdi:button-cursor",
-                  "action_name": "Confirm",
+                  "entity": "timer.finnley_feeding_timer",
+                  "icon": "mdi:timer",
+                  "name": "Toggle Feeding Timer (Hold to reset)",
                   "tap_action": {
                     "action": "call-service",
-                    "service": "script.finnley_confirm_feeding_details"
-                  }
+                    "service": "script.toggle_finnley_feeding_timer",
+                    "target": {}
+                  },
+                  "hold_action": {
+                    "action": "call-service",
+                    "service": "timer.cancel",
+                    "target": {
+                      "entity_id": "timer.finnley_feeding_timer"
+                    }
+                  },
+                  "show_state": true,
+                  "icon_height": "20px"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "input_boolean.waiting_for_finnley_feeding_confirmation"
+                    },
+                    {
+                      "type": "custom:template-entity-row",
+                      "icon": "mdi:baby-bottle-outline",
+                      "name": "Feeding Timer",
+                      "state": "{% set t = 'timer.finnley_feeding_timer' %} {% if is_state(t, 'active') %}\n  {% set d = state_attr(t,'duration') | as_timedelta %}\n  {% set f = state_attr(t, 'finishes_at') | as_datetime %}\n  {{ ( d.total_seconds() - ( f  - now()).total_seconds())  | timestamp_custom('%H:%M:%S', false) }}\n{% elif is_state(t, 'paused') %}\n  {% set d = state_attr(t,'duration') | as_timedelta %}\n  {% set f = state_attr(t, 'remaining') | as_timedelta %}\n  {{ ( d.total_seconds() - f.total_seconds())  | timestamp_custom('%H:%M:%S', false) }}\n{% else %}\n  00:00:00\n{% endif %}"
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "entity": "select.baby_buddy_feeding_method"
+                    },
+                    {
+                      "entity": "select.baby_buddy_feeding_type"
+                    },
+                    {
+                      "entity": "input_text.finnley_feeding_notes"
+                    },
+                    {
+                      "entity": "input_number.finnley_feeding_amount"
+                    },
+                    {
+                      "entity": "input_number.finnley_feeding_time"
+                    },
+                    {
+                      "entity": "input_boolean.finnley_feeding_use_timer",
+                      "name": "Should use timer instead of time?",
+                      "secondary_info": "none"
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "Confirm Finnley Feeding",
+                      "icon": "mdi:button-cursor",
+                      "action_name": "Confirm",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_confirm_feeding_details"
+                      }
+                    }
+                  ]
                 }
               ]
             }
