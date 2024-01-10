@@ -64066,6 +64066,39 @@
         "unique_id": "submit_baby_buddy_diaper_change",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "99ca1977f36f35a52f277f04783802a3",
+        "device_class": null,
+        "device_id": "39cf0653008dc782c3b7cfe46a1f13f5",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.system_monitor_process_s6_supervise",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c6cd578e54c29cff3b29c2a7ce1a430a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "Process s6-supervise",
+        "platform": "systemmonitor",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "process_s6_supervise",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
