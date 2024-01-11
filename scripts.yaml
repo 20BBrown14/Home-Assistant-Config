@@ -1237,3 +1237,171 @@ submit_baby_buddy_diaper_change:
       entity_id:
       - input_boolean.waiting_for_finnley_diaper_change_confirmation
   mode: queued
+finnley_confirm_sleep_details:
+  alias: Finnley Confirm Sleep Details
+  sequence:
+  - event: FINNLEY_SLEEP_CONFIRMED
+    event_data: {}
+  mode: single
+toggle_finnley_sleep_timer:
+  alias: Toggle Finnley Sleep Timer
+  sequence:
+  - if:
+    - condition: state
+      entity_id: timer.finnley_sleep_timer
+      state: active
+    then:
+    - service: timer.pause
+      metadata: {}
+      data: {}
+      target:
+        entity_id: timer.finnley_sleep_timer
+    else:
+    - service: timer.start
+      metadata: {}
+      data: {}
+      target:
+        entity_id: timer.finnley_sleep_timer
+  mode: single
+  icon: mdi:timer
+reset_finnley_sleep_form:
+  alias: Reset Finnley Sleep Form
+  sequence:
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id: input_text.finnley_sleep_notes
+  - service: input_datetime.set_datetime
+    target:
+      entity_id:
+      - input_datetime.finnley_sleep_end
+      - input_datetime.baby_buddy_finnley_sleep_start
+    data:
+      time: 00:00:00
+  mode: single
+  icon: mdi:format-clear
+submit_baby_buddy_sleep:
+  alias: Submit Baby Buddy Sleep
+  sequence:
+  - service: babybuddy.add_sleep
+    data:
+      notes: '{{states(''input_text.finnley_sleep_notes'') or ''Added without additional
+        information from HA Automation(s)''}}'
+      start: "{% if states('input_boolean.finnley_sleep_use_timer') == 'on' and states('timer.finnley_sleep_timer')
+        != 'idle' %}\n  {% set t = 'timer.finnley_sleep_timer' %}\n  {% if is_state(t,
+        'active') %}\n    {% set d = state_attr(t,'duration') | as_timedelta %}\n
+        \   {% set f = state_attr(t, 'finishes_at') | as_datetime %}\n    {% set duration
+        = ( d.total_seconds() - ( f  - now()).total_seconds())  | timestamp_custom('%H:%M:%S',
+        false) %}\n  {% elif is_state(t, 'paused') %}\n    {% set d = state_attr(t,'duration')
+        | as_timedelta %}\n    {% set f = state_attr(t, 'remaining') | as_timedelta
+        %}\n    {% set duration = ( d.total_seconds() - f.total_seconds())  | timestamp_custom('%H:%M:%S',
+        false) %}\n  {% else %}\n    00:00:00\n  {% endif %}\n  {{(now() - duration|as_timedelta).strftime('%H:%M:%S')}}\n{%
+        else %}\n  {{states('input_datetime.baby_buddy_finnley_sleep_start')}}\n{%
+        endif %}"
+      end: "{% if states('input_datetime.baby_buddy_finnley_sleep_start') == states('input_datetime.finnley_sleep_end')
+        or states('input_datetime.finnley_sleep_end') == '00:00:00' %}\n  {{now().strftime('%H:%M:%S')}}\n{%
+        else %}\n  {{states('input_datetime.finnley_sleep_end')}}\n{% endif %}"
+    target:
+      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
+  - service: script.reset_finnley_sleep_form
+    data: {}
+  - service: input_boolean.turn_off
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_sleep_confirmation
+  - service: timer.cancel
+    metadata: {}
+    data: {}
+    target:
+      entity_id: timer.finnley_sleep_timer
+  - service: input_boolean.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.finnley_sleep_use_timer
+  mode: queued
+  max: 10
+baby_buddy_finnley_sleep:
+  alias: Baby Buddy - Finnley - Sleep
+  sequence:
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_branden_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Sleep for Finnley Added!
+        data:
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_sleep
+          actions:
+          - action: NO_ADDITIONAL_SLEEP_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/sleep
+      enabled: true
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_samantha_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_samantha_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Sleep for Finnley Added!
+        data:
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_sleep
+          actions:
+          - action: NO_ADDITIONAL_SLEEP_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/sleep
+      enabled: true
+    enabled: true
+  - service: script.reset_finnley_sleep_form
+    data: {}
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id:
+      - input_boolean.waiting_for_finnley_sleep_confirmation
+  - wait_for_trigger:
+    - platform: event
+      event_type: FINNLEY_SLEEP_CONFIRMED
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: NO_ADDITIONAL_SLEEP_INFORMATION
+    - platform: state
+      entity_id:
+      - input_boolean.waiting_for_finnley_sleep_confirmation
+      to: 'off'
+    - platform: device
+      domain: mqtt
+      device_id: 80c996aef1daadbad8c4ffc3926a0921
+      type: action
+      subtype: brightness_move_down
+      discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_down
+    timeout:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - service: script.submit_baby_buddy_sleep
+    data: {}
+  - service: notify.all_mobile_phones
+    data:
+      data:
+        tag: confirm_finnley_sleep
+      message: clear_notification
+  mode: queued
+  icon: mdi:food
+  max: 5

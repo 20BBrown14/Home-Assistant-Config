@@ -145,6 +145,112 @@
               ]
             }
           ]
+        },
+        {
+          "title": "Sleep",
+          "path": "sleep",
+          "icon": "mdi:sleep",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "timer.finnley_sleep_timer",
+                  "icon": "mdi:timer",
+                  "name": "Toggle Sleep Timer (Hold to reset)",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.toggle_finnley_sleep_timer",
+                    "target": {}
+                  },
+                  "hold_action": {
+                    "action": "call-service",
+                    "service": "timer.cancel",
+                    "target": {
+                      "entity_id": "timer.finnley_sleep_timer"
+                    }
+                  },
+                  "show_state": true,
+                  "icon_height": "20px"
+                },
+                {
+                  "type": "entities",
+                  "entities": [
+                    {
+                      "entity": "input_boolean.waiting_for_finnley_sleep_confirmation"
+                    },
+                    {
+                      "type": "custom:template-entity-row",
+                      "icon": "mdi:baby-bottle-outline",
+                      "name": "Sleep Timer",
+                      "state": "{% set t = 'timer.finnley_sleep_timer' %} {% if is_state(t, 'active') %}\n  {% set d = state_attr(t,'duration') | as_timedelta %}\n  {% set f = state_attr(t, 'finishes_at') | as_datetime %}\n  {{ ( d.total_seconds() - ( f  - now()).total_seconds())  | timestamp_custom('%H:%M:%S', false) }}\n{% elif is_state(t, 'paused') %}\n  {% set d = state_attr(t,'duration') | as_timedelta %}\n  {% set f = state_attr(t, 'remaining') | as_timedelta %}\n  {{ ( d.total_seconds() - f.total_seconds())  | timestamp_custom('%H:%M:%S', false) }}\n{% else %}\n  00:00:00\n{% endif %}"
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "entity": "input_datetime.baby_buddy_finnley_sleep_start"
+                    },
+                    {
+                      "entity": "input_datetime.finnley_sleep_end"
+                    },
+                    {
+                      "entity": "input_text.finnley_sleep_notes"
+                    },
+                    {
+                      "entity": "input_boolean.finnley_sleep_use_timer",
+                      "name": "Should use timer instead of time?",
+                      "secondary_info": "none"
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "Confirm Finnley Sleep",
+                      "icon": "mdi:button-cursor",
+                      "action_name": "Confirm",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_confirm_sleep_details"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temperature",
+          "path": "temperature",
+          "icon": "mdi:thermometer",
+          "badges": [],
+          "cards": []
+        },
+        {
+          "title": "Pumping",
+          "path": "pumping",
+          "icon": "mdi:mother-nurse",
+          "badges": [],
+          "cards": []
+        },
+        {
+          "title": "Tummy Time",
+          "path": "tummy-time",
+          "icon": "mdi:stomach",
+          "badges": [],
+          "cards": []
         }
       ]
     }

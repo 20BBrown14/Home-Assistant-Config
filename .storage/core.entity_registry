@@ -63768,6 +63768,9 @@
         "options": {
           "conversation": {
             "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
           }
         },
         "original_device_class": "sound",
@@ -64097,6 +64100,375 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "process_s6_supervise",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.waiting_for_finnley_sleep_confirmation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "410d25e2241d95e81aeefc1870382140",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-star",
+        "original_name": "Waiting for Finnley Sleep Confirmation",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "waiting_for_finnley_sleep_confirmation",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": false,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.baby_buddy_finnley_sleep_start",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bed22f8e10c3dc64509fc176a30115f4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Baby Buddy Finnley Sleep Start",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "baby_buddy_finnley_sleep_start",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": false,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.finnley_sleep_end",
+        "hidden_by": null,
+        "icon": null,
+        "id": "500badf26b2233602e37fc4c8dfba17a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Finnley Sleep End",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_sleep_end",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "timer.finnley_sleep_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f1b157b425a72afe9665175d4bfaa0e3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bed-clock",
+        "original_name": "Finnley Sleep Timer",
+        "platform": "timer",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_sleep_timer",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_confirm_sleep_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d1b8b9ab660822e7df2ed8ae01d731d9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Confirm Sleep Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_confirm_sleep_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.toggle_finnley_sleep_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "730625f2676b1e7714f589a7a6d3d09e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer",
+        "original_name": "Toggle Finnley Sleep Timer",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "toggle_finnley_sleep_timer",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.finnley_sleep_use_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "23c126fb8de8835bd26b26951efe850a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer",
+        "original_name": "Finnley Sleep Use Timer",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_sleep_use_timer",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_sleep_notes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d6afa4101a3c57f6a25bd7c7e34ab71f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:chat-sleep",
+        "original_name": "Finnley Sleep Notes",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_sleep_notes",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.reset_finnley_sleep_form",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9019b5b92d34a2a30cc9f4e25cece805",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Finnley Sleep Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reset_finnley_sleep_form",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.submit_baby_buddy_sleep",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a3585e9adabb682541b9fc26fafecbe6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Submit Baby Buddy Sleep",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "submit_baby_buddy_sleep",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.baby_buddy_finnley_sleep",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7ac61483f09e2ec22141b7f412ad5df9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:food",
+        "original_name": "Baby Buddy - Finnley - Sleep",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "baby_buddy_finnley_sleep",
         "previous_unique_id": null,
         "unit_of_measurement": null
       }

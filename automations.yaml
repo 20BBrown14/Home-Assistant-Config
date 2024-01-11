@@ -1102,12 +1102,6 @@
   description: ''
   trigger:
   - platform: device
-    domain: mqtt
-    device_id: 4123d53d80bf262f32a413067ab8812b
-    type: action
-    subtype: hold
-    discovery_id: 0x00158d0008393dbe action_hold
-  - platform: device
     device_id: e50cb3846e82014dde1e95832d9d4e9c
     domain: zwave_js
     type: event.value_notification.central_scene
@@ -2431,6 +2425,13 @@
     subtype: brightness_move_up
     discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_up
     id: timer_toggle_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 80c996aef1daadbad8c4ffc3926a0921
+    type: action
+    subtype: brightness_move_down
+    discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_down
+    id: sleep_trigger
   condition: []
   action:
   - if:
@@ -2464,6 +2465,13 @@
     then:
     - service: script.toggle_finnley_feeding_timer
       data: {}
+  - if:
+    - condition: trigger
+      id:
+      - sleep_trigger
+    then:
+    - service: script.baby_buddy_finnley_sleep
+      data: {}
   mode: parallel
   max: 10
 - id: '1704164614912'
@@ -2493,22 +2501,18 @@
     entity_id:
     - binary_sensor.master_underbed_motion_sensor_branden_side_motion
     to: 'on'
+    enabled: false
   - platform: state
     entity_id:
     - binary_sensor.master_underbed_motion_sensor_samantha_side_motion
-  condition:
-  - condition: and
-    conditions:
-    - condition: device
-      type: is_off
-      device_id: fc14d585e20bc18f0fae2b868f5849f3
-      entity_id: c6e3361713d1b57b3eb8fc217f9c08b4
-      domain: light
-    - condition: sun
-      before: sunrise
-      before_offset: '1:00:00'
-      after: sunset
-      after_offset: '-1:00:00'
+    enabled: false
+  - platform: device
+    domain: mqtt
+    device_id: 4123d53d80bf262f32a413067ab8812b
+    type: action
+    subtype: hold
+    discovery_id: 0x00158d0008393dbe action_hold
+  condition: []
   action:
   - type: turn_on
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
@@ -2519,18 +2523,51 @@
       - delay:
           hours: 0
           minutes: 0
-          seconds: 12
+          seconds: 1
           milliseconds: 0
       while:
-      - condition: template
-        value_template: '{{states(''binary_sensor.master_underbed_motion_sensor_samantha_side_motion'')|lower
-          not in [''unavailable'', ''off''] or states(''binary_sensor.master_underbed_motion_sensor_branden_side_motion'')|lower
-          not in [''unavailable'', ''off'']}}'
+      - condition: or
+        conditions:
+        - condition: or
+          conditions:
+          - condition: not
+            conditions:
+            - type: is_no_motion
+              condition: device
+              device_id: fd44d9316525d7e8e2c66fa38a70c1c6
+              entity_id: 71679ed1badaf26f72fc2a08d2fe1411
+              domain: binary_sensor
+              for:
+                hours: 0
+                minutes: 0
+                seconds: 20
+          - condition: not
+            conditions:
+            - type: is_no_motion
+              condition: device
+              device_id: fd44d9316525d7e8e2c66fa38a70c1c6
+              entity_id: 6aa2cdad73ed899af65eb9f9217bc7a0
+              domain: binary_sensor
+              for:
+                hours: 0
+                minutes: 0
+                seconds: 20
+        - condition: not
+          conditions:
+          - condition: device
+            type: is_on
+            device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
+            entity_id: f134af8facf63fbd170622fcd6275e7e
+            domain: light
+            for:
+              hours: 0
+              minutes: 0
+              seconds: 20
   - type: turn_off
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
     entity_id: f134af8facf63fbd170622fcd6275e7e
     domain: light
-  mode: single
+  mode: restart
 - id: '1704508016555'
   alias: Coffee Pot
   description: ''
@@ -2571,6 +2608,19 @@
   - platform: event
     event_type: FINNLEY_DIAPER_CHANGE_CONFIRMED
     id: submit_diaper_change
+  - platform: state
+    entity_id:
+    - timer.finnley_sleep_timer
+    to: idle
+    id: finnley_sleep_timer_stopped
+  - platform: state
+    entity_id:
+    - timer.finnley_sleep_timer
+    to: active
+    id: finnley_sleep_timer_started
+  - platform: event
+    event_type: FINNLEY_SLEEP_CONFIRMED
+    id: submit_sleep
   condition: []
   action:
   - if:
@@ -2618,4 +2668,37 @@
     - service: script.submit_baby_buddy_feeding
       metadata: {}
       data: {}
+  - if:
+    - condition: trigger
+      id:
+      - finnley_sleep_timer_stopped
+    then:
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.finnley_sleep_use_timer
+  - if:
+    - condition: trigger
+      id:
+      - finnley_sleep_timer_started
+    then:
+    - service: input_boolean.turn_on
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.finnley_sleep_use_timer
+  - if:
+    - condition: and
+      conditions:
+      - condition: trigger
+        id:
+        - submit_sleep
+      - condition: state
+        entity_id: input_boolean.waiting_for_finnley_sleep_confirmation
+        state: 'off'
+    then:
+    - service: script.submit_baby_buddy_sleep
+      data: {}
+    enabled: true
   mode: single

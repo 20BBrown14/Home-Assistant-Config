@@ -73,6 +73,16 @@
         "id": "finnley_feeding_use_timer",
         "name": "Finnley Feeding Use Timer",
         "icon": "mdi:timer"
+      },
+      {
+        "id": "waiting_for_finnley_sleep_confirmation",
+        "name": "Waiting for Finnley Sleep Confirmation",
+        "icon": "mdi:timer-star"
+      },
+      {
+        "id": "finnley_sleep_use_timer",
+        "name": "Finnley Sleep Use Timer",
+        "icon": "mdi:timer"
       }
     ]
   }
