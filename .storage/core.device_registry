@@ -1020,7 +1020,7 @@
         "name_by_user": null,
         "name": "Garage Entry",
         "serial_number": null,
-        "sw_version": "1.5.0",
+        "sw_version": "1.6.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
       {
@@ -1182,7 +1182,7 @@
         "name_by_user": null,
         "name": "Front Door",
         "serial_number": null,
-        "sw_version": "1.5.0",
+        "sw_version": "1.6.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
       {
@@ -1615,7 +1615,7 @@
         "name_by_user": null,
         "name": "Kitchen Door",
         "serial_number": null,
-        "sw_version": "1.5.0",
+        "sw_version": "1.6.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
       {

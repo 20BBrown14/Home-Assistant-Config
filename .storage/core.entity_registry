@@ -15282,7 +15282,10 @@
         "area_id": null,
         "capabilities": {
           "options": [
-            "Window/door is open"
+            "Window/door is open",
+            "Window/door is closed",
+            "Window/door is open in regular position",
+            "Window/door is open in tilt position"
           ]
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
@@ -15298,6 +15301,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -16773,7 +16779,9 @@
         "capabilities": {
           "options": [
             "Window/door is open",
-            "Window/door is closed"
+            "Window/door is closed",
+            "Window/door is open in regular position",
+            "Window/door is open in tilt position"
           ]
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
@@ -16789,6 +16797,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -32583,9 +32594,9 @@
         "capabilities": {
           "options": [
             "Always off",
-            "Flash when transmitting (except Wake Up notifications)",
-            "On when sending Wake Up notification",
-            "Flash when transmitting (including Wake Up notifications)"
+            "Flash when transmitting (Except wake up notifications)",
+            "On when sending wake up notification",
+            "Flash when transmitting (Including wake up notifications)"
           ]
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
@@ -32601,6 +32612,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -32979,9 +32993,9 @@
         "capabilities": {
           "options": [
             "Always off",
-            "Flash when transmitting (except Wake Up notifications)",
-            "On when sending Wake Up notification",
-            "Flash when transmitting (including Wake Up notifications)"
+            "Flash when transmitting (Except wake up notifications)",
+            "On when sending wake up notification",
+            "Flash when transmitting (Including wake up notifications)"
           ]
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
@@ -32997,6 +33011,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -33943,9 +33960,9 @@
         "capabilities": {
           "options": [
             "Always off",
-            "Flash when transmitting (except Wake Up notifications)",
-            "On when sending Wake Up notification",
-            "Flash when transmitting (including Wake Up notifications)"
+            "Flash when transmitting (Except wake up notifications)",
+            "On when sending wake up notification",
+            "Flash when transmitting (Including wake up notifications)"
           ]
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
@@ -33961,6 +33978,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -64469,6 +64489,340 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "baby_buddy_finnley_sleep",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "ca0457c4a2a23167836611ffe6200a52",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_window_door_is_open_in_regular_position",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4d344e5f12203ecf8f83c4b7b4fd09e8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Window/door is open in regular position",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.36-113-0-Access Control-Door state.5632",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "ca0457c4a2a23167836611ffe6200a52",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.front_door_window_door_is_open_in_tilt_position",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0a86f3f210ba57c5c07d2bf8509c26be",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Window/door is open in tilt position",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.36-113-0-Access Control-Door state.5633",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.garage_entry_window_door_is_open_in_regular_position",
+        "hidden_by": null,
+        "icon": null,
+        "id": "95cf882ecadb29533ab35e0e142ff681",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Window/door is open in regular position",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-Access Control-Door state.5632",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.garage_entry_window_door_is_open_in_tilt_position",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2bb9748861495eee64e1549809594986",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Window/door is open in tilt position",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-Access Control-Door state.5633",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.garage_entry_power_has_been_applied",
+        "hidden_by": null,
+        "icon": null,
+        "id": "88c675301a0384f5cab7723b806d2e00",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Power has been applied",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-Power Management-Power status.1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "idle",
+            "Power has been applied"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.garage_entry_power_management_power_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "657b5a1aa16f907d29b63d86d761be9c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "enum",
+        "original_icon": null,
+        "original_name": "Power Management Power status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-Power Management-Power status",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.garage_entry_idle_power_management_power_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "97671f150ecb32ff6a698afbadedae00",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Idle Power Management Power status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-Power Management-Power status.notification_idle",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.garage_entry_system_software_failure_with_failure_code",
+        "hidden_by": null,
+        "icon": null,
+        "id": "238db6d55ed2f459ada82178a24ce62e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "problem",
+        "original_icon": null,
+        "original_name": "System software failure (with failure code)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-System-Software status.4",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "idle",
+            "System software failure (with failure code)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.garage_entry_system_software_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "120f1a67f35c5f884ef0cf2e336f1a64",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "enum",
+        "original_icon": null,
+        "original_name": "System Software status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-System-Software status",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "933741cce5d5e2275a126b49415cad02",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.garage_entry_idle_system_software_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9a41c1c010210d7e1e3d0015ad69d148",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Idle System Software status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.33-113-0-System-Software status.notification_idle",
         "previous_unique_id": null,
         "unit_of_measurement": null
       }
