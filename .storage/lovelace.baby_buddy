@@ -90,7 +90,9 @@
                         "service": "script.finnley_confirm_feeding_details"
                       }
                     }
-                  ]
+                  ],
+                  "title": "Add Feeding - Finnley",
+                  "show_header_toggle": false
                 }
               ]
             }
@@ -142,7 +144,10 @@
                     "service": "script.finnley_confirm_diaper_change_details"
                   }
                 }
-              ]
+              ],
+              "title": "Add Diaper Change - Finnley",
+              "show_header_toggle": false,
+              "state_color": false
             }
           ]
         },
@@ -225,7 +230,9 @@
                         "service": "script.finnley_confirm_sleep_details"
                       }
                     }
-                  ]
+                  ],
+                  "title": "Add Sleep - Finnley",
+                  "show_header_toggle": false
                 }
               ]
             }
@@ -236,14 +243,90 @@
           "path": "temperature",
           "icon": "mdi:thermometer",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "entities",
+              "title": "Add Temperature - Finnley",
+              "entities": [
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "input_number.finnley_temperature"
+                },
+                {
+                  "entity": "input_text.finnley_temperature_notes"
+                },
+                {
+                  "entity": "input_datetime.finnley_temperature_time"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "Confirm Temperature",
+                  "icon": "mdi:button-cursor",
+                  "action_name": "Confirm",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.submit_baby_buddy_temeprature"
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
-          "title": "Pumping",
+          "title": "Temperature",
           "path": "pumping",
           "icon": "mdi:mother-nurse",
           "badges": [],
-          "cards": []
+          "cards": [
+            {
+              "type": "entities",
+              "title": "Add Temperature - Finnley",
+              "entities": [
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "input_number.pumping_amount"
+                },
+                {
+                  "entity": "input_text.pumping_notes"
+                },
+                {
+                  "entity": "input_datetime.pumping_time"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "Confirm Pumping",
+                  "icon": "mdi:button-cursor",
+                  "action_name": "Confirm",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.submit_baby_buddy_pumping"
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
           "title": "Tummy Time",

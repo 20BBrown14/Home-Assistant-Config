@@ -955,7 +955,7 @@ baby_buddy_test:
             title: 'Yes'
             uri: /baby-buddy/feeding
       enabled: true
-    enabled: false
+    enabled: true
   - service: script.reset_finnley_feeding_form
     data: {}
     enabled: true
@@ -1405,3 +1405,84 @@ baby_buddy_finnley_sleep:
   mode: queued
   icon: mdi:food
   max: 5
+reset_finnley_temperature_form:
+  alias: Reset Finnley Temperature Form
+  sequence:
+  - service: input_number.set_value
+    data:
+      value: 98.6
+    target:
+      entity_id: input_number.finnley_temperature
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id: input_text.finnley_temperature_notes
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      time: 00:00:00
+    target:
+      entity_id: input_datetime.finnley_temperature_time
+  mode: single
+  icon: mdi:format-clear
+submit_baby_buddy_temeprature:
+  alias: Submit Baby Buddy Temeprature
+  sequence:
+  - service: babybuddy.add_temperature
+    metadata: {}
+    target:
+      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
+    data:
+      temperature: '{{states(''input_number.finnley_temperature'')}}'
+      notes: '{{states(''input_text.finnley_temperature_notes'') or ''Added without
+        additional information from HA Automation(s)''}}'
+      time: '{{states(''input_datetime.finnley_temperature_time'') if states(''input_datetime.finnley_temperature_time'')
+        != ''00:00:00'' else now()}}'
+  - service: script.reset_finnley_temperature_form
+    metadata: {}
+    data: {}
+  mode: queued
+  icon: mdi:temperature-fahrenheit
+submit_baby_buddy_pumping:
+  alias: Submit Baby Buddy Pumping
+  sequence:
+  - service: babybuddy.add_pumping
+    metadata: {}
+    target:
+      device_id: 2b1a9a4e51e7b25d6b50fb964b777127
+    data:
+      amount: '{{states(''input_number.pumping_amount'')}}'
+      notes: '{{states(''input_text.pumping_notes'') or ''Added without additional
+        information from HA Automation(s)''}}'
+      time: '{{states(''input_datetime.pumping_time'') if states(''input_datetime.pumping_time'')
+        != ''00:00:00'' else now()}}'
+  - service: script.1705186537951
+    data: {}
+  mode: queued
+  icon: mdi:mother-nurse
+  max: 10
+'1705186537951':
+  alias: Reset Pumping Form
+  sequence:
+  - service: input_number.set_value
+    data:
+      value: 0
+    target:
+      entity_id:
+      - input_number.pumping_amount
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id:
+      - input_text.pumping_notes
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      time: 00:00:00
+    target:
+      entity_id:
+      - input_datetime.pumping_time
+  mode: single
+  icon: mdi:format-clear

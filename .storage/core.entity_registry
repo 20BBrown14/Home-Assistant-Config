@@ -64825,6 +64825,412 @@
         "unique_id": "3343393661.33-113-0-System-Software status.notification_idle",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.finnley_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fb31da888bb7c00f836ceca76e0baef7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:temperature-fahrenheit",
+        "original_name": "Finnley Temperature",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_temperature",
+        "previous_unique_id": null,
+        "unit_of_measurement": "F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_temperature_notes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e1efec027d7d9e948ec8e9961d5f635c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:text",
+        "original_name": "Finnley Temperature Notes",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_temperature_notes",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.reset_finnley_temperature_form",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cc74d3aae4c99d2c37b1920187cc8ff0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Finnley Temperature Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reset_finnley_temperature_form",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.submit_baby_buddy_temeprature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "02a54b9dbf84243261b2506c3cd3582e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:temperature-fahrenheit",
+        "original_name": "Submit Baby Buddy Temeprature",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "submit_baby_buddy_temeprature",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": false,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.finnley_temperature_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "568ff06e97710e45db870e1dcd053fb2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:clock-time-eight",
+        "original_name": "Finnley Temperature Time",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_temperature_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bfe658b98ed32890115919292c1b6950",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": "mdi:thermometer",
+        "original_name": "Finnley Brown last temperature",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-temperature",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_number.pumping_amount",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dd9d5deafdc9b6f26cd8beb698af8f08",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:mother-nurse",
+        "original_name": "Pumping Amount",
+        "platform": "input_number",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "pumping_amount",
+        "previous_unique_id": null,
+        "unit_of_measurement": "oz"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": false,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.pumping_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c8a2b4983dd091a8b4addd328bec9f1a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:clock-time-eight",
+        "original_name": "Pumping Time",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "pumping_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.pumping_notes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d930311c9904531a5509ae30bcce7465",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:text",
+        "original_name": "Pumping Notes",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "pumping_notes",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.submit_baby_buddy_pumping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fba6ccab41cfbc446462936930f00aa1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:mother-nurse",
+        "original_name": "Submit Baby Buddy Pumping",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "submit_baby_buddy_pumping",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.1705186537951",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3f28a587c2d38aea41ea54ea28aac577",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Pumping Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1705186537951",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_pumping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a3275f59e325ba45ae3b88a2a8f3b9eb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:mother-nurse",
+        "original_name": "Finnley Brown last pumping",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-pumping",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -64939,6 +65345,14 @@
         "orphaned_timestamp": 1704751469.877281,
         "platform": "automation",
         "unique_id": "1704751433714"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "input_number.finnley_temperature",
+        "id": "52b49f9879d1e2ca391d51891afe8de3",
+        "orphaned_timestamp": 1705185261.2021492,
+        "platform": "input_number",
+        "unique_id": "temp"
       }
     ]
   }
