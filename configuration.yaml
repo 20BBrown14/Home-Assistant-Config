@@ -35,6 +35,16 @@ recorder:
       - input_button.confirm_*
       - input_text.finnley_*
       - input_number.finnley_*
+      - input_dattime.finnley_*
+      - input_datetime.pumping_time
+      - input_datetime.baby_buddy*
+      - media_player.*
+      - timer.finnley*
+      - tts.*
+      - update.*
+      - weather.*
+      - vaccuum.*
+      - button.*ping
 
 # Spotcast
 spotcast:

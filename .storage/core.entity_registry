@@ -64184,7 +64184,7 @@
         },
         "original_device_class": null,
         "original_icon": "mdi:sleep",
-        "original_name": "Baby Buddy Finnley Sleep Start",
+        "original_name": "Finnley Sleep Start",
         "platform": "input_datetime",
         "supported_features": 0,
         "translation_key": null,
@@ -64680,6 +64680,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "enum",
@@ -64780,6 +64783,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
