@@ -6,6 +6,24 @@
     "config": {
       "views": [
         {
+          "title": "Finnley",
+          "path": "finnley",
+          "icon": "mdi:baby",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                "sensor.finnley_brown_last_change",
+                "sensor.finnley_brown_last_feeding",
+                "sensor.finnley_brown_last_pumping",
+                "sensor.finnley_brown_last_sleep",
+                "sensor.finnley_brown_last_temperature"
+              ]
+            }
+          ]
+        },
+        {
           "title": "Feed",
           "icon": "mdi:food",
           "path": "feeding",
