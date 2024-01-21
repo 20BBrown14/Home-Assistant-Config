@@ -59459,6 +59459,9 @@
         "options": {
           "conversation": {
             "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -59521,6 +59524,9 @@
         "options": {
           "conversation": {
             "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -59552,6 +59558,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
