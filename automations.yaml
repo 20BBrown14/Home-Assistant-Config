@@ -2501,11 +2501,12 @@
     entity_id:
     - binary_sensor.master_underbed_motion_sensor_branden_side_motion
     to: 'on'
-    enabled: false
+    enabled: true
   - platform: state
     entity_id:
     - binary_sensor.master_underbed_motion_sensor_samantha_side_motion
-    enabled: false
+    enabled: true
+    to: 'on'
   - platform: device
     domain: mqtt
     device_id: 4123d53d80bf262f32a413067ab8812b
@@ -2540,7 +2541,7 @@
               for:
                 hours: 0
                 minutes: 0
-                seconds: 20
+                seconds: 8
           - condition: not
             conditions:
             - type: is_no_motion
@@ -2551,7 +2552,7 @@
               for:
                 hours: 0
                 minutes: 0
-                seconds: 20
+                seconds: 8
         - condition: not
           conditions:
           - condition: device
@@ -2562,7 +2563,7 @@
             for:
               hours: 0
               minutes: 0
-              seconds: 20
+              seconds: 12
   - type: turn_off
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
     entity_id: f134af8facf63fbd170622fcd6275e7e
