@@ -2501,11 +2501,11 @@
     entity_id:
     - binary_sensor.master_underbed_motion_sensor_branden_side_motion
     to: 'on'
-    enabled: true
+    enabled: false
   - platform: state
     entity_id:
     - binary_sensor.master_underbed_motion_sensor_samantha_side_motion
-    enabled: true
+    enabled: false
     to: 'on'
   - platform: device
     domain: mqtt
