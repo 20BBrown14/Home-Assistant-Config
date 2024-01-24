@@ -2916,6 +2916,31 @@
         "serial_number": null,
         "sw_version": null,
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d93aef20aa3ac73a5f0276ed408e6855"
+        ],
+        "configuration_url": "http://192.168.86.21:5000/cameras/garage",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "477357e0708ce673c3b659cab53bbf12",
+        "identifiers": [
+          [
+            "frigate",
+            "d93aef20aa3ac73a5f0276ed408e6855:garage"
+          ]
+        ],
+        "manufacturer": "Frigate",
+        "model": "5.0.0-beta.3/0.13.0-49814b3",
+        "name_by_user": null,
+        "name": "Garage",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
       }
     ],
     "deleted_devices": [

@@ -392,7 +392,7 @@ set_front_yard_lights_for_visibility:
     - delay:
         hours: 0
         minutes: 0
-        seconds: 1
+        seconds: 5
         milliseconds: 0
   - service: script.turn_on_outdoor_sconse_lights_full_cool_bright
     data: {}
@@ -588,6 +588,15 @@ reset_front_yard_lights:
 turn_on_frontyard_lights_idle:
   alias: Turn on Frontyard Lights, Idle
   sequence:
+  - type: turn_on
+    device_id: 7667289dac32e9792162b70cc2af7484
+    entity_id: c0bd051cafd9549eceb53d7e10e2e979
+    domain: switch
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 10
+      milliseconds: 0
   - service: light.turn_on
     data:
       brightness: 255

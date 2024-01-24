@@ -572,6 +572,10 @@
       data: {}
       target:
         entity_id: light.frontyard_lights
+    - type: turn_off
+      device_id: 7667289dac32e9792162b70cc2af7484
+      entity_id: c0bd051cafd9549eceb53d7e10e2e979
+      domain: switch
   mode: single
 - id: '1668385139698'
   alias: Motion in Garage

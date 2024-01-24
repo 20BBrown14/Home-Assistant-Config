@@ -125,23 +125,6 @@
                           ]
                         }
                       ]
-                    },
-                    {
-                      "type": "custom:history-explorer-card",
-                      "cardName": "PC",
-                      "graphs": [
-                        {
-                          "type": "line",
-                          "entities": [
-                            {
-                              "entity": "sensor.swap_free"
-                            },
-                            {
-                              "entity": "sensor.swap_use"
-                            }
-                          ]
-                        }
-                      ]
                     }
                   ]
                 },

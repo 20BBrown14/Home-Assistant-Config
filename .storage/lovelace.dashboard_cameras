@@ -7,6 +7,8 @@
       "views": [
         {
           "title": "Home",
+          "type": "panel",
+          "badges": [],
           "cards": [
             {
               "square": true,
@@ -18,29 +20,12 @@
                   "cameras": [
                     {
                       "camera_entity": "camera.front_door"
-                    }
-                  ],
-                  "view": {
-                    "default": "live",
-                    "dark_mode": "off",
-                    "update_force": true
-                  },
-                  "performance": {
-                    "profile": "high",
-                    "features": {
-                      "media_chunk_size": 1000
                     },
-                    "style": {
-                      "border_radius": true,
-                      "box_shadow": true
-                    }
-                  }
-                },
-                {
-                  "type": "custom:frigate-card",
-                  "cameras": [
                     {
                       "camera_entity": "camera.finnley_room"
+                    },
+                    {
+                      "camera_entity": "camera.garage"
                     }
                   ],
                   "view": {
@@ -57,6 +42,9 @@
                       "border_radius": true,
                       "box_shadow": true
                     }
+                  },
+                  "live": {
+                    "preload": true
                   }
                 }
               ]
