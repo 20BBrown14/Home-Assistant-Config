@@ -107,6 +107,22 @@
                         "action": "call-service",
                         "service": "script.finnley_confirm_feeding_details"
                       }
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "1px"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "Cancel Finnley Feeding",
+                      "icon": "mdi:button-cursor",
+                      "action_name": "Cancel",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_cancel_feeding_details"
+                      }
                     }
                   ],
                   "title": "Add Feeding - Finnley",
@@ -160,6 +176,22 @@
                   "tap_action": {
                     "action": "call-service",
                     "service": "script.finnley_confirm_diaper_change_details"
+                  }
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px"
+                  }
+                },
+                {
+                  "type": "button",
+                  "name": "Cancel Finnley Diaper Change",
+                  "icon": "mdi:button-cursor",
+                  "action_name": "Cancel",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.finnley_cancel_diaper_change_details"
                   }
                 }
               ],
@@ -247,6 +279,22 @@
                         "action": "call-service",
                         "service": "script.finnley_confirm_sleep_details"
                       }
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "1px"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "name": "Cancel Finnley Sleep",
+                      "icon": "mdi:button-cursor",
+                      "action_name": "Cancel",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_cancel_sleep_details"
+                      }
                     }
                   ],
                   "title": "Add Sleep - Finnley",
@@ -302,14 +350,14 @@
           ]
         },
         {
-          "title": "Temperature",
+          "title": "Pumping",
           "path": "pumping",
           "icon": "mdi:mother-nurse",
           "badges": [],
           "cards": [
             {
               "type": "entities",
-              "title": "Add Temperature - Finnley",
+              "title": "Add Pumping - Finnley",
               "entities": [
                 {
                   "type": "divider",
@@ -345,13 +393,6 @@
               ]
             }
           ]
-        },
-        {
-          "title": "Tummy Time",
-          "path": "tummy-time",
-          "icon": "mdi:stomach",
-          "badges": [],
-          "cards": []
         }
       ]
     }

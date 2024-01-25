@@ -2941,6 +2941,56 @@
         "serial_number": null,
         "sw_version": null,
         "via_device_id": "ddc274d6e1da8c6e24f65d52b6fda161"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8a0e66269e863f771847626e4793deb8",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x4c5bb3fffe462b16"
+          ]
+        ],
+        "manufacturer": "IKEA",
+        "model": "STYRBAR remote control (E2001/E2002)",
+        "name_by_user": null,
+        "name": "Master Bedroom Baby Buddy Buttons",
+        "serial_number": null,
+        "sw_version": "1.0.024",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x84ba20fffed1b83e"
+          ]
+        ],
+        "manufacturer": "IKEA",
+        "model": "STYRBAR remote control (E2001/E2002)",
+        "name_by_user": null,
+        "name": "Basement Baby Buddy Buttons",
+        "serial_number": null,
+        "sw_version": "1.0.024",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

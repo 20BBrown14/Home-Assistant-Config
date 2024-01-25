@@ -938,6 +938,8 @@ baby_buddy_test:
           priority: high
           tag: confirm_finnley_feeding
           actions:
+          - action: CANCEL_FEEDING
+            title: Cancel
           - action: NO_ADDITIONAL_FEEDING_INFORMATION
             title: 'No'
           - action: URI
@@ -958,6 +960,8 @@ baby_buddy_test:
           priority: high
           tag: confirm_finnley_feeding
           actions:
+          - action: CANCEL_FEEDING
+            title: Cancel
           - action: NO_ADDITIONAL_FEEDING_INFORMATION
             title: 'No'
           - action: URI
@@ -975,33 +979,60 @@ baby_buddy_test:
   - wait_for_trigger:
     - platform: event
       event_type: FINNLEY_FEEDING_CONFIRMED
+      id: CONTINUE
     - platform: event
       event_type: mobile_app_notification_action
       event_data:
         action: NO_ADDITIONAL_FEEDING_INFORMATION
+      id: CONTINUE
     - platform: device
       domain: mqtt
       device_id: 80c996aef1daadbad8c4ffc3926a0921
       type: action
       subtype: 'on'
       discovery_id: 0x4c5bb3fffe4c336b action_on
+      id: CONTINUE
     - platform: state
       entity_id:
       - input_boolean.waiting_for_finnley_feeding_confirmation
       to: 'off'
+      id: CONTINUE
+    - platform: event
+      event_type: FINNLEY_FEEDING_CANCELLED
+      id: CANCEL
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: CANCEL_FEEDING
+      id: CANCEL
     timeout:
       hours: 0
       minutes: 30
       seconds: 0
       milliseconds: 0
-  - service: script.submit_baby_buddy_feeding
-    metadata: {}
-    data: {}
   - service: notify.all_mobile_phones
     data:
       data:
         tag: confirm_finnley_feeding
       message: clear_notification
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CONTINUE'' or wait.trigger.id == null}}'
+    then:
+    - service: script.submit_baby_buddy_feeding
+      metadata: {}
+      data: {}
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CANCEL''}}'
+    then:
+    - service: script.reset_finnley_feeding_form
+      data: {}
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
   mode: queued
   icon: mdi:food
   max: 5
@@ -1081,6 +1112,8 @@ baby_buddy_finnley_diaper_change:
           priority: high
           tag: confirm_finnley_diaper_change
           actions:
+          - action: CANCEL_DIAPER_CHANGE
+            title: Cancel
           - action: NO_ADDITIONAL_DIAPER_CHANGE_INFORMATION
             title: 'No'
           - action: URI
@@ -1101,6 +1134,8 @@ baby_buddy_finnley_diaper_change:
           priority: high
           tag: confirm_finnley_diaper_change
           actions:
+          - action: CANCEL_DIAPER_CHANGE
+            title: Cancel
           - action: NO_ADDITIONAL_DIAPER_CHANGE_INFORMATION
             title: 'No'
           - action: URI
@@ -1118,45 +1153,75 @@ baby_buddy_finnley_diaper_change:
   - wait_for_trigger:
     - platform: event
       event_type: FINNLEY_DIAPER_CHANGE_CONFIRMED
+      id: CONTINUE
     - platform: event
       event_type: mobile_app_notification_action
       event_data:
         action: NO_ADDITIONAL_DIAPER_CHANGE_INFORMATION
+      id: CONTINUE
     - platform: state
       entity_id:
       - input_boolean.waiting_for_finnley_diaper_change_confirmation
       to: 'off'
+      id: CONTINUE
     - platform: device
       domain: mqtt
       device_id: 80c996aef1daadbad8c4ffc3926a0921
       type: action
       subtype: 'off'
       discovery_id: 0x4c5bb3fffe4c336b action_off
+      id: CONTINUE
     - platform: device
       domain: mqtt
       device_id: 80c996aef1daadbad8c4ffc3926a0921
       type: action
       subtype: arrow_left_click
       discovery_id: 0x4c5bb3fffe4c336b action_arrow_left_click
+      id: CONTINUE
     - platform: device
       domain: mqtt
       device_id: 80c996aef1daadbad8c4ffc3926a0921
       type: action
       subtype: arrow_right_click
       discovery_id: 0x4c5bb3fffe4c336b action_arrow_right_click
+      id: CONTINUE
+    - platform: event
+      event_type: FINNLEY_DIAPER_CHANGE_CANCELLED
+      id: CANCEL
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: CANCEL_DIAPER_CHANGE
+      id: CANCEL
     timeout:
       hours: 0
       minutes: 30
       seconds: 0
       milliseconds: 0
-  - service: script.submit_baby_buddy_diaper_change
-    metadata: {}
-    data: {}
   - service: notify.all_mobile_phones
     data:
       data:
         tag: confirm_finnley_diaper_change
       message: clear_notification
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CONTINUE'' or wait.trigger.id == null}}'
+    then:
+    - service: script.submit_baby_buddy_diaper_change
+      metadata: {}
+      data: {}
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CANCEL''}}'
+    then:
+    - service: script.reset_finnley_diaper_changer_form
+      metadata: {}
+      data: {}
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.waiting_for_finnley_diaper_change_confirmation
   mode: queued
   icon: mdi:food
   max: 5
@@ -1348,6 +1413,8 @@ baby_buddy_finnley_sleep:
           priority: high
           tag: confirm_finnley_sleep
           actions:
+          - action: CANCEL_SLEEP
+            title: Cancel
           - action: NO_ADDITIONAL_SLEEP_INFORMATION
             title: 'No'
           - action: URI
@@ -1368,6 +1435,8 @@ baby_buddy_finnley_sleep:
           priority: high
           tag: confirm_finnley_sleep
           actions:
+          - action: CANCEL_SLEEP
+            title: Cancel
           - action: NO_ADDITIONAL_SLEEP_INFORMATION
             title: 'No'
           - action: URI
@@ -1385,32 +1454,60 @@ baby_buddy_finnley_sleep:
   - wait_for_trigger:
     - platform: event
       event_type: FINNLEY_SLEEP_CONFIRMED
+      id: CONTINUE
     - platform: event
       event_type: mobile_app_notification_action
       event_data:
         action: NO_ADDITIONAL_SLEEP_INFORMATION
+      id: CONTINUE
     - platform: state
       entity_id:
       - input_boolean.waiting_for_finnley_sleep_confirmation
       to: 'off'
+      id: CONTINUE
     - platform: device
       domain: mqtt
       device_id: 80c996aef1daadbad8c4ffc3926a0921
       type: action
       subtype: brightness_move_down
       discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_down
+      id: CONTINUE
+    - platform: event
+      event_type: FINNLEY_SLEEP_CANCELLED
+      id: CANCEL
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: CANCEL_SLEEP
+      id: CANCEL
     timeout:
       hours: 0
       minutes: 30
       seconds: 0
       milliseconds: 0
-  - service: script.submit_baby_buddy_sleep
-    data: {}
   - service: notify.all_mobile_phones
     data:
       data:
         tag: confirm_finnley_sleep
       message: clear_notification
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CONTINUE'' or wait.trigger.id == null}}'
+    then:
+    - service: script.submit_baby_buddy_sleep
+      metadata: {}
+      data: {}
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CANCEL''}}'
+    then:
+    - service: script.reset_finnley_sleep_form
+      data: {}
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.waiting_for_finnley_sleep_confirmation
   mode: queued
   icon: mdi:food
   max: 5
@@ -1495,3 +1592,21 @@ submit_baby_buddy_pumping:
       - input_datetime.pumping_time
   mode: single
   icon: mdi:format-clear
+finnley_cancel_feeding_details:
+  alias: Finnley Cancel Feeding Details
+  sequence:
+  - event: FINNLEY_FEEDING_CANCELLED
+    event_data: {}
+  mode: single
+finnley_cancel_diaper_change_details:
+  alias: Finnley Cancel Diaper Change Details
+  sequence:
+  - event: FINNLEY_DIAPER_CHANGE_CANCELLED
+    event_data: {}
+  mode: single
+finnley_cancel_sleep_details:
+  alias: Finnley Cancel Sleep Details
+  sequence:
+  - event: FINNLEY_SLEEP_CANCELLED
+    event_data: {}
+  mode: single

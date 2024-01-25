@@ -2403,10 +2403,38 @@
     id: feeding_trigger
   - platform: device
     domain: mqtt
+    device_id: 8a0e66269e863f771847626e4793deb8
+    type: action
+    subtype: 'on'
+    discovery_id: 0x4c5bb3fffe462b16 action_on
+    id: feeding_trigger
+  - platform: device
+    domain: mqtt
+    device_id: ff5d548ecb6d3bc0c57107012bc65e57
+    type: action
+    subtype: 'on'
+    discovery_id: 0x84ba20fffed1b83e action_on
+    id: feeding_trigger
+  - platform: device
+    domain: mqtt
     device_id: 80c996aef1daadbad8c4ffc3926a0921
     type: action
     subtype: arrow_left_click
     discovery_id: 0x4c5bb3fffe4c336b action_arrow_left_click
+    id: wet_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 8a0e66269e863f771847626e4793deb8
+    type: action
+    subtype: arrow_left_click
+    discovery_id: 0x4c5bb3fffe462b16 action_arrow_left_click
+    id: wet_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: ff5d548ecb6d3bc0c57107012bc65e57
+    type: action
+    subtype: arrow_left_click
+    discovery_id: 0x84ba20fffed1b83e action_arrow_left_click
     id: wet_diaper_trigger
   - platform: device
     domain: mqtt
@@ -2417,6 +2445,20 @@
     id: solid_diaper_trigger
   - platform: device
     domain: mqtt
+    device_id: 8a0e66269e863f771847626e4793deb8
+    type: action
+    subtype: arrow_right_click
+    discovery_id: 0x4c5bb3fffe462b16 action_arrow_right_click
+    id: solid_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: ff5d548ecb6d3bc0c57107012bc65e57
+    type: action
+    subtype: arrow_right_click
+    discovery_id: 0x84ba20fffed1b83e action_arrow_right_click
+    id: solid_diaper_trigger
+  - platform: device
+    domain: mqtt
     device_id: 80c996aef1daadbad8c4ffc3926a0921
     type: action
     subtype: 'off'
@@ -2424,17 +2466,59 @@
     id: wet_solid_diaper_trigger
   - platform: device
     domain: mqtt
+    device_id: 8a0e66269e863f771847626e4793deb8
+    type: action
+    subtype: 'off'
+    discovery_id: 0x4c5bb3fffe462b16 action_off
+    id: wet_solid_diaper_trigger
+  - platform: device
+    domain: mqtt
+    device_id: ff5d548ecb6d3bc0c57107012bc65e57
+    type: action
+    subtype: 'off'
+    discovery_id: 0x84ba20fffed1b83e action_off
+    id: wet_solid_diaper_trigger
+  - platform: device
+    domain: mqtt
     device_id: 80c996aef1daadbad8c4ffc3926a0921
     type: action
     subtype: brightness_move_up
     discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_up
-    id: timer_toggle_trigger
+    id: feeding_timer_toggle_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 8a0e66269e863f771847626e4793deb8
+    type: action
+    subtype: brightness_move_up
+    discovery_id: 0x4c5bb3fffe462b16 action_brightness_move_up
+    id: feeding_timer_toggle_trigger
+  - platform: device
+    domain: mqtt
+    device_id: ff5d548ecb6d3bc0c57107012bc65e57
+    type: action
+    subtype: brightness_move_up
+    discovery_id: 0x84ba20fffed1b83e action_brightness_move_up
+    id: feeding_timer_toggle_trigger
   - platform: device
     domain: mqtt
     device_id: 80c996aef1daadbad8c4ffc3926a0921
     type: action
     subtype: brightness_move_down
     discovery_id: 0x4c5bb3fffe4c336b action_brightness_move_down
+    id: sleep_trigger
+  - platform: device
+    domain: mqtt
+    device_id: 8a0e66269e863f771847626e4793deb8
+    type: action
+    subtype: brightness_move_down
+    discovery_id: 0x4c5bb3fffe462b16 action_brightness_move_down
+    id: sleep_trigger
+  - platform: device
+    domain: mqtt
+    device_id: ff5d548ecb6d3bc0c57107012bc65e57
+    type: action
+    subtype: brightness_move_down
+    discovery_id: 0x84ba20fffed1b83e action_brightness_move_down
     id: sleep_trigger
   condition: []
   action:
@@ -2465,7 +2549,7 @@
   - if:
     - condition: trigger
       id:
-      - timer_toggle_trigger
+      - feeding_timer_toggle_trigger
     then:
     - service: script.toggle_finnley_feeding_timer
       data: {}

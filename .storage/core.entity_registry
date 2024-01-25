@@ -66842,6 +66842,557 @@
         "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:motion_sensor:garage",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "8a0e66269e863f771847626e4793deb8",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bedroom_baby_buddy_buttons_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0b10eb253f5bf97ef5a59c2724230ad5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe462b16_battery_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "8a0e66269e863f771847626e4793deb8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.master_bedroom_baby_buddy_buttons_action",
+        "hidden_by": null,
+        "icon": null,
+        "id": "db768d94bcf8b51a3057c3b567e10d14",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gesture-double-tap",
+        "original_name": "action",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe462b16_action_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "8a0e66269e863f771847626e4793deb8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bedroom_baby_buddy_buttons_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c60d87291a42954c524c5120929d099a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe462b16_linkquality_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "8a0e66269e863f771847626e4793deb8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.master_bedroom_baby_buddy_buttons_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4a033137339a497f244ed40741737667",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe462b16_update_state_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "8a0e66269e863f771847626e4793deb8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.master_bedroom_baby_buddy_buttons_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dc68d0fbee5ef73fa9645e4c6b8ae932",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe462b16_update_available_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "8a0e66269e863f771847626e4793deb8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.master_bedroom_baby_buddy_buttons",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7ecbf1a95e03144fb1a6c350bb471c9d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x4c5bb3fffe462b16_update_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_baby_buddy_buttons_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "833acd7c3285a01867fe3ec361c4a81c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x84ba20fffed1b83e_battery_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.basement_baby_buddy_buttons_action",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e53d01ed9c42bb308c9e41543b6a0609",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gesture-double-tap",
+        "original_name": "action",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x84ba20fffed1b83e_action_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_baby_buddy_buttons_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7d1ed653da306726b00896ccd7e2e99b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x84ba20fffed1b83e_linkquality_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.basement_baby_buddy_buttons_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a8e8d8a66a9f35e3ff517b30ed456770",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x84ba20fffed1b83e_update_state_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.basement_baby_buddy_buttons_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "748e6f9ac27c7706720063e4c0b1a537",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x84ba20fffed1b83e_update_available_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "ff5d548ecb6d3bc0c57107012bc65e57",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.basement_baby_buddy_buttons",
+        "hidden_by": null,
+        "icon": null,
+        "id": "804723acc74838e128c1a106724babb3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x84ba20fffed1b83e_update_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "person.beth",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7cbe143f2b018d166fe042d95d2cf2f1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Beth",
+        "platform": "person",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "beth",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "person.tina",
+        "hidden_by": null,
+        "icon": null,
+        "id": "88e91d3668762b001c5dde52454e25b5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Tina",
+        "platform": "person",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "tina",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_cancel_feeding_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "46f44bcebd4bb2e05b8907de43904a56",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Cancel Feeding Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_cancel_feeding_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_cancel_diaper_change_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0baa10b2df24a0a405d806a38add5264",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Cancel Diaper Change Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_cancel_diaper_change_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_cancel_sleep_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1303ac29ce5ed67b5ca5e4985e49e9fa",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Cancel Sleep Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_cancel_sleep_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
