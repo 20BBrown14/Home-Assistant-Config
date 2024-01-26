@@ -2790,4 +2790,5 @@
     - service: script.submit_baby_buddy_sleep
       data: {}
     enabled: true
-  mode: single
+  mode: parallel
+  max: 10
