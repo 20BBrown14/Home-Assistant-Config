@@ -13678,11 +13678,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "source_list": [
-            "Branden's Note20 Ultra"
-          ]
-        },
+        "capabilities": {},
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
