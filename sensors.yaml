@@ -64,3 +64,65 @@
     User-Agent: Homeassistant
     Accept: application/geo+json
   scan_interval: 60
+
+      ##########################################################
+      ## BabyBuddy Feedings
+      ##########################################################
+
+- platform: rest
+  scan_interval: 15
+  name: BabyBuddy Feedings
+  resource: http://192.168.86.21:8000/api/feedings/?limit=20
+  value_template: N/A
+  json_attributes:
+    - results
+  headers:
+    Authorization: !secret baby_buddy_token
+
+- platform: template
+  sensors:
+    bb_last_feeding_time:
+      friendly_name: Last Feeding Time
+      value_template: >-
+        {{ as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["end"]) | timestamp_custom ("%-I:%M %p", True) }}
+
+    bb_last_bottle_amount:
+      friendly_name: Last Bottle Amount
+      value_template: >-
+        {% set last_bottle_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('type', 'equalto', 'formula') | list | first%}
+        {{last_bottle_feeding.amount}}oz @ {{as_timestamp(last_bottle_feeding.start) | timestamp_custom ("%-I:%M %p", True)}} 
+
+    bb_last_breast_feeding:
+      friendly_name: Last Breast Feeding
+      value_template: >-
+        {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('type', 'equalto', 'breast milk') | list | first %}
+        {{(as_timestamp(last_breast_milk_feeding.end) - as_timestamp(last_breast_milk_feeding.start))/60}} Minutes on {{last_breast_milk_feeding.method.title()}} @ {{as_timestamp(last_breast_milk_feeding.start) | timestamp_custom ("%-I:%M %p", True)}}
+
+    bb_last_feeding_how_long_ago:
+      friendly_name: Last Feeding How Long Ago
+      value_template: >-
+        {% set up_time = as_timestamp(now()) - as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["end"]) %}
+        {% set seconds = (up_time % 60) | int %}
+        {% set minutes = (up_time // 60) | int %}
+        {% set hours = (minutes // 60) %}
+        {% set days = (hours // 24) %}
+        {% set weeks = (days // 7) %}
+        {% set minutes = (minutes % 60) %}
+        {% set hours =  (hours % 24) %}
+        {% set days = (days % 7) %}
+        {% macro phrase(value, name) %}
+                  {%- set value = value %}
+                  {%- set end = 's' if value > 1 else '' %}
+                  {{- '{} {}{}'.format(value, name, end) if value | int > 0 else '' }}
+        {%- endmacro %}
+        {% macro phraseSeconds(value) %}
+                  {%- set value = value %}
+                  {%- set end = 's' if value > 0 else '' %}
+                  {{- '{}{}'.format(value, end) if value | int > 0 else '' }}
+        {%- endmacro %}
+        {% set text = [ phrase(weeks, 'week'), phrase(days, 'day'), phrase(hours, 'hr'), phrase(minutes, 'min') ] | select('!=','') | list | join(', ') %}
+        {% set last_comma = text.rfind(',') %}
+        {% if last_comma != -1 %}
+          {% set text = text[:last_comma] + ' and' + text[last_comma + 1:] %}
+        {% endif %}
+        {{ text }} ago

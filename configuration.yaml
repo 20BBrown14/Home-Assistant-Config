@@ -45,6 +45,7 @@ recorder:
       - weather.*
       - vaccuum.*
       - button.*ping
+      - sensor.bb_*
 
 # Spotcast
 spotcast:
@@ -78,11 +79,5 @@ notify:
     services:
       - service: mobile_app_samantha_s_phone
       - service: mobile_app_branden_s_phone
-
-
-panel_iframe:
-  baby_buddy:
-    title: "Baby Buddy"
-    url: !secret baby_buddy_auth_url
 
 #test comment8

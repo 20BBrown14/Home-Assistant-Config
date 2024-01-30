@@ -971,7 +971,7 @@ baby_buddy_test:
     enabled: true
   - service: script.reset_finnley_feeding_form
     data: {}
-    enabled: true
+    enabled: false
   - service: input_boolean.turn_on
     data: {}
     target:
@@ -1036,6 +1036,10 @@ baby_buddy_test:
   mode: queued
   icon: mdi:food
   max: 5
+  fields:
+    field:
+      selector:
+        text:
 finnley_confirm_feeding_details:
   alias: Finnley Confirm Feeding Details
   sequence:
@@ -1073,6 +1077,14 @@ reset_finnley_feeding_form:
       option: Breast milk
     target:
       entity_id: select.baby_buddy_feeding_type
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      timestamp: 1
+    target:
+      entity_id:
+      - input_datetime.finnley_feeding_start_time
+      - input_datetime.finnley_feeding_stop_time
   mode: single
   icon: mdi:format-clear
 reset_finnley_diaper_changer_form:
@@ -1090,7 +1102,7 @@ reset_finnley_diaper_changer_form:
       entity_id: input_text.finnley_diaper_change_notes
   - service: select.select_option
     data:
-      option: Yellow
+      option: Brown
     target:
       entity_id: select.baby_buddy_diaper_color
   mode: single
@@ -1258,19 +1270,16 @@ submit_baby_buddy_feeding:
         {% endif %}'
       notes: '{{states(''input_text.finnley_feeding_notes'') or ''Added without additional
         information from HA Automation(s)''}}'
-      start: "{% if states('input_boolean.finnley_feeding_use_timer') == 'on' and
-        states('timer.finnley_feeding_timer') != 'idle' %}\n  {% set t = 'timer.finnley_feeding_timer'
-        %}\n  {% if is_state(t, 'active') %}\n    {% set d = state_attr(t,'duration')
-        | as_timedelta %}\n    {% set f = state_attr(t, 'finishes_at') | as_datetime
-        %}\n    {% set duration = ( d.total_seconds() - ( f  - now()).total_seconds())
-        \ | timestamp_custom('%H:%M:%S', false) %}\n  {% elif is_state(t, 'paused')
-        %}\n    {% set d = state_attr(t,'duration') | as_timedelta %}\n    {% set
-        f = state_attr(t, 'remaining') | as_timedelta %}\n    {% set duration = (
-        d.total_seconds() - f.total_seconds())  | timestamp_custom('%H:%M:%S', false)
-        %}\n  {% else %}\n    00:00:00\n  {% endif %}\n  {{(now() - duration|as_timedelta).strftime('%H:%M:%S')}}\n{%
-        else %}\n  {{(now() - timedelta(minutes=(states('input_number.finnley_feeding_time')|int))).strftime('%H:%M:%S')}}\n{%
-        endif %}"
-      end: '{{now().strftime(''%H:%M:%S'')}}'
+      start: '{{(states(''input_datetime.finnley_feeding_start_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
+      end: "{% if states('timer.finnley_feeding_timer') == 'active'%}\n  {% set t
+        = 'timer.finnley_feeding_timer' %}\n  {% set d = state_attr(t,'duration')
+        | as_timedelta %}\n  {% set f = state_attr(t, 'finishes_at') | as_datetime
+        %}\n  {% set duration = ( d.total_seconds() - ( f  - now()).total_seconds())
+        \ | timestamp_custom('%H:%M:%S', false) %}\n  {{(states('input_datetime.finnley_feeding_start_time')
+        | as_datetime + duration|as_timedelta).strftime('%Y-%m-%dT%H:%M:%S')}}\n{%
+        elif states('input_datetime.finnley_feeding_start_time') > states('input_datetime.finnley_feeding_stop_time')
+        %}\n  {{now()}}\n{% else %}\n  {{(states('input_datetime.finnley_feeding_stop_time')
+        | as_datetime).strftime('%Y-%m-%dT%H:%M:%S')}}\n{% endif %}"
     target:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
   - service: script.reset_finnley_feeding_form
@@ -1300,7 +1309,7 @@ submit_baby_buddy_diaper_change:
       amount: '{{states(''input_number.finnley_diaper_amount'')}}'
       notes: '{{states(''input_text.finnley_diaper_change_notes'') or ''Added without
         additional information from HA Automation(s)''}}'
-      time: '{{now().strftime(''%H:%M:%S'')}}'
+      time: '{{(states(''input_datetime.finnley_diaper_change_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
     target:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
   - service: script.reset_finnley_diaper_changer_form
@@ -1609,4 +1618,14 @@ finnley_cancel_sleep_details:
   sequence:
   - event: FINNLEY_SLEEP_CANCELLED
     event_data: {}
+  mode: single
+set_diaper_change_time_to_now:
+  alias: Set Finnley Diaper Change Time to Now
+  sequence:
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      datetime: '{{now()}}'
+    target:
+      entity_id: input_datetime.finnley_diaper_change_time
   mode: single

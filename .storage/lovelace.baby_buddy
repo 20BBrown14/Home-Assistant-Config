@@ -14,12 +14,37 @@
             {
               "type": "entities",
               "entities": [
-                "sensor.finnley_brown_last_change",
-                "sensor.finnley_brown_last_feeding",
-                "sensor.finnley_brown_last_pumping",
-                "sensor.finnley_brown_last_sleep",
-                "sensor.finnley_brown_last_temperature"
-              ]
+                {
+                  "entity": "sensor.finnley_brown_last_change"
+                },
+                {
+                  "entity": "sensor.bb_last_feeding_time",
+                  "icon": "mdi:av-timer"
+                },
+                {
+                  "entity": "sensor.bb_last_feeding_how_long_ago",
+                  "name": "Time Since Last Feeding",
+                  "icon": "mdi:av-timer"
+                },
+                {
+                  "entity": "sensor.bb_last_bottle_amount",
+                  "icon": "mdi:baby-bottle"
+                },
+                {
+                  "entity": "sensor.bb_last_breast_feeding",
+                  "icon": "mdi:mother-nurse"
+                },
+                {
+                  "entity": "sensor.finnley_brown_last_pumping"
+                },
+                {
+                  "entity": "sensor.finnley_brown_last_sleep"
+                },
+                {
+                  "entity": "sensor.finnley_brown_last_temperature"
+                }
+              ],
+              "title": "Finnley Summary"
             }
           ]
         },
@@ -85,12 +110,12 @@
                       "entity": "input_number.finnley_feeding_amount"
                     },
                     {
-                      "entity": "input_number.finnley_feeding_time"
+                      "entity": "input_datetime.finnley_feeding_start_time",
+                      "name": "Start Time"
                     },
                     {
-                      "entity": "input_boolean.finnley_feeding_use_timer",
-                      "name": "Should use timer instead of time?",
-                      "secondary_info": "none"
+                      "entity": "input_datetime.finnley_feeding_stop_time",
+                      "name": "Stop Time"
                     },
                     {
                       "type": "divider",
@@ -155,6 +180,19 @@
                 },
                 {
                   "entity": "select.baby_buddy_diaper_color"
+                },
+                {
+                  "entity": "input_datetime.finnley_diaper_change_time"
+                },
+                {
+                  "type": "button",
+                  "name": "Set Diaper Change Time To Now",
+                  "icon": "mdi:timer",
+                  "action_name": "Now",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.set_diaper_change_time_to_now"
+                  }
                 },
                 {
                   "entity": "input_text.finnley_diaper_change_notes"

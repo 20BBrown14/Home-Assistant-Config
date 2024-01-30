@@ -2543,6 +2543,12 @@
           %} Wet and Solid {%endif%}'
       target:
         entity_id: select.baby_buddy_diaper_type
+    - service: input_datetime.set_datetime
+      metadata: {}
+      data:
+        datetime: '{{now()}}'
+      target:
+        entity_id: input_datetime.finnley_diaper_change_time
     - service: script.baby_buddy_finnley_diaper_change
       data: {}
     enabled: true
@@ -2551,8 +2557,18 @@
       id:
       - feeding_timer_toggle_trigger
     then:
-    - service: script.toggle_finnley_feeding_timer
-      data: {}
+    - if:
+      - condition: template
+        value_template: '{{states(''timer.finnley_feeding_timer'') == ''active''}}'
+      then:
+      - service: script.toggle_finnley_feeding_timer
+        data: {}
+      - service: script.baby_buddy_test
+        metadata: {}
+        data: {}
+      else:
+      - service: script.toggle_finnley_feeding_timer
+        data: {}
   - if:
     - condition: trigger
       id:
@@ -2686,11 +2702,12 @@
     - timer.finnley_feeding_timer
     to: active
     id: finnley_feeding_timer_started
+    from: idle
   - platform: state
     entity_id:
     - timer.finnley_feeding_timer
-    to: idle
-    id: finnley_feeding_timer_stopped
+    to: paused
+    id: finnley_feeding_timer_paused
   - platform: event
     event_type: FINNLEY_FEEDING_CONFIRMED
     id: submit_feeding_form
@@ -2717,11 +2734,11 @@
       id:
       - finnley_feeding_timer_started
     then:
-    - service: input_boolean.turn_on
-      metadata: {}
-      data: {}
+    - service: input_datetime.set_datetime
       target:
-        entity_id: input_boolean.finnley_feeding_use_timer
+        entity_id: input_datetime.finnley_feeding_start_time
+      data:
+        datetime: '{{ now() }}'
   - if:
     - condition: trigger
       id:
@@ -2760,13 +2777,13 @@
   - if:
     - condition: trigger
       id:
-      - finnley_sleep_timer_stopped
+      - finnley_feeding_timer_paused
     then:
-    - service: input_boolean.turn_off
-      metadata: {}
-      data: {}
+    - service: input_datetime.set_datetime
       target:
-        entity_id: input_boolean.finnley_sleep_use_timer
+        entity_id: input_datetime.finnley_feeding_stop_time
+      data:
+        datetime: '{{ now() }}'
   - if:
     - condition: trigger
       id:
