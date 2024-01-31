@@ -67574,6 +67574,76 @@
         "unique_id": "set_diaper_change_time_to_now",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_height",
+        "hidden_by": null,
+        "icon": null,
+        "id": "03c0b103ec00aad74827b36ca011d861",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human-male-height",
+        "original_name": "Finnley Brown last height",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-height",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_weight",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5d9aa7cecc66c69cb4f96a3f664322c9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:scale-bathroom",
+        "original_name": "Finnley Brown last weight",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-weight",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

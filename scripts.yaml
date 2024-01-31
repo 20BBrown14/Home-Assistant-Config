@@ -142,6 +142,7 @@ good_night:
       device_id: e50cb3846e82014dde1e95832d9d4e9c
       entity_id: fan.in_wall_fan_speed_control_500s
       domain: fan
+      enabled: false
     - type: turn_on
       device_id: 10186c425eb8729e24fde4e484d6a531
       entity_id: switch.smart_plug_1_channel
@@ -272,6 +273,7 @@ get_ready_for_bed:
       device_id: e50cb3846e82014dde1e95832d9d4e9c
       entity_id: fan.in_wall_fan_speed_control_500s
       domain: fan
+      enabled: false
     - type: turn_on
       device_id: b47adfbdffd61cfbe4a91df9331b1c05
       entity_id: switch.smart_plug_1_channel_2
