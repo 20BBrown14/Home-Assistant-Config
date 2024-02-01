@@ -98,10 +98,10 @@
                       }
                     },
                     {
-                      "entity": "select.baby_buddy_feeding_method"
+                      "entity": "select.baby_buddy_feeding_type"
                     },
                     {
-                      "entity": "select.baby_buddy_feeding_type"
+                      "entity": "select.baby_buddy_feeding_method"
                     },
                     {
                       "entity": "input_text.finnley_feeding_notes"
@@ -124,30 +124,42 @@
                       }
                     },
                     {
-                      "type": "button",
-                      "name": "Confirm Finnley Feeding",
-                      "icon": "mdi:button-cursor",
-                      "action_name": "Confirm",
-                      "tap_action": {
-                        "action": "call-service",
-                        "service": "script.finnley_confirm_feeding_details"
-                      }
-                    },
-                    {
-                      "type": "divider",
-                      "style": {
-                        "height": "1px"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "Cancel Finnley Feeding",
-                      "icon": "mdi:button-cursor",
-                      "action_name": "Cancel",
-                      "tap_action": {
-                        "action": "call-service",
-                        "service": "script.finnley_cancel_feeding_details"
-                      }
+                      "type": "custom:multiple-entity-row",
+                      "show_state": false,
+                      "name": " ",
+                      "icon": " ",
+                      "entity": "input_boolean.waiting_for_finnley_feeding_confirmation",
+                      "entities": [
+                        {
+                          "type": "button",
+                          "name": "Cancel",
+                          "icon": " ",
+                          "action_name": "Cancel",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold",
+                            "padding-right": "72px"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_cancel_feeding_details"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "name": "Submit",
+                          "icon": " ",
+                          "action_name": "Confirm",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_confirm_feeding_details"
+                          }
+                        }
+                      ]
                     }
                   ],
                   "title": "Add Feeding - Finnley",
@@ -207,30 +219,42 @@
                   }
                 },
                 {
-                  "type": "button",
-                  "name": "Confirm Finnley Diaper Change",
-                  "icon": "mdi:button-cursor",
-                  "action_name": "Confirm",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "script.finnley_confirm_diaper_change_details"
-                  }
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "1px"
-                  }
-                },
-                {
-                  "type": "button",
-                  "name": "Cancel Finnley Diaper Change",
-                  "icon": "mdi:button-cursor",
-                  "action_name": "Cancel",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "script.finnley_cancel_diaper_change_details"
-                  }
+                  "type": "custom:multiple-entity-row",
+                  "show_state": false,
+                  "name": " ",
+                  "icon": " ",
+                  "entity": "input_boolean.waiting_for_finnley_diaper_change_confirmation",
+                  "entities": [
+                    {
+                      "type": "button",
+                      "icon": " ",
+                      "action_name": "Cancel",
+                      "name": "Cancel",
+                      "styles": {
+                        "height": "10px",
+                        "font-weight": "bold",
+                        "padding-right": "72px"
+                      },
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_cancel_diaper_change_details"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "icon": " ",
+                      "action_name": "Confirm",
+                      "name": "Submit",
+                      "styles": {
+                        "height": "10px",
+                        "font-weight": "bold"
+                      },
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_confirm_diaper_change_details"
+                      }
+                    }
+                  ]
                 }
               ],
               "title": "Add Diaper Change - Finnley",
@@ -309,30 +333,33 @@
                       }
                     },
                     {
-                      "type": "button",
-                      "name": "Confirm Finnley Sleep",
+                      "type": "custom:multiple-entity-row",
+                      "show_state": false,
+                      "name": " ",
                       "icon": "mdi:button-cursor",
-                      "action_name": "Confirm",
-                      "tap_action": {
-                        "action": "call-service",
-                        "service": "script.finnley_confirm_sleep_details"
-                      }
-                    },
-                    {
-                      "type": "divider",
-                      "style": {
-                        "height": "1px"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "name": "Cancel Finnley Sleep",
-                      "icon": "mdi:button-cursor",
-                      "action_name": "Cancel",
-                      "tap_action": {
-                        "action": "call-service",
-                        "service": "script.finnley_cancel_sleep_details"
-                      }
+                      "entity": "input_boolean.waiting_for_finnley_diaper_change_confirmation",
+                      "entities": [
+                        {
+                          "type": "button",
+                          "name": "Cancel Finnley Sleep",
+                          "icon": "mdi:cancel",
+                          "action_name": "Cancel",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_cancel_sleep_details"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "name": "Confirm Finnley Sleep",
+                          "icon": "mdi:hand-okay",
+                          "action_name": "Confirm",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_confirm_sleep_details"
+                          }
+                        }
+                      ]
                     }
                   ],
                   "title": "Add Sleep - Finnley",

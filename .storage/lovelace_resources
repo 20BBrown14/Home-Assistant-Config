@@ -73,6 +73,16 @@
         "id": "080ce45c74da4d2aaa8eb20da7161f76",
         "url": "/hacsfiles/lovelace-template-entity-row/template-entity-row.js?hacstag=231674882132",
         "type": "module"
+      },
+      {
+        "id": "fb7db805d6e24acc8b25e88b7a95e9b4",
+        "url": "/hacsfiles/lovelace-multiple-entity-row/multiple-entity-row.js?hacstag=178921037450",
+        "type": "module"
+      },
+      {
+        "id": "e6112c1d3a2a476784e135e01f9549fd",
+        "url": "/hacsfiles/lovelace-card-mod/card-mod.js?hacstag=190927524342",
+        "type": "module"
       }
     ]
   }

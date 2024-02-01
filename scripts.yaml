@@ -1045,12 +1045,22 @@ baby_buddy_test:
 finnley_confirm_feeding_details:
   alias: Finnley Confirm Feeding Details
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - event: FINNLEY_FEEDING_CONFIRMED
     event_data: {}
   mode: single
 finnley_confirm_diaper_change_details:
   alias: Finnley Confirm Diaper Change Details
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - event: FINNLEY_DIAPER_CHANGE_CONFIRMED
     event_data: {}
   mode: single
@@ -1325,6 +1335,11 @@ submit_baby_buddy_diaper_change:
 finnley_confirm_sleep_details:
   alias: Finnley Confirm Sleep Details
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - event: FINNLEY_SLEEP_CONFIRMED
     event_data: {}
   mode: single
@@ -1546,6 +1561,11 @@ reset_finnley_temperature_form:
 submit_baby_buddy_temeprature:
   alias: Submit Baby Buddy Temeprature
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - service: babybuddy.add_temperature
     metadata: {}
     target:
@@ -1564,6 +1584,11 @@ submit_baby_buddy_temeprature:
 submit_baby_buddy_pumping:
   alias: Submit Baby Buddy Pumping
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - service: babybuddy.add_pumping
     metadata: {}
     target:
@@ -1606,12 +1631,22 @@ submit_baby_buddy_pumping:
 finnley_cancel_feeding_details:
   alias: Finnley Cancel Feeding Details
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - event: FINNLEY_FEEDING_CANCELLED
     event_data: {}
   mode: single
 finnley_cancel_diaper_change_details:
   alias: Finnley Cancel Diaper Change Details
   sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
   - event: FINNLEY_DIAPER_CHANGE_CANCELLED
     event_data: {}
   mode: single

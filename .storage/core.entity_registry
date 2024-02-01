@@ -4381,7 +4381,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8470,7 +8470,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-90",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8506,7 +8506,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-charging",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8542,7 +8542,7 @@
           }
         },
         "original_device_class": "plug",
-        "original_icon": "mdi:power-plug-off",
+        "original_icon": "mdi:power-plug",
         "original_name": "Samantha's Phone Is charging",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8578,7 +8578,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Samantha's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -9518,7 +9518,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:wifi-strength-2",
+        "original_icon": "mdi:wifi-strength-3",
         "original_name": "Samantha's Phone WiFi link speed",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -9617,7 +9617,7 @@
           }
         },
         "original_device_class": "signal_strength",
-        "original_icon": "mdi:wifi-strength-2",
+        "original_icon": "mdi:wifi-strength-3",
         "original_name": "Samantha's Phone WiFi signal strength",
         "platform": "mobile_app",
         "supported_features": 0,

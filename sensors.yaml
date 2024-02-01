@@ -96,7 +96,7 @@
       friendly_name: Last Breast Feeding
       value_template: >-
         {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('type', 'equalto', 'breast milk') | list | first %}
-        {{(as_timestamp(last_breast_milk_feeding.end) - as_timestamp(last_breast_milk_feeding.start))/60}} Minutes on {{last_breast_milk_feeding.method.title()}} @ {{as_timestamp(last_breast_milk_feeding.start) | timestamp_custom ("%-I:%M %p", True)}}
+        {{((as_timestamp(last_breast_milk_feeding.end) - as_timestamp(last_breast_milk_feeding.start))/60) | round(2)}} min(s) on {{last_breast_milk_feeding.method.title()}} @ {{as_timestamp(last_breast_milk_feeding.start) | timestamp_custom ("%-I:%M %p", True)}}
 
     bb_last_feeding_how_long_ago:
       friendly_name: Last Feeding How Long Ago
