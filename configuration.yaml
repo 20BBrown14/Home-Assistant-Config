@@ -19,7 +19,6 @@ tts:
     cache_dir: /tmp/tts
     time_memory: 300
     service_name: google_say
-    # base_url: http://192.168.86.21:8123
 
 recorder:
   purge_keep_days: 400
@@ -35,7 +34,7 @@ recorder:
       - input_button.confirm_*
       - input_text.finnley_*
       - input_number.finnley_*
-      - input_dattime.finnley_*
+      - input_datetime.finnley_*
       - input_datetime.pumping_time
       - input_datetime.baby_buddy*
       - media_player.*
@@ -46,6 +45,8 @@ recorder:
       - vaccuum.*
       - button.*ping
       - sensor.bb_*
+      - sensor.sun*
+      - weather.*
 
 # Spotcast
 spotcast:

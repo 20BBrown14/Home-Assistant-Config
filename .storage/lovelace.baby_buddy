@@ -114,8 +114,59 @@
                       "name": "Start Time"
                     },
                     {
+                      "type": "button",
+                      "name": " ",
+                      "icon": " ",
+                      "action_name": "Now",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.set_finnley_start_feeding_time_to_now"
+                      }
+                    },
+                    {
                       "entity": "input_datetime.finnley_feeding_stop_time",
                       "name": "Stop Time"
+                    },
+                    {
+                      "type": "custom:multiple-entity-row",
+                      "card_mod": {
+                        "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 16px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
+                      },
+                      "name": " ",
+                      "icon": " ",
+                      "show_state": false,
+                      "entity": "input_boolean.waiting_for_finnley_feeding_confirmation",
+                      "entities": [
+                        {
+                          "type": "button",
+                          "name": "Same as Start",
+                          "icon": " ",
+                          "action_name": "SameAsStart",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold",
+                            "padding-right": "48px"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.set_finnley_stop_feeding_time_to_same_as_start_time_duplicate"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "name": "Now",
+                          "icon": " ",
+                          "action_name": "Now",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.set_finnley_stop_feeding_time_to_now"
+                          }
+                        }
+                      ]
                     },
                     {
                       "type": "divider",
@@ -125,6 +176,9 @@
                     },
                     {
                       "type": "custom:multiple-entity-row",
+                      "card_mod": {
+                        "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 18px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
+                      },
                       "show_state": false,
                       "name": " ",
                       "icon": " ",
@@ -198,8 +252,8 @@
                 },
                 {
                   "type": "button",
-                  "name": "Set Diaper Change Time To Now",
-                  "icon": "mdi:timer",
+                  "name": " ",
+                  "icon": " ",
                   "action_name": "Now",
                   "tap_action": {
                     "action": "call-service",
@@ -224,6 +278,9 @@
                   "name": " ",
                   "icon": " ",
                   "entity": "input_boolean.waiting_for_finnley_diaper_change_confirmation",
+                  "card_mod": {
+                    "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 18px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
+                  },
                   "entities": [
                     {
                       "type": "button",

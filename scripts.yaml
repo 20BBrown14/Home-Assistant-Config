@@ -1666,3 +1666,33 @@ set_diaper_change_time_to_now:
     target:
       entity_id: input_datetime.finnley_diaper_change_time
   mode: single
+set_finnley_start_feeding_time_to_now:
+  alias: Set Finnley Start Feeding Time to Now
+  sequence:
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      datetime: '{{now()}}'
+    target:
+      entity_id: input_datetime.finnley_feeding_start_time
+  mode: single
+set_finnley_stop_feeding_time_to_now:
+  alias: Set Finnley Stop Feeding Time to Now
+  sequence:
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      datetime: '{{now()}}'
+    target:
+      entity_id: input_datetime.finnley_feeding_stop_time
+  mode: single
+set_finnley_stop_feeding_time_to_same_as_start_time_duplicate:
+  alias: Set Finnley Stop Feeding Time to Same as Start Time
+  sequence:
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      datetime: '{{states(''input_datetime.finnley_feeding_start_time'') | as_datetime}}'
+    target:
+      entity_id: input_datetime.finnley_feeding_stop_time
+  mode: single

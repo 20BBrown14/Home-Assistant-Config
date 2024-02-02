@@ -67644,17 +67644,108 @@
         "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-weight",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.set_finnley_start_feeding_time_to_now",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d559cec390e64a24a76e1ce5a1602cda",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Set Finnley Start Feeding Time to Now",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "set_finnley_start_feeding_time_to_now",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.set_finnley_stop_feeding_time_to_now",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8d66070cc1b3327b314c87633b073e5c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Set Finnley Stop Feeding Time to Now",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "set_finnley_stop_feeding_time_to_now",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.set_finnley_stop_feeding_time_to_same_as_start_time_duplicate",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fa52ca7fa779bb10e3018459ace08800",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Set Finnley Stop Feeding Time to Same as Start Time",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "set_finnley_stop_feeding_time_to_same_as_start_time_duplicate",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
-      {
-        "config_entry_id": null,
-        "entity_id": "automation.frigate_front_door_notification_pc",
-        "id": "9740abafd4d25755e1f6e94b2105f405",
-        "orphaned_timestamp": 1704163645.1757553,
-        "platform": "automation",
-        "unique_id": "1701399650903"
-      },
       {
         "config_entry_id": null,
         "entity_id": "input_datetime.finnley_feeding_time",
