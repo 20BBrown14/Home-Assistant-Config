@@ -1007,11 +1007,6 @@ baby_buddy_test:
       event_data:
         action: CANCEL_FEEDING
       id: CANCEL
-    timeout:
-      hours: 0
-      minutes: 30
-      seconds: 0
-      milliseconds: 0
   - service: notify.all_mobile_phones
     data:
       data:
@@ -1219,7 +1214,7 @@ baby_buddy_finnley_diaper_change:
       id: CANCEL
     timeout:
       hours: 0
-      minutes: 30
+      minutes: 0
       seconds: 0
       milliseconds: 0
   - service: notify.all_mobile_phones
