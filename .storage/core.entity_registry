@@ -67747,14 +67747,6 @@
     ],
     "deleted_entities": [
       {
-        "config_entry_id": null,
-        "entity_id": "input_datetime.finnley_feeding_time",
-        "id": "b6616946d28e58b83636eac426690cd6",
-        "orphaned_timestamp": 1704413911.7085488,
-        "platform": "input_datetime",
-        "unique_id": "finnley_feeding_time"
-      },
-      {
         "config_entry_id": "d93aef20aa3ac73a5f0276ed408e6855",
         "entity_id": "sensor.cameras_camera_fps",
         "id": "39443373d19d2f2a9ded7124829acb8c",

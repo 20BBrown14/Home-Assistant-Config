@@ -84,7 +84,7 @@
     bb_last_feeding_time:
       friendly_name: Last Feeding Time
       value_template: >-
-        {{ as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["end"]) | timestamp_custom ("%-I:%M %p", True) }}
+        {{ as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["start"]) | timestamp_custom ("%-I:%M %p", True) }}
 
     bb_last_bottle_amount:
       friendly_name: Last Bottle Amount
@@ -101,7 +101,7 @@
     bb_last_feeding_how_long_ago:
       friendly_name: Last Feeding How Long Ago
       value_template: >-
-        {% set up_time = as_timestamp(now()) - as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["end"]) %}
+        {% set up_time = as_timestamp(now()) - as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["start"]) %}
         {% set seconds = (up_time % 60) | int %}
         {% set minutes = (up_time // 60) | int %}
         {% set hours = (minutes // 60) %}

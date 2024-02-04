@@ -36,7 +36,7 @@
                   "performance": {
                     "profile": "high",
                     "features": {
-                      "media_chunk_size": 1000
+                      "media_chunk_size": 50
                     },
                     "style": {
                       "border_radius": true,

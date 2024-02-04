@@ -2527,6 +2527,9 @@
       id:
       - feeding_trigger
     then:
+    - service: script.set_finnley_start_feeding_time_to_now
+      metadata: {}
+      data: {}
     - service: script.baby_buddy_test
       data: {}
   - if:
