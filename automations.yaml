@@ -83,11 +83,16 @@
           weekday:
           - sun
           - sat
+      - condition: state
+        entity_id: input_boolean.quiet_mode
+        state: 'off'
+        enabled: true
       then:
       - parallel:
         - service: notify.google_assistant_sdk
           data:
             message: Garage Door Opening
+          enabled: true
   - delay:
       hours: 0
       minutes: 0

@@ -31,8 +31,18 @@
                   "icon": "mdi:baby-bottle"
                 },
                 {
+                  "entity": "sensor.bb_last_bottle_feeding_notes",
+                  "name": "Notes",
+                  "icon": "mdi:text"
+                },
+                {
                   "entity": "sensor.bb_last_breast_feeding",
                   "icon": "mdi:mother-nurse"
+                },
+                {
+                  "entity": "sensor.bb_last_breast_feeding_notes",
+                  "name": "Notes",
+                  "icon": "mdi:text"
                 },
                 {
                   "entity": "sensor.finnley_brown_last_pumping"

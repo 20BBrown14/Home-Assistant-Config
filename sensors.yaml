@@ -86,17 +86,30 @@
       value_template: >-
         {{ as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["start"]) | timestamp_custom ("%-I:%M %p", True) }}
 
+    bb_last_breast_feeding_notes:
+      friendly_name: Last Breast Feeding Notes
+      value_template: >-
+        {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'in', ['left breast', 'right breast', 'both breasts']) | list | first %}
+        {{last_breast_milk_feeding.notes}}
+
+    bb_last_bottle_feeding_notes:
+      friendly_name: Last Bottle Feeding Notes
+      value_template: >-
+        {% set last_bottle_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'equalto', 'bottle') | list | first%}
+        {{last_bottle_feeding.notes}}
+    
     bb_last_bottle_amount:
       friendly_name: Last Bottle Amount
       value_template: >-
-        {% set last_bottle_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('type', 'equalto', 'formula') | list | first%}
-        {{last_bottle_feeding.amount}}oz @ {{as_timestamp(last_bottle_feeding.start) | timestamp_custom ("%-I:%M %p", True)}} 
+        {% set last_bottle_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'equalto', 'bottle') | list | first%}
+        {{last_bottle_feeding.amount}}oz of {{last_bottle_feeding.type.title()}} @ {{as_timestamp(last_bottle_feeding.start) | timestamp_custom ("%-I:%M %p", True)}} 
 
     bb_last_breast_feeding:
       friendly_name: Last Breast Feeding
       value_template: >-
-        {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('type', 'equalto', 'breast milk') | list | first %}
+        {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'in', ['left breast', 'right breast', 'both breasts']) | list | first %}
         {{((as_timestamp(last_breast_milk_feeding.end) - as_timestamp(last_breast_milk_feeding.start))/60) | round(2)}} min(s) on {{last_breast_milk_feeding.method.title()}} @ {{as_timestamp(last_breast_milk_feeding.start) | timestamp_custom ("%-I:%M %p", True)}}
+
 
     bb_last_feeding_how_long_ago:
       friendly_name: Last Feeding How Long Ago

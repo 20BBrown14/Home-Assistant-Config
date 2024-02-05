@@ -1109,7 +1109,7 @@ reset_finnley_diaper_changer_form:
       entity_id: input_text.finnley_diaper_change_notes
   - service: select.select_option
     data:
-      option: Brown
+      option: Yellow
     target:
       entity_id: select.baby_buddy_diaper_color
   mode: single
@@ -1270,8 +1270,7 @@ submit_baby_buddy_feeding:
       amount: '{% if states(''input_number.finnley_feeding_amount'') | float == 0
         %} 0 {% else %} {{states(''input_number.finnley_feeding_amount'') | float}}
         {% endif %}'
-      notes: '{{states(''input_text.finnley_feeding_notes'') or ''Added without additional
-        information from HA Automation(s)''}}'
+      notes: '{{states(''input_text.finnley_feeding_notes'') or ''''}}'
       start: '{{(states(''input_datetime.finnley_feeding_start_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
       end: "{% if states('timer.finnley_feeding_timer') == 'active'%}\n  {% set t
         = 'timer.finnley_feeding_timer' %}\n  {% set d = state_attr(t,'duration')
@@ -1309,8 +1308,7 @@ submit_baby_buddy_diaper_change:
       type: '{{states(''select.baby_buddy_diaper_type'')}}'
       color: '{{states(''select.baby_buddy_diaper_color'')}}'
       amount: '{{states(''input_number.finnley_diaper_amount'')}}'
-      notes: '{{states(''input_text.finnley_diaper_change_notes'') or ''Added without
-        additional information from HA Automation(s)''}}'
+      notes: '{{states(''input_text.finnley_diaper_change_notes'') or ''''}}'
       time: '{{(states(''input_datetime.finnley_diaper_change_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
     target:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
@@ -1686,3 +1684,18 @@ set_finnley_stop_feeding_time_to_same_as_start_time_duplicate:
     target:
       entity_id: input_datetime.finnley_feeding_stop_time
   mode: single
+'1707117792684':
+  alias: New Script
+  sequence:
+  - wait_for_trigger:
+    - platform: device
+      type: turned_off
+      device_id: 1f38410000bfa7512b5e118322a6f696
+      entity_id: 65d9748ddc8ae0d0b31d1f6520d92a62
+      domain: switch
+    timeout:
+      hours: 0
+      minutes: 0.5
+      seconds: 0
+      milliseconds: 0
+    enabled: true
