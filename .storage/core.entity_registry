@@ -4141,7 +4141,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "battery",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4318,7 +4320,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "temperature",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4357,7 +4361,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "power",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4381,7 +4387,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-minus",
         "original_name": "Branden's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -5299,7 +5305,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": null,
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -63972,11 +63980,11 @@
         "has_entity_name": false,
         "name": null,
         "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
           "conversation": {
             "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": true
           }
         },
         "original_device_class": null,
@@ -63991,7 +63999,7 @@
       },
       {
         "aliases": [],
-        "area_id": null,
+        "area_id": "finnley_s_room",
         "capabilities": null,
         "config_entry_id": null,
         "device_class": null,
@@ -67647,7 +67655,7 @@
       },
       {
         "aliases": [],
-        "area_id": null,
+        "area_id": "finnley_s_room",
         "capabilities": null,
         "config_entry_id": null,
         "device_class": null,
