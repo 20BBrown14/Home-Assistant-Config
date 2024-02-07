@@ -67899,6 +67899,30 @@
         "orphaned_timestamp": 1705185261.2021492,
         "platform": "input_number",
         "unique_id": "temp"
+      },
+      {
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "entity_id": "sensor.branden_desktop_gpuload",
+        "id": "3c926a1de6bf07bd77a444f741976f9a",
+        "orphaned_timestamp": null,
+        "platform": "mqtt",
+        "unique_id": "c845e4cd-f1eb-4e28-8a47-1af54293fb45"
+      },
+      {
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "entity_id": "sensor.branden_desktop_gputemperature",
+        "id": "c2fb42694d5d1af1e0f8149101dc6da3",
+        "orphaned_timestamp": null,
+        "platform": "mqtt",
+        "unique_id": "e40521db-74ed-4f86-a43c-de340a2a4a26"
+      },
+      {
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "entity_id": "sensor.branden_desktop_gputemperature",
+        "id": "40ca212c9c5f383c307b9833a284f4d4",
+        "orphaned_timestamp": null,
+        "platform": "mqtt",
+        "unique_id": "f4628c85-339e-465f-a975-942335384ea6"
       }
     ]
   }
