@@ -79,8 +79,28 @@
   headers:
     Authorization: !secret baby_buddy_token
 
+- platform: rest
+  scan_interval: 15
+  name: BabyBuddy Pumpings
+  resource: http://192.168.86.21:8000/api/pumping/?limit=2
+  value_template: N/A
+  json_attributes:
+    - results
+  headers:
+    Authorization: !secret baby_buddy_token
+
 - platform: template
   sensors:
+    bb_last_pumping:
+      friendly_name: Last Pumping
+      value_template: >-
+        {{state_attr('sensor.babybuddy_pumpings', 'results')[0]["amount"]}}oz @ {{ as_timestamp(state_attr('sensor.babybuddy_pumpings', 'results')[0]["start"]) | timestamp_custom ("%-I:%M %p", True) }}
+
+    bb_last_pumping_notes:
+      friendly_name: Last Pumping Notes
+      value_template: >-
+        {{state_attr('sensor.babybuddy_pumpings', 'results')[0]["notes"] or ''}}
+
     bb_last_feeding_time:
       friendly_name: Last Feeding Time
       value_template: >-
@@ -90,13 +110,13 @@
       friendly_name: Last Breast Feeding Notes
       value_template: >-
         {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'in', ['left breast', 'right breast', 'both breasts']) | list | first %}
-        {{last_breast_milk_feeding.notes}}
+        {{last_breast_milk_feeding.notes or ''}}
 
     bb_last_bottle_feeding_notes:
       friendly_name: Last Bottle Feeding Notes
       value_template: >-
         {% set last_bottle_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'equalto', 'bottle') | list | first%}
-        {{last_bottle_feeding.notes}}
+        {{last_bottle_feeding.notes or ''}}
     
     bb_last_bottle_amount:
       friendly_name: Last Bottle Amount

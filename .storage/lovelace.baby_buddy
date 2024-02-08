@@ -18,6 +18,12 @@
                   "entity": "sensor.finnley_brown_last_change"
                 },
                 {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
                   "entity": "sensor.bb_last_feeding_time",
                   "icon": "mdi:av-timer"
                 },
@@ -45,10 +51,34 @@
                   "icon": "mdi:text"
                 },
                 {
-                  "entity": "sensor.finnley_brown_last_pumping"
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "sensor.bb_last_pumping",
+                  "icon": "mdi:mother-nurse"
+                },
+                {
+                  "entity": "sensor.bb_last_pumping_notes",
+                  "name": "Notes",
+                  "icon": "mdi:text"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
                 },
                 {
                   "entity": "sensor.finnley_brown_last_sleep"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
                 },
                 {
                   "entity": "sensor.finnley_brown_last_temperature"
@@ -504,7 +534,17 @@
                   "entity": "input_text.pumping_notes"
                 },
                 {
-                  "entity": "input_datetime.pumping_time"
+                  "entity": "input_datetime.pumping_start_time"
+                },
+                {
+                  "type": "button",
+                  "name": " ",
+                  "icon": " ",
+                  "action_name": "Now",
+                  "tap_action": {
+                    "action": "call-service",
+                    "service": "script.set_start_pumping_time_to_now"
+                  }
                 },
                 {
                   "type": "divider",

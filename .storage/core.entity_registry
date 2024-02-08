@@ -65112,42 +65112,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "has_date": false,
-          "has_time": true
-        },
-        "config_entry_id": null,
-        "device_class": null,
-        "device_id": null,
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "input_datetime.pumping_time",
-        "hidden_by": null,
-        "icon": null,
-        "id": "c8a2b4983dd091a8b4addd328bec9f1a",
-        "has_entity_name": false,
-        "name": null,
-        "options": {
-          "cloud.google_assistant": {
-            "should_expose": false
-          },
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:clock-time-eight",
-        "original_name": "Pumping Time",
-        "platform": "input_datetime",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "pumping_time",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": null,
         "config_entry_id": null,
         "device_class": null,
@@ -67817,6 +67781,75 @@
         "unique_id": "1707117792684",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": true,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.pumping_start_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "619d21595a40329b1efa6a3970b06cf8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-play",
+        "original_name": "Pumping Start Time",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "pumping_start_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.set_start_pumping_time_to_now",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4010800afd18535a06abb7e2488adfba",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Set Start Pumping Time to Now",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "set_start_pumping_time_to_now",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
@@ -67886,14 +67919,6 @@
       },
       {
         "config_entry_id": null,
-        "entity_id": "automation.baby_buddy_form_submissions",
-        "id": "3228336f99deac63d22e387b1d37ad10",
-        "orphaned_timestamp": 1704751469.877281,
-        "platform": "automation",
-        "unique_id": "1704751433714"
-      },
-      {
-        "config_entry_id": null,
         "entity_id": "input_number.finnley_temperature",
         "id": "52b49f9879d1e2ca391d51891afe8de3",
         "orphaned_timestamp": 1705185261.2021492,
@@ -67923,6 +67948,38 @@
         "orphaned_timestamp": null,
         "platform": "mqtt",
         "unique_id": "f4628c85-339e-465f-a975-942335384ea6"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "input_datetime.pumping_time",
+        "id": "c8a2b4983dd091a8b4addd328bec9f1a",
+        "orphaned_timestamp": 1707348048.33369,
+        "platform": "input_datetime",
+        "unique_id": "pumping_time"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "input_datetime.pumping_stop_time",
+        "id": "389435ccc42634657f7c2a73484c1fff",
+        "orphaned_timestamp": 1707348052.4031856,
+        "platform": "input_datetime",
+        "unique_id": "pumping_stop_time"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "script.set_stop_pumping_time_to_same_as_start_time",
+        "id": "8913896028f6ae322fbe4a4ec2913fba",
+        "orphaned_timestamp": 1707348099.1357756,
+        "platform": "script",
+        "unique_id": "set_stop_pumping_time_to_same_as_start_time"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "script.set_stop_pumping_time_to_now",
+        "id": "c0695ad65858f6a889d594f3b78d7d06",
+        "orphaned_timestamp": 1707348102.5645747,
+        "platform": "script",
+        "unique_id": "set_stop_pumping_time_to_now"
       }
     ]
   }

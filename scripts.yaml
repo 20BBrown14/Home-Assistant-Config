@@ -936,6 +936,7 @@ baby_buddy_test:
         message: Would you like to add additional details?
         title: Feeding for Finnely Added!
         data:
+          notification_icon: mdi:food
           ttl: 0
           priority: high
           tag: confirm_finnley_feeding
@@ -958,6 +959,7 @@ baby_buddy_test:
         message: Would you like to add additional details?
         title: Feeding for Finnely Added!
         data:
+          notification_icon: mdi:food
           ttl: 0
           priority: high
           tag: confirm_finnley_feeding
@@ -1127,6 +1129,7 @@ baby_buddy_finnley_diaper_change:
         message: Would you like to add additional details?
         title: Diaper Change for Finnley Added!
         data:
+          notification_icon: mdi:emoticon-poop
           ttl: 0
           priority: high
           tag: confirm_finnley_diaper_change
@@ -1149,6 +1152,7 @@ baby_buddy_finnley_diaper_change:
         message: Would you like to add additional details?
         title: Diaper Change for Finnley Added!
         data:
+          notification_icon: mdi:emoticon-poop
           ttl: 0
           priority: high
           tag: confirm_finnley_diaper_change
@@ -1583,10 +1587,8 @@ submit_baby_buddy_pumping:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
     data:
       amount: '{{states(''input_number.pumping_amount'')}}'
-      notes: '{{states(''input_text.pumping_notes'') or ''Added without additional
-        information from HA Automation(s)''}}'
-      time: '{{states(''input_datetime.pumping_time'') if states(''input_datetime.pumping_time'')
-        != ''00:00:00'' else now()}}'
+      notes: '{{states(''input_text.pumping_notes'') or ''''}}'
+      time: '{{states(''input_datetime.pumping_start_time'')}}'
   - service: script.1705186537951
     data: {}
   mode: queued
@@ -1699,3 +1701,13 @@ set_finnley_stop_feeding_time_to_same_as_start_time_duplicate:
       seconds: 0
       milliseconds: 0
     enabled: true
+set_start_pumping_time_to_now:
+  alias: Set Start Pumping Time to Now
+  sequence:
+  - service: input_datetime.set_datetime
+    metadata: {}
+    data:
+      datetime: '{{now()}}'
+    target:
+      entity_id: input_datetime.pumping_start_time
+  mode: single
