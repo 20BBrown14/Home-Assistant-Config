@@ -8454,7 +8454,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "battery",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8478,7 +8480,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless",
+        "original_icon": "mdi:battery-40",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8634,7 +8636,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "temperature",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8673,7 +8677,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "power",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9505,7 +9511,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9571,7 +9579,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9604,7 +9614,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "signal_strength",
         "device_id": "6636b1f64974c361328efbc239dceb84",

@@ -1591,6 +1591,7 @@ submit_baby_buddy_pumping:
       time: '{{states(''input_datetime.pumping_start_time'')}}'
   - service: script.1705186537951
     data: {}
+    enabled: true
   mode: queued
   icon: mdi:mother-nurse
   max: 10
