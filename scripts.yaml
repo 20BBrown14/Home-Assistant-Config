@@ -1588,7 +1588,7 @@ submit_baby_buddy_pumping:
     data:
       amount: '{{states(''input_number.pumping_amount'')}}'
       notes: '{{states(''input_text.pumping_notes'') or ''''}}'
-      time: '{{states(''input_datetime.pumping_start_time'')}}'
+      time: '{{(states(''input_datetime.pumping_start_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
   - service: script.1705186537951
     data: {}
     enabled: true
