@@ -4167,7 +4167,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-50",
+        "original_icon": "mdi:battery-charging",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4272,7 +4272,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-charging-wireless",
+        "original_icon": "mdi:power-plug",
         "original_name": "Branden's Phone Charger type",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -67928,14 +67928,6 @@
         "orphaned_timestamp": null,
         "platform": "frigate",
         "unique_id": "d93aef20aa3ac73a5f0276ed408e6855:sensor_fps:processes_skipped"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "input_number.finnley_temperature",
-        "id": "52b49f9879d1e2ca391d51891afe8de3",
-        "orphaned_timestamp": 1705185261.2021492,
-        "platform": "input_number",
-        "unique_id": "temp"
       },
       {
         "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
