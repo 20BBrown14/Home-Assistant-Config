@@ -61,6 +61,7 @@ spotcast:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+rest_command: !include rest_commands.yaml
 
 binary_sensor: !include binary_sensors.yaml
 
