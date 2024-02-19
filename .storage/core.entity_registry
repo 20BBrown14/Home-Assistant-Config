@@ -67842,6 +67842,39 @@
         "unique_id": "set_start_pumping_time_to_now",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "9969a305e5424bc4ee38402562677bd0",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.branden_desktop_babybuddy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "258d1e42c1ee8f12b90ea1ceda3efdef",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "_babybuddy",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "91c26a3c-ce5d-41d0-b8df-b6d06102cd6f",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
