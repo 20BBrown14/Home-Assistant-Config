@@ -2627,7 +2627,7 @@
     discovery_id: 0x00158d0008393dbe action_hold
   condition: []
   action:
-  - type: turn_on
+  - type: toggle
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
     entity_id: f134af8facf63fbd170622fcd6275e7e
     domain: light
@@ -2676,10 +2676,12 @@
               hours: 0
               minutes: 0
               seconds: 12
+    enabled: false
   - type: turn_off
     device_id: c7d0f87a2a9d9c765892a9d5e9f5924a
     entity_id: f134af8facf63fbd170622fcd6275e7e
     domain: light
+    enabled: false
   mode: restart
 - id: '1704508016555'
   alias: Coffee Pot
