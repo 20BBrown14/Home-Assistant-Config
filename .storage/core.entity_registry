@@ -4141,7 +4141,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "battery",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4318,7 +4320,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "temperature",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4357,7 +4361,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "power",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -5299,7 +5305,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": null,
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -67875,6 +67883,38 @@
         "unique_id": "91c26a3c-ce5d-41d0-b8df-b6d06102cd6f",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
+        "device_class": null,
+        "device_id": "86b1b485f0e733b3962457c610d02eae",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.branden_s_phone_ipv6_addresses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7539bc543951a94932c760d73739b47",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "Branden's Phone IPv6 addresses",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "43decfd0a90b302918d57e17c32715f1dbff11f381e1165579a84cf418b41c5b_ip6_addresses",
+        "previous_unique_id": null,
+        "unit_of_measurement": "address(es)"
       }
     ],
     "deleted_entities": [
