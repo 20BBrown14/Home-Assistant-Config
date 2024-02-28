@@ -67915,6 +67915,41 @@
         "unique_id": "43decfd0a90b302918d57e17c32715f1dbff11f381e1165579a84cf418b41c5b_ip6_addresses",
         "previous_unique_id": null,
         "unit_of_measurement": "address(es)"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_head_circumference",
+        "hidden_by": null,
+        "icon": null,
+        "id": "62b3a4dfa7f9b59d085f2d469aa06b2d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:head-outline",
+        "original_name": "Finnley Brown last head-circumference",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-head-circumference",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
