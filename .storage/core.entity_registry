@@ -67950,6 +67950,699 @@
         "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-head-circumference",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.sq_mac",
+        "hidden_by": null,
+        "icon": null,
+        "id": "22e647f033583dc620676bc7e6d0a6cf",
+        "has_entity_name": false,
+        "name": "SQ Mac",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "MAC104952",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "44764385-3148-5BE8-B7DA-5CA084B5716B",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.sq_mac_active",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ae55bafe4f11bee6d6137590849121d2",
+        "has_entity_name": false,
+        "name": "SQ Mac Active",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Active",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_active",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_active_audio_input",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a1748798deff22d5bf5d4b7e669c645a",
+        "has_entity_name": false,
+        "name": "SQ Mac Active Audio Input",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Active Audio Input",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_active_microphone",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_active_audio_output",
+        "hidden_by": null,
+        "icon": null,
+        "id": "969eb850a748be2513c7efc14b6103bf",
+        "has_entity_name": false,
+        "name": "SQ Mac Active Audio Output",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Active Audio Output",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_active_audio_output",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_active_camera",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d89520f71e1b240620d604d7f6084a69",
+        "has_entity_name": false,
+        "name": "SQ Mac Active Camera",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Active Camera",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_active_camera",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.sq_mac_audio_input_in_use",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7ebbc2ae7b508e280f1e7881619fe6fa",
+        "has_entity_name": false,
+        "name": "SQ Mac Audio Input In Use",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Audio Input In Use",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_microphone_in_use",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.sq_mac_audio_output_in_use",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5a9f7cc0babdd69e34b82e1443b9fc0c",
+        "has_entity_name": false,
+        "name": "SQ Mac Audio Output In Use",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Audio Output In Use",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_audio_output_in_use",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c9b1b3b64ae184e80953265151e253db",
+        "has_entity_name": false,
+        "name": "SQ Mac BSSID",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_connectivity_bssid",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.sq_mac_camera_in_use",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2d2426eb3995b77c738fbd8b02e3cf9b",
+        "has_entity_name": false,
+        "name": "SQ Mac Camera In Use",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Camera In Use",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_camera_in_use",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_connection_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "83d269d24ed2979fd47ffcec1cb556b1",
+        "has_entity_name": false,
+        "name": "SQ Mac Connection Type",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Connection Type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_connectivity_connection_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_displays",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7e798d1d068f997c646a4556d61c50be",
+        "has_entity_name": false,
+        "name": "SQ Mac Displays",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Displays",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_displays_count",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.sq_mac_focus",
+        "hidden_by": null,
+        "icon": null,
+        "id": "58cdce9bb9d473fb73de42cad5446aed",
+        "has_entity_name": false,
+        "name": "SQ Mac Focus",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Focus",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_focus",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_frontmost_app",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b1a2b3f95e395551b5ba82e17def24e4",
+        "has_entity_name": false,
+        "name": "SQ Mac Frontmost App",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Frontmost App",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_frontmost_app",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b1727a2083560eb9964cc0c4416dcc7c",
+        "has_entity_name": false,
+        "name": "SQ Mac Geocoded Location",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Geocoded Location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_geocoded_location",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_internal_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6335f6ed4b8c05b655f21cc3daafd486",
+        "has_entity_name": false,
+        "name": "SQ Mac Internal Battery Level",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Internal Battery Level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_F8Y3292H50MQ1LTAW_level",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_internal_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "313e1cc8522dbe03dc242d9a1995730f",
+        "has_entity_name": false,
+        "name": "SQ Mac Internal Battery State",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Internal Battery State",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_F8Y3292H50MQ1LTAW_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9daad8a51a139a13f308150a5bd45ae9",
+        "has_entity_name": false,
+        "name": "SQ Mac Last Update Trigger",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Last Update Trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_last_update_trigger",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_primary_display_id",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cdb4e9d64a7490dd72d1c72b4018dc53",
+        "has_entity_name": false,
+        "name": "SQ Mac Primary Display ID",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Primary Display ID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_primary_display_id",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_primary_display_name",
+        "hidden_by": null,
+        "icon": null,
+        "id": "11a0a531ff15d8fb9e13413dde5967e9",
+        "has_entity_name": false,
+        "name": "SQ Mac Primary Display Name",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Primary Display Name",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_primary_display_name",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_ssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cbd7281c016a35eb003b9cfbbea061ab",
+        "has_entity_name": false,
+        "name": "SQ Mac SSID",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 SSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_connectivity_ssid",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c762d309c8fdb0265335fa5036f68943",
+        "device_class": null,
+        "device_id": "13aa79b6653975c87f268c93c1a0afc7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.sq_mac_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5a2413cfd107c6c141b9fe4958b0c51e",
+        "has_entity_name": false,
+        "name": "SQ Mac Storage",
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:dots-square",
+        "original_name": "MAC104952 Storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_storage",
+        "previous_unique_id": null,
+        "unit_of_measurement": "% available"
       }
     ],
     "deleted_entities": [

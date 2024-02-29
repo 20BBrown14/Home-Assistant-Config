@@ -8,7 +8,8 @@
         "name": "Branden",
         "user_id": "32f3dc229b3742fd85bee517cda43b55",
         "device_trackers": [
-          "device_tracker.branden_s_phone"
+          "device_tracker.branden_s_phone",
+          "device_tracker.mac104952"
         ],
         "id": "branden",
         "picture": "/api/image/serve/9fc9c2b14e4e6227be12b03f701459ec/512x512"
