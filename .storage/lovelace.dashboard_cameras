@@ -6,7 +6,7 @@
     "config": {
       "views": [
         {
-          "title": "Home",
+          "title": "All Cameras",
           "type": "panel",
           "badges": [],
           "cards": [
@@ -44,7 +44,54 @@
                     }
                   },
                   "live": {
-                    "preload": true
+                    "preload": true,
+                    "auto_unmute": "never",
+                    "transition_effect": "slide",
+                    "auto_mute": "never"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Finnley's Camera",
+          "path": "finnley-s-camera",
+          "type": "panel",
+          "badges": [],
+          "cards": [
+            {
+              "square": true,
+              "type": "grid",
+              "columns": 1,
+              "cards": [
+                {
+                  "type": "custom:frigate-card",
+                  "cameras": [
+                    {
+                      "camera_entity": "camera.finnley_room"
+                    }
+                  ],
+                  "view": {
+                    "default": "live",
+                    "dark_mode": "off",
+                    "update_force": true
+                  },
+                  "performance": {
+                    "profile": "high",
+                    "features": {
+                      "media_chunk_size": 50
+                    },
+                    "style": {
+                      "border_radius": true,
+                      "box_shadow": true
+                    }
+                  },
+                  "live": {
+                    "preload": true,
+                    "auto_unmute": "selected",
+                    "transition_effect": "slide",
+                    "auto_mute": "never"
                   }
                 }
               ]
