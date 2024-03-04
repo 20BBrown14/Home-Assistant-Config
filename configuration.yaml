@@ -81,6 +81,12 @@ notify:
     services:
       - service: mobile_app_samantha_s_phone
       - service: mobile_app_branden_s_phone
+  - platform: group
+    name: "Phones and PC"
+    services:
+      - service: mobile_app_samantha_s_phone
+      - service: mobile_app_branden_s_phone
+      - service: branden_desktop
 
 panel_iframe:
   baby_buddy:

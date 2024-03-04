@@ -2162,6 +2162,14 @@
       data: {}
       target:
         entity_id: input_boolean.snoozed_frigate_pc_notifications
+  - if:
+    - condition: template
+      value_template: '{{''FINNLEY_LIVE_FEED'' == trigger[''event''][''data''][''action'']}}'
+    then:
+    - service: mqtt.publish
+      data:
+        topic: homeassistant/button/Branden_Desktop/Branden_Desktop_launchurl/action
+        payload: http://192.168.86.21:8123/dashboard-cameras/finnley-s-camera
   mode: restart
 - id: '1701562649842'
   alias: Frigate Notifications (PC)
@@ -2818,4 +2826,54 @@
       data: {}
     enabled: true
   mode: parallel
+  max: 10
+- id: '1709497515323'
+  alias: Frigate Notifications - Crying
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.finnley_room_crying_sound
+    - binary_sensor.finnley_room_speech_sound
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  condition: []
+  action:
+  - service: notify.all_mobile_phones
+    data:
+      message: clear_notification
+      data:
+        tag: finnley_crying_notification
+  - service: "{%if states('binary_sensor.is_branden_home') and states('binary_sensor.is_samantha_home')
+      %}\n  notify.all_mobile_phones\n{% elif states('binary_sensor.is_branden_home')
+      %}\n  branden\n{% elif states('binary_sensor.is_samantha_home') %}\n  sam\n{%endif%}"
+    data:
+      title: Baby!
+      message: Baby is making noise!
+      data:
+        critical: true
+        ttl: 0
+        priority: high
+        notification_icon: mdi:ear-hearing
+        tag: finnley_crying_notification
+        actions:
+        - action: URI
+          title: Live Feed
+          uri: /dashboard-cameras/finnley-s-camera
+        image: http://192.168.86.21:8000/media/child/picture/20240301_140331.jpg
+        vibrationPattern: 1250 250
+        channel: Crying
+  - service: notify.branden_desktop
+    data:
+      message: Baby!
+      title: Baby is making noise!
+      data:
+        actions:
+        - action: FINNLEY_LIVE_FEED
+          title: Live Feed
+        image: http://192.168.86.21:8000/media/child/picture/20240301_140331.jpg
+  mode: queued
   max: 10

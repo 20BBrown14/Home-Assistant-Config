@@ -68643,6 +68643,107 @@
         "unique_id": "094b62005ad7c65b8c991e8d93f40abecec7ba3c6162fe020546887290ef0147_storage",
         "previous_unique_id": null,
         "unit_of_measurement": "% available"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1709497515323"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.frigate_notifications_crying",
+        "hidden_by": null,
+        "icon": null,
+        "id": "50dfc83cf0d5659087e40e25072c1ead",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Frigate Notifications - Crying",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1709497515323",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "9969a305e5424bc4ee38402562677bd0",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.branden_desktop_launchurl",
+        "hidden_by": null,
+        "icon": null,
+        "id": "661aa943335cc4aa3b126a6df4bd08f5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "_launchurl",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "90fcef26-b2b2-4060-8abc-fc7502d05a20",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "9969a305e5424bc4ee38402562677bd0",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.branden_desktop_memoryusage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "09570b3f0dddd729d89152d8ca2de71e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "_memoryusage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "11bd94ea-c863-4566-821f-0caec2968778",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
       }
     ],
     "deleted_entities": [

@@ -94,7 +94,11 @@
                 ]
               },
               "sort": {
-                "method": "friendly_name"
+                "method": "domain",
+                "reverse": false,
+                "ip": false,
+                "numeric": false,
+                "ignore_case": false
               }
             }
           ]
