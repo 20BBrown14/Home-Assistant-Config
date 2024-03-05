@@ -2839,7 +2839,7 @@
     for:
       hours: 0
       minutes: 0
-      seconds: 5
+      seconds: 1
   condition: []
   action:
   - service: notify.all_mobile_phones
