@@ -594,11 +594,15 @@ turn_on_frontyard_lights_idle:
     device_id: 7667289dac32e9792162b70cc2af7484
     entity_id: c0bd051cafd9549eceb53d7e10e2e979
     domain: switch
-  - delay:
-      hours: 0
-      minutes: 0
-      seconds: 10
-      milliseconds: 0
+  - wait_for_trigger:
+    - platform: state
+      entity_id:
+      - light.porch_light
+      to: 'on'
+      for:
+        hours: 0
+        minutes: 0
+        seconds: 10
   - service: light.turn_on
     data:
       brightness: 255
