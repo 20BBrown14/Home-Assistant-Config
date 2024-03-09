@@ -183,6 +183,10 @@ good_night:
       bitmask:
       subtype: 24 (Status LED 4 Color)
       value: 0
+    - type: turn_off
+      device_id: 271b54528ef7dc397f28f1200a8f11b8
+      entity_id: 94e96e010ed20e5995b3593a1dc65adf
+      domain: fan
   mode: single
 reset_kitchen_leds:
   alias: Reset Kitchen LEDs
