@@ -68832,38 +68832,6 @@
         "orphaned_timestamp": null,
         "platform": "mqtt",
         "unique_id": "f4628c85-339e-465f-a975-942335384ea6"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "input_datetime.pumping_time",
-        "id": "c8a2b4983dd091a8b4addd328bec9f1a",
-        "orphaned_timestamp": 1707348048.33369,
-        "platform": "input_datetime",
-        "unique_id": "pumping_time"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "input_datetime.pumping_stop_time",
-        "id": "389435ccc42634657f7c2a73484c1fff",
-        "orphaned_timestamp": 1707348052.4031856,
-        "platform": "input_datetime",
-        "unique_id": "pumping_stop_time"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "script.set_stop_pumping_time_to_same_as_start_time",
-        "id": "8913896028f6ae322fbe4a4ec2913fba",
-        "orphaned_timestamp": 1707348099.1357756,
-        "platform": "script",
-        "unique_id": "set_stop_pumping_time_to_same_as_start_time"
-      },
-      {
-        "config_entry_id": null,
-        "entity_id": "script.set_stop_pumping_time_to_now",
-        "id": "c0695ad65858f6a889d594f3b78d7d06",
-        "orphaned_timestamp": 1707348102.5645747,
-        "platform": "script",
-        "unique_id": "set_stop_pumping_time_to_now"
       }
     ]
   }
