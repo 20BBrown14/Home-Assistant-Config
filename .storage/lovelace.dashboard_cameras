@@ -80,7 +80,7 @@
                   "performance": {
                     "profile": "high",
                     "features": {
-                      "media_chunk_size": 50
+                      "media_chunk_size": 52
                     },
                     "style": {
                       "border_radius": true,
@@ -91,7 +91,14 @@
                     "preload": true,
                     "auto_unmute": "selected",
                     "transition_effect": "slide",
-                    "auto_mute": "never"
+                    "auto_mute": "never",
+                    "lazy_unload": "all"
+                  },
+                  "menu": {
+                    "style": "none"
+                  },
+                  "media_viewer": {
+                    "draggable": true
                   }
                 }
               ]

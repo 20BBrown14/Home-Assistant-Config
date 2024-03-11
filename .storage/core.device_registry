@@ -47,11 +47,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-19"
+            "3343393661-19-99:18756:13111"
           ],
           [
             "zwave_js",
-            "3343393661-19-99:18756:13111"
+            "3343393661-19"
           ]
         ],
         "manufacturer": "Enbrighten",
@@ -165,11 +165,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-24-330:4:1"
+            "3343393661-24"
           ],
           [
             "zwave_js",
-            "3343393661-24"
+            "3343393661-24-330:4:1"
           ]
         ],
         "manufacturer": "Ecolink",
@@ -270,9 +270,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
+          "58e47bce27bf6aedbe7250e4c4716963",
           "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "58e47bce27bf6aedbe7250e4c4716963"
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -820,11 +820,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-31"
+            "3343393661-31-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-31-99:18770:12597"
+            "3343393661-31"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1008,11 +1008,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ],
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1112,11 +1112,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-34-99:18756:12853"
+            "3343393661-34"
           ],
           [
             "zwave_js",
-            "3343393661-34"
+            "3343393661-34-99:18756:12853"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1141,11 +1141,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-35-99:18770:12597"
+            "3343393661-35"
           ],
           [
             "zwave_js",
-            "3343393661-35"
+            "3343393661-35-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1170,11 +1170,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-36-881:258:187"
+            "3343393661-36"
           ],
           [
             "zwave_js",
-            "3343393661-36"
+            "3343393661-36-881:258:187"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1836,11 +1836,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-41-634:28672:40962"
+            "3343393661-41"
           ],
           [
             "zwave_js",
-            "3343393661-41"
+            "3343393661-41-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -1894,11 +1894,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-45"
+            "3343393661-45-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-45-634:28672:40962"
+            "3343393661-45"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2461,11 +2461,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-48"
+            "3343393661-48-634:28672:40962"
           ],
           [
             "zwave_js",
-            "3343393661-48-634:28672:40962"
+            "3343393661-48"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2519,11 +2519,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-43-634:260:513"
+            "3343393661-43"
           ],
           [
             "zwave_js",
-            "3343393661-43"
+            "3343393661-43-634:260:513"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2796,12 +2796,12 @@
         "configuration_url": null,
         "connections": [
           [
-            "bluetooth",
-            "CF:35:33:35:18:67"
-          ],
-          [
             "mac",
             "cf:35:33:35:18:67"
+          ],
+          [
+            "bluetooth",
+            "CF:35:33:35:18:67"
           ]
         ],
         "disabled_by": null,
@@ -3016,6 +3016,31 @@
         "serial_number": null,
         "sw_version": "14.0.0",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "fd975b44eaba37e4ffd02b85bec5bf23"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2a360884722df163356f2ce4eb7420b3",
+        "identifiers": [
+          [
+            "mobile_app",
+            "3C4E4843-5C6F-4C95-AFD1-0A10DD300CA1"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPad7,4",
+        "name_by_user": null,
+        "name": "Branden’s iPad",
+        "serial_number": null,
+        "sw_version": "17.4",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
@@ -3027,11 +3052,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-20"
+            "3343393661-20-12:17479:16439"
           ],
           [
             "zwave_js",
-            "3343393661-20-12:17479:16439"
+            "3343393661-20"
           ]
         ],
         "id": "63731068bce97381e2cce1c4a43b9c6c",

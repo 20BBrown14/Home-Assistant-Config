@@ -68742,6 +68742,402 @@
         "unique_id": "11bd94ea-c863-4566-821f-0caec2968778",
         "previous_unique_id": null,
         "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.brandens_ipad",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7979198d6b6e17986198b8558848d040",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Branden’s iPad",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3C4E4843-5C6F-4C95-AFD1-0A10DD300CA1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7d45dae7003f2b493fea463db041d8bc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-80",
+        "original_name": "Branden’s iPad Battery State",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_battery_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3eba4fd34269b2dc33cb4f3ab5424fc2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:battery-80",
+        "original_name": "Branden’s iPad Battery Level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_battery_level",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2971ba0184e9b8009d78321b99759fa6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-off",
+        "original_name": "Branden’s iPad BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_connectivity_bssid",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_sim_1",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d90964895a9edbdb0c5569cfa9972288",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "Branden’s iPad SIM 1",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_connectivity_sim_1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8b68ecfda6c4822cda8745b87c51b95c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-wireless",
+        "original_name": "Branden’s iPad Last Update Trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_last_update_trigger",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_ssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fc5c02abfc73fd25fe518b187a7f2057",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-off",
+        "original_name": "Branden’s iPad SSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_connectivity_ssid",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f23d9a2eac9a33e4840db8e9fab09b11",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map",
+        "original_name": "Branden’s iPad Geocoded Location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_geocoded_location",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b046111497ca76ea927ed55fb089008b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:database",
+        "original_name": "Branden’s iPad Storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_storage",
+        "previous_unique_id": null,
+        "unit_of_measurement": "% available"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_connection_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "642db3adc81e9900b2eb424c5b17aa09",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Branden’s iPad Connection Type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_connectivity_connection_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.brandens_ipad_activity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "594bf1bc80073eb998ed3aa12ba42e73",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:help-circle",
+        "original_name": "Branden’s iPad Activity",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_activity",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fd975b44eaba37e4ffd02b85bec5bf23",
+        "device_class": null,
+        "device_id": "2a360884722df163356f2ce4eb7420b3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.brandens_ipad_focus",
+        "hidden_by": null,
+        "icon": null,
+        "id": "44fac5dc04e3883a8572c31cbcd90f85",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:moon-waning-crescent",
+        "original_name": "Branden’s iPad Focus",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "b1bcefef248c96661ecfc9d8771a1a6c9386d36a4d14d786b7f4100817ba2ad9_focus",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
