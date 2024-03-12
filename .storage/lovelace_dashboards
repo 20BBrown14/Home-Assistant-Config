@@ -8,7 +8,7 @@
         "show_in_sidebar": true,
         "icon": "mdi:cellphone",
         "title": "Mobile",
-        "require_admin": false,
+        "require_admin": true,
         "mode": "storage",
         "url_path": "lovelace-mobile",
         "id": "lovelace_mobile"
@@ -26,7 +26,7 @@
         "show_in_sidebar": true,
         "icon": "mdi:remote",
         "title": "Remotes",
-        "require_admin": false,
+        "require_admin": true,
         "mode": "storage",
         "url_path": "dashboard-remotes",
         "id": "dashboard_remotes"
@@ -35,7 +35,7 @@
         "show_in_sidebar": true,
         "icon": "mdi:shield-home",
         "title": "Security",
-        "require_admin": false,
+        "require_admin": true,
         "mode": "storage",
         "url_path": "dashboard-security",
         "id": "dashboard_security"
@@ -45,7 +45,7 @@
         "show_in_sidebar": true,
         "icon": "mdi:webcam",
         "title": "Cameras",
-        "require_admin": false,
+        "require_admin": true,
         "mode": "storage",
         "url_path": "dashboard-cameras"
       },

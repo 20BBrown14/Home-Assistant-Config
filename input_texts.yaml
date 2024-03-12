@@ -4,3 +4,12 @@ external_url:
 local_url:
   name: Local URL
   initial: !secret local_url
+#finnley_room_cam_user:
+#  name: Finnley Room Cam User
+#  initial: !secret finnley_room_cam_user
+#finnley_room_cam_pass:
+#  name: Finnley Room Cam Pass
+#  initial: !secret finnley_room_cam_pass
+#finnley_room_cam_ip:
+#  name: Finnley Room Cam IP
+#  initial: !secret finnley_room_cam_ip
