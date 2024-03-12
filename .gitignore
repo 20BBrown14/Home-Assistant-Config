@@ -12,6 +12,10 @@ ip_bans.yaml
 secrets.yaml
 known_devices.yaml
 *.db
+go2rtc.yaml
+
+### Ignored Binaries
+go2rtc-*
 
 
 ### Ignored files

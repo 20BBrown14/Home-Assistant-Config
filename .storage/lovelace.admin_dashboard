@@ -9,6 +9,14 @@
           "theme": "Backend-selected",
           "title": "Battery Devices",
           "icon": "mdi:battery-unknown",
+          "visible": [
+            {
+              "user": "32f3dc229b3742fd85bee517cda43b55"
+            },
+            {
+              "user": "1f1c81d780d44b3f9c0ae5fd830bbef0"
+            }
+          ],
           "badges": [],
           "cards": [
             {
@@ -73,6 +81,14 @@
           "path": "machine",
           "panel": true,
           "icon": "mdi:desktop-classic",
+          "visible": [
+            {
+              "user": "32f3dc229b3742fd85bee517cda43b55"
+            },
+            {
+              "user": "1f1c81d780d44b3f9c0ae5fd830bbef0"
+            }
+          ],
           "badges": [],
           "cards": [
             {
@@ -226,6 +242,15 @@
         {
           "title": "Home",
           "icon": "mdi:history",
+          "visible": [
+            {
+              "user": "32f3dc229b3742fd85bee517cda43b55"
+            },
+            {
+              "user": "1f1c81d780d44b3f9c0ae5fd830bbef0"
+            }
+          ],
+          "badges": [],
           "cards": [
             {
               "type": "custom:history-explorer-card",

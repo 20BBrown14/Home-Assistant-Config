@@ -83,6 +83,11 @@
         "id": "e6112c1d3a2a476784e135e01f9549fd",
         "url": "/hacsfiles/lovelace-card-mod/card-mod.js?hacstag=190927524342",
         "type": "module"
+      },
+      {
+        "id": "6cf088f5491a475eb8b354516e64f3d1",
+        "url": "/webrtc/webrtc-camera.js?v=v3.5.1",
+        "type": "module"
       }
     ]
   }

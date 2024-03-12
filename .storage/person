@@ -10,7 +10,8 @@
         "device_trackers": [
           "device_tracker.branden_s_phone",
           "device_tracker.mac104952",
-          "device_tracker.brandens_ipad"
+          "device_tracker.brandens_ipad",
+          "device_tracker.sq_mac"
         ],
         "id": "branden",
         "picture": "/api/image/serve/9fc9c2b14e4e6227be12b03f701459ec/512x512"
@@ -27,7 +28,9 @@
       {
         "id": "beth",
         "name": "Beth",
-        "device_trackers": [],
+        "device_trackers": [
+          "device_tracker.sq_mac"
+        ],
         "user_id": "99e63b9167c74f9eba827f12ad89268d",
         "picture": "/api/image/serve/ebfc873a455dcb2be9c6b07e19e53391/512x512"
       },

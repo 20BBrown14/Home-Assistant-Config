@@ -78,9 +78,8 @@
                     "update_force": true
                   },
                   "performance": {
-                    "profile": "high",
                     "features": {
-                      "media_chunk_size": 52
+                      "media_chunk_size": 50
                     },
                     "style": {
                       "border_radius": true,
@@ -102,6 +101,18 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "title": "Finnley Camera 2",
+          "path": "finnley-camera-2",
+          "type": "panel",
+          "badges": [],
+          "cards": [
+            {
+              "type": "custom:webrtc-camera",
+              "url": "rtsp://192.168.86.21:8554/finnley_room"
             }
           ]
         }

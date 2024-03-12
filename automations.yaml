@@ -2404,7 +2404,7 @@
     domain: switch
   mode: single
 - id: '1704154185925'
-  alias: Baby Buddy
+  alias: Baby Buddy Buttons
   description: ''
   trigger:
   - platform: device
@@ -2591,6 +2591,70 @@
       - sleep_trigger
     then:
     - service: script.baby_buddy_finnley_sleep
+      data: {}
+  - if:
+    - condition: and
+      conditions:
+      - condition: trigger
+        id:
+        - wet_diaper_trigger
+        - solid_diaper_trigger
+        - wet_solid_diaper_trigger
+      - condition: template
+        value_template: '{{"Master Bedroom Baby Buddy Buttons" in trigger.topic}}'
+    then:
+    - wait_for_trigger:
+      - platform: device
+        domain: mqtt
+        device_id: 8a0e66269e863f771847626e4793deb8
+        type: action
+        subtype: arrow_left_click
+        discovery_id: 0x4c5bb3fffe462b16 action_arrow_left_click
+      timeout:
+        hours: 0
+        minutes: 0
+        seconds: 3
+        milliseconds: 0
+    - if:
+      - condition: template
+        value_template: '{{not wait.completed}}'
+      then:
+      - service: select.select_option
+        data:
+          option: '{% if trigger.id == ''wet_diaper_trigger'' %} Wet {% elif trigger.id
+            == ''solid_diaper_trigger'' %} Solid {% elif trigger.id == ''wet_solid_diaper_trigger''
+            %} Wet and Solid {%endif%}'
+        target:
+          entity_id: select.baby_buddy_diaper_type
+      - service: input_datetime.set_datetime
+        metadata: {}
+        data:
+          datetime: '{{now()}}'
+        target:
+          entity_id: input_datetime.finnley_diaper_change_time
+      - service: script.baby_buddy_finnley_diaper_change
+        data: {}
+      else:
+      - type: toggle
+        device_id: c10c5693aa72ffa8de675fe6af4d8761
+        entity_id: e4799c6eb8e66f4b8bb2bb37499e17d5
+        domain: light
+    enabled: false
+    else:
+    - service: select.select_option
+      data:
+        option: '{% if trigger.id == ''wet_diaper_trigger'' %} Wet {% elif trigger.id
+          == ''solid_diaper_trigger'' %} Solid {% elif trigger.id == ''wet_solid_diaper_trigger''
+          %} Wet and Solid {%endif%}'
+      target:
+        entity_id: select.baby_buddy_diaper_type
+    - service: input_datetime.set_datetime
+      metadata: {}
+      data:
+        datetime: '{{now()}}'
+      target:
+        entity_id: input_datetime.finnley_diaper_change_time
+    - service: script.baby_buddy_finnley_diaper_change
       data: {}
   mode: parallel
   max: 10
