@@ -93,7 +93,7 @@
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
       },
       {
-        "area_id": "master_bedroom",
+        "area_id": "finnley_s_room",
         "config_entries": [
           "4d198b0c52d3f21e86684be21461084f",
           "c360373dda801e0ca73ccd582d53d98d"
@@ -116,8 +116,8 @@
         ],
         "manufacturer": "Minoston",
         "model": "MP21Z / MP31Z",
-        "name_by_user": "Bedside Lamp",
-        "name": "Bedside Lamp",
+        "name_by_user": "Finnley Room Fan",
+        "name": "Finnley Room Fan",
         "serial_number": null,
         "sw_version": "1.0.0",
         "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
@@ -3040,6 +3040,31 @@
         "name": "Branden’s iPad",
         "serial_number": null,
         "sw_version": "17.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0xb0ce1814001afdc2"
+          ]
+        ],
+        "manufacturer": "Sengled",
+        "model": "Smart LED multicolor A19 bulb (E21-N1EA)",
+        "name_by_user": null,
+        "name": "Bedside Lamp Light",
+        "serial_number": null,
+        "sw_version": null,
         "via_device_id": null
       }
     ],

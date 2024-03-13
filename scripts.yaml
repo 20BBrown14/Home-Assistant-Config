@@ -134,10 +134,6 @@ good_night:
       device_id: fc14d585e20bc18f0fae2b868f5849f3
       entity_id: light.master_bedroom_light
       domain: light
-    - type: turn_off
-      device_id: b47adfbdffd61cfbe4a91df9331b1c05
-      entity_id: switch.smart_plug_1_channel_2
-      domain: switch
     - type: turn_on
       device_id: e50cb3846e82014dde1e95832d9d4e9c
       entity_id: fan.in_wall_fan_speed_control_500s
@@ -187,6 +183,14 @@ good_night:
       device_id: 271b54528ef7dc397f28f1200a8f11b8
       entity_id: 94e96e010ed20e5995b3593a1dc65adf
       domain: fan
+    - service: light.turn_off
+      target:
+        entity_id: light.bedside_lamp_light
+      data: {}
+    - type: turn_off
+      device_id: b47adfbdffd61cfbe4a91df9331b1c05
+      entity_id: 838bd176af233578b9eaebe2d67c3aae
+      domain: light
   mode: single
 reset_kitchen_leds:
   alias: Reset Kitchen LEDs
@@ -279,13 +283,16 @@ get_ready_for_bed:
       domain: fan
       enabled: false
     - type: turn_on
-      device_id: b47adfbdffd61cfbe4a91df9331b1c05
-      entity_id: switch.smart_plug_1_channel_2
-      domain: switch
-    - type: turn_on
       device_id: 10186c425eb8729e24fde4e484d6a531
       entity_id: switch.smart_plug_1_channel
       domain: switch
+    - service: light.turn_on
+      metadata: {}
+      data:
+        kelvin: 2500
+        brightness_pct: 100
+      target:
+        entity_id: light.bedside_lamp_light
   mode: single
 empty_master_bedroom:
   alias: Empty Master Bedroom
@@ -303,9 +310,9 @@ empty_master_bedroom:
     entity_id: switch.smart_plug_1_channel
     domain: switch
   - type: turn_off
-    device_id: b47adfbdffd61cfbe4a91df9331b1c05
-    entity_id: switch.smart_plug_1_channel_2
-    domain: switch
+    device_id: 3b5a74bf4f0b08e306cb22c9d9290c18
+    entity_id: ee27b3af1cb0ccd417384a5d253dd72d
+    domain: light
   mode: single
 turn_on_holiday_lights:
   alias: Turn on Holiday Lights

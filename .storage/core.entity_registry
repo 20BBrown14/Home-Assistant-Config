@@ -24102,230 +24102,6 @@
         },
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
         "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_successful_commands_rx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "5655cdb364e052759e2e647a97d8253d",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Successful commands (RX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_commandsRX",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_successful_commands_tx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "c1403b8e22acb24899ca0f022d637ac7",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Successful commands (TX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_commandsTX",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_commands_dropped_rx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "1aea25e950226e4086eedb60808b9d28",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Commands dropped (RX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_commandsDroppedRX",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_commands_dropped_tx",
-        "hidden_by": null,
-        "icon": null,
-        "id": "951a07d62e0bc988b807c2466a29342c",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Commands dropped (TX)",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_commandsDroppedTX",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_timed_out_responses",
-        "hidden_by": null,
-        "icon": null,
-        "id": "bbf3966db42f39e9dff76a38658ae99a",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Timed out responses",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_timeoutResponse",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_round_trip_time",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9667d80c5223d60999afe92e8cb0c42c",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "duration",
-        "original_icon": null,
-        "original_name": "Round Trip Time",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_rtt",
-        "previous_unique_id": null,
-        "unit_of_measurement": "ms"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.bedside_lamp_rssi",
-        "hidden_by": null,
-        "icon": null,
-        "id": "069c9eaf71beb8e6d1ac63dbf4b0dd46",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "signal_strength",
-        "original_icon": null,
-        "original_name": "RSSI",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22.statistics_rssi",
-        "previous_unique_id": null,
-        "unit_of_measurement": "dBm"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "total"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
         "device_id": "acee43e1932b364bc7db9deb54e4090d",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -27941,39 +27717,6 @@
         "capabilities": null,
         "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
         "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "button.bedside_lamp_identify",
-        "hidden_by": null,
-        "icon": null,
-        "id": "a0387ce4e8ebf6bd9d28451fd8bd4a26",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Identify",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22-135-0-identify",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
         "device_id": "64f87538bc7680d16b9d62de3e259936",
         "disabled_by": null,
         "entity_category": "config",
@@ -28570,79 +28313,6 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "3343393661.21-135-0-value",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 36000.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "number.bedside_lamp_auto_off_timer",
-        "hidden_by": null,
-        "icon": null,
-        "id": "cb3e13ed27f8a59d283b6fe43ea81256",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Auto-Off Timer",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22-112-0-2",
-        "previous_unique_id": null,
-        "unit_of_measurement": "seconds"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "min": 0.0,
-          "max": 255.0,
-          "step": 1.0,
-          "mode": "auto"
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "number.bedside_lamp_indicator_value",
-        "hidden_by": null,
-        "icon": null,
-        "id": "7ef60d3e452205e24942e8dd8637994b",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          },
-          "cloud.google_assistant": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Indicator value",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22-135-0-value",
         "previous_unique_id": null,
         "unit_of_measurement": null
       },
@@ -30269,42 +29939,6 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "3343393661.21-112-0-1",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "options": [
-            "On when load is off",
-            "On when load is on",
-            "Always off"
-          ]
-        },
-        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
-        "device_class": null,
-        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
-        "disabled_by": "integration",
-        "entity_category": "config",
-        "entity_id": "select.bedside_lamp_led_indicator",
-        "hidden_by": null,
-        "icon": null,
-        "id": "1b0d4863bcd3ca4e3653bad3fb2af385",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "LED Indicator",
-        "platform": "zwave_js",
-        "supported_features": 0,
-        "translation_key": null,
-        "unique_id": "3343393661.22-112-0-1",
         "previous_unique_id": null,
         "unit_of_measurement": null
       },
@@ -69243,6 +68877,743 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "1bbd9a70072b409e9363e107d980869506a89a08613989f789a1977305b534e3_last_update_trigger",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min_color_temp_kelvin": 2000,
+          "max_color_temp_kelvin": 6493,
+          "min_mireds": 154,
+          "max_mireds": 500,
+          "supported_color_modes": [
+            "color_temp",
+            "xy"
+          ]
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "light.bedside_lamp_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ee27b3af1cb0ccd417384a5d253dd72d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 40,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_light_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.bedside_lamp_light_power",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d5b509377e1fc8d1b5d3fc3e4e373f6c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": null,
+        "original_name": "power",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_power_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "W"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bedside_lamp_light_energy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "41a3148653f8456f4fb3d818efba7913",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "energy",
+        "original_icon": null,
+        "original_name": "energy",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_energy_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "kWh"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.bedside_lamp_light_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b211d94d6425a3d6901dd1891044e067",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_linkquality_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.bedside_lamp_light_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "efa42ba16038aea29259f860c20c2971",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_update_state_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.bedside_lamp_light_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f37824923fc1479ec5b735ff4a6901da",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_update_available_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "3b5a74bf4f0b08e306cb22c9d9290c18",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.bedside_lamp_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f8d001a441b46a16627a1c56dc921471",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0xb0ce1814001afdc2_update_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.finnley_room_fan_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a0387ce4e8ebf6bd9d28451fd8bd4a26",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-135-0-identify",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 255.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.finnley_room_fan_indicator_value",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7ef60d3e452205e24942e8dd8637994b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Indicator value",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-135-0-value",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.finnley_room_fan_auto_off_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cb3e13ed27f8a59d283b6fe43ea81256",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto-Off Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-112-0-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.finnley_room_fan_auto_on_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d33f73572cee620ce7e94d2d8de79a82",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto-On Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-112-0-4",
+        "previous_unique_id": null,
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "On when load is on",
+            "On when load is off",
+            "Always off"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.finnley_room_fan_led_indicator",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1b0d4863bcd3ca4e3653bad3fb2af385",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-112-0-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "High",
+            "Medium",
+            "Low"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.finnley_room_fan_led_indicator_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "78a71b029a941fb67312f17dffa93119",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-112-0-7",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Always off",
+            "Always on",
+            "Previous state"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.finnley_room_fan_state_after_power_failure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "be04d4e48b249828b7d7490f05c52f64",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "State After Power Failure",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22-112-0-6",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1aea25e950226e4086eedb60808b9d28",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_commandsDroppedRX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "951a07d62e0bc988b807c2466a29342c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_commandsDroppedTX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9667d80c5223d60999afe92e8cb0c42c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_rtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "069c9eaf71beb8e6d1ac63dbf4b0dd46",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_rssi",
+        "previous_unique_id": null,
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5655cdb364e052759e2e647a97d8253d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_commandsRX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c1403b8e22acb24899ca0f022d637ac7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_commandsTX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "b47adfbdffd61cfbe4a91df9331b1c05",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.finnley_room_fan_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bbf3966db42f39e9dff76a38658ae99a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.22.statistics_timeoutResponse",
         "previous_unique_id": null,
         "unit_of_measurement": null
       }
