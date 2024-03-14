@@ -69616,6 +69616,41 @@
         "unique_id": "3343393661.22.statistics_timeoutResponse",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1710348570969"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.finnley_room_fan",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4373c95bbdee60219b6002ff0a7bb34e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Room Fan",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1710348570969",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
