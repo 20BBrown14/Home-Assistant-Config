@@ -59263,6 +59263,9 @@
         "options": {
           "conversation": {
             "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -69649,6 +69652,573 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "1710348570969",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "3",
+            "7",
+            "15",
+            "25",
+            "30"
+          ]
+        },
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "select.litter_robot_4_clean_cycle_wait_time_minutes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3841f7afccc3896f34ec22d7f75a7af4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-outline",
+        "original_name": "Clean cycle wait time minutes",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "cycle_delay",
+        "unique_id": "LR4C434279-cycle_delay",
+        "previous_unique_id": null,
+        "unit_of_measurement": "min"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "select.litter_robot_4_panel_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "06ab8b6aa5a20637bd230f80669a5e9e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:lightbulb-question",
+        "original_name": "Panel brightness",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "brightness_level",
+        "unique_id": "LR4C434279-panel_brightness",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "vacuum.litter_robot_4_litter_box",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4f707d5879bb0794c83305466f968019",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Litter box",
+        "platform": "litterrobot",
+        "supported_features": 12299,
+        "translation_key": "litter_box",
+        "unique_id": "LR4C434279-litter_box",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.litter_robot_4_sleeping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "052bf1ce4dd704391361019028c9628a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Sleeping",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "sleeping",
+        "unique_id": "LR4C434279-sleeping",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.litter_robot_4_sleep_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "02a6fc9e4c1bc17781d23ceda7c83e49",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Sleep mode",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "sleep_mode",
+        "unique_id": "LR4C434279-sleep_mode",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.litter_robot_4_power_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f64b57179e840799510dcfa22275bc9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "plug",
+        "original_icon": null,
+        "original_name": "Power status",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "power_status",
+        "unique_id": "LR4C434279-power_status",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.litter_robot_4_waste_drawer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "619e4f7c416f4438647a2980b8aff17c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gauge-empty",
+        "original_name": "Waste drawer",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "waste_drawer",
+        "unique_id": "LR4C434279-waste_drawer_level",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.litter_robot_4_sleep_mode_start_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "49335fb760327a3b89719f757c3baa40",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": null,
+        "original_name": "Sleep mode start time",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "sleep_mode_start_time",
+        "unique_id": "LR4C434279-sleep_mode_start_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.litter_robot_4_sleep_mode_end_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7772cefe46b4ab394e7df176b0c21eb4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": null,
+        "original_name": "Sleep mode end time",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "sleep_mode_end_time",
+        "unique_id": "LR4C434279-sleep_mode_end_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.litter_robot_4_last_seen",
+        "hidden_by": null,
+        "icon": null,
+        "id": "515e70b3b8e5e12537f00a63d89634e4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": null,
+        "original_name": "Last seen",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "last_seen",
+        "unique_id": "LR4C434279-last_seen",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "br",
+            "ccc",
+            "ccp",
+            "cd",
+            "csf",
+            "csi",
+            "cst",
+            "df1",
+            "df2",
+            "dfs",
+            "dhf",
+            "dpf",
+            "ec",
+            "hpf",
+            "off",
+            "offline",
+            "otf",
+            "p",
+            "pd",
+            "pwrd",
+            "pwru",
+            "rdy",
+            "scf",
+            "sdf",
+            "spf"
+          ]
+        },
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.litter_robot_4_status_code",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5ac924cdcd3bd49efc9995c82d9984fa",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "enum",
+        "original_icon": null,
+        "original_name": "Status code",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "status_code",
+        "unique_id": "LR4C434279-status_code",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.litter_robot_4_litter_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e3d39aa58d223372c0542115b6198832",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gauge-low",
+        "original_name": "Litter level",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "litter_level",
+        "unique_id": "LR4C434279-litter_level",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.litter_robot_4_pet_weight",
+        "hidden_by": null,
+        "icon": null,
+        "id": "36ff437a12e7bb0f119a46ffd5dbddc0",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "weight",
+        "original_icon": null,
+        "original_name": "Pet weight",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "pet_weight",
+        "unique_id": "LR4C434279-pet_weight",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lb"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.litter_robot_4_night_light_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8c798dfe9f08ca0694b8873fc0c3fb7f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:lightbulb-on",
+        "original_name": "Night light mode",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "night_light_mode",
+        "unique_id": "LR4C434279-night_light_mode_enabled",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.litter_robot_4_panel_lockout",
+        "hidden_by": null,
+        "icon": null,
+        "id": "640bb1814d6bde92f728a5f3a7d50fe8",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:lock-open",
+        "original_name": "Panel lockout",
+        "platform": "litterrobot",
+        "supported_features": 0,
+        "translation_key": "panel_lockout",
+        "unique_id": "LR4C434279-panel_lock_enabled",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506633d92b9fee6c2a7199be1b4f317a",
+        "device_class": null,
+        "device_id": "9c5503844279813835773d316a5ffde8",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.litter_robot_4_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bd052f624e66e8be2bbecd7ccb040d9f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "litterrobot",
+        "supported_features": 5,
+        "translation_key": null,
+        "unique_id": "LR4C434279-firmware",
         "previous_unique_id": null,
         "unit_of_measurement": null
       }

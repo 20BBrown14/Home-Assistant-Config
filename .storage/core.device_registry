@@ -3066,6 +3066,31 @@
         "serial_number": null,
         "sw_version": null,
         "via_device_id": null
+      },
+      {
+        "area_id": "sub_basement",
+        "config_entries": [
+          "506633d92b9fee6c2a7199be1b4f317a"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9c5503844279813835773d316a5ffde8",
+        "identifiers": [
+          [
+            "litterrobot",
+            "LR4C434279"
+          ]
+        ],
+        "manufacturer": "Litter-Robot",
+        "model": "Litter-Robot 4",
+        "name_by_user": null,
+        "name": "Litter-Robot 4",
+        "serial_number": null,
+        "sw_version": "ESP: 1.1.75 / PIC: 10512.3072.2.89 / TOF: 5.0.2.1",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
