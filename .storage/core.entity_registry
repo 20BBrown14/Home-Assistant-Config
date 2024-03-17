@@ -70221,6 +70221,1470 @@
         "unique_id": "LR4C434279-firmware",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_node_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fedb39667d0d711e787cfe451ddb9f08",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:heart-pulse",
+        "original_name": "Node status",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.node_status",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.laundry_room_light_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "62ae7b7768b6b55b9327858f9caee0c3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Ping",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.ping",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_successful_commands_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6e66b7290e033040d5187cc465cde45e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_commandsRX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_successful_commands_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "980fe15b8bc955eb6b3f6948b665f985",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Successful commands (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_commandsTX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_commands_dropped_rx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aa9485316d731a47a47a84ea0fdd8c61",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (RX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_commandsDroppedRX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_commands_dropped_tx",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6e72e8890d25f2ef3a817e846ec8965a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Commands dropped (TX)",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_commandsDroppedTX",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_timed_out_responses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bc4b1224270fcb78afc724ed8cfa2d5e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Timed out responses",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_timeoutResponse",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_round_trip_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4e32f22de155775964a4572b4d48125d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "duration",
+        "original_icon": null,
+        "original_name": "Round Trip Time",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_rtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_light_rssi",
+        "hidden_by": null,
+        "icon": null,
+        "id": "14877cf69568dc0ef7dc19a392c67c2a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": null,
+        "original_name": "RSSI",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50.statistics_rssi",
+        "previous_unique_id": null,
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.laundry_room_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "937d402008a5524c73d3210a57a40b06",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-37-0-currentValue",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "event_types": [
+            "KeyHeldDown",
+            "KeyPressed",
+            "KeyPressed2x",
+            "KeyPressed3x",
+            "KeyPressed4x",
+            "KeyPressed5x",
+            "KeyReleased"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "event.laundry_room_light_scene_001",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a3f4c6c7e0bc45f322c982c54a2bdb8e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene 001",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-91-0-scene-001",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "event_types": [
+            "KeyHeldDown",
+            "KeyPressed",
+            "KeyPressed2x",
+            "KeyPressed3x",
+            "KeyPressed4x",
+            "KeyPressed5x",
+            "KeyReleased"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "event.laundry_room_light_scene_002",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0db311c8ed87178ba36f12f8c8531a90",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene 002",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-91-0-scene-002",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "event_types": [
+            "KeyHeldDown",
+            "KeyPressed",
+            "KeyPressed2x",
+            "KeyPressed3x",
+            "KeyPressed4x",
+            "KeyPressed5x",
+            "KeyReleased"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "event.laundry_room_light_scene_003",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ad5d80bd01ee360cf378610643d181cc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene 003",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-91-0-scene-003",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable",
+            "Momentary mode"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_inverted_orientation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "becfb7c276b456821b98e8f70d391e69",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Inverted Orientation",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "On when load is off",
+            "On when load is on",
+            "Always off",
+            "Always on"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_led_indicator",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7e37d77e3dcc2fa0fdf516ec18bae470",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.laundry_room_light_auto_turn_off_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a45caa5be0868534ffccb21c3831430b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-Off Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-3",
+        "previous_unique_id": null,
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 65535.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "number.laundry_room_light_auto_turn_on_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2c8b4509ee9e7e5e94b01ba2e0463b7f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Auto Turn-On Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-5",
+        "previous_unique_id": null,
+        "unit_of_measurement": "minutes"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_send_status_change_report_local_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f3d9471d789a8d258963ccc7cdce4299",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Local Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-7-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_send_status_change_report_3_way",
+        "hidden_by": null,
+        "icon": null,
+        "id": "57f5378e7209e6f896bf4ef2d16fbebe",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: 3-Way",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-7-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_send_status_change_report_z_wave",
+        "hidden_by": null,
+        "icon": null,
+        "id": "da2d3f920e9e23e7989d6b216524357f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Z-Wave",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-7-4",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_send_status_change_report_timer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "03561ec88fb596c60527fcb9875e3495",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Send Status Change Report: Timer",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-7-8",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Always off",
+            "Always on",
+            "Previous state"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_state_after_power_failure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "21e0a89a3a92279fa97c0737d66775bf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "State After Power Failure",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-8",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_scene_control",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8c5bd7c7f31b15e3ec909c41bb38fc4f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-9",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Disable",
+            "Enable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_scene_control_remote_3_way_switch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7016d06a428654583fa2bdca112002e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Scene Control: Remote 3-Way Switch",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-18",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Local control disabled",
+            "Local and Z-Wave control enabled",
+            "Local and Z-Wave control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_smart_switch_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "47d1058a2a13bd7c01753873b2aeb710",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Switch Mode",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-11",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Toggle switch",
+            "Momentary switch"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_3_way_switch_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e2f645485523d4361e8c88f89a783edf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "3-Way Switch Type",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-12",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Switch always reports status and changes LED state",
+            "No status or LED state change when physical (and Z-Wave) control disabled"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_smart_bulb_mode_reporting_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b8c4289ac46bb25f84f6d52537e3ec8d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Smart Bulb Mode: Reporting Behavior",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-13",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "White",
+            "Blue",
+            "Green",
+            "Red"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_led_indicator_color",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9f7ce8892cf63e360ce8206ee71c7206",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator Color",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-14",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Bright (100%)",
+            "Medium (60%)",
+            "Low (30%)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_led_indicator_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4e01feddc7bb8ebdc9e551fdbf386911",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator Brightness",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-15",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_led_indicator_confirm_configuration_change",
+        "hidden_by": null,
+        "icon": null,
+        "id": "58e80f3e7ffe536a3ae82a9f322f41bc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "LED Indicator: Confirm Configuration Change",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-19",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Binary Switch CC report (Z-Wave); Basic CC Set (Manual)",
+            "Binary Switch CC report (Z-Wave / Manual)"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_association_reports",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3c38f751a22b7a0c7872703dbb46d9d5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Association Reports",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-16",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Enable",
+            "Disable"
+          ]
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": "integration",
+        "entity_category": "config",
+        "entity_id": "select.laundry_room_light_local_programming",
+        "hidden_by": null,
+        "icon": null,
+        "id": "784dfea304fedb0ed85a6b4433dadc72",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Local Programming",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-112-0-17",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0.0,
+          "max": 255.0,
+          "step": 1.0,
+          "mode": "auto"
+        },
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.laundry_room_light_indicator_value",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2a71e8b5212ed4e6bb984ba0cfd87ac9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Indicator value",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-135-0-value",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.laundry_room_light_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2bbdf49bf2ccb16ff4a4debe163291b5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "zwave_js",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3343393661.50-135-0-identify",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c360373dda801e0ca73ccd582d53d98d",
+        "device_class": null,
+        "device_id": "df0e508a257fdfeefae0b8057b65b26f",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.laundry_room_light_firmware",
+        "hidden_by": null,
+        "icon": null,
+        "id": "98f34a10d3adaaaf3eddd52f3923afd7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": "Firmware",
+        "platform": "zwave_js",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "3343393661.50.firmware_update",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "6beca227eb0e580630d2462d9d43203c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_door_sensoe_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d54302a6aaa8616ecc83eca171506a0e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "battery",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000ad7e7ba_battery_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "6beca227eb0e580630d2462d9d43203c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.laundry_room_door_sensoe_contact",
+        "hidden_by": null,
+        "icon": null,
+        "id": "eff2c01c090a5c0754863eb8b6245471",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "door",
+        "original_icon": null,
+        "original_name": "contact",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000ad7e7ba_contact_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "6beca227eb0e580630d2462d9d43203c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_door_sensoe_device_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e686d1be514b1ba77a5f816caecfbc05",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": null,
+        "original_name": "device temperature",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000ad7e7ba_device_temperature_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "6beca227eb0e580630d2462d9d43203c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_door_sensoe_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "179ee7114a1bab208d8b53a64bbcf14f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000ad7e7ba_voltage_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "mV"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "6beca227eb0e580630d2462d9d43203c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.laundry_room_door_sensoe_power_outage_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6cdb656cdd27ba622375565fdc3653ff",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "power outage count",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000ad7e7ba_power_outage_count_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "6beca227eb0e580630d2462d9d43203c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.laundry_room_door_sensoe_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9f6dcf85f38b122085d2d9cb3deffce1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00158d000ad7e7ba_linkquality_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1710619107909"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.laundry_room_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4d10312db0eb500daee0b9c680fe7ac2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Laundry Room Light",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1710619107909",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

@@ -3131,3 +3131,44 @@
     entity_id: 838bd176af233578b9eaebe2d67c3aae
     domain: light
   mode: single
+- id: '1710619107909'
+  alias: Laundry Room Light
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: 6beca227eb0e580630d2462d9d43203c
+    entity_id: eff2c01c090a5c0754863eb8b6245471
+    domain: binary_sensor
+    id: Door_open
+  - type: not_opened
+    platform: device
+    device_id: 6beca227eb0e580630d2462d9d43203c
+    entity_id: eff2c01c090a5c0754863eb8b6245471
+    domain: binary_sensor
+    id: Door_closed
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - Door_open
+    then:
+    - type: turn_on
+      device_id: df0e508a257fdfeefae0b8057b65b26f
+      entity_id: 937d402008a5524c73d3210a57a40b06
+      domain: switch
+  - if:
+    - condition: trigger
+      id:
+      - Door_closed
+    then:
+    - type: turn_off
+      device_id: df0e508a257fdfeefae0b8057b65b26f
+      entity_id: 937d402008a5524c73d3210a57a40b06
+      domain: switch
+  mode: single

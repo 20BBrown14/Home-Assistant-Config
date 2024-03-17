@@ -3091,6 +3091,60 @@
         "serial_number": null,
         "sw_version": "ESP: 1.1.75 / PIC: 10512.3072.2.89 / TOF: 5.0.2.1",
         "via_device_id": null
+      },
+      {
+        "area_id": "laundry_room",
+        "config_entries": [
+          "c360373dda801e0ca73ccd582d53d98d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "df0e508a257fdfeefae0b8057b65b26f",
+        "identifiers": [
+          [
+            "zwave_js",
+            "3343393661-50-634:28672:40961"
+          ],
+          [
+            "zwave_js",
+            "3343393661-50"
+          ]
+        ],
+        "manufacturer": "Zooz",
+        "model": "ZEN71 800LR",
+        "name_by_user": null,
+        "name": "Laundry Room Light",
+        "serial_number": null,
+        "sw_version": "3.30.0",
+        "via_device_id": "a194f958f8d0b08f556aff6106e1cde3"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6beca227eb0e580630d2462d9d43203c",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00158d000ad7e7ba"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "Aqara door & window contact sensor (MCCGQ11LM)",
+        "name_by_user": null,
+        "name": "Laundry Room Door Sensoe",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

@@ -123,6 +123,12 @@
         "name": "Master Bath",
         "id": "master_bath",
         "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Laundry Room",
+        "id": "laundry_room",
+        "picture": null
       }
     ]
   }
