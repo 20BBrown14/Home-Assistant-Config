@@ -4167,7 +4167,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-80",
+        "original_icon": "mdi:battery-charging-wireless-60",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -59230,6 +59230,9 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
