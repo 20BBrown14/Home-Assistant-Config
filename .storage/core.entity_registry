@@ -71688,6 +71688,2952 @@
         "unique_id": "1710619107909",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.ernie",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d4f1b8e4d77909bcca970edd95409594",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "ernie",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "5e009b0a586f86ab",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_detected_activity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5bb79e4487b33318837885a43feca7e9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:walk",
+        "original_name": "ernie Detected activity",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_detected_activity",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_sleep_confidence",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7f2bd3caaa0965aa5a1e5abe01a62c5c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "ernie Sleep confidence",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_sleep_confidence",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_sleep_segment",
+        "hidden_by": null,
+        "icon": null,
+        "id": "06cf8a1107e5235d98bf429f4ac26835",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "ernie Sleep segment",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_sleep_segment",
+        "previous_unique_id": null,
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.ernie_android_auto",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4b26ce9405ae914c1733dceb703a699d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car",
+        "original_name": "ernie Android Auto",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_android_auto",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_os_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "282831b6d560a653949e6d33a9f106c4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "ernie OS version",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_android_os_version",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_security_patch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "56bd0e50f15acd21e3ad109140bc4f17",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:security",
+        "original_name": "ernie Security patch",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_android_os_security_patch",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_current_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "de1c14f28fba2f17df7e5f79554c7f70",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "ernie Current version",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_current_version",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_app_rx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "15d78b8a068559c2e7dc6c9d4dfac007",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "ernie App Rx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_app_rx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_app_tx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "247a733f05dd525005e185170e5652c6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "ernie App Tx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_app_tx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_app_memory",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ef44846da7b83f1eb3c26d3449295695",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "ernie App memory",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_app_memory",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_app_inactive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6b6994ede8393ec8fdbd22cca92abbaf",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-outline",
+        "original_name": "ernie App inactive",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_app_inactive",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_app_standby_bucket",
+        "hidden_by": null,
+        "icon": null,
+        "id": "720e06064fb5e6e9767ea4e57dfa18fe",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "ernie App standby bucket",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_app_standby_bucket",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_app_importance",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d3e4af03ee11168e45f8fa76a2fdf8ab",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "ernie App importance",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_app_importance",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_ringer_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "302ed6c1d42489339f4a0c5d86a8d44f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "ernie Ringer mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_audio_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_audio_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "833080b3dc68403e26ed06916db67841",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "ernie Audio mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_audio_mode",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.ernie_headphones",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a09b19a6814a4af77f87ab29b9469410",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:headphones",
+        "original_name": "ernie Headphones",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_headphone_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.ernie_mic_muted",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4c90e64eb48c8f27e56b47f6eb592bda",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:microphone-off",
+        "original_name": "ernie Mic muted",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_mic_muted",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.ernie_speakerphone",
+        "hidden_by": null,
+        "icon": null,
+        "id": "23f71f3436313d821bd15be03d3ccadc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "ernie Speakerphone",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_speakerphone_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.ernie_music_active",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4973c554b722f6463b19702c9b73dbfa",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:music",
+        "original_name": "ernie Music active",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_music_active",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_alarm",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b908f4cd09ca62d5ba28a10fa2300f1f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:alarm",
+        "original_name": "ernie Volume level alarm",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_alarm",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_call",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0f994bc7664627f687d862f44693dbc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:phone",
+        "original_name": "ernie Volume level call",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_call",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_music",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3fddfae68b3b358295e956ebfea175db",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:music",
+        "original_name": "ernie Volume level music",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_music",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_ringer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c27f7b60cc2d00da1c709723318ecdd5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:phone-ring",
+        "original_name": "ernie Volume level ringer",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_ring",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_notification",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ebd4412f4fa7ee5153e07251733d6a7f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "ernie Volume level notification",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_notification",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_system",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c415097fce42c14f5266f2ff035041e8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-sound",
+        "original_name": "ernie Volume level system",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_system",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_dtmf",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bd3f11d9e54b97a974eb52bdc2005f8f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "ernie Volume level DTMF",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_dtmf",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_volume_level_accessibility",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6cd4e55f427389b598a41d5c95d80800",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "ernie Volume level accessibility",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_volume_accessibility",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "af046ec83d58a6404ebccac4f98288d4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:battery-50",
+        "original_name": "ernie Battery level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_battery_level",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "06a7e8a2012316ac63e4a57b2ca81c14",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-minus",
+        "original_name": "ernie Battery state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_battery_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_is_charging",
+        "hidden_by": null,
+        "icon": null,
+        "id": "50c1aee1c5705c390733ba078b376e28",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "plug",
+        "original_icon": "mdi:power-plug",
+        "original_name": "ernie Is charging",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_is_charging",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_charger_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a8e8e4799c6f7db60e4fe60e8718cb70",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery",
+        "original_name": "ernie Charger type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_charger_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_battery_health",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3bf342f7cbd1e48dd8742ff04ec35415",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-heart-variant",
+        "original_name": "ernie Battery health",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_battery_health",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_battery_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c1c0fa6ec5ec4f7864dbc737f6f5b7b3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": "mdi:battery",
+        "original_name": "ernie Battery temperature",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_battery_temperature",
+        "previous_unique_id": null,
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_battery_power",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fea5edde92301b294bfe4dd3e60cfa35",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": "mdi:battery-plus",
+        "original_name": "ernie Battery power",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_battery_power",
+        "previous_unique_id": null,
+        "unit_of_measurement": "W"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_bluetooth_connection",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e2adeb2ce06a8db7fd7df17fff53031d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "ernie Bluetooth connection",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_bluetooth_connection",
+        "previous_unique_id": null,
+        "unit_of_measurement": "connection(s)"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_bluetooth_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3080fdd1e192eb90ff102793a28669cf",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "ernie Bluetooth state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_bluetooth_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_ble_transmitter",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c81b7c3ae0214093c6855187914773fc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "ernie BLE transmitter",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_ble_emitter",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_beacon_monitor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "90c3394c3af40f73afcee60a5d0ef72d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "ernie Beacon monitor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_beacon_monitor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_car_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "936d22ecde5e1c13652139a0b16b964b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:car-battery",
+        "original_name": "ernie Car battery",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_battery",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_car_name",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fbb943b97d8f3746c69ce57fbf39a481",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car-info",
+        "original_name": "ernie Car name",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_name",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_car_charging_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a1296e149ee353485c856f81e59b85e8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "plug",
+        "original_icon": "mdi:ev-station",
+        "original_name": "ernie Car charging status",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_charging_status",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_car_ev_connector_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "16bd5490a50f7c5a2d494fed390a82f6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car-electric",
+        "original_name": "ernie Car EV connector type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_ev_connector",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_car_fuel",
+        "hidden_by": null,
+        "icon": null,
+        "id": "79bea71853e48fe13781b377f8857bda",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:barrel",
+        "original_name": "ernie Car fuel",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_fuel",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_car_fuel_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "616c2dde3855c20e0d8b338efd166f8a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gas-station",
+        "original_name": "ernie Car fuel type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_fuel_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_car_odometer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fe350c0bb5a70853281e5d51e2baf7dd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "ft"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "distance",
+        "original_icon": "mdi:map-marker-distance",
+        "original_name": "ernie Car odometer",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_odometer",
+        "previous_unique_id": null,
+        "unit_of_measurement": "ft"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_screen_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "135cf30414a7027faeb8449f1fb939a7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:brightness-6",
+        "original_name": "ernie Screen brightness",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_screen_brightness",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_screen_off_timeout",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0765cfcedc65bd8af7e4788ff0090ffd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-off",
+        "original_name": "ernie Screen off timeout",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_screen_off_timeout",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_do_not_disturb_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7eadaf556df9e9b31c18d5bbb8ed6c76",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:minus-circle",
+        "original_name": "ernie Do Not Disturb sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_dnd_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_accent_color",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6c6c91ef6f40589e247943b7253b4da4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:palette",
+        "original_name": "ernie Accent color",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_accent_color",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.ernie_work_profile",
+        "hidden_by": null,
+        "icon": null,
+        "id": "10476c6cf873206fea611e9eceb4029b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:briefcase",
+        "original_name": "ernie Work profile",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_is_work_profile",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c941be7639b08543d09140cde4f5ebd8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map",
+        "original_name": "ernie Geocoded location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_geocoded_location",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_device_locked",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7d001cf2e5004135a200fbf789cff957",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-lock",
+        "original_name": "ernie Device locked",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_device_locked",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_device_secure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5d80e0665307875a0012c8498f912efb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-key",
+        "original_name": "ernie Device secure",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_device_secure",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_keyguard_locked",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2d4ead6c10fdbeddae6395755fe0b1f6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-lock",
+        "original_name": "ernie Keyguard locked",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_keyguard_locked",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_keyguard_secure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "149b703f1f05e2c1b928e65f0e20f2a6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-key",
+        "original_name": "ernie Keyguard secure",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_keyguard_secure",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_last_used_app",
+        "hidden_by": null,
+        "icon": null,
+        "id": "94127c241a1ed618eb11d3839cdb0230",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "ernie Last used app",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_last_used_app",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_last_reboot",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9368286a634153654fc877c6590b16d5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:restart",
+        "original_name": "ernie Last reboot",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_last_reboot",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f96ca4645ae450622db018f1bd6c973",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "ernie Last update trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_last_update",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_light_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "068d5a4bd4c0d76fb6e2751ef56fcd59",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "illuminance",
+        "original_icon": "mdi:brightness-5",
+        "original_name": "ernie Light sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_light_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lx"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_high_accuracy_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0b4b3d377c2d3b0ee318f6f9c54b577b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:crosshairs-gps",
+        "original_name": "ernie High accuracy mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_high_accuracy_mode",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_high_accuracy_update_interval",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4831a7910c6a91507bab3faf807d8c85",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer",
+        "original_name": "ernie High accuracy update interval",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_high_accuracy_update_interval",
+        "previous_unique_id": null,
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_mobile_data",
+        "hidden_by": null,
+        "icon": null,
+        "id": "676769f64b2475571f6dd7cf2c68f053",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "ernie Mobile data",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_mobile_data",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_mobile_data_roaming",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f742011c5f6c8a5935e836d9a17c1328",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:toggle-switch",
+        "original_name": "ernie Mobile data roaming",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_mobile_data_roaming",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_wifi_connection",
+        "hidden_by": null,
+        "icon": null,
+        "id": "60cd2ff4bb27982e83daa6e5dd0a6af7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "ernie WiFi connection",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_connection",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_wifi_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "202bcfad348d46dfe4ad6fb0d085bc04",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "ernie WiFi BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_bssid",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_wifi_ip_address",
+        "hidden_by": null,
+        "icon": null,
+        "id": "82bcfb81bd818a0f64ad93380b4eb8d8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "ernie WiFi IP address",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_ip_address",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_wifi_link_speed",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a360a4ba4b01af93892894e7686fa934",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-strength-3",
+        "original_name": "ernie WiFi link speed",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_link_speed",
+        "previous_unique_id": null,
+        "unit_of_measurement": "Mbps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_wifi_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "744fedb3d13ecf71ccd7fab081adf4b4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "ernie WiFi state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_wifi_frequency",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7d294f9dc4326f819500c1596bf8aa36",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "ernie WiFi frequency",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_frequency",
+        "previous_unique_id": null,
+        "unit_of_measurement": "MHz"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_wifi_signal_strength",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d584556cdff0d76b97312ba29314d56a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": "mdi:wifi-strength-3",
+        "original_name": "ernie WiFi signal strength",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_wifi_signal_strength",
+        "previous_unique_id": null,
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_public_ip_address",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6e557f97f8912de35e735be0636da79e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "ernie Public IP address",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_public_ip_address",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_hotspot_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "857186d7929ef7800df1dedf07666e48",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:access-point",
+        "original_name": "ernie Hotspot state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_hotspot_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_network_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9483e31c0a40ebc59405364fc0c15168",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:network",
+        "original_name": "ernie Network type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_network_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_nfc_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e1f749740b4e674a6ec259574b867d39",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:nfc-variant",
+        "original_name": "ernie NFC state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_nfc_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_next_alarm",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f2592576c5df040a3887898045bcc37",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:alarm",
+        "original_name": "ernie Next alarm",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_next_alarm",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_last_notification",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4da93060324acebff49a42902b4db7dc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "ernie Last notification",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_last_notification",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_last_removed_notification",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2916bfb28f21b238d11292a6964f930c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "ernie Last removed notification",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_last_removed_notification",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_active_notification_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b64c8b29ca0b938c576d5b4e59d5bc4b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "ernie Active notification count",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_active_notification_count",
+        "previous_unique_id": null,
+        "unit_of_measurement": "notifications"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_media_session",
+        "hidden_by": null,
+        "icon": null,
+        "id": "52998321e6577a6a5f75b0e1e221f7d1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:play-circle",
+        "original_name": "ernie Media session",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_media_session",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_phone_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ea07f4181481c85ccec341033671b060",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:phone",
+        "original_name": "ernie Phone state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_phone_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_sim_1",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0857ca7c60988b11e9756db11f1bdcb8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "ernie SIM 1",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_sim_1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_sim_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "93d1d18a244f42f10eff4414aff3815f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "ernie SIM 2",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_sim_2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_interactive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0b763ad5f31a832365a403803b311e9a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone",
+        "original_name": "ernie Interactive",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_is_interactive",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_doze_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8a36473c6c6f6030643a506af56b2d82",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "ernie Doze mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_is_idle",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.ernie_power_save",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c4dbb54b0bbe63103c7276818c4fab3c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-plus",
+        "original_name": "ernie Power save",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_power_save",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_pressure_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6a71f245f89bec1ddba38fe7e971d08c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "psi"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "pressure",
+        "original_icon": "mdi:gauge",
+        "original_name": "ernie Pressure sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_pressure_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "psi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_proximity_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0190c7903964541a25e9f6cc3a70aeb6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:leak",
+        "original_name": "ernie Proximity sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_proximity_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.ernie_steps_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e148663d96fb7b5dee9614f57ef04a2b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:walk",
+        "original_name": "ernie Steps sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_steps_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "steps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_internal_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c3b4a3846086fbf70f00e4ccc2fd7ad9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:harddisk",
+        "original_name": "ernie Internal storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_storage_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_external_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "930c341198002f14bcfd1e55ba836860",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:micro-sd",
+        "original_name": "ernie External storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_external_storage",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_current_time_zone",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bc3147a593550f3a841566e6dc9eaa1e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map-clock",
+        "original_name": "ernie Current time zone",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_current_time_zone",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_mobile_rx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e9d623a43c0303f5de640ed71ca91380",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "ernie Mobile Rx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_mobile_rx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_mobile_tx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "544e252a2d150571df1db9b279cd1c52",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "ernie Mobile Tx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_mobile_tx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_total_rx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3f83a8d6f6df93cae7782c957df6bd9f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "ernie Total Rx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_total_rx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_total_tx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0b4e4c5da5d00d474b8dda51d394e77f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "ernie Total Tx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_total_tx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
       }
     ],
     "deleted_entities": [

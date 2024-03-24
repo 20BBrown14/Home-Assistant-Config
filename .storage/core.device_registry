@@ -3145,6 +3145,31 @@
         "serial_number": null,
         "sw_version": null,
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c79dbba4a30c36c685f1c83d815c726c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1146ddc764461b26a547a4fc05f290a6",
+        "identifiers": [
+          [
+            "mobile_app",
+            "5e009b0a586f86ab"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-A146U",
+        "name_by_user": null,
+        "name": "ernie",
+        "serial_number": null,
+        "sw_version": "34",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
