@@ -4167,7 +4167,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-60",
+        "original_icon": "mdi:battery-charging-wireless-70",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -74634,6 +74634,41 @@
         "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_total_tx_gb",
         "previous_unique_id": null,
         "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "id": "1711391382479"
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "automation.litter_robot_notifications",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2a9d2536af185e9a4415d0896517f67f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Litter Robot Notifications",
+        "platform": "automation",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1711391382479",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

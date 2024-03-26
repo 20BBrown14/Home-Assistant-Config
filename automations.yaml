@@ -3172,3 +3172,115 @@
       entity_id: 937d402008a5524c73d3210a57a40b06
       domain: switch
   mode: single
+- id: '1711391382479'
+  alias: Litter Robot Notifications
+  description: ''
+  trigger:
+  - type: value
+    platform: device
+    device_id: 9c5503844279813835773d316a5ffde8
+    entity_id: 619e4f7c416f4438647a2980b8aff17c
+    domain: sensor
+    above: 85
+    id: box_needs_attention
+  - type: value
+    platform: device
+    device_id: 9c5503844279813835773d316a5ffde8
+    entity_id: e3d39aa58d223372c0542115b6198832
+    domain: sensor
+    below: 70
+    id: box_needs_attention
+  - type: value
+    platform: device
+    device_id: 9c5503844279813835773d316a5ffde8
+    entity_id: 619e4f7c416f4438647a2980b8aff17c
+    domain: sensor
+    below: 15
+    id: box_issue_addressed
+  - type: value
+    platform: device
+    device_id: 9c5503844279813835773d316a5ffde8
+    entity_id: e3d39aa58d223372c0542115b6198832
+    domain: sensor
+    id: box_issue_addressed
+    above: 95
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - box_needs_attention
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        title: Litter Box
+        message: Litter Box Needs Attention
+        data:
+          critical: true
+          ttl: 0
+          priority: high
+          notification_icon: mdi:cat
+          tag: litter_box_needs_attention
+          actions:
+          - action: URI
+            title: Litter Box Info
+            uri: /config/devices/device/9c5503844279813835773d316a5ffde8
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 2
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 31
+      bitmask: 32
+      subtype: 31[0x20] on endpoint 0 (LED 6 Blink Status) on endpoint 0
+      value: 1
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 2
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 31
+      bitmask: 32
+      subtype: 31[0x20] on endpoint 0 (LED 6 Blink Status) on endpoint 0
+      value: 1
+  - if:
+    - condition: trigger
+      id:
+      - box_issue_addressed
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: clear_notification
+        data:
+          tag: litter_box_needs_attention
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 0
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 0
+  mode: single
