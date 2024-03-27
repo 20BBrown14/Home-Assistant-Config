@@ -3039,7 +3039,7 @@
         "name_by_user": null,
         "name": "Branden’s iPad",
         "serial_number": null,
-        "sw_version": "17.4",
+        "sw_version": "17.4.1",
         "via_device_id": null
       },
       {
@@ -3169,6 +3169,31 @@
         "name": "ernie",
         "serial_number": null,
         "sw_version": "34",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "baf57ba037f975caf4dced6631ef5ce8",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0029e85ba2"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "15A Zigbee smart plug (S40ZBTPB)",
+        "name_by_user": null,
+        "name": "0x00124b0029e85ba2",
+        "serial_number": null,
+        "sw_version": "1.1.0",
         "via_device_id": null
       }
     ],

@@ -74669,6 +74669,234 @@
         "unique_id": "1711391382479",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.0x00124b0029e85ba2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7d915334e8a7fb6547fe9806c33eb9e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_switch_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.0x00124b0029e85ba2_power_on_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e4820cf1a75da7cef15bf5d08562c2ba",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power-settings",
+        "original_name": "power on behavior",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_power_on_behavior_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "off",
+            "on",
+            "toggle",
+            "previous"
+          ]
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "select.0x00124b0029e85ba2_power_on_behavior",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b09b574e9cbc941e61b06a022145a22e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power-settings",
+        "original_name": "power on behavior",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_power_on_behavior_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.0x00124b0029e85ba2_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b68d35e5156f26ecf14f651c67a15440",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_linkquality_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.0x00124b0029e85ba2_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "33e587d177969c14e99548894a4774a7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_update_state_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.0x00124b0029e85ba2_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d58780af3a360e686069c89b40a4e3e7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_update_available_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "baf57ba037f975caf4dced6631ef5ce8",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.0x00124b0029e85ba2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4ebf2d4432aa4446c7c3d7b7100f18ed",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x00124b0029e85ba2_update_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
