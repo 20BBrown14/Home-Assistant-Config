@@ -3181,14 +3181,14 @@
     device_id: 9c5503844279813835773d316a5ffde8
     entity_id: 619e4f7c416f4438647a2980b8aff17c
     domain: sensor
-    above: 85
+    above: 80
     id: box_needs_attention
   - type: value
     platform: device
     device_id: 9c5503844279813835773d316a5ffde8
     entity_id: e3d39aa58d223372c0542115b6198832
     domain: sensor
-    below: 70
+    below: 81
     id: box_needs_attention
   - type: value
     platform: device
