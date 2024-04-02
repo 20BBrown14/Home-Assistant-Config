@@ -614,6 +614,7 @@ turn_on_frontyard_lights_idle:
         hours: 0
         minutes: 0
         seconds: 10
+    enabled: false
   - service: light.turn_on
     data:
       brightness: 255
