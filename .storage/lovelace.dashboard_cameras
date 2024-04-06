@@ -115,6 +115,23 @@
               "url": "rtsp://192.168.86.21:8554/finnley_room"
             }
           ]
+        },
+        {
+          "title": "Finnley Camera 3",
+          "path": "finnley-camera-3",
+          "type": "panel",
+          "badges": [],
+          "cards": [
+            {
+              "show_state": true,
+              "show_name": true,
+              "camera_view": "live",
+              "type": "picture-entity",
+              "image": "https://demo.home-assistant.io/stub_config/bedroom.png",
+              "camera_image": "camera.192_168_86_21",
+              "entity": "camera.192_168_86_21"
+            }
+          ]
         }
       ]
     }

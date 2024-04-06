@@ -18,11 +18,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-1-0:4:4"
+            "3343393661-1"
           ],
           [
             "zwave_js",
-            "3343393661-1"
+            "3343393661-1-0:4:4"
           ]
         ],
         "manufacturer": "Silicon Labs",
@@ -47,11 +47,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-19-99:18756:13111"
+            "3343393661-19"
           ],
           [
             "zwave_js",
-            "3343393661-19"
+            "3343393661-19-99:18756:13111"
           ]
         ],
         "manufacturer": "Enbrighten",
@@ -95,8 +95,8 @@
       {
         "area_id": "finnley_s_room",
         "config_entries": [
-          "c360373dda801e0ca73ccd582d53d98d",
-          "4d198b0c52d3f21e86684be21461084f"
+          "4d198b0c52d3f21e86684be21461084f",
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -107,11 +107,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-22"
+            "3343393661-22-786:65280:65292"
           ],
           [
             "zwave_js",
-            "3343393661-22-786:65280:65292"
+            "3343393661-22"
           ]
         ],
         "manufacturer": "Minoston",
@@ -136,11 +136,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-23"
+            "3343393661-23-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-23-99:18770:12597"
+            "3343393661-23"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -252,11 +252,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-27"
+            "3343393661-27-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-27-99:18770:12597"
+            "3343393661-27"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -270,9 +270,9 @@
       {
         "area_id": "backyard",
         "config_entries": [
+          "58e47bce27bf6aedbe7250e4c4716963",
           "2c5ce0bfc343e83e40169c18d16cd1f0",
-          "c360373dda801e0ca73ccd582d53d98d",
-          "58e47bce27bf6aedbe7250e4c4716963"
+          "c360373dda801e0ca73ccd582d53d98d"
         ],
         "configuration_url": null,
         "connections": [],
@@ -791,11 +791,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-30-99:18770:12597"
+            "3343393661-30"
           ],
           [
             "zwave_js",
-            "3343393661-30"
+            "3343393661-30-99:18770:12597"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1008,11 +1008,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-33"
+            "3343393661-33-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-33-881:258:187"
+            "3343393661-33"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1112,11 +1112,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-34-99:18756:12853"
+            "3343393661-34"
           ],
           [
             "zwave_js",
-            "3343393661-34"
+            "3343393661-34-99:18756:12853"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1141,11 +1141,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-35"
+            "3343393661-35-99:18770:12597"
           ],
           [
             "zwave_js",
-            "3343393661-35-99:18770:12597"
+            "3343393661-35"
           ]
         ],
         "manufacturer": "GE/Enbrighten",
@@ -1170,11 +1170,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-36"
+            "3343393661-36-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-36-881:258:187"
+            "3343393661-36"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -1603,11 +1603,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-39"
+            "3343393661-39-881:258:187"
           ],
           [
             "zwave_js",
-            "3343393661-39-881:258:187"
+            "3343393661-39"
           ]
         ],
         "manufacturer": "Aeotec Ltd.",
@@ -2432,11 +2432,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-47"
+            "3343393661-47-99:18756:13111"
           ],
           [
             "zwave_js",
-            "3343393661-47-99:18756:13111"
+            "3343393661-47"
           ]
         ],
         "manufacturer": "Enbrighten",
@@ -2461,11 +2461,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-48-634:28672:40962"
+            "3343393661-48"
           ],
           [
             "zwave_js",
-            "3343393661-48"
+            "3343393661-48-634:28672:40962"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2519,11 +2519,11 @@
         "identifiers": [
           [
             "zwave_js",
-            "3343393661-43-634:260:513"
+            "3343393661-43"
           ],
           [
             "zwave_js",
-            "3343393661-43"
+            "3343393661-43-634:260:513"
           ]
         ],
         "manufacturer": "Zooz",
@@ -2796,12 +2796,12 @@
         "configuration_url": null,
         "connections": [
           [
-            "bluetooth",
-            "CF:35:33:35:18:67"
-          ],
-          [
             "mac",
             "cf:35:33:35:18:67"
+          ],
+          [
+            "bluetooth",
+            "CF:35:33:35:18:67"
           ]
         ],
         "disabled_by": null,
@@ -3194,6 +3194,31 @@
         "name": "0x00124b0029e85ba2",
         "serial_number": null,
         "sw_version": "1.1.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "finnley_s_room",
+        "config_entries": [
+          "fe06e9e32d9103fce4a206d90beec3df"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5567c76ff3bc7e6477527a659538cce5",
+        "identifiers": [
+          [
+            "generic",
+            "fe06e9e32d9103fce4a206d90beec3df"
+          ]
+        ],
+        "manufacturer": "Generic",
+        "model": null,
+        "name_by_user": null,
+        "name": "192_168_86_21",
+        "serial_number": null,
+        "sw_version": null,
         "via_device_id": null
       }
     ],

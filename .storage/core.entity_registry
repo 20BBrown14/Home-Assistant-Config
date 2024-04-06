@@ -75307,7 +75307,11 @@
         "id": "d97c18354f4290e0d23ec0bd3cbd4189",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "param012",
@@ -75315,6 +75319,72 @@
         "supported_features": 0,
         "translation_key": null,
         "unique_id": "3343393661.46-112-0-12",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "person.ipad",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0faada75603731fa02f88c8f2553567d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "iPad",
+        "platform": "person",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "ipad",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "fe06e9e32d9103fce4a206d90beec3df",
+        "device_class": null,
+        "device_id": "5567c76ff3bc7e6477527a659538cce5",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "camera.192_168_86_21",
+        "hidden_by": null,
+        "icon": null,
+        "id": "60b5bef7b80954473cebae21e7d053b2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "192_168_86_21",
+        "platform": "generic",
+        "supported_features": 2,
+        "translation_key": null,
+        "unique_id": "fe06e9e32d9103fce4a206d90beec3df",
         "previous_unique_id": null,
         "unit_of_measurement": null
       }

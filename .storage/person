@@ -42,6 +42,15 @@
         ],
         "user_id": "b4824123392d466486ccf59dd5d09b01",
         "picture": "/api/image/serve/a4fc1dcc5eea87240ea2bf3d635a0d2a/512x512"
+      },
+      {
+        "id": "ipad",
+        "name": "iPad",
+        "device_trackers": [
+          "device_tracker.brandens_ipad"
+        ],
+        "user_id": "0596017bea8b4f1fa870a259f95a40de",
+        "picture": null
       }
     ]
   }
