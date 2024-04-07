@@ -112,7 +112,8 @@
           "cards": [
             {
               "type": "custom:webrtc-camera",
-              "url": "rtsp://192.168.86.21:8554/finnley_room"
+              "url": "rtsp://192.168.86.21:8554/finnley_room",
+              "mode": "mse"
             }
           ]
         },

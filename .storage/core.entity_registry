@@ -8446,7 +8446,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "battery",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8470,7 +8472,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-40",
+        "original_icon": "mdi:battery-charging-wireless-70",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8506,7 +8508,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-charging",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8626,7 +8628,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "temperature",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8665,7 +8669,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "power",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8689,7 +8695,7 @@
           }
         },
         "original_device_class": "power",
-        "original_icon": "mdi:battery-minus",
+        "original_icon": "mdi:battery-plus",
         "original_name": "Samantha's Phone Battery power",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -9497,7 +9503,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9563,7 +9571,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9596,7 +9606,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "signal_strength",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -75387,6 +75399,38 @@
         "unique_id": "fe06e9e32d9103fce4a206d90beec3df",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
+        "device_class": null,
+        "device_id": "6636b1f64974c361328efbc239dceb84",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.samantha_s_phone_ipv6_addresses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "93c15a20e36bb35e461f5f9258965903",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "Samantha's Phone IPv6 addresses",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0dfb818836402d406b9696502e029d26399230aa6ccff73f8373c9f4b5f3d480_ip6_addresses",
+        "previous_unique_id": null,
+        "unit_of_measurement": "address(es)"
       }
     ],
     "deleted_entities": [
