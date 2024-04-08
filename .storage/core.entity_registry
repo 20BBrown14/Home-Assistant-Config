@@ -75431,6 +75431,39 @@
         "unique_id": "0dfb818836402d406b9696502e029d26399230aa6ccff73f8373c9f4b5f3d480_ip6_addresses",
         "previous_unique_id": null,
         "unit_of_measurement": "address(es)"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {},
+        "config_entry_id": "dc7efdab860d3315f9756e4b5e55a80c",
+        "device_class": null,
+        "device_id": "63db670935c51de36597787073617bde",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.garage_microphone_esphome_i2s_media_player",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7ba317d309c6a92def84db87dec2a06f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": null,
+        "original_name": "ESPHome I2S Media Player",
+        "platform": "esphome",
+        "supported_features": 152077,
+        "translation_key": null,
+        "unique_id": "48:E7:29:A3:17:C0-media_player-esphome_i2s_media_player",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

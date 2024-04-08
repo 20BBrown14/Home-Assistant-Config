@@ -3220,6 +3220,31 @@
         "serial_number": null,
         "sw_version": null,
         "via_device_id": null
+      },
+      {
+        "area_id": "garage",
+        "config_entries": [
+          "dc7efdab860d3315f9756e4b5e55a80c"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "48:e7:29:a3:17:c0"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "63db670935c51de36597787073617bde",
+        "identifiers": [],
+        "manufacturer": "Espressif",
+        "model": "esp32dev",
+        "name_by_user": null,
+        "name": "Garage Microphone",
+        "serial_number": null,
+        "sw_version": "2023.12.5 (Apr  7 2024, 16:46:58)",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
