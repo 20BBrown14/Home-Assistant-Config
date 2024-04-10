@@ -605,16 +605,21 @@ turn_on_frontyard_lights_idle:
     device_id: 7667289dac32e9792162b70cc2af7484
     entity_id: c0bd051cafd9549eceb53d7e10e2e979
     domain: switch
-  - wait_for_trigger:
-    - platform: state
-      entity_id:
-      - light.porch_light
-      to: 'on'
-      for:
+  - if:
+    - condition: state
+      entity_id: light.porch_light
+      state: unavailable
+    then:
+    - wait_for_trigger:
+      - platform: state
+        entity_id:
+        - light.porch_light
+        to: 'on'
+      timeout:
         hours: 0
-        minutes: 0
-        seconds: 10
-    enabled: false
+        minutes: 1
+        seconds: 0
+        milliseconds: 0
   - service: light.turn_on
     data:
       brightness: 255
@@ -1607,6 +1612,11 @@ submit_baby_buddy_pumping:
   - service: script.1705186537951
     data: {}
     enabled: true
+  - service: input_boolean.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.waiting_for_finnley_pumping_confirmation
   mode: queued
   icon: mdi:mother-nurse
   max: 10
@@ -1726,4 +1736,148 @@ set_start_pumping_time_to_now:
       datetime: '{{now()}}'
     target:
       entity_id: input_datetime.pumping_start_time
+  mode: single
+reset_finnley_pumping_form:
+  alias: Reset Finnley Pumping Form
+  sequence:
+  - service: input_number.set_value
+    data:
+      value: 0
+    target:
+      entity_id:
+      - input_number.pumping_amount
+  - service: input_text.set_value
+    data:
+      value: ''
+    target:
+      entity_id:
+      - input_text.pumping_notes
+  mode: single
+  icon: mdi:format-clear
+baby_buddy_finnley_pumping:
+  alias: Baby Buddy - Finnley -Pumping
+  sequence:
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_branden_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Pumping Added!
+        data:
+          notification_icon: mdi:mother-nurse
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_pumping
+          actions:
+          - action: CANCEL_PUMPING
+            title: Cancel
+          - action: NO_ADDITIONAL_PUMPING_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/pumping
+      enabled: true
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_samantha_home
+      state: 'on'
+    then:
+    - service: notify.mobile_app_samantha_s_phone
+      data:
+        message: Would you like to add additional details?
+        title: Pumping Added!
+        data:
+          notification_icon: mdi:mother-nurse
+          ttl: 0
+          priority: high
+          tag: confirm_finnley_pumping
+          actions:
+          - action: CANCEL_PUMPING
+            title: Cancel
+          - action: NO_ADDITIONAL_PUMPING_INFORMATION
+            title: 'No'
+          - action: URI
+            title: 'Yes'
+            uri: /baby-buddy/pumping
+      enabled: true
+    enabled: true
+  - service: script.reset_finnley_pumping_form
+    data: {}
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id:
+      - input_boolean.waiting_for_finnley_pumping_confirmation
+  - wait_for_trigger:
+    - platform: event
+      event_type: FINNLEY_PUMPING_CONFIRMED
+      id: CONTINUE
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: NO_ADDITIONAL_PUMPING_INFORMATION
+      id: CONTINUE
+    - platform: state
+      entity_id:
+      - input_boolean.waiting_for_finnley_pumping_confirmation
+      to: 'off'
+      id: CONTINUE
+    - platform: event
+      event_type: FINNLEY_PUMPING_CANCELLED
+      id: CANCEL
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: CANCEL_PUMPING
+      id: CANCEL
+  - service: notify.all_mobile_phones
+    data:
+      data:
+        tag: confirm_finnley_pumping
+      message: clear_notification
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CONTINUE'' or wait.trigger.id == null}}'
+    then:
+    - service: script.submit_baby_buddy_pumping
+      data: {}
+  - if:
+    - condition: template
+      value_template: '{{wait.trigger.id == ''CANCEL''}}'
+    then:
+    - service: script.1705186537951
+      data: {}
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id:
+        - input_boolean.waiting_for_finnley_pumping_confirmation
+  mode: queued
+  icon: mdi:food
+  max: 5
+finnley_confirm_pumping_details:
+  alias: Finnley Confirm Pumping Details
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - event: FINNLEY_PUMPING_CONFIRMED
+    event_data: {}
+  mode: single
+finnley_cancel_pumping_details:
+  alias: Finnley Cancel Pumping Details
+  sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 1
+      milliseconds: 0
+  - event: FINNLEY_PUMPING_CANCELLED
+    event_data: {}
   mode: single

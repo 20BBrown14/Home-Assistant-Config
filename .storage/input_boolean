@@ -88,6 +88,11 @@
         "id": "quiet_mode",
         "name": "Quiet Mode",
         "icon": "mdi:alarm-snooze"
+      },
+      {
+        "id": "waiting_for_finnley_pumping_confirmation",
+        "name": "Waiting for Finnley Pumping Confirmation",
+        "icon": "mdi:timer-star"
       }
     ]
   }

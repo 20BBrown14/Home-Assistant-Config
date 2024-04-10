@@ -2830,6 +2830,16 @@
     then:
     - service: script.baby_buddy_finnley_sleep
       data: {}
+      enabled: false
+    - service: input_datetime.set_datetime
+      metadata: {}
+      data:
+        datetime: '{{now()}}'
+      target:
+        entity_id: input_datetime.pumping_start_time
+    - service: script.baby_buddy_finnley_pumping
+      metadata: {}
+      data: {}
   mode: single
 - id: '1704164614912'
   alias: Reset Snoozed Frigate Notifications
@@ -2982,6 +2992,9 @@
   - platform: event
     event_type: FINNLEY_SLEEP_CONFIRMED
     id: submit_sleep
+  - platform: event
+    event_type: FINNLEY_PUMPING_CONFIRMED
+    id: submit_pumping
   condition: []
   action:
   - if:
@@ -3062,6 +3075,18 @@
     - service: script.submit_baby_buddy_sleep
       data: {}
     enabled: true
+  - if:
+    - condition: and
+      conditions:
+      - condition: trigger
+        id:
+        - submit_pumping
+      - condition: state
+        entity_id: input_boolean.waiting_for_finnley_pumping_confirmation
+        state: 'off'
+    then:
+    - service: script.submit_baby_buddy_pumping
+      data: {}
   mode: parallel
   max: 10
 - id: '1709497515323'

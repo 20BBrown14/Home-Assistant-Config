@@ -522,6 +522,9 @@
               "title": "Add Pumping - Finnley",
               "entities": [
                 {
+                  "entity": "input_boolean.waiting_for_finnley_pumping_confirmation"
+                },
+                {
                   "type": "divider",
                   "style": {
                     "height": "2px"
@@ -553,16 +556,48 @@
                   }
                 },
                 {
-                  "type": "button",
-                  "name": "Confirm Pumping",
-                  "icon": "mdi:button-cursor",
-                  "action_name": "Confirm",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "script.submit_baby_buddy_pumping"
+                  "type": "custom:multiple-entity-row",
+                  "show_state": false,
+                  "name": " ",
+                  "icon": " ",
+                  "entity": "input_boolean.waiting_for_finnley_pumping_confirmation",
+                  "entities": [
+                    {
+                      "type": "button",
+                      "icon": " ",
+                      "action_name": "Cancel",
+                      "name": "Cancel",
+                      "styles": {
+                        "height": "10px",
+                        "font-weight": "bold",
+                        "padding-right": "72px"
+                      },
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_cancel_pumping_details"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "icon": " ",
+                      "action_name": "Confirm",
+                      "name": "Submit",
+                      "styles": {
+                        "height": "10px",
+                        "font-weight": "bold"
+                      },
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.finnley_confirm_pumping_details"
+                      }
+                    }
+                  ],
+                  "card_mod": {
+                    "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 18px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
                   }
                 }
-              ]
+              ],
+              "show_header_toggle": false
             }
           ]
         }

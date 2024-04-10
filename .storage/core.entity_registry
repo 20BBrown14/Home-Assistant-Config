@@ -4141,7 +4141,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "battery",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4165,7 +4167,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-60",
+        "original_icon": "mdi:battery-charging-wireless-80",
         "original_name": "Branden's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -4318,7 +4320,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "temperature",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4357,7 +4361,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "power",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -5299,7 +5305,9 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": null,
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -10778,7 +10786,7 @@
         "config_entry_id": "938f1fe1c1e5bf6b7aa1d4b18ba0ee4f",
         "device_class": null,
         "device_id": "e92e0738814460ac3d65d44e25ff7c4a",
-        "disabled_by": "integration",
+        "disabled_by": null,
         "entity_category": "diagnostic",
         "entity_id": "sensor.wiz_rgbw_tunable_da095c_signal_strength",
         "hidden_by": null,
@@ -10788,6 +10796,12 @@
         "name": null,
         "options": {
           "conversation": {
+            "should_expose": false
+          },
+          "sensor": {
+            "display_precision": null
+          },
+          "cloud.google_assistant": {
             "should_expose": false
           }
         },
@@ -72739,9 +72753,11 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "battery",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": null,
         "entity_category": "diagnostic",
@@ -72760,7 +72776,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-50",
+        "original_icon": "mdi:battery-60",
         "original_name": "ernie Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -72807,7 +72823,7 @@
         "area_id": null,
         "capabilities": null,
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "plug",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -72908,7 +72924,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "temperature",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -72934,7 +72950,7 @@
         "translation_key": null,
         "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_battery_temperature",
         "previous_unique_id": null,
-        "unit_of_measurement": "°F"
+        "unit_of_measurement": "°C"
       },
       {
         "aliases": [],
@@ -72943,7 +72959,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "power",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -73112,7 +73128,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "battery",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -73178,7 +73194,7 @@
         "area_id": null,
         "capabilities": null,
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "plug",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": null,
@@ -73246,7 +73262,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "battery",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": null,
@@ -73314,7 +73330,7 @@
           "state_class": "total_increasing"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "distance",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": null,
@@ -73343,7 +73359,7 @@
         "translation_key": null,
         "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_car_odometer",
         "previous_unique_id": null,
-        "unit_of_measurement": "ft"
+        "unit_of_measurement": "m"
       },
       {
         "aliases": [],
@@ -73713,7 +73729,7 @@
         "area_id": null,
         "capabilities": null,
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "timestamp",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -73781,7 +73797,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "illuminance",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": null,
@@ -74150,7 +74166,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "signal_strength",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": "diagnostic",
@@ -74315,7 +74331,7 @@
         "area_id": null,
         "capabilities": null,
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "timestamp",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": null,
@@ -74682,7 +74698,7 @@
           "state_class": "measurement"
         },
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
-        "device_class": null,
+        "device_class": "pressure",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
         "disabled_by": "integration",
         "entity_category": null,
@@ -74711,7 +74727,7 @@
         "translation_key": null,
         "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_pressure_sensor",
         "previous_unique_id": null,
-        "unit_of_measurement": "psi"
+        "unit_of_measurement": "hPa"
       },
       {
         "aliases": [],
@@ -75464,6 +75480,203 @@
         "unique_id": "48:E7:29:A3:17:C0-media_player-esphome_i2s_media_player",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_boolean.waiting_for_finnley_pumping_confirmation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f38aae07db3d21fda1bc27e90306340c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-star",
+        "original_name": "Waiting for Finnley Pumping Confirmation",
+        "platform": "input_boolean",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "waiting_for_finnley_pumping_confirmation",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.reset_finnley_pumping_form",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c08d45397721ed08261585cee64ad8f6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Finnley Pumping Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reset_finnley_pumping_form",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.baby_buddy_finnley_pumping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a1e8ebd969c4051db39d8098f50370d8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:food",
+        "original_name": "Baby Buddy - Finnley -Pumping",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "baby_buddy_finnley_pumping",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_confirm_pumping_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "afad06312973b501c13a688fbea61bc9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Confirm Pumping Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_confirm_pumping_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_cancel_pumping_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8af795018499e0537bcb7542e4db141e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Cancel Pumping Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_cancel_pumping_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
+        "device_class": null,
+        "device_id": "1146ddc764461b26a547a4fc05f290a6",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.ernie_ipv6_addresses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9d230ba6a924655877c0ee0cfe1edf42",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "ernie IPv6 addresses",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "05d0e3f3a6e9a3726f4d670ec672987c2c1b52a15687d6a98f9a350378f0ff88_ip6_addresses",
+        "previous_unique_id": null,
+        "unit_of_measurement": "address(es)"
       }
     ],
     "deleted_entities": [
