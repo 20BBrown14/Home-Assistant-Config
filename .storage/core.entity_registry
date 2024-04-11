@@ -8480,7 +8480,7 @@
           }
         },
         "original_device_class": "battery",
-        "original_icon": "mdi:battery-charging-wireless-70",
+        "original_icon": "mdi:battery-charging-wireless",
         "original_name": "Samantha's Phone Battery level",
         "platform": "mobile_app",
         "supported_features": 0,
@@ -8516,7 +8516,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:battery-plus",
+        "original_icon": "mdi:battery-charging",
         "original_name": "Samantha's Phone Battery state",
         "platform": "mobile_app",
         "supported_features": 0,
