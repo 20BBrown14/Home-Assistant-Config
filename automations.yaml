@@ -638,74 +638,9 @@
   condition: []
   action:
   - type: toggle
-    device_id: 3b5a74bf4f0b08e306cb22c9d9290c18
-    entity_id: ee27b3af1cb0ccd417384a5d253dd72d
-    domain: light
-    enabled: false
-  - wait_for_trigger:
-    - platform: device
-      domain: mqtt
-      device_id: 4123d53d80bf262f32a413067ab8812b
-      type: action
-      subtype: single
-      discovery_id: 0x00158d0008393dbe action_single
-    timeout:
-      hours: 0
-      minutes: 0
-      seconds: 1
-      milliseconds: 0
-  - if:
-    - condition: template
-      value_template: '{{not wait.trigger}}'
-    then:
-    - type: toggle
-      device_id: 3b5a74bf4f0b08e306cb22c9d9290c18
-      entity_id: ee27b3af1cb0ccd417384a5d253dd72d
-      domain: light
-      enabled: false
-    - if:
-      - condition: device
-        type: is_off
-        device_id: 3b5a74bf4f0b08e306cb22c9d9290c18
-        entity_id: ee27b3af1cb0ccd417384a5d253dd72d
-        domain: light
-      then:
-      - service: light.turn_on
-        metadata: {}
-        data:
-          kelvin: 2500
-          brightness_pct: 34
-        target:
-          entity_id: light.bedside_lamp_light
-      else:
-      - type: turn_off
-        device_id: 3b5a74bf4f0b08e306cb22c9d9290c18
-        entity_id: ee27b3af1cb0ccd417384a5d253dd72d
-        domain: light
-    else:
-    - if:
-      - condition: template
-        value_template: '{{ is_state_attr(''light.bedside_lamp_light'' , ''rgb_color''
-          , (255, 0, 0))}}'
-      then:
-      - service: light.turn_on
-        metadata: {}
-        data:
-          kelvin: 2500
-          brightness_pct: 34
-        target:
-          entity_id: light.bedside_lamp_light
-      else:
-      - service: light.turn_on
-        metadata: {}
-        data:
-          rgb_color:
-          - 255
-          - 0
-          - 0
-          brightness_pct: 100
-        target:
-          entity_id: light.bedside_lamp_light
+    device_id: baf57ba037f975caf4dced6631ef5ce8
+    entity_id: b7d915334e8a7fb6547fe9806c33eb9e
+    domain: switch
   mode: single
 - id: '1668465157914'
   alias: Trash Reminder
@@ -2673,26 +2608,18 @@
           - condition: template
             value_template: '{{wait.trigger.payload == ''arrow_right_click''}}'
           then:
-          - service: light.turn_on
-            metadata: {}
-            data:
-              kelvin: 2500
-              brightness: 87
+          - service: switch.turn_on
             target:
-              entity_id: light.bedside_lamp_light
+              device_id: baf57ba037f975caf4dced6631ef5ce8
+            data: {}
         - if:
           - condition: template
             value_template: '{{wait.trigger.payload == ''off''}}'
           then:
-          - service: light.turn_on
-            metadata: {}
-            data:
-              rgb_color:
-              - 255
-              - 0
-              - 0
-            target:
-              entity_id: light.bedside_lamp_light
+          - type: turn_on
+            device_id: baf57ba037f975caf4dced6631ef5ce8
+            entity_id: b7d915334e8a7fb6547fe9806c33eb9e
+            domain: switch
       else:
       - service: select.select_option
         data:
@@ -2755,11 +2682,10 @@
           - condition: template
             value_template: '{{wait.trigger.payload == ''on''}}'
           then:
-          - service: light.turn_off
-            target:
-              entity_id:
-              - light.bedside_lamp_light
-            data: {}
+          - type: turn_off
+            device_id: baf57ba037f975caf4dced6631ef5ce8
+            entity_id: b7d915334e8a7fb6547fe9806c33eb9e
+            domain: switch
       else:
       - service: script.turn_on
         metadata: {}

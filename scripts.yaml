@@ -183,9 +183,9 @@ good_night:
       device_id: 271b54528ef7dc397f28f1200a8f11b8
       entity_id: 94e96e010ed20e5995b3593a1dc65adf
       domain: fan
-    - service: light.turn_off
+    - service: switch.turn_off
       target:
-        entity_id: light.bedside_lamp_light
+        device_id: baf57ba037f975caf4dced6631ef5ce8
       data: {}
     - type: turn_off
       device_id: b47adfbdffd61cfbe4a91df9331b1c05
@@ -286,13 +286,10 @@ get_ready_for_bed:
       device_id: 10186c425eb8729e24fde4e484d6a531
       entity_id: switch.smart_plug_1_channel
       domain: switch
-    - service: light.turn_on
-      metadata: {}
-      data:
-        kelvin: 2500
-        brightness_pct: 100
+    - service: switch.turn_on
       target:
-        entity_id: light.bedside_lamp_light
+        device_id: baf57ba037f975caf4dced6631ef5ce8
+      data: {}
   mode: single
 empty_master_bedroom:
   alias: Empty Master Bedroom

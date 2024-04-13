@@ -3172,31 +3172,6 @@
         "via_device_id": null
       },
       {
-        "area_id": null,
-        "config_entries": [
-          "506577fc8a37fe2461c50ddcb419276f"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": null,
-        "hw_version": null,
-        "id": "baf57ba037f975caf4dced6631ef5ce8",
-        "identifiers": [
-          [
-            "mqtt",
-            "zigbee2mqtt_0x00124b0029e85ba2"
-          ]
-        ],
-        "manufacturer": "SONOFF",
-        "model": "15A Zigbee smart plug (S40ZBTPB)",
-        "name_by_user": null,
-        "name": "0x00124b0029e85ba2",
-        "serial_number": null,
-        "sw_version": "1.1.0",
-        "via_device_id": null
-      },
-      {
         "area_id": "finnley_s_room",
         "config_entries": [
           "fe06e9e32d9103fce4a206d90beec3df"
@@ -3244,6 +3219,31 @@
         "name": "Garage Microphone",
         "serial_number": null,
         "sw_version": "2023.12.5 (Apr  7 2024, 16:46:58)",
+        "via_device_id": null
+      },
+      {
+        "area_id": "master_bedroom",
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "baf57ba037f975caf4dced6631ef5ce8",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x00124b0029e85ba2"
+          ]
+        ],
+        "manufacturer": "SONOFF",
+        "model": "15A Zigbee smart plug (S40ZBTPB)",
+        "name_by_user": null,
+        "name": "Bedside Lamp",
+        "serial_number": null,
+        "sw_version": "1.1.0",
         "via_device_id": null
       }
     ],
