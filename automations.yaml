@@ -2763,8 +2763,9 @@
         datetime: '{{now()}}'
       target:
         entity_id: input_datetime.pumping_start_time
-    - service: script.baby_buddy_finnley_pumping
-      metadata: {}
+    - service: script.turn_on
+      target:
+        entity_id: script.baby_buddy_finnley_pumping
       data: {}
   mode: single
 - id: '1704164614912'

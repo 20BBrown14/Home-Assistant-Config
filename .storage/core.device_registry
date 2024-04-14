@@ -3245,6 +3245,31 @@
         "serial_number": null,
         "sw_version": "1.1.0",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "506577fc8a37fe2461c50ddcb419276f"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f01d275ee6ed764a669c499dfeee474e",
+        "identifiers": [
+          [
+            "mqtt",
+            "zigbee2mqtt_0x282c02bfffe68946"
+          ]
+        ],
+        "manufacturer": "Third Reality",
+        "model": "Zigbee / BLE smart plug with power (3RSP02028BZ)",
+        "name_by_user": null,
+        "name": "Washing Machine",
+        "serial_number": null,
+        "sw_version": "v1.00.71",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

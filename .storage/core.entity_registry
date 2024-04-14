@@ -75665,6 +75665,362 @@
         "unique_id": "0x00124b0029e85ba2_update_zigbee2mqtt",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.washing_machine",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8157d7738c36ba734030328515f7413d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_switch_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_ac_frequency",
+        "hidden_by": null,
+        "icon": null,
+        "id": "02bc0ea389175e6adcbd7838b384b33d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "frequency",
+        "original_icon": null,
+        "original_name": "ac frequency",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_ac_frequency_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "Hz"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_power",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f88299b8f4bfe41d1695f312e8d6e35f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": null,
+        "original_name": "power",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_power_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "W"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_power_factor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9b320148c214b4df4909ae7c52dbb219",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power_factor",
+        "original_icon": null,
+        "original_name": "power factor",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_power_factor_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.washing_machine_energy",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f552a58450ef7c5b857230da694832c1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "energy",
+        "original_icon": null,
+        "original_name": "energy",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_energy_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "kWh"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_current",
+        "hidden_by": null,
+        "icon": null,
+        "id": "61fb54cac3abeacb5b554f7d7c6b70f9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "current",
+        "original_icon": null,
+        "original_name": "current",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_current_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "A"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "612240431723d4430d840757f321597c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "voltage",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_voltage_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "V"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_linkquality",
+        "hidden_by": null,
+        "icon": null,
+        "id": "58bc71dc34a6804624169928d2dc6139",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "linkquality",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_linkquality_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lqi"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.washing_machine_update_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "98dea722755133ae3d185aa68f9e1cb4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "update state",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_update_state_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.washing_machine_update_available",
+        "hidden_by": null,
+        "icon": null,
+        "id": "27d588a2d5e1adab9d025d6c4c9ecffa",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "update",
+        "original_icon": null,
+        "original_name": "update available",
+        "platform": "mqtt",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_update_available_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "506577fc8a37fe2461c50ddcb419276f",
+        "device_class": null,
+        "device_id": "f01d275ee6ed764a669c499dfeee474e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "update.washing_machine",
+        "hidden_by": null,
+        "icon": null,
+        "id": "09467e1824af3df8d2a8c2906e79c6f5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "firmware",
+        "original_icon": null,
+        "original_name": null,
+        "platform": "mqtt",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "0x282c02bfffe68946_update_zigbee2mqtt",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [
