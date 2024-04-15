@@ -1710,7 +1710,8 @@
       type: set_hvac_mode
       hvac_mode: 'off'
     alias: Turn off thermostat if doors/windows open
-  - if:
+  - alias: Turn on thermostat if doors/windows closed
+    if:
     - condition: or
       conditions:
       - condition: trigger
@@ -1725,8 +1726,7 @@
       domain: climate
       entity_id: climate.thermostat
       type: set_hvac_mode
-      hvac_mode: heat
-    alias: Turn on thermostat if doors/windows closed
+      hvac_mode: cool
   - if:
     - condition: or
       conditions:
@@ -3235,4 +3235,73 @@
       bitmask:
       subtype: 26 (Status LED 6 Color) on endpoint 0
       value: 0
+  mode: single
+- id: '1713139745652'
+  alias: Washer
+  description: ''
+  trigger:
+  - type: power
+    platform: device
+    device_id: f01d275ee6ed764a669c499dfeee474e
+    entity_id: f88299b8f4bfe41d1695f312e8d6e35f
+    domain: sensor
+    above: 10
+  condition: []
+  action:
+  - wait_for_trigger:
+    - type: power
+      platform: device
+      device_id: f01d275ee6ed764a669c499dfeee474e
+      entity_id: f88299b8f4bfe41d1695f312e8d6e35f
+      domain: sensor
+      below: 2
+      for:
+        hours: 0
+        minutes: 5
+        seconds: 0
+    timeout:
+      hours: 1
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+    continue_on_timeout: false
+  - if:
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: binary_sensor.is_branden_home
+        state: 'off'
+      - condition: state
+        entity_id: binary_sensor.is_samantha_home
+        state: 'off'
+    then:
+    - wait_for_trigger:
+      - platform: state
+        entity_id:
+        - binary_sensor.is_branden_home
+        to: 'on'
+      - platform: state
+        entity_id:
+        - binary_sensor.is_samantha_home
+        to: 'on'
+      continue_on_timeout: true
+  - if:
+    - condition: state
+      entity_id: binary_sensor.is_branden_home
+      state: 'on'
+    then:
+      service: "{%if states('binary_sensor.is_branden_home') and states('binary_sensor.is_samantha_home')
+        %}\n  notify.all_mobile_phones        \n{% elif states('binary_sensor.is_branden_home')
+        %}\n  branden\n{% elif states('binary_sensor.is_samantha_home') %}\n  sam\n{%endif%}"
+      data:
+        message: Don't forget to put the clothes in the dryer
+        title: Washer is done!
+        data:
+          critical: true
+          notification_icon: mdi:washing-machine-alert
+          ttl: 0
+          priority: high
+          tag: washing_machine_done
+          channel: WashingMachine
+      enabled: true
   mode: single
