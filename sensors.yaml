@@ -72,7 +72,7 @@
 - platform: rest
   scan_interval: 15
   name: BabyBuddy Feedings
-  resource: http://192.168.86.21:8000/api/feedings/?limit=20
+  resource: http://192.168.86.21:8000/api/feedings/?limit=30
   value_template: N/A
   json_attributes:
     - results
@@ -82,7 +82,28 @@
 - platform: rest
   scan_interval: 15
   name: BabyBuddy Pumpings
-  resource: http://192.168.86.21:8000/api/pumping/?limit=2
+  resource: http://192.168.86.21:8000/api/pumping/?limit=30
+  value_template: N/A
+  json_attributes:
+    - results
+    - count
+  headers:
+    Authorization: !secret baby_buddy_token
+
+- platform: rest
+  scan_interval: 15
+  name: BabyBuddy Tummy Times
+  resource: http://192.168.86.21:8000/api/tummy-times/?limit=20
+  value_template: N/A
+  json_attributes:
+    - results
+  headers:
+    Authorization: !secret baby_buddy_token
+
+- platform: rest
+  scan_interval: 15
+  name: BabyBuddy Changes
+  resource: http://192.168.86.21:8000/api/changes/?limit=30
   value_template: N/A
   json_attributes:
     - results
@@ -91,6 +112,53 @@
 
 - platform: template
   sensors:
+    bb_total_changes_today:
+      friendly_name: Total Changes Today
+      value_template: >-
+        {% set totalChanges = namespace(count=0, wet=0, solid=0) %}
+        {% for change in state_attr('sensor.babybuddy_changes', 'results') if as_timestamp(change["time"], '%Y-%m-%d %H:%M:%S') | timestamp_custom ("%Y-%m-%d", True) == as_timestamp(now()) | timestamp_custom ("%Y-%m-%d", True)%}
+          {% set totalChanges.count = totalChanges.count + 1 %}
+          {% if change['wet'] %}
+            {% set totalChanges.wet = totalChanges.wet + 1 %}
+          {% endif %}
+
+          {% if change['solid'] %}
+            {% set totalChanges.solid = totalChanges.solid + 1 %}
+          {% endif %}
+        {% endfor %}
+        {{totalChanges.count}} changes ({{totalChanges.wet}} wet, {{totalChanges.solid}} solid)
+
+    bb_last_tummy_time:
+      friendly_name: Last Tummy Time
+      value_template: >-
+        {{state_attr('sensor.babybuddy_tummy_times', 'results')[0]["duration"].split(':')[1:3]|join(':')}} minutes @ {{ as_timestamp(state_attr('sensor.babybuddy_tummy_times', 'results')[0]["start"]) | timestamp_custom ("%-I:%M %p", True) }}
+    
+    bb_last_tummy_time_notes:
+      friendly_name: Last Tummy Time Notes
+      value_template: >-
+        {{state_attr('sensor.babybuddy_tummy_times', 'results')[0]["milestone"]}}
+
+    bb_total_tummy_time_today:
+      friendly_name: Total Tummy Time Today
+      value_template: >-
+        {% set totalTummyTime = namespace(seconds=0, count=0) %}
+        {% for tummyTime in state_attr('sensor.babybuddy_tummy_times', 'results') if as_timestamp(tummyTime["start"], '%Y-%m-%d %H:%M:%S') | timestamp_custom ("%Y-%m-%d", True) == as_timestamp(now()) | timestamp_custom ("%Y-%m-%d", True)%}
+          {% set splitTime = tummyTime["duration"].split(':')[1:3] %}
+          {% set totalTummyTime.seconds = totalTummyTime.seconds + (splitTime[0]|int * 60) + splitTime[1]|int %}
+          {% set totalTummyTime.count = totalTummyTime.count + 1%}
+        {% endfor %}
+        {{totalTummyTime.count}} tummy times for {{(totalTummyTime.seconds / 60)|int}} minutes, {{(totalTummyTime.seconds % 60)|int}} seconds
+
+    bb_total_pumpings:
+      friendly_name: Total Pumpings
+      value_template: >-
+        {% set totalPumpings = namespace(count=0, ounces=0) %}
+        {% for pumping in state_attr('sensor.babybuddy_pumpings', 'results') if as_timestamp(pumping["start"], '%Y-%m-%d %H:%M:%S') | timestamp_custom ("%Y-%m-%d", True) == as_timestamp(now()) | timestamp_custom ("%Y-%m-%d", True)%}
+            {% set totalPumpings.ounces = totalPumpings.ounces + pumping['amount'] %}
+            {% set totalPumpings.count = totalPumpings.count + 1 %}
+        {% endfor %}
+        {{totalPumpings.count}} Pumpings ({{totalPumpings.ounces}}oz)
+
     bb_last_pumping:
       friendly_name: Last Pumping
       value_template: >-
@@ -129,6 +197,24 @@
       value_template: >-
         {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'in', ['left breast', 'right breast', 'both breasts']) | list | first %}
         {{((as_timestamp(last_breast_milk_feeding.end) - as_timestamp(last_breast_milk_feeding.start))/60) | round(2)}} min(s) on {{last_breast_milk_feeding.method.title()}} @ {{as_timestamp(last_breast_milk_feeding.start) | timestamp_custom ("%-I:%M %p", True)}}
+
+    bb_total_feedings_today:
+      friendly_name: Total Feedings Today
+      value_template: >-
+        {% set totalFeedings = namespace(ounces=0, bottleCount=0, breastFeedCount=0, breastFeedSeconds=0) %}
+        {% for feeding in state_attr('sensor.babybuddy_feedings', 'results') if as_timestamp(feeding["start"], '%Y-%m-%d %H:%M:%S') | timestamp_custom ("%Y-%m-%d", True) == as_timestamp(now()) | timestamp_custom ("%Y-%m-%d", True)%}
+          {% if feeding['method'] | lower == 'bottle' %}
+            {% set totalFeedings.ounces = totalFeedings.ounces + feeding['amount'] %}
+            {% set totalFeedings.bottleCount = totalFeedings.bottleCount + 1 %}
+          {% endif %}
+
+          {% if feeding['method']|lower in ['left breast', 'right breast', 'both breasts'] %}
+            {% set totalFeedings.breastFeedCount = totalFeedings.breastFeedCount + 1 %}
+            {% set splitTime = feeding["duration"].split(':')[1:3] %}
+            {% set totalFeedings.breastFeedSeconds = totalFeedings.breastFeedSeconds + (splitTime[0]|int * 60) + splitTime[1]|int %}
+          {% endif %}
+        {% endfor %}
+        {{totalFeedings.bottleCount}} Bottles ({{totalFeedings.ounces}}oz) | {{totalFeedings.breastFeedCount}} Breast Feeds ({{(totalFeedings.breastFeedSeconds / 60)|int}}m, {{(totalFeedings.breastFeedSeconds % 60)|int}}s)
 
 
     bb_last_feeding_how_long_ago:

@@ -88,6 +88,11 @@
         "id": "6cf088f5491a475eb8b354516e64f3d1",
         "url": "/webrtc/webrtc-camera.js?v=v3.5.1",
         "type": "module"
+      },
+      {
+        "id": "72814b214b03452a8439199e755ea990",
+        "url": "/hacsfiles/restriction-card/restriction-card.js?hacstag=215633404129",
+        "type": "module"
       }
     ]
   }

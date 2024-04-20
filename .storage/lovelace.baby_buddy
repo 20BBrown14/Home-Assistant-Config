@@ -15,6 +15,10 @@
               "type": "entities",
               "entities": [
                 {
+                  "entity": "sensor.bb_total_changes_today",
+                  "icon": "mdi:diaper-outline"
+                },
+                {
                   "entity": "sensor.finnley_brown_last_change"
                 },
                 {
@@ -22,6 +26,10 @@
                   "style": {
                     "height": "2px"
                   }
+                },
+                {
+                  "entity": "sensor.bb_total_feedings_today",
+                  "icon": "mdi:food"
                 },
                 {
                   "entity": "sensor.bb_last_feeding_time",
@@ -55,6 +63,28 @@
                   "style": {
                     "height": "2px"
                   }
+                },
+                {
+                  "entity": "sensor.bb_total_tummy_time_today",
+                  "icon": "mdi:emoticon-happy-outline"
+                },
+                {
+                  "entity": "sensor.bb_last_tummy_time",
+                  "icon": "mdi:emoticon-happy-outline"
+                },
+                {
+                  "entity": "sensor.bb_last_tummy_time_notes",
+                  "icon": "mdi:emoticon-happy-outline"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "sensor.bb_total_pumpings",
+                  "icon": "mdi:mother-heart"
                 },
                 {
                   "entity": "sensor.bb_last_pumping",
@@ -118,6 +148,39 @@
                   },
                   "show_state": true,
                   "icon_height": "20px"
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "condition": "state",
+                      "entity": "input_text.finnley_feeding_info_message",
+                      "state_not": ""
+                    }
+                  ],
+                  "card": {
+                    "type": "custom:restriction-card",
+                    "restrictions": {
+                      "block": true
+                    },
+                    "card": {
+                      "type": "entities",
+                      "entities": [
+                        "input_text.finnley_feeding_info_message"
+                      ],
+                      "card_mod": {
+                        "style": {
+                          "div": {
+                            "div": {
+                              "hui-input-text-entity-row $": {
+                                "hui-generic-entity-row $": "state-badge {\n  color: red;\n  animation: pulse 2s infinite;\n}\n\n@keyframes pulse {\n\t0% {\n\t\ttransform: scale(0.95);\n\t\tbox-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);\n\t}\n\n\t70% {\n\t\ttransform: scale(1);\n\t\tbox-shadow: 0 0 0 10px rgba(0, 0, 0, 0);\n\t}\n\n\t100% {\n\t\ttransform: scale(0.95);\n\t\tbox-shadow: 0 0 0 0 rgba(0, 0, 0, 0);\n\t}\n}\n"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
                 },
                 {
                   "type": "entities",
@@ -518,86 +581,244 @@
           "badges": [],
           "cards": [
             {
-              "type": "entities",
-              "title": "Add Pumping - Finnley",
-              "entities": [
+              "type": "vertical-stack",
+              "cards": [
                 {
-                  "entity": "input_boolean.waiting_for_finnley_pumping_confirmation"
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "2px"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "condition": "state",
+                      "entity": "input_text.finnley_pumping_info_message",
+                      "state_not": ""
+                    }
+                  ],
+                  "card": {
+                    "type": "custom:restriction-card",
+                    "restrictions": {
+                      "block": true
+                    },
+                    "card": {
+                      "type": "entities",
+                      "entities": [
+                        "input_text.finnley_pumping_info_message"
+                      ],
+                      "card_mod": {
+                        "style": {
+                          "div": {
+                            "div": {
+                              "hui-input-text-entity-row $": {
+                                "hui-generic-entity-row $": "state-badge {\n  color: red;\n  animation: pulse 2s infinite;\n}\n\n@keyframes pulse {\n\t0% {\n\t\ttransform: scale(0.95);\n\t\tbox-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);\n\t}\n\n\t70% {\n\t\ttransform: scale(1);\n\t\tbox-shadow: 0 0 0 10px rgba(0, 0, 0, 0);\n\t}\n\n\t100% {\n\t\ttransform: scale(0.95);\n\t\tbox-shadow: 0 0 0 0 rgba(0, 0, 0, 0);\n\t}\n}\n"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 },
                 {
-                  "entity": "input_number.pumping_amount"
-                },
-                {
-                  "entity": "input_text.pumping_notes"
-                },
-                {
-                  "entity": "input_datetime.pumping_start_time"
-                },
-                {
-                  "type": "button",
-                  "name": " ",
-                  "icon": " ",
-                  "action_name": "Now",
-                  "tap_action": {
-                    "action": "call-service",
-                    "service": "script.set_start_pumping_time_to_now"
-                  }
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "2px"
-                  }
-                },
-                {
-                  "type": "custom:multiple-entity-row",
-                  "show_state": false,
-                  "name": " ",
-                  "icon": " ",
-                  "entity": "input_boolean.waiting_for_finnley_pumping_confirmation",
+                  "type": "entities",
+                  "title": "Add Pumping - Finnley",
                   "entities": [
                     {
-                      "type": "button",
-                      "icon": " ",
-                      "action_name": "Cancel",
-                      "name": "Cancel",
-                      "styles": {
-                        "height": "10px",
-                        "font-weight": "bold",
-                        "padding-right": "72px"
-                      },
-                      "tap_action": {
-                        "action": "call-service",
-                        "service": "script.finnley_cancel_pumping_details"
+                      "entity": "input_boolean.waiting_for_finnley_pumping_confirmation"
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
                       }
                     },
                     {
+                      "entity": "input_number.pumping_amount"
+                    },
+                    {
+                      "entity": "input_text.pumping_notes"
+                    },
+                    {
+                      "entity": "input_datetime.pumping_start_time"
+                    },
+                    {
                       "type": "button",
+                      "name": " ",
                       "icon": " ",
-                      "action_name": "Confirm",
-                      "name": "Submit",
-                      "styles": {
-                        "height": "10px",
-                        "font-weight": "bold"
-                      },
+                      "action_name": "Now",
                       "tap_action": {
                         "action": "call-service",
-                        "service": "script.finnley_confirm_pumping_details"
+                        "service": "script.set_start_pumping_time_to_now"
+                      }
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "type": "custom:multiple-entity-row",
+                      "show_state": false,
+                      "name": " ",
+                      "icon": " ",
+                      "entity": "input_boolean.waiting_for_finnley_pumping_confirmation",
+                      "entities": [
+                        {
+                          "type": "button",
+                          "icon": " ",
+                          "action_name": "Cancel",
+                          "name": "Cancel",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold",
+                            "padding-right": "72px"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_cancel_pumping_details"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "icon": " ",
+                          "action_name": "Confirm",
+                          "name": "Submit",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_confirm_pumping_details"
+                          }
+                        }
+                      ],
+                      "card_mod": {
+                        "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 18px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
                       }
                     }
                   ],
-                  "card_mod": {
-                    "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 18px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
-                  }
+                  "show_header_toggle": false
                 }
-              ],
-              "show_header_toggle": false
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Tummy Time",
+          "path": "tummy-time",
+          "icon": "mdi:stomach",
+          "badges": [],
+          "cards": [
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "condition": "state",
+                      "entity": "input_text.finnley_tummy_time_info_message",
+                      "state_not": ""
+                    }
+                  ],
+                  "card": {
+                    "type": "custom:restriction-card",
+                    "restrictions": {
+                      "block": true
+                    },
+                    "card": {
+                      "type": "entities",
+                      "entities": [
+                        "input_text.finnley_tummy_time_info_message"
+                      ],
+                      "card_mod": {
+                        "style": {
+                          "div": {
+                            "div": {
+                              "hui-input-text-entity-row $": {
+                                "hui-generic-entity-row $": "state-badge {\n  color: red;\n  animation: pulse 2s infinite;\n}\n\n@keyframes pulse {\n\t0% {\n\t\ttransform: scale(0.95);\n\t\tbox-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);\n\t}\n\n\t70% {\n\t\ttransform: scale(1);\n\t\tbox-shadow: 0 0 0 10px rgba(0, 0, 0, 0);\n\t}\n\n\t100% {\n\t\ttransform: scale(0.95);\n\t\tbox-shadow: 0 0 0 0 rgba(0, 0, 0, 0);\n\t}\n}\n"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "type": "entities",
+                  "title": "Add Tummy Time - Finnley",
+                  "entities": [
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "entity": "input_text.finnley_tummy_time_notes"
+                    },
+                    {
+                      "entity": "input_datetime.finnley_tummy_time_start"
+                    },
+                    {
+                      "type": "button",
+                      "name": " ",
+                      "icon": " ",
+                      "action_name": "Now",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.set_finnley_tummy_time_start_time_to_now"
+                      }
+                    },
+                    {
+                      "entity": "input_datetime.finnley_tummy_time_stop"
+                    },
+                    {
+                      "type": "button",
+                      "name": " ",
+                      "icon": " ",
+                      "action_name": "Now",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "script.set_finnley_tummy_time_stop_time_to_now"
+                      }
+                    },
+                    {
+                      "type": "divider",
+                      "style": {
+                        "height": "2px"
+                      }
+                    },
+                    {
+                      "type": "custom:multiple-entity-row",
+                      "show_state": false,
+                      "name": " ",
+                      "icon": " ",
+                      "entity": "input_boolean.waiting_for_finnley_pumping_confirmation",
+                      "entities": [
+                        {
+                          "type": "button",
+                          "icon": " ",
+                          "action_name": "Confirm",
+                          "name": "Submit",
+                          "styles": {
+                            "height": "10px",
+                            "font-weight": "bold"
+                          },
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.finnley_confirm_tummy_time_details"
+                          }
+                        }
+                      ],
+                      "card_mod": {
+                        "style": ".entity {\n  span {\n    padding: 5px;\n    font-size: 18px !important;\n    font-weight: bold;\n    color: var(--mdc-theme-primary,#6200ee) !important;\n  }\n  :active {\n    background: #666666;\n    -webkit-box-shadow: inset 0px 0px 5px #666666;\n    -moz-box-shadow: inset 0px 0px 5px #666666;\n    box-shadow: inset 0px 0px 5px #666666;\n    outline: none;\n    border: 2px solid #66666;\n    border-radius: 5px;\n  }\n  div {\n    display: none;\n  }\n}\n"
+                      }
+                    }
+                  ],
+                  "show_header_toggle": false
+                }
+              ]
             }
           ]
         }

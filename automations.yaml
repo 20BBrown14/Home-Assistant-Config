@@ -1721,12 +1721,18 @@
     - condition: state
       entity_id: binary_sensor.doors_and_windows
       state: 'off'
+    - condition: device
+      device_id: 0bcb5d2a9faa56f77c07a7c9da51e63d
+      domain: climate
+      entity_id: e0c3a51074d59749cf3e01e13c276b65
+      type: is_hvac_mode
+      hvac_mode: 'off'
     then:
     - device_id: 0bcb5d2a9faa56f77c07a7c9da51e63d
       domain: climate
       entity_id: climate.thermostat
       type: set_hvac_mode
-      hvac_mode: cool
+      hvac_mode: heat_cool
   - if:
     - condition: or
       conditions:
@@ -2922,6 +2928,14 @@
   - platform: event
     event_type: FINNLEY_PUMPING_CONFIRMED
     id: submit_pumping
+  - platform: state
+    entity_id:
+    - select.baby_buddy_feeding_method
+    to: Bottle
+    id: feeding_bottle_selected
+  - platform: event
+    event_type: FINNLEY_TUMMY_TIME_CONFIRMED
+    id: tummy_time_confirmed
   condition: []
   action:
   - if:
@@ -2966,6 +2980,97 @@
         entity_id: input_boolean.waiting_for_finnley_feeding_confirmation
         state: 'off'
     then:
+    - if:
+      - alias: Test if bottle feeding has an amount
+        condition: template
+        value_template: '{{states(''select.baby_buddy_feeding_method'') |lower ==
+          ''bottle'' and states(''input_number.finnley_feeding_amount'')|float ==
+          0.0}}'
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: Bottle feeding must have an amount!
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: Bottle feeding must have an amount
+      else: []
+    - if:
+      - condition: template
+        value_template: "{{states('select.baby_buddy_feeding_method') | lower in ['left
+          breast', 'right breast', 'both breasts'] \n  and as_timestamp(states('input_datetime.finnley_feeding_start_time'))
+          >= as_timestamp(states('input_datetime.finnley_feeding_stop_time'))}}"
+        alias: Test if end time is after start time for breast feeding
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: End time must be after start time for breast feeding
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: End time must be after start time for breast feeding
+      else: []
+    - if:
+      - condition: template
+        value_template: '{{states(''select.baby_buddy_feeding_method'') | lower in
+          [''left breast'', ''right breast'', ''both breasts''] and states(''input_number.finnley_feeding_amount'')|float
+          != 0.0}}'
+        alias: Test if breast feeding has an amount
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: Breast feeding should not have an amount!
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: Breast feeding should not have an amount
+      else: []
+    - if:
+      - condition: template
+        value_template: '{{states(''select.baby_buddy_feeding_method'') | lower in
+          [''left breast'', ''right breast'', ''both breasts''] and states(''select.baby_buddy_feeding_type'')|lower
+          != ''breast milk''}}'
+        alias: Test if breast feeding is of type breast milk
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: Breast feeding should always be have type Breast Milk!
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: Breast feeding should always be have type Breast Milk
+      else: []
+    - if:
+      - condition: template
+        value_template: '{{states(''select.baby_buddy_feeding_method'') | lower ==
+          ''bottle'' and  as_timestamp(states(''input_datetime.finnley_feeding_start_time''))
+          != as_timestamp(states(''input_datetime.finnley_feeding_stop_time''))}}'
+        alias: Test if end time equals start time for bottle feeding
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: End time must equal start time for bottle feeding!
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: End time must equal start time for bottle feeding
+      else: []
+    - if:
+      - condition: template
+        value_template: "{{as_timestamp(strptime(states('input_datetime.finnley_feeding_start_time'),
+          '%Y-%m-%d %H:%M:%S')) | timestamp_custom(\"%Y\")|int <= now().year - 1\n
+          \ or\n  as_timestamp(strptime(states('input_datetime.finnley_feeding_stop_time'),
+          '%Y-%m-%d %H:%M:%S')) | timestamp_custom(\"%Y\")|int <= now().year - 1\n}}"
+        alias: Test if start and end times are set
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: Start and end times must be set!
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: Start and end times must be set
+      else: []
     - service: script.submit_baby_buddy_feeding
       metadata: {}
       data: {}
@@ -3012,7 +3117,49 @@
         entity_id: input_boolean.waiting_for_finnley_pumping_confirmation
         state: 'off'
     then:
+    - if:
+      - condition: template
+        value_template: '{{states(''input_number.pumping_amount'')|float == 0.0}}'
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: Pumping must have an amount!
+        target:
+          entity_id: input_text.finnley_pumping_info_message
+      - stop: Pumping must have amount
     - service: script.submit_baby_buddy_pumping
+      data: {}
+  - if:
+    - condition: trigger
+      id:
+      - feeding_bottle_selected
+    then:
+    - service: input_datetime.set_datetime
+      metadata: {}
+      data:
+        datetime: '{{states(''input_datetime.finnley_feeding_start_time'')}}'
+      target:
+        entity_id: input_datetime.finnley_feeding_stop_time
+  - if:
+    - condition: trigger
+      id:
+      - tummy_time_confirmed
+    then:
+    - if:
+      - alias: Check if stop time is after start time
+        condition: template
+        value_template: '{{as_timestamp(states(''input_datetime.finnley_tummy_time_start''))
+          >= as_timestamp(states(''input_datetime.finnley_tummy_time_stop''))}}'
+      then:
+      - service: input_text.set_value
+        target:
+          entity_id: input_text.finnley_tummy_time_info_message
+        data:
+          value: Stop time should be after start time!
+      - stop: Stop time should be after start time
+    - service: script.submit_baby_buddy_tummy_time
+      metadata: {}
       data: {}
   mode: parallel
   max: 10

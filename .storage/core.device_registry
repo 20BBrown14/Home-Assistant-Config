@@ -3270,6 +3270,31 @@
         "serial_number": null,
         "sw_version": "v1.00.71",
         "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "8ab229c9633cbda65f3eb42487132f24"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7ddcd3d218c6303895e64099e0e4475c",
+        "identifiers": [
+          [
+            "mobile_app",
+            "24ff2437373ff9e8"
+          ]
+        ],
+        "manufacturer": "samsung",
+        "model": "SM-A515U",
+        "name_by_user": null,
+        "name": "Tina's Phone",
+        "serial_number": null,
+        "sw_version": "33",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

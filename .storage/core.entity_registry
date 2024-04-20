@@ -4141,9 +4141,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "battery",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4320,9 +4318,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "temperature",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -4361,9 +4357,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": "power",
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -5305,9 +5299,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "7ae3380ec0d779d8c0efa855882541f3",
         "device_class": null,
         "device_id": "86b1b485f0e733b3962457c610d02eae",
@@ -8454,9 +8446,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "battery",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8636,9 +8626,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "temperature",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -8677,9 +8665,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "power",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9511,9 +9497,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9579,9 +9563,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": null,
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -9614,9 +9596,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "2454e50d2817ff721f76ef34370a7f05",
         "device_class": "signal_strength",
         "device_id": "6636b1f64974c361328efbc239dceb84",
@@ -13696,11 +13676,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "source_list": [
-            "Branden's Note20 Ultra"
-          ]
-        },
+        "capabilities": {},
         "config_entry_id": "8dc8ef2eb05125ac3d6aff5de8c0e61f",
         "device_class": null,
         "device_id": "e9077faaa8424a86bd187cc953313ac8",
@@ -53632,7 +53608,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:help-rhombus",
+        "original_icon": "mdi:robot-dead",
         "original_name": "Node status",
         "platform": "zwave_js",
         "supported_features": 0,
@@ -69937,7 +69913,7 @@
           }
         },
         "original_device_class": null,
-        "original_icon": "mdi:gauge",
+        "original_icon": "mdi:gauge-low",
         "original_name": "Waste drawer",
         "platform": "litterrobot",
         "supported_features": 0,
@@ -72758,9 +72734,7 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
+        "capabilities": null,
         "config_entry_id": "c79dbba4a30c36c685f1c83d815c726c",
         "device_class": "battery",
         "device_id": "1146ddc764461b26a547a4fc05f290a6",
@@ -75201,6 +75175,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -75431,6 +75408,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -75493,6 +75473,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -75566,6 +75549,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -75596,6 +75582,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -75625,6 +75614,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -75724,6 +75716,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "frequency",
@@ -75790,6 +75785,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -75858,6 +75856,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": "current",
@@ -75889,6 +75890,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -75922,6 +75926,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -75952,6 +75959,9 @@
         "options": {
           "cloud.google_assistant": {
             "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
           }
         },
         "original_device_class": null,
@@ -75981,6 +75991,9 @@
         "name": null,
         "options": {
           "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
             "should_expose": false
           }
         },
@@ -76061,6 +76074,3627 @@
         "unique_id": "1713139745652",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.tina_s_phone",
+        "hidden_by": null,
+        "icon": null,
+        "id": "01e2416a53070162d8fabc00cf27b5ed",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Tina's Phone",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "24ff2437373ff9e8",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_detected_activity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6f10edfc8cd1c40c86c766661a2027b6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:walk",
+        "original_name": "Tina's Phone Detected activity",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_detected_activity",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_sleep_confidence",
+        "hidden_by": null,
+        "icon": null,
+        "id": "33a9541637bf1b6ac023b574dae5bbed",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Tina's Phone Sleep confidence",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_sleep_confidence",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_sleep_segment",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bd559e7a05b3a9bbb9f913a93b5b7755",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Tina's Phone Sleep segment",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_sleep_segment",
+        "previous_unique_id": null,
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.tina_s_phone_android_auto",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0c728b73b02aeef310bdd829baf63fff",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car",
+        "original_name": "Tina's Phone Android Auto",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_android_auto",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_os_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9c1b099b81b07809bc89f4715abd7716",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "Tina's Phone OS version",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_android_os_version",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_security_patch",
+        "hidden_by": null,
+        "icon": null,
+        "id": "de68842a8fc7ea72f7d21ff4050a64c5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:security",
+        "original_name": "Tina's Phone Security patch",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_android_os_security_patch",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_current_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "08eaac9415f4791420dfa0557f376a99",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "Tina's Phone Current version",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_current_version",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_app_rx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cd00202551470ce9486496242ff4f0c6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "Tina's Phone App Rx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_app_rx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_app_tx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "998294525448e11b38c3f679d740e52b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "Tina's Phone App Tx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_app_tx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_app_memory",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8fb0dc816e6ca82479a8acd6e00a08ac",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "Tina's Phone App memory",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_app_memory",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_app_inactive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2feee6c6ed51f023b0200a707eaf942f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer-outline",
+        "original_name": "Tina's Phone App inactive",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_app_inactive",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_app_standby_bucket",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bfea9dfa713ce4fa6ebb8f2a3bc905ce",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "Tina's Phone App standby bucket",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_app_standby_bucket",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_app_importance",
+        "hidden_by": null,
+        "icon": null,
+        "id": "373088920505fa8aaa1d4cf2fe898a26",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "Tina's Phone App importance",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_app_importance",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_ringer_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f22ea36e9a445e0bed2f6551cc061c75",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "Tina's Phone Ringer mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_audio_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_audio_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cff056249902f25ee4b609fcc2c1198d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "Tina's Phone Audio mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_audio_mode",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.tina_s_phone_headphones",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0f5d778bd3c3e162f3da547c3672445",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:headphones",
+        "original_name": "Tina's Phone Headphones",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_headphone_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.tina_s_phone_mic_muted",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1f8638d195b85e47fa41e55c34ea5b62",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:microphone-off",
+        "original_name": "Tina's Phone Mic muted",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_mic_muted",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.tina_s_phone_speakerphone",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7dafaa9a3e2ff8c1deb066dab615a687",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "Tina's Phone Speakerphone",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_speakerphone_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.tina_s_phone_music_active",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7303104ab7538d64569463246de2fee",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:music",
+        "original_name": "Tina's Phone Music active",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_music_active",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_alarm",
+        "hidden_by": null,
+        "icon": null,
+        "id": "593a03f56fd288648683a930edfc8a00",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:alarm",
+        "original_name": "Tina's Phone Volume level alarm",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_alarm",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_call",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ca8776df8df4725195704c9e78b9d20e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:phone",
+        "original_name": "Tina's Phone Volume level call",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_call",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_music",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6bc40b55a58bd36108161ba784c62618",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:music",
+        "original_name": "Tina's Phone Volume level music",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_music",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_ringer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "722ab31ddfe1f57bfd305f351a803c34",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:phone-ring",
+        "original_name": "Tina's Phone Volume level ringer",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_ring",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_notification",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7378b8f8102a8b761a8665f9d14749ea",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "Tina's Phone Volume level notification",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_notification",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_system",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8001ed2569d8057bc557683e04833c13",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-sound",
+        "original_name": "Tina's Phone Volume level system",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_system",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_dtmf",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5eae14ea75d24b0d4a3ddc2ed1a28644",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "Tina's Phone Volume level DTMF",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_dtmf",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_volume_level_accessibility",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d8e85aa3b0c24be4fd88cb61e3b39a29",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:human",
+        "original_name": "Tina's Phone Volume level accessibility",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_volume_accessibility",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "80e6d0c948c5fc91542c03a41a824c2d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:battery-70",
+        "original_name": "Tina's Phone Battery level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_battery_level",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "004126d290885b19de40de4836b91bd7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-minus",
+        "original_name": "Tina's Phone Battery state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_battery_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_is_charging",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e438314c41913cb8cc9ea83b3311a49e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "plug",
+        "original_icon": "mdi:power-plug",
+        "original_name": "Tina's Phone Is charging",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_is_charging",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_charger_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0d1d0d99e02d59ab6eb273963277c704",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery",
+        "original_name": "Tina's Phone Charger type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_charger_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_battery_health",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9299e7bb6f06d6b6e1db30b221befd7e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-heart-variant",
+        "original_name": "Tina's Phone Battery health",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_battery_health",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_battery_temperature",
+        "hidden_by": null,
+        "icon": null,
+        "id": "30cfb9a2e4fb90140483ba8df42505af",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "temperature",
+        "original_icon": "mdi:battery",
+        "original_name": "Tina's Phone Battery temperature",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_battery_temperature",
+        "previous_unique_id": null,
+        "unit_of_measurement": "°F"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_battery_power",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8bc57a9b10bcff314fbecc21cba72b6e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": "mdi:battery-plus",
+        "original_name": "Tina's Phone Battery power",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_battery_power",
+        "previous_unique_id": null,
+        "unit_of_measurement": "W"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_bluetooth_connection",
+        "hidden_by": null,
+        "icon": null,
+        "id": "65dfc2e486b995960539be3ebce3f54e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "Tina's Phone Bluetooth connection",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_bluetooth_connection",
+        "previous_unique_id": null,
+        "unit_of_measurement": "connection(s)"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_bluetooth_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e9623ba8da69e932a5724447ec959532",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "Tina's Phone Bluetooth state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_bluetooth_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_ble_transmitter",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2c19a6d2cf325954dd53fd8868dba8ab",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "Tina's Phone BLE transmitter",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_ble_emitter",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_beacon_monitor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9922bc7866a043120264bb8248cd58be",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bluetooth",
+        "original_name": "Tina's Phone Beacon monitor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_beacon_monitor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_car_battery",
+        "hidden_by": null,
+        "icon": null,
+        "id": "757bf5ce57355535610d2dbde4a87d14",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:car-battery",
+        "original_name": "Tina's Phone Car battery",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_battery",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_car_name",
+        "hidden_by": null,
+        "icon": null,
+        "id": "897fe8c9b31717cf27e3a79fcd935fdd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car-info",
+        "original_name": "Tina's Phone Car name",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_name",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_car_charging_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fed5f208b13c63c5caa7365f752144a0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "plug",
+        "original_icon": "mdi:ev-station",
+        "original_name": "Tina's Phone Car charging status",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_charging_status",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_car_ev_connector_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2e7b42c8494fe6ade6150350ad963dd8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:car-electric",
+        "original_name": "Tina's Phone Car EV connector type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_ev_connector",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_car_fuel",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2950716b968f7ad465d7d909111b15a3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:barrel",
+        "original_name": "Tina's Phone Car fuel",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_fuel",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_car_fuel_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "74d18131db686b1f33e874c12a44985c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:gas-station",
+        "original_name": "Tina's Phone Car fuel type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_fuel_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_car_odometer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "da6c725dc1d7697cfc7032da8311f9d3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "sensor.private": {
+            "suggested_unit_of_measurement": "ft"
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "distance",
+        "original_icon": "mdi:map-marker-distance",
+        "original_name": "Tina's Phone Car odometer",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_car_odometer",
+        "previous_unique_id": null,
+        "unit_of_measurement": "ft"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_screen_brightness",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7e8a6c5028dd0f88969e385feed65acf",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:brightness-6",
+        "original_name": "Tina's Phone Screen brightness",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_screen_brightness",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_screen_off_timeout",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f72092972ae1f66ee614b7d5609050b8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-off",
+        "original_name": "Tina's Phone Screen off timeout",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_screen_off_timeout",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_do_not_disturb_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "393585339a894f451e74df18bbb0c9f9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:minus-circle",
+        "original_name": "Tina's Phone Do Not Disturb sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_dnd_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_accent_color",
+        "hidden_by": null,
+        "icon": null,
+        "id": "508a05af48270e009c8eb517f17e6337",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:palette",
+        "original_name": "Tina's Phone Accent color",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_accent_color",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.tina_s_phone_work_profile",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3b4ca3b35111b87ead54edc519013ad4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:briefcase",
+        "original_name": "Tina's Phone Work profile",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_is_work_profile",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0c24369ececb80a266563578f0d828ff",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map",
+        "original_name": "Tina's Phone Geocoded location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_geocoded_location",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_device_locked",
+        "hidden_by": null,
+        "icon": null,
+        "id": "55a560a74a8e12eaf12de674642794b4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-lock",
+        "original_name": "Tina's Phone Device locked",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_device_locked",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_device_secure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7350db9691e0c4d83324ed7c30ff36ee",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-key",
+        "original_name": "Tina's Phone Device secure",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_device_secure",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_keyguard_locked",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0c479d31b7c479fca9fb8470a3775e28",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-lock",
+        "original_name": "Tina's Phone Keyguard locked",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_keyguard_locked",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_keyguard_secure",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8810a62d84dd3356f3c42ba908aa1393",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-key",
+        "original_name": "Tina's Phone Keyguard secure",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_keyguard_secure",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_last_used_app",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ece3f1669c8996ea2ed276bed2def13f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:android",
+        "original_name": "Tina's Phone Last used app",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_last_used_app",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_last_reboot",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cce3ecdb827ed14153167c1dc6c9396b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:restart",
+        "original_name": "Tina's Phone Last reboot",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_last_reboot",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f568060560f837d008877c2bb730a9fe",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:update",
+        "original_name": "Tina's Phone Last update trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_last_update",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_light_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "13bc7bcfdc2d03e360f1c00eeb7df3e4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "illuminance",
+        "original_icon": "mdi:brightness-5",
+        "original_name": "Tina's Phone Light sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_light_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "lx"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_high_accuracy_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d6513deff83c151ad62d2cbb87ecb08b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:crosshairs-gps",
+        "original_name": "Tina's Phone High accuracy mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_high_accuracy_mode",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_high_accuracy_update_interval",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0ef9dc84cef9baad35b830052d82fb23",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:timer",
+        "original_name": "Tina's Phone High accuracy update interval",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_high_accuracy_update_interval",
+        "previous_unique_id": null,
+        "unit_of_measurement": "seconds"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_mobile_data",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d896729a022007775f8a744b280c22b0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "Tina's Phone Mobile data",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_mobile_data",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_mobile_data_roaming",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fe867ac763eb7f09525f2a4d3fbf2c76",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:toggle-switch",
+        "original_name": "Tina's Phone Mobile data roaming",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_mobile_data_roaming",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_wifi_connection",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4a83b0d29caafaf2751e156e9d84c20e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Tina's Phone WiFi connection",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_connection",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_wifi_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e41ec61478526d1eec55d12f6c358513",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Tina's Phone WiFi BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_bssid",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_wifi_ip_address",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7abbdc94ef57fc949646803757cbbdbe",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "Tina's Phone WiFi IP address",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_ip_address",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_wifi_link_speed",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4417f34e5273240354d6e059327b68b3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-strength-3",
+        "original_name": "Tina's Phone WiFi link speed",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_link_speed",
+        "previous_unique_id": null,
+        "unit_of_measurement": "Mbps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_wifi_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f484cbccb646de6b47b1f9f8930182df",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Tina's Phone WiFi state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_wifi_frequency",
+        "hidden_by": null,
+        "icon": null,
+        "id": "76aefd8390b6d2abc83e2cbfd2054732",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Tina's Phone WiFi frequency",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_frequency",
+        "previous_unique_id": null,
+        "unit_of_measurement": "MHz"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_wifi_signal_strength",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e3840c13015eb908a8f40512ce34ef51",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "signal_strength",
+        "original_icon": "mdi:wifi-strength-3",
+        "original_name": "Tina's Phone WiFi signal strength",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_wifi_signal_strength",
+        "previous_unique_id": null,
+        "unit_of_measurement": "dBm"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_public_ip_address",
+        "hidden_by": null,
+        "icon": null,
+        "id": "58b5a5c9fabb84b3405d4d4f6b063d6f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "Tina's Phone Public IP address",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_public_ip_address",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_hotspot_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c51a5a676490f57f5a3fc56cd01d2dfc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:access-point",
+        "original_name": "Tina's Phone Hotspot state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_hotspot_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_network_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8e047c4589a801a9f7b305b9e6aa0303",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:network",
+        "original_name": "Tina's Phone Network type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_network_type",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_ipv6_addresses",
+        "hidden_by": null,
+        "icon": null,
+        "id": "84ef3d4139d353caed26b871de21dea1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ip",
+        "original_name": "Tina's Phone IPv6 addresses",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_ip6_addresses",
+        "previous_unique_id": null,
+        "unit_of_measurement": "address(es)"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_nfc_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7506ee2024a7388a98709fcbd3f4268a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:nfc-variant",
+        "original_name": "Tina's Phone NFC state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_nfc_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_next_alarm",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f95373b460b296403a9cfaf06dbdd1f3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:alarm",
+        "original_name": "Tina's Phone Next alarm",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_next_alarm",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_last_notification",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7f0afbf1ce4f3cf510b5888762719674",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "Tina's Phone Last notification",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_last_notification",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_last_removed_notification",
+        "hidden_by": null,
+        "icon": null,
+        "id": "85013c93b439fc9806137ee381124d2d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "Tina's Phone Last removed notification",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_last_removed_notification",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_active_notification_count",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e3a3c9007bffa58e9045abde6f609ad7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:bell-ring",
+        "original_name": "Tina's Phone Active notification count",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_active_notification_count",
+        "previous_unique_id": null,
+        "unit_of_measurement": "notifications"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_media_session",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fac7b77f95419ce3d30ff5872da68d10",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:play-circle",
+        "original_name": "Tina's Phone Media session",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_media_session",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_phone_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f71bfb01591fa0ee7bee13e3cbef390c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:phone",
+        "original_name": "Tina's Phone Phone state",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_phone_state",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_sim_1",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a581b638d92b6d68aead516be1dd8018",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "Tina's Phone SIM 1",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_sim_1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_sim_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5a2dfc04db9b3fdaa7547ba0ad29fb08",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "Tina's Phone SIM 2",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_sim_2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_interactive",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6b16f098d2ac7052b4be7e583f7d61b3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone",
+        "original_name": "Tina's Phone Interactive",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_is_interactive",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_doze_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f447d1caff12c9713a952237b1ab011",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sleep",
+        "original_name": "Tina's Phone Doze mode",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_is_idle",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.tina_s_phone_power_save",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5f6950b55ad447c90bfdd76558747fcc",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-plus",
+        "original_name": "Tina's Phone Power save",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_power_save",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_proximity_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "efa55800f6bd8f3720f46b0be4e78dd5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:leak",
+        "original_name": "Tina's Phone Proximity sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_proximity_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.tina_s_phone_steps_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e2b819da32a4379a4bdeec4fc69f7c23",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:walk",
+        "original_name": "Tina's Phone Steps sensor",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_steps_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "steps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_internal_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bc26348cec516f5866a62da256bb8ae6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:harddisk",
+        "original_name": "Tina's Phone Internal storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_storage_sensor",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_external_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e321da13d00950f5ad1b6eff7df17904",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:micro-sd",
+        "original_name": "Tina's Phone External storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_external_storage",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_current_time_zone",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c75782d1a72d3f1aa8677af50f9374f7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map-clock",
+        "original_name": "Tina's Phone Current time zone",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_current_time_zone",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_mobile_rx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "880b985b1f48311b9a0d8306291d4594",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "Tina's Phone Mobile Rx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_mobile_rx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_mobile_tx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "970f0722bf35e7cf290be65bf894f16e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "Tina's Phone Mobile Tx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_mobile_tx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_total_rx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "221732b60d30de6c9e0d13c21512d221",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "Tina's Phone Total Rx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_total_rx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "8ab229c9633cbda65f3eb42487132f24",
+        "device_class": null,
+        "device_id": "7ddcd3d218c6303895e64099e0e4475c",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.tina_s_phone_total_tx_gb",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c3458c365c07215eab11c0a4518d05d8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:radio-tower",
+        "original_name": "Tina's Phone Total Tx GB",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "92588d642bd42279b8a745c8b9ecf2fecfe5e5eb9a68e41f57a8750bcddaa457_total_tx_gb",
+        "previous_unique_id": null,
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_feeding_info_message",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ee90a8e821bd5104427dafec14224633",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:alert-circle",
+        "original_name": "Finnley Feeding Info Message",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_feeding_info_message",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_pumping_info_message",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f85df523942ce0e04491aca9676fc556",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:alert-circle",
+        "original_name": "Finnley Pumping Info Message",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_pumping_info_message",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": true,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.finnley_tummy_time_start",
+        "hidden_by": null,
+        "icon": null,
+        "id": "eb35a3a8f69f5ea60b906ae2d5bdc83b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:emoticon-happy-outline",
+        "original_name": "Finnley Tummy Time Start",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_tummy_time_start",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "has_date": true,
+          "has_time": true
+        },
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_datetime.finnley_tummy_time_stop",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9dcb7b4f41dfeff79485fdd9d8ac172e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:emoticon-excited-outline",
+        "original_name": "Finnley Tummy Time Stop",
+        "platform": "input_datetime",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_tummy_time_stop",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_tummy_time_notes",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3b61051d8ff3e40744f4c2db0e1f99ae",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:text",
+        "original_name": "Finnley Tummy Time Notes",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_tummy_time_notes",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.set_finnley_tummy_time_start_time_to_now",
+        "hidden_by": null,
+        "icon": null,
+        "id": "72ee66cda7077c129ea3e22d9c5aa1f8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Set Finnley Tummy Time Start Time to Now",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "set_finnley_tummy_time_start_time_to_now",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.set_finnley_tummy_time_stop_time_to_now",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aa1df4af69063373a8ba34ae6802ac74",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Set Finnley Tummy Time Stop Time to Now",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "set_finnley_tummy_time_stop_time_to_now",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.finnley_confirm_tummy_time_details",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ece1a8e2c9cc9edeb4c4012339732bae",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Finnley Confirm Tummy Time Details",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_confirm_tummy_time_details",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "input_text.finnley_tummy_time_info_message",
+        "hidden_by": null,
+        "icon": null,
+        "id": "649c0ae33825e5f73226cb1c041bb8c2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:alert-circle",
+        "original_name": "Finnley Tummy Time Info Message",
+        "platform": "input_text",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "finnley_tummy_time_info_message",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.reset_finnley_tummy_time_form",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ce9376f5ef20d22ba4366a5751d25213",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:format-clear",
+        "original_name": "Reset Finnley Tummy Time Form",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "reset_finnley_tummy_time_form",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "script.submit_baby_buddy_tummy_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7d255eff5a2207a4b8ed610edd111af8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": true
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Submit Baby Buddy Tummy Time",
+        "platform": "script",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "submit_baby_buddy_tummy_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e4b6a5868d92da8dc980d601a5410ef8",
+        "device_class": null,
+        "device_id": "2b1a9a4e51e7b25d6b50fb964b777127",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.finnley_brown_last_tummy_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e7783dc338186cee73f2ee25f8f2380a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:baby",
+        "original_name": "Finnley Brown last tummy-time",
+        "platform": "babybuddy",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "28a9202e4a01bf5ae9a3efb234837fc75e2655e7-1-tummy-times",
+        "previous_unique_id": null,
+        "unit_of_measurement": "min"
       }
     ],
     "deleted_entities": [
