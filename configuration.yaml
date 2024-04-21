@@ -48,11 +48,6 @@ recorder:
       - sensor.sun*
       - weather.*
 
-# Spotcast
-spotcast:
-  sp_dc: !secret sp_dc
-  sp_key: !secret sp_key
-
 # ourgroceries:
 #   username: !secret our_groceries_username
 #   password: !secret our_groceries_password
@@ -87,10 +82,5 @@ notify:
       - service: mobile_app_samantha_s_phone
       - service: mobile_app_branden_s_phone
       - service: branden_desktop
-
-panel_iframe:
-  baby_buddy:
-    title: "Baby Buddy 2"
-    url: !secret baby_buddy_auth_url
 
 #test comment8

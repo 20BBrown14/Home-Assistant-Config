@@ -1191,6 +1191,7 @@ baby_buddy_finnley_diaper_change:
     enabled: true
   - service: script.reset_finnley_diaper_changer_form
     data: {}
+    enabled: false
   - service: input_boolean.turn_on
     data: {}
     target:

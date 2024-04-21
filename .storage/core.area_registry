@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "minor_version": 3,
+  "minor_version": 6,
   "key": "core.area_registry",
   "data": {
     "areas": [
@@ -8,127 +8,190 @@
         "aliases": [],
         "name": "Living Room",
         "id": "living_room",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Kitchen",
         "id": "kitchen",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Master Bedroom",
         "id": "master_bedroom",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Basement",
         "id": "basement",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Garage",
         "id": "garage",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Kitchen Cabinets",
         "id": "kitchen_cabinets",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Backyard",
         "id": "backyard",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Frontyard",
         "id": "frontyard",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Entrance",
         "id": "entrance",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Hallway",
         "id": "hallway",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Outside",
         "id": "outside",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Storage Room",
         "id": "storage_room",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Dining Room",
         "id": "dining_room",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Office",
         "id": "office",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Sub-basement",
         "id": "sub_basement",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Upstairs Bathroom",
         "id": "upstairs_bathroom",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Finnley's Room",
         "id": "finnley_s_room",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Master Bathroom",
         "id": "master_bathroom",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Basement Bathroom",
         "id": "basement_bathroom",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Master Bath",
         "id": "master_bath",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       },
       {
         "aliases": [],
         "name": "Laundry Room",
         "id": "laundry_room",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": []
       }
     ]
   }
