@@ -28,7 +28,9 @@
       {
         "id": "beth",
         "name": "Beth",
-        "device_trackers": [],
+        "device_trackers": [
+          "device_tracker.beth_s_phone"
+        ],
         "user_id": "99e63b9167c74f9eba827f12ad89268d",
         "picture": "/api/image/serve/ebfc873a455dcb2be9c6b07e19e53391/512x512"
       },

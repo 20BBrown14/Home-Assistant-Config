@@ -1261,10 +1261,12 @@
         device_id: cec1c9acc6998365c5762cb515ed6469
         entity_id: binary_sensor.living_room_occupancy
         domain: binary_sensor
+      enabled: false
     - type: turn_off
       device_id: 1f38410000bfa7512b5e118322a6f696
       entity_id: switch.entry_light
       domain: switch
+      enabled: false
   mode: restart
 - id: '1674073338532'
   alias: Leak detection & notification
