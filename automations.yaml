@@ -2950,6 +2950,7 @@
         entity_id: input_datetime.finnley_feeding_start_time
       data:
         datetime: '{{ now() }}'
+    alias: Feeding Timer Started
   - if:
     - condition: trigger
       id:
@@ -2960,7 +2961,9 @@
       data: {}
       target:
         entity_id: input_boolean.finnley_feeding_use_timer
-  - if:
+    alias: Feeding Timer Stopped
+  - alias: Submit Diaper Change
+    if:
     - condition: and
       conditions:
       - condition: trigger
@@ -2971,8 +2974,10 @@
         state: 'off'
     then:
     - service: script.submit_baby_buddy_diaper_change
-      data: {}
-  - if:
+      data:
+        user_id: '{{trigger.event.context.user_id}}'
+  - alias: Submit Feeding Form
+    if:
     - condition: and
       conditions:
       - condition: trigger
@@ -3073,9 +3078,26 @@
           entity_id: input_text.finnley_feeding_info_message
       - stop: Start and end times must be set
       else: []
+    - if:
+      - alias: Test if breast feeding and a non-allowed user
+        condition: template
+        value_template: '{{ states(''select.baby_buddy_feeding_method'') | lower in
+          [''left breast'', ''right breast'', ''both breasts''] and trigger.event.context.user_id
+          not in ["32f3dc229b3742fd85bee517cda43b55", "0596017bea8b4f1fa870a259f95a40de",
+          "1f1c81d780d44b3f9c0ae5fd830bbef0"]}}'
+      then:
+      - service: input_text.set_value
+        metadata: {}
+        data:
+          value: You are not allowed to submit breast feeding
+        target:
+          entity_id: input_text.finnley_feeding_info_message
+      - stop: User not allowed to submit breast feeding.
+      else: []
     - service: script.submit_baby_buddy_feeding
       metadata: {}
-      data: {}
+      data:
+        user_id: '{{trigger.event.context.user_id}}'
   - if:
     - condition: trigger
       id:
@@ -3086,6 +3108,7 @@
         entity_id: input_datetime.finnley_feeding_stop_time
       data:
         datetime: '{{ now() }}'
+    alias: Feeding Timer Paused
   - if:
     - condition: trigger
       id:
@@ -3096,6 +3119,7 @@
       data: {}
       target:
         entity_id: input_boolean.finnley_sleep_use_timer
+    alias: Sleep Timer Stopped
   - if:
     - condition: and
       conditions:
@@ -3109,6 +3133,7 @@
     - service: script.submit_baby_buddy_sleep
       data: {}
     enabled: true
+    alias: Submit Sleep
   - if:
     - condition: and
       conditions:
@@ -3132,6 +3157,7 @@
       - stop: Pumping must have amount
     - service: script.submit_baby_buddy_pumping
       data: {}
+    alias: Submit Pumping
   - if:
     - condition: trigger
       id:
@@ -3143,7 +3169,9 @@
         datetime: '{{states(''input_datetime.finnley_feeding_start_time'')}}'
       target:
         entity_id: input_datetime.finnley_feeding_stop_time
-  - if:
+    alias: Feeding Bottle Selected
+  - alias: Tummy Time Confirmed
+    if:
     - condition: trigger
       id:
       - tummy_time_confirmed
@@ -3162,7 +3190,8 @@
       - stop: Stop time should be after start time
     - service: script.submit_baby_buddy_tummy_time
       metadata: {}
-      data: {}
+      data:
+        user_id: '{{trigger.event.context.user_id}}'
   mode: parallel
   max: 10
 - id: '1709497515323'

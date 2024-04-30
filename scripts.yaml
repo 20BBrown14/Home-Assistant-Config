@@ -1038,7 +1038,8 @@ baby_buddy_test:
     then:
     - service: script.submit_baby_buddy_feeding
       metadata: {}
-      data: {}
+      data:
+        user_id: '{{wait.trigger.event.context.user_id}}'
   - if:
     - condition: template
       value_template: '{{wait.trigger.id == ''CANCEL''}}'
@@ -1053,7 +1054,11 @@ baby_buddy_test:
   mode: queued
   icon: mdi:food
   max: 5
-  fields: {}
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
 finnley_confirm_feeding_details:
   alias: Finnley Confirm Feeding Details
   sequence:
@@ -1251,7 +1256,8 @@ baby_buddy_finnley_diaper_change:
     then:
     - service: script.submit_baby_buddy_diaper_change
       metadata: {}
-      data: {}
+      data:
+        user_id: '{{wait.trigger.event.context.user_id}}'
   - if:
     - condition: template
       value_template: '{{wait.trigger.id == ''CANCEL''}}'
@@ -1267,6 +1273,11 @@ baby_buddy_finnley_diaper_change:
   mode: queued
   icon: mdi:food
   max: 5
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
 toggle_finnley_feeding_timer:
   alias: Toggle Finnley Feeding Timer
   sequence:
@@ -1298,7 +1309,9 @@ submit_baby_buddy_feeding:
       amount: '{% if states(''input_number.finnley_feeding_amount'') | float == 0
         %} 0 {% else %} {{states(''input_number.finnley_feeding_amount'') | float}}
         {% endif %}'
-      notes: '{{states(''input_text.finnley_feeding_notes'') or ''''}}'
+      notes: '{{states(''input_text.finnley_feeding_notes'') + "\n" if states(''input_text.finnley_feeding_notes'')
+        else ''''}}Submitted By: {{ states.person|selectattr("attributes.user_id",
+        "==", user_id)|map(attribute="attributes.friendly_name")|first or "System"}}'
       start: '{{(states(''input_datetime.finnley_feeding_start_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
       end: "{% if states('timer.finnley_feeding_timer') == 'active'%}\n  {% set t
         = 'timer.finnley_feeding_timer' %}\n  {% set d = state_attr(t,'duration')
@@ -1328,6 +1341,11 @@ submit_baby_buddy_feeding:
     target:
       entity_id: input_boolean.finnley_feeding_use_timer
   mode: queued
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
 submit_baby_buddy_diaper_change:
   alias: Submit Baby Buddy Diaper Change
   sequence:
@@ -1336,7 +1354,9 @@ submit_baby_buddy_diaper_change:
       type: '{{states(''select.baby_buddy_diaper_type'')}}'
       color: '{{states(''select.baby_buddy_diaper_color'')}}'
       amount: '{{states(''input_number.finnley_diaper_amount'')}}'
-      notes: '{{states(''input_text.finnley_diaper_change_notes'') or ''''}}'
+      notes: '{{states(''input_text.finnley_diaper_change_notes'') + "\n" if states(''input_text.finnley_diaper_change_notes'')
+        else ''''}}Submitted By: {{ states.person|selectattr("attributes.user_id",
+        "==", user_id)|map(attribute="attributes.friendly_name")|first or "System"}}'
       time: '{{(states(''input_datetime.finnley_diaper_change_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
     target:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
@@ -1348,6 +1368,12 @@ submit_baby_buddy_diaper_change:
       entity_id:
       - input_boolean.waiting_for_finnley_diaper_change_confirmation
   mode: queued
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
+      required: false
 finnley_confirm_sleep_details:
   alias: Finnley Confirm Sleep Details
   sequence:
@@ -1610,7 +1636,9 @@ submit_baby_buddy_pumping:
       start: '{{(states(''input_datetime.pumping_start_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
       end: '{{(states(''input_datetime.pumping_start_time'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
       amount: '{{states(''input_number.pumping_amount'')}}'
-      notes: '{{states(''input_text.pumping_notes'') or ''''}}'
+      notes: '{{states(''input_text.pumping_notes'') + "\n" if states(''input_text.pumping_notes'')
+        else ''''}}Submitted By: {{ states.person|selectattr("attributes.user_id",
+        "==", user_id)|map(attribute="attributes.friendly_name")|first or "System"}}'
       child: 1
   - service: script.1705186537951
     data: {}
@@ -1623,6 +1651,11 @@ submit_baby_buddy_pumping:
   mode: queued
   icon: mdi:mother-nurse
   max: 10
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
 '1705186537951':
   alias: Reset Pumping Form
   sequence:
@@ -1854,7 +1887,8 @@ baby_buddy_finnley_pumping:
       value_template: '{{wait.trigger.id == ''CONTINUE'' or wait.trigger.id == null}}'
     then:
     - service: script.submit_baby_buddy_pumping
-      data: {}
+      data:
+        user_id: '{{wait.trigger.event.context.user_id}}'
   - if:
     - condition: template
       value_template: '{{wait.trigger.id == ''CANCEL''}}'
@@ -1870,6 +1904,11 @@ baby_buddy_finnley_pumping:
   mode: queued
   icon: mdi:food
   max: 5
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
 finnley_confirm_pumping_details:
   alias: Finnley Confirm Pumping Details
   sequence:
@@ -1950,10 +1989,17 @@ submit_baby_buddy_tummy_time:
     data:
       start: '{{(states(''input_datetime.finnley_tummy_time_start'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
       end: '{{(states(''input_datetime.finnley_tummy_time_stop'') | as_datetime).strftime(''%Y-%m-%dT%H:%M:%S'')}}'
-      milestone: '{{states(''input_text.finnley_tummy_time_notes'') or ''''}}'
+      milestone: '{{states(''input_text.finnley_tummy_time_notes'') + "\n" if states(''input_text.finnley_tummy_time_notes'')
+        else ''''}}Submitted By: {{ states.person|selectattr("attributes.user_id",
+        "==", user_id)|map(attribute="attributes.friendly_name")|first or "System"}}'
     target:
       device_id: 2b1a9a4e51e7b25d6b50fb964b777127
   - service: script.reset_finnley_tummy_time_form
     data: {}
   mode: queued
   max: 10
+  fields:
+    user_id:
+      selector:
+        text:
+      name: User ID
