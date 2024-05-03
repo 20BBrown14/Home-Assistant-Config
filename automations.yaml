@@ -3134,7 +3134,8 @@
       data: {}
     enabled: true
     alias: Submit Sleep
-  - if:
+  - alias: Submit Pumping
+    if:
     - condition: and
       conditions:
       - condition: trigger
@@ -3156,8 +3157,8 @@
           entity_id: input_text.finnley_pumping_info_message
       - stop: Pumping must have amount
     - service: script.submit_baby_buddy_pumping
-      data: {}
-    alias: Submit Pumping
+      data:
+        user_id: '{{trigger.event.context.user_id}}'
   - if:
     - condition: trigger
       id:
