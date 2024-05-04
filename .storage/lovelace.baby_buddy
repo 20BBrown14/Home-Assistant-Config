@@ -112,6 +112,15 @@
                 },
                 {
                   "entity": "sensor.finnley_brown_last_temperature"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "2px"
+                  }
+                },
+                {
+                  "entity": "sensor.who_has_finn"
                 }
               ],
               "title": "Finnley Summary"

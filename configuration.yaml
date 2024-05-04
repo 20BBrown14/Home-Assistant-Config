@@ -66,6 +66,16 @@ input_select: !include input_selects.yaml
 
 input_text: !include input_texts.yaml
 
+template:
+  - trigger:
+    - platform: time_pattern
+      hours: 0
+      minutes: 0
+    sensor:
+      - name: "Who Has Finn on Friday?"
+        unique_id: who_has_finn
+        state: "{{now().strftime('%a, %b %d, %Y')}}{{ ': Tina' if (now() |as_timestamp)|timestamp_custom (\"%U\", True) |int % 2 != 0 else ': Beth'}}"
+
 notify:
   - platform: group
     name: "branden_desktop_group"
