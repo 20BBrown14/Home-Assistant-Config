@@ -3484,3 +3484,45 @@
           channel: WashingMachine
       enabled: true
   mode: single
+- id: '1714858591538'
+  alias: Deep Freeze Safety
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: 80f019b83e24c79fa0bfc2111c2bb2fb
+    entity_id: f5f89da380c7e251ef24f5da14d44854
+    domain: switch
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 10
+      milliseconds: 0
+  - type: turn_on
+    device_id: 80f019b83e24c79fa0bfc2111c2bb2fb
+    entity_id: f5f89da380c7e251ef24f5da14d44854
+    domain: switch
+  mode: single
+- id: '1714858626617'
+  alias: Sump Pump Safety
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_off
+    device_id: d1a1e7f7119e7e3e4bcce0caf8787712
+    entity_id: 1768dfd4846826eb4964fbc5eebd7ef9
+    domain: switch
+  condition: []
+  action:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 10
+      milliseconds: 0
+  - type: turn_on
+    device_id: d1a1e7f7119e7e3e4bcce0caf8787712
+    entity_id: 1768dfd4846826eb4964fbc5eebd7ef9
+    domain: switch
+  mode: single

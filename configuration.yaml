@@ -74,7 +74,9 @@ template:
     sensor:
       - name: "Who Has Finn on Friday?"
         unique_id: who_has_finn
-        state: "{{now().strftime('%a, %b %d, %Y')}}{{ ': Tina' if (now() |as_timestamp)|timestamp_custom (\"%U\", True) |int % 2 != 0 else ': Beth'}}"
+        state: >-
+          {% set nextFriday = (now().date() + (((7 + 4 - now().weekday()))*86400|string|as_timedelta))%}
+          {{nextFriday.strftime('%a, %b %d, %Y')}}{{ ': Tina' if nextFriday.strftime("%U") |int % 2 != 0 else ': Beth'}}
 
 notify:
   - platform: group
