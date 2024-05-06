@@ -89,13 +89,55 @@
                     "entity_id": "*effect_speed*"
                   },
                   {
+                    "entity_id": "*rssi*"
+                  },
+                  {
+                    "entity_id": "*last_seen*"
+                  },
+                  {
+                    "entity_id": "*scene*"
+                  },
+                  {
+                    "entity_id": "*event*"
+                  },
+                  {
+                    "entity_id": "*cloud*"
+                  },
+                  {
+                    "entity_id": "*event*"
+                  },
+                  {
+                    "entity_id": "*reboot*"
+                  },
+                  {
+                    "entity_id": "*uptime*"
+                  },
+                  {
+                    "entity_id": "*input*"
+                  },
+                  {
+                    "entity_id": "*media_player*"
+                  },
+                  {
+                    "entity_id": "*signal*"
+                  },
+                  {
+                    "entity_id": "*basic*"
+                  },
+                  {
+                    "integration": "frigate"
+                  },
+                  {
+                    "integration": "babybuddy"
+                  },
+                  {
                     "domain": "update"
                   }
                 ]
               },
               "sort": {
                 "method": "domain",
-                "reverse": false,
+                "reverse": true,
                 "ip": false,
                 "numeric": false,
                 "ignore_case": false
