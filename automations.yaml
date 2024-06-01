@@ -3468,12 +3468,14 @@
         to: 'on'
       continue_on_timeout: true
   - if:
-    - condition: state
-      entity_id: binary_sensor.is_branden_home
-      state: 'on'
-    - condition: state
-      entity_id: binary_sensor.is_samantha_home
-      state: 'on'
+    - condition: or
+      conditions:
+      - condition: state
+        entity_id: binary_sensor.is_branden_home
+        state: 'on'
+      - condition: state
+        entity_id: binary_sensor.is_samantha_home
+        state: 'on'
     then:
       service: "{%if states('binary_sensor.is_branden_home') and states('binary_sensor.is_samantha_home')
         %}\n  notify.all_mobile_phones\n{% elif states('binary_sensor.is_branden_home')
