@@ -3345,10 +3345,11 @@
       id:
       - box_needs_attention
     then:
-    - service: notify.mobile_app_branden_s_phone
+    - service: notify.all_mobile_phones
       data:
-        title: Litter Box
-        message: Litter Box Needs Attention
+        title: Litter Box Needs Attention
+        message: 'Litter Level: {{states(''sensor.litter_robot_4_litter_level'')}}%
+          | Waste Drawer Level: {{states(''sensor.litter_robot_4_waste_drawer'')}}%'
         data:
           critical: true
           ttl: 0
