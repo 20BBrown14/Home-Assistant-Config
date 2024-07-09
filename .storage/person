@@ -39,7 +39,6 @@
         "name": "Tina",
         "device_trackers": [
           "device_tracker.ernie",
-          "device_tracker.tina_s_phone",
           "device_tracker.sm_s928u"
         ],
         "user_id": "b4824123392d466486ccf59dd5d09b01",
