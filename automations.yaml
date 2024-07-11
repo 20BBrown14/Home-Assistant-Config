@@ -3338,6 +3338,10 @@
     domain: sensor
     id: box_issue_addressed
     above: 95
+  - platform: template
+    value_template: '{{as_timestamp(now()) - as_timestamp(states(''sensor.litter_robot_4_last_seen''))
+      > 43200}}'
+    id: stale_litter_box
   condition: []
   action:
   - if:
@@ -3418,6 +3422,25 @@
       bitmask:
       subtype: 26 (Status LED 6 Color) on endpoint 0
       value: 0
+  - if:
+    - condition: trigger
+      id:
+      - stale_litter_box
+    then:
+    - service: notify.all_mobile_phones
+      data:
+        title: Litter Box Needs Attention
+        message: Litter Box last seen 8 hours ago
+        data:
+          critical: true
+          ttl: 0
+          priority: high
+          notification_icon: mdi:connection
+          tag: litter_box_stale
+          actions:
+          - action: URI
+            title: Litter Box Info
+            uri: /config/devices/device/9c5503844279813835773d316a5ffde8
   mode: single
 - id: '1713139745652'
   alias: Washer
