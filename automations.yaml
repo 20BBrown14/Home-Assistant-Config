@@ -3339,8 +3339,8 @@
     id: box_issue_addressed
     above: 95
   - platform: template
-    value_template: '{{as_timestamp(now()) - as_timestamp(states(''sensor.litter_robot_4_last_seen''))
-      > 43200}}'
+    value_template: '{{as_timestamp(now()) - as_timestamp(states.sensor.litter_robot_4_status_code.last_changed)
+      > 28800}}'
     id: stale_litter_box
   condition: []
   action:
