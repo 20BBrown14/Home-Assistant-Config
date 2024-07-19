@@ -198,10 +198,15 @@
         {% set last_breast_milk_feeding = state_attr('sensor.babybuddy_feedings', 'results') | selectattr('child', 'equalto', 1) | selectattr('method', 'in', ['left breast', 'right breast', 'both breasts']) | list | first %}
         {{((as_timestamp(last_breast_milk_feeding.end) - as_timestamp(last_breast_milk_feeding.start))/60) | round(2)}} min(s) on {{last_breast_milk_feeding.method.title()}} @ {{as_timestamp(last_breast_milk_feeding.start) | timestamp_custom ("%-I:%M %p", True)}}
 
+    #bb_last_solid_feeding:
+    #  friendly_name: Last Solid Feeding
+    #  value_template: >-
+    #    {{ as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["start"]) | timestamp_custom ("%-I:%M %p", True) }}
+
     bb_total_feedings_today:
       friendly_name: Total Feedings Today
       value_template: >-
-        {% set totalFeedings = namespace(ounces=0, bottleCount=0, breastFeedCount=0, breastFeedSeconds=0) %}
+        {% set totalFeedings = namespace(ounces=0, bottleCount=0, breastFeedCount=0, breastFeedSeconds=0, solidCount=0) %}
         {% for feeding in state_attr('sensor.babybuddy_feedings', 'results') if as_timestamp(feeding["start"], '%Y-%m-%d %H:%M:%S') | timestamp_custom ("%Y-%m-%d", True) == as_timestamp(now()) | timestamp_custom ("%Y-%m-%d", True)%}
           {% if feeding['method'] | lower == 'bottle' %}
             {% set totalFeedings.ounces = totalFeedings.ounces + feeding['amount'] %}
@@ -213,14 +218,18 @@
             {% set splitTime = feeding["duration"].split(':')[1:3] %}
             {% set totalFeedings.breastFeedSeconds = totalFeedings.breastFeedSeconds + (splitTime[0]|int * 60) + splitTime[1]|int %}
           {% endif %}
-        {% endfor %}
-        {{totalFeedings.bottleCount}} Bottles ({{totalFeedings.ounces}}oz) | {{totalFeedings.breastFeedCount}} Breast Feeds ({{(totalFeedings.breastFeedSeconds / 60)|int}}m, {{(totalFeedings.breastFeedSeconds % 60)|int}}s)
 
+          {% if feeding['type']|lower in ['solid food'] %}
+            {% set totalFeedings.solidCount = totalFeedings.solidCount + 1 %}
+          {% endif %}
+          
+        {% endfor %}
+        {{totalFeedings.bottleCount}} Bottles ({{totalFeedings.ounces}}oz) | {{totalFeedings.breastFeedCount}} Breast Feeds ({{(totalFeedings.breastFeedSeconds / 60)|int}}m, {{(totalFeedings.breastFeedSeconds % 60)|int}}s) | {{(totalFeedings.solidCount)}} Solid Feedings
 
     bb_last_feeding_how_long_ago:
       friendly_name: Last Feeding How Long Ago
       value_template: >-
-        {% set up_time = as_timestamp(now()) - as_timestamp(state_attr('sensor.babybuddy_feedings', 'results')[0]["start"]) %}
+        {% set up_time = as_timestamp(now()) - as_timestamp((state_attr('sensor.babybuddy_feedings', 'results')|selectattr('method', 'in', ['bottle', 'both breasts', 'left breast', 'right breast'])|list|first).start) %}
         {% set seconds = (up_time % 60) | int %}
         {% set minutes = (up_time // 60) | int %}
         {% set hours = (minutes // 60) %}
