@@ -3559,3 +3559,53 @@
     entity_id: 1768dfd4846826eb4964fbc5eebd7ef9
     domain: switch
   mode: single
+- id: '1721546216744'
+  alias: Automatic Goodnight
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:00:00
+    id: Midnight
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - Midnight
+    then:
+    - if:
+      - condition: or
+        conditions:
+        - condition: state
+          entity_id: binary_sensor.is_branden_home
+          state: 'on'
+        - condition: state
+          entity_id: binary_sensor.is_samantha_home
+          state: 'on'
+      then:
+      - service: input_boolean.turn_on
+        metadata: {}
+        data: {}
+        target:
+          entity_id: input_boolean.good_night_mode
+    else:
+    - wait_for_trigger:
+      - platform: state
+        entity_id:
+        - binary_sensor.is_samantha_home
+        to: 'on'
+      - platform: state
+        entity_id:
+        - binary_sensor.is_branden_home
+        to: 'on'
+      timeout:
+        hours: 6
+        minutes: 0
+        seconds: 0
+        milliseconds: 0
+      continue_on_timeout: false
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.good_night_mode
+      data: {}
+  mode: single
