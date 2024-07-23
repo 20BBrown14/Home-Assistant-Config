@@ -3340,7 +3340,7 @@
     above: 95
   - platform: template
     value_template: '{{as_timestamp(now()) - as_timestamp(states.sensor.litter_robot_4_status_code.last_changed)
-      > 28800}}'
+      > 43200}}'
     id: stale_litter_box
   condition: []
   action:
@@ -3430,7 +3430,7 @@
     - service: notify.all_mobile_phones
       data:
         title: Litter Box Needs Attention
-        message: Litter Box last seen 8 hours ago
+        message: Litter Box last seen 12 hours ago
         data:
           critical: true
           ttl: 0
