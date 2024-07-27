@@ -3609,3 +3609,17 @@
         entity_id: input_boolean.good_night_mode
       data: {}
   mode: single
+- id: '1722051995666'
+  alias: Automatic Goodnight
+  description: ''
+  trigger:
+  - platform: time
+    at: 00:00:00
+  condition: []
+  action:
+  - service: input_boolean.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.good_night_mode
+  mode: single
