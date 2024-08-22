@@ -93,6 +93,11 @@
         "id": "waiting_for_finnley_pumping_confirmation",
         "name": "Waiting for Finnley Pumping Confirmation",
         "icon": "mdi:timer-star"
+      },
+      {
+        "id": "litter_box_needs_attention",
+        "name": "Litter Box Needs Attention",
+        "icon": "mdi:cat"
       }
     ]
   }

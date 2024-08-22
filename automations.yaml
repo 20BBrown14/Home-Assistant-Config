@@ -3347,84 +3347,6 @@
   - if:
     - condition: trigger
       id:
-      - box_needs_attention
-    then:
-    - service: notify.all_mobile_phones
-      data:
-        title: Litter Box Needs Attention
-        message: 'Litter Level: {{states(''sensor.litter_robot_4_litter_level'')}}%
-          | Waste Drawer Level: {{states(''sensor.litter_robot_4_waste_drawer'')}}%'
-        data:
-          critical: true
-          ttl: 0
-          priority: high
-          notification_icon: mdi:cat
-          tag: litter_box_needs_attention
-          actions:
-          - action: URI
-            title: Litter Box Info
-            uri: /config/devices/device/9c5503844279813835773d316a5ffde8
-    - device_id: 171c8f1cbdc67a075d1170858166fd45
-      domain: zwave_js
-      type: set_config_parameter
-      endpoint: 0
-      parameter: 26
-      bitmask:
-      subtype: 26 (Status LED 6 Color) on endpoint 0
-      value: 2
-    - device_id: 171c8f1cbdc67a075d1170858166fd45
-      domain: zwave_js
-      type: set_config_parameter
-      endpoint: 0
-      parameter: 31
-      bitmask: 32
-      subtype: 31[0x20] on endpoint 0 (LED 6 Blink Status) on endpoint 0
-      value: 1
-    - device_id: fc14d585e20bc18f0fae2b868f5849f3
-      domain: zwave_js
-      type: set_config_parameter
-      endpoint: 0
-      parameter: 26
-      bitmask:
-      subtype: 26 (Status LED 6 Color) on endpoint 0
-      value: 2
-    - device_id: fc14d585e20bc18f0fae2b868f5849f3
-      domain: zwave_js
-      type: set_config_parameter
-      endpoint: 0
-      parameter: 31
-      bitmask: 32
-      subtype: 31[0x20] on endpoint 0 (LED 6 Blink Status) on endpoint 0
-      value: 1
-  - if:
-    - condition: trigger
-      id:
-      - box_issue_addressed
-    then:
-    - service: notify.mobile_app_branden_s_phone
-      data:
-        message: clear_notification
-        data:
-          tag: litter_box_needs_attention
-    - device_id: 171c8f1cbdc67a075d1170858166fd45
-      domain: zwave_js
-      type: set_config_parameter
-      endpoint: 0
-      parameter: 26
-      bitmask:
-      subtype: 26 (Status LED 6 Color) on endpoint 0
-      value: 0
-    - device_id: fc14d585e20bc18f0fae2b868f5849f3
-      domain: zwave_js
-      type: set_config_parameter
-      endpoint: 0
-      parameter: 26
-      bitmask:
-      subtype: 26 (Status LED 6 Color) on endpoint 0
-      value: 0
-  - if:
-    - condition: trigger
-      id:
       - stale_litter_box
     then:
     - service: notify.all_mobile_phones
@@ -3441,6 +3363,30 @@
           - action: URI
             title: Litter Box Info
             uri: /config/devices/device/9c5503844279813835773d316a5ffde8
+    enabled: true
+  - if:
+    - condition: trigger
+      id:
+      - box_needs_attention
+    - condition: state
+      entity_id: input_boolean.good_night_mode
+      state: 'off'
+    then:
+    - service: input_boolean.turn_on
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.litter_box_needs_attention
+  - if:
+    - condition: trigger
+      id:
+      - box_issue_addressed
+    then:
+    - service: input_boolean.turn_off
+      target:
+        entity_id:
+        - input_boolean.litter_box_needs_attention
+      data: {}
   mode: single
 - id: '1713139745652'
   alias: Washer
@@ -3614,4 +3560,128 @@
     - service: script.good_night
       metadata: {}
       data: {}
+  mode: single
+- id: '1724260405740'
+  alias: Litter Robot Needs Attention
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.litter_box_needs_attention
+    to: 'on'
+    id: box_needs_attention
+  - platform: state
+    entity_id:
+    - input_boolean.litter_box_needs_attention
+    to: 'off'
+    id: box_issue_addressed
+  - platform: state
+    entity_id:
+    - input_boolean.good_night_mode
+    to: 'off'
+    id: good_night_off
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - box_needs_attention
+    then:
+    - service: notify.all_mobile_phones
+      data:
+        title: Litter Box Needs Attention
+        message: 'Litter Level: {{states(''sensor.litter_robot_4_litter_level'')}}%
+          | Waste Drawer Level: {{states(''sensor.litter_robot_4_waste_drawer'')}}%'
+        data:
+          critical: true
+          ttl: 0
+          priority: high
+          notification_icon: mdi:cat
+          tag: litter_box_needs_attention
+          actions:
+          - action: URI
+            title: Litter Box Info
+            uri: /config/devices/device/9c5503844279813835773d316a5ffde8
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 2
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 31
+      bitmask: 32
+      subtype: 31[0x20] on endpoint 0 (LED 6 Blink Status) on endpoint 0
+      value: 1
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 2
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 31
+      bitmask: 32
+      subtype: 31[0x20] on endpoint 0 (LED 6 Blink Status) on endpoint 0
+      value: 1
+  - if:
+    - condition: trigger
+      id:
+      - box_issue_addressed
+    then:
+    - service: notify.mobile_app_branden_s_phone
+      data:
+        message: clear_notification
+        data:
+          tag: litter_box_needs_attention
+    - device_id: 171c8f1cbdc67a075d1170858166fd45
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 0
+    - device_id: fc14d585e20bc18f0fae2b868f5849f3
+      domain: zwave_js
+      type: set_config_parameter
+      endpoint: 0
+      parameter: 26
+      bitmask:
+      subtype: 26 (Status LED 6 Color) on endpoint 0
+      value: 0
+  - if:
+    - condition: trigger
+      id:
+      - good_night_off
+    - condition: or
+      conditions:
+      - type: is_value
+        condition: device
+        device_id: 9c5503844279813835773d316a5ffde8
+        entity_id: e3d39aa58d223372c0542115b6198832
+        domain: sensor
+        below: 80
+      - type: is_value
+        condition: device
+        device_id: 9c5503844279813835773d316a5ffde8
+        entity_id: 619e4f7c416f4438647a2980b8aff17c
+        domain: sensor
+        above: 80
+    then:
+    - service: input_boolean.turn_on
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.litter_box_needs_attention
   mode: single
