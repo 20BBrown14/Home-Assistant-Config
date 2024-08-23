@@ -191,6 +191,18 @@ good_night:
       device_id: b47adfbdffd61cfbe4a91df9331b1c05
       entity_id: 838bd176af233578b9eaebe2d67c3aae
       domain: light
+    - if:
+      - condition: device
+        device_id: e50cb3846e82014dde1e95832d9d4e9c
+        domain: fan
+        entity_id: 1195150d7d5855b2b2152c049c0ea4c3
+        type: is_on
+      then:
+      - service: fan.set_percentage
+        target:
+          entity_id: fan.in_wall_fan_speed_control_500s
+        data:
+          percentage: 33
   mode: single
 reset_kitchen_leds:
   alias: Reset Kitchen LEDs
