@@ -2517,8 +2517,7 @@
       {"config_entry_id":"99ca1977f36f35a52f277f04783802a3","entity_id":"sensor.system_monitor_disk_use_percent_etc_resolv_conf","id":"fe717750dacc63b5a8165fca2350280c","orphaned_timestamp":null,"platform":"systemmonitor","unique_id":"disk_use_percent_etc_resolv_conf"},
       {"config_entry_id":"99ca1977f36f35a52f277f04783802a3","entity_id":"sensor.system_monitor_disk_use_percent_etc_localtime","id":"7c9bb098286ea2a6282c05f40407f967","orphaned_timestamp":null,"platform":"systemmonitor","unique_id":"disk_use_percent_etc_localtime"},
       {"config_entry_id":"9f0e41bbe33813c288826b857bc76d90","entity_id":"weather.forecast_home_hourly","id":"c48a6a7e0385771babd58b4f4861d8bd","orphaned_timestamp":null,"platform":"met","unique_id":"home-hourly"},
-      {"config_entry_id":"99ca1977f36f35a52f277f04783802a3","entity_id":"sensor.system_monitor_process_s6_supervise","id":"c6cd578e54c29cff3b29c2a7ce1a430a","orphaned_timestamp":null,"platform":"systemmonitor","unique_id":"process_s6_supervise"},
-      {"config_entry_id":null,"entity_id":"automation.automatic_goodnight_2","id":"bc087a8c86c543f5476238a4e914d7ec","orphaned_timestamp":1722214550.7004027,"platform":"automation","unique_id":"1722051995666"}
+      {"config_entry_id":"99ca1977f36f35a52f277f04783802a3","entity_id":"sensor.system_monitor_process_s6_supervise","id":"c6cd578e54c29cff3b29c2a7ce1a430a","orphaned_timestamp":null,"platform":"systemmonitor","unique_id":"process_s6_supervise"}
     ]
   }
 }
