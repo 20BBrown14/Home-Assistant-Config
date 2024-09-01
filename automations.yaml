@@ -1712,6 +1712,7 @@
       type: set_hvac_mode
       hvac_mode: 'off'
     alias: Turn off thermostat if doors/windows open
+    enabled: false
   - alias: Turn on thermostat if doors/windows closed
     if:
     - condition: or
@@ -1735,6 +1736,7 @@
       entity_id: climate.thermostat
       type: set_hvac_mode
       hvac_mode: heat_cool
+    enabled: false
   - if:
     - condition: or
       conditions:
