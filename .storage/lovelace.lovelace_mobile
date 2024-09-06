@@ -12,13 +12,103 @@
           "badges": [],
           "cards": [
             {
-              "type": "custom:select-list-card",
-              "truncate": true,
-              "show_toggle": false,
-              "scroll_to_selected": false,
-              "max_options": 5,
-              "title": "Room Select",
-              "entity": "input_select.room_select"
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "input_select.select_option",
+                        "target": {
+                          "entity_id": "input_select.room_select"
+                        },
+                        "data": {
+                          "option": "Master Bedroom"
+                        }
+                      },
+                      "name": "Master Bedroom",
+                      "icon": "mdi:bed-king",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "input_select.select_option",
+                        "target": {
+                          "entity_id": "input_select.room_select"
+                        },
+                        "data": {
+                          "option": "Finnley's Room"
+                        }
+                      },
+                      "name": "Finnley Room",
+                      "icon": "mdi:baby",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "input_select.select_option",
+                        "target": {
+                          "entity_id": "input_select.room_select"
+                        },
+                        "data": {
+                          "option": "Hallway"
+                        }
+                      },
+                      "name": "Hallway",
+                      "icon": "mdi:coat-rack",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    },
+                    {
+                      "show_name": true,
+                      "show_icon": true,
+                      "type": "button",
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "input_select.select_option",
+                        "target": {
+                          "entity_id": "input_select.room_select"
+                        },
+                        "data": {
+                          "option": "Sub-basement"
+                        }
+                      },
+                      "name": "Sub Basement",
+                      "icon": "mdi:home-floor-b",
+                      "hold_action": {
+                        "action": "none"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "custom:select-list-card",
+                  "truncate": true,
+                  "show_toggle": false,
+                  "scroll_to_selected": false,
+                  "max_options": 5,
+                  "title": "Room Select",
+                  "entity": "input_select.room_select"
+                }
+              ]
             },
             {
               "type": "custom:auto-entities",
