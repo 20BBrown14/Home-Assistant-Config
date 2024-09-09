@@ -203,6 +203,11 @@ good_night:
           entity_id: fan.in_wall_fan_speed_control_500s
         data:
           percentage: 33
+    - service: input_boolean.turn_off
+      metadata: {}
+      data: {}
+      target:
+        entity_id: input_boolean.litter_box_needs_attention
   mode: single
 reset_kitchen_leds:
   alias: Reset Kitchen LEDs
