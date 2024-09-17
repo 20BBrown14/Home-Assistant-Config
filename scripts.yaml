@@ -760,32 +760,28 @@ deck_light_commands:
 basement_tv_pause:
   alias: 'Basement TV: Pause'
   sequence:
-  - service: remote.send_command
-    data:
-      device: Basement TV
-      command: Pause
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_play:
   alias: 'Basement TV: Play'
   sequence:
-  - service: remote.send_command
-    data:
-      device: Basement TV
-      command: Play
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_power:
   alias: 'Basement TV: Power'
   sequence:
-  - service: remote.send_command
-    data:
-      device: Basement TV
-      command: Power
-    target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+  - type: toggle
+    device_id: 9d9b3aef9b02e671b68985cc255ab410
+    entity_id: edff6e6377aaa6777fee3188ca840808
+    domain: remote
   mode: restart
 basement_tv_pause_in_15_seconds:
   alias: 'Basement TV: Pause in 15 seconds'
@@ -795,12 +791,11 @@ basement_tv_pause_in_15_seconds:
       minutes: 0
       seconds: 12
       milliseconds: 0
-  - service: remote.send_command
-    data:
-      command: Pause
-      device: Basement TV
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_pause_in_30_seconds:
   alias: 'Basement TV: Pause in 30 seconds'
@@ -810,12 +805,11 @@ basement_tv_pause_in_30_seconds:
       minutes: 0
       seconds: 27
       milliseconds: 0
-  - service: remote.send_command
-    data:
-      command: Pause
-      device: Basement TV
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_pause_in_45_seconds:
   alias: 'Basement TV: Pause in 45 seconds'
@@ -825,12 +819,11 @@ basement_tv_pause_in_45_seconds:
       minutes: 0
       seconds: 42
       milliseconds: 0
-  - service: remote.send_command
-    data:
-      command: Pause
-      device: Basement TV
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_pause_in_60_seconds:
   alias: 'Basement TV: Pause in 60 seconds'
@@ -840,12 +833,11 @@ basement_tv_pause_in_60_seconds:
       minutes: 0
       seconds: 57
       milliseconds: 0
-  - service: remote.send_command
-    data:
-      command: Pause
-      device: Basement TV
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_pause_in_75_seconds:
   alias: 'Basement TV: Pause in 75 seconds'
@@ -855,12 +847,11 @@ basement_tv_pause_in_75_seconds:
       minutes: 1
       seconds: 12
       milliseconds: 0
-  - service: remote.send_command
-    data:
-      command: Pause
-      device: Basement TV
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_tv_pause_in_90_seconds:
   alias: 'Basement TV: Pause in 90 seconds'
@@ -870,12 +861,11 @@ basement_tv_pause_in_90_seconds:
       minutes: 1
       seconds: 27
       milliseconds: 0
-  - service: remote.send_command
-    data:
-      command: Pause
-      device: Basement TV
+  - data:
+      command: Confirm
+    action: remote.send_command
     target:
-      device_id: 87aa1df34edae2559dd3b3ea8cae7799
+      entity_id: remote.sony_xr_65x90cl
   mode: restart
 basement_fan_power:
   alias: 'Basement Fan: Power'
