@@ -2010,3 +2010,39 @@ submit_baby_buddy_tummy_time:
       selector:
         text:
       name: User ID
+finnley_bedtime_2:
+  alias: Finnley Bedtime
+  sequence:
+  - type: turn_on
+    device_id: b47adfbdffd61cfbe4a91df9331b1c05
+    entity_id: 99c23073eb7dd81d6160c1f55cde4689
+    domain: switch
+  - type: turn_on
+    device_id: 271b54528ef7dc397f28f1200a8f11b8
+    entity_id: 94e96e010ed20e5995b3593a1dc65adf
+    domain: fan
+  - action: fan.set_percentage
+    metadata: {}
+    data:
+      percentage: 67
+    target:
+      entity_id: fan.finnley_s_room_ceilling_fan
+  description: ''
+  icon: mdi:cradle-outline
+turn_off_finnley_room:
+  alias: Turn off Finnley Room
+  sequence:
+  - type: turn_off
+    device_id: fd9c68d487e9da3c5d33d22aa0b3e290
+    entity_id: d8f06645ff2fd1774d370941b9635988
+    domain: light
+  - type: turn_off
+    device_id: 271b54528ef7dc397f28f1200a8f11b8
+    entity_id: 94e96e010ed20e5995b3593a1dc65adf
+    domain: fan
+  - type: turn_off
+    device_id: b47adfbdffd61cfbe4a91df9331b1c05
+    entity_id: 838bd176af233578b9eaebe2d67c3aae
+    domain: light
+  description: ''
+  icon: mdi:baby

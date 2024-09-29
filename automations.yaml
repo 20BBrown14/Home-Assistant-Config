@@ -3687,3 +3687,47 @@
       target:
         entity_id: input_boolean.litter_box_needs_attention
   mode: single
+- id: '1727572390563'
+  alias: Finnley Room
+  description: ''
+  trigger:
+  - platform: device
+    device_id: fd9c68d487e9da3c5d33d22aa0b3e290
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '001'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 001
+    value: 3
+    id: turn on
+  - platform: device
+    device_id: fd9c68d487e9da3c5d33d22aa0b3e290
+    domain: zwave_js
+    type: event.value_notification.central_scene
+    property: scene
+    property_key: '002'
+    endpoint: 0
+    command_class: 91
+    subtype: Endpoint 0 Scene 002
+    id: turn off
+    value: 3
+  condition: []
+  action:
+  - if:
+    - condition: trigger
+      id:
+      - turn on
+    then:
+    - action: script.finnley_bedtime_2
+      metadata: {}
+      data: {}
+  - if:
+    - condition: trigger
+      id:
+      - turn off
+    then:
+    - action: script.turn_off_finnley_room
+      data: {}
+  mode: single
