@@ -3731,3 +3731,15 @@
     - action: script.turn_off_finnley_room
       data: {}
   mode: single
+- id: '1727817185439'
+  alias: Humidifier
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - action: script.humidifier
+    metadata: {}
+    data:
+      humidifier_switch_id: '{{states.switch.finnley_room_humidifier.entity_id}}'
+      humidity_sensor_id: sensor.finnleys_room_temperature_sensor_humidity
+  mode: single
