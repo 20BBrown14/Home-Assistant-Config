@@ -1194,6 +1194,12 @@
         entity_id:
         - sensor.branden_s_phone_battery_level
         - sensor.samantha_s_phone_battery_level
+        - sensor.brandens_ipad_battery_level
+        - sensor.beth_s_phone_battery_level
+        - sensor.ernie_battery_level
+        - sensor.sm_s928u_battery_level
+        - sensor.roomba_battery_level
+        - sensor.mac104952_internal_battery_level
       actions:
       - device_id: 86b1b485f0e733b3962457c610d02eae
         domain: mobile_app
