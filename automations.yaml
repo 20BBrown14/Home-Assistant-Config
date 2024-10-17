@@ -3749,3 +3749,145 @@
       humidifier_switch_id: '{{states.switch.finnley_room_humidifier.entity_id}}'
       humidity_sensor_id: sensor.finnleys_room_temperature_sensor_humidity
   mode: single
+- id: '1729104974147'
+  alias: Mach-E Charging
+  description: Sends notifications if the Mach-E is home and not plugged into the
+    charger for a period of time.
+  trigger:
+  - platform: state
+    entity_id:
+    - device_tracker.fordpass_tracker
+    to: home
+    for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+  - platform: state
+    entity_id:
+    - sensor.fordpass_elvehcharging
+    attribute: Plug Status
+    from: CONNECTED
+    to: DISCONNECTED
+    for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+  condition: []
+  action:
+  - if:
+    - condition: or
+      conditions:
+      - condition: state
+        entity_id: sensor.fordpass_elvehcharging
+        attribute: Plug Status
+        state: CONNECTED
+      - condition: state
+        entity_id: device_tracker.fordpass_tracker
+        state: not_home
+    then:
+    - stop: Charge is connected or the car is not home, all is well!
+  - alias: Wait 10 minutes for charger to get connected
+    wait_for_trigger:
+    - platform: state
+      entity_id:
+      - sensor.fordpass_elvehcharging
+      to: CONNECTED
+      id: CHARGER_CONNECTED
+    - platform: state
+      entity_id:
+      - device_tracker.fordpass_tracker
+      to: not_home
+      id: CAR_AWAY
+    timeout:
+      hours: 0
+      minutes: 10
+      seconds: 0
+      milliseconds: 0
+  - alias: Stop if charger becomes connected
+    if:
+    - condition: template
+      value_template: wait.trigger.id == CHARGER_CONNECTED or wait.trigger.id == CAR_AWAY
+    then:
+    - stop: Charger connected or the car is not home
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    endpoint: 0
+    parameter: 22
+    bitmask:
+    subtype: 22 (Status LED 2 Color) on endpoint 0
+    value: 4
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    endpoint: 0
+    parameter: 31
+    bitmask: 2
+    subtype: 31[0x2] on endpoint 0 (LED 2 Blink Status) on endpoint 0
+    value: 1
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    endpoint: 0
+    parameter: 22
+    bitmask:
+    subtype: 22 (Status LED 2 Color) on endpoint 0
+    value: 4
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    endpoint: 0
+    parameter: 31
+    bitmask: 2
+    subtype: 31[0x2] on endpoint 0 (LED 2 Blink Status) on endpoint 0
+    value: 1
+  - action: notify.all_mobile_phones
+    data:
+      message: Be sure to plug in the Mustang Mach-E!
+      title: Mach-E not charging!
+      data:
+        notification_icon: mdi:car-electric-outline
+        ttl: 0
+        priority: high
+        tag: mach-e-not-charing
+        actions:
+        - action: IGNORE_MACH-E_CHARGING_NOTIFICATION
+          title: Ignore
+  - wait_for_trigger:
+    - platform: state
+      entity_id:
+      - sensor.fordpass_elvehcharging
+      to: CONNECTED
+      attribute: Plug Status
+    - platform: event
+      event_type: mobile_app_notification_action
+      event_data:
+        action: IGNORE_MACH-E_CHARGING_NOTIFICATION
+    - platform: state
+      entity_id:
+      - device_tracker.fordpass_tracker
+      to: not_home
+    continue_on_timeout: false
+  - device_id: 171c8f1cbdc67a075d1170858166fd45
+    domain: zwave_js
+    type: set_config_parameter
+    endpoint: 0
+    parameter: 22
+    bitmask:
+    subtype: 22 (Status LED 2 Color) on endpoint 0
+    value: 0
+  - device_id: fc14d585e20bc18f0fae2b868f5849f3
+    domain: zwave_js
+    type: set_config_parameter
+    endpoint: 0
+    parameter: 22
+    bitmask:
+    subtype: 22 (Status LED 2 Color) on endpoint 0
+    value: 0
+  - action: notify.all_mobile_phones
+    metadata: {}
+    data:
+      message: clear_notification
+      data:
+        tag: mach-e-not-charing
+  mode: single
