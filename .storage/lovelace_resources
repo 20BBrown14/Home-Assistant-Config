@@ -93,6 +93,11 @@
         "id": "72814b214b03452a8439199e755ea990",
         "url": "/hacsfiles/restriction-card/restriction-card.js?hacstag=215633404129",
         "type": "module"
+      },
+      {
+        "id": "ff1b757481ed4c969916f3f02d9d79fd",
+        "url": "/hacsfiles/Ultra-Vehicle-Card/ultra-vehicle-card.js?hacstag=8332067951686",
+        "type": "module"
       }
     ]
   }

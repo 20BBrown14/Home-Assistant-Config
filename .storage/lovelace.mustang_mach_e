@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.mustang_mach_e",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "cards": [
+            {
+              "title": "Mustang Mach-E",
+              "image_url": "https://di-sitebuilder-assets.s3.amazonaws.com/Ford/MLP/Mustang_MachE/2023/trims-premium.png",
+              "charging_image_url": "",
+              "image_url_type": "image",
+              "charging_image_url_type": "none",
+              "vehicle_type": "EV",
+              "unit_type": "mi",
+              "level_entity": "",
+              "range_entity": "",
+              "charging_status_entity": "sensor.fordpass_elvehcharging",
+              "location_entity": "device_tracker.fordpass_tracker",
+              "mileage_entity": "sensor.fordpass_odometer",
+              "show_level": true,
+              "show_range": true,
+              "show_location": true,
+              "show_mileage": true,
+              "show_car_state": true,
+              "show_charge_limit": true,
+              "icon_grid_entities": [],
+              "custom_icons": {
+                "sensor.fordpass_oil": {
+                  "inactiveState": "default",
+                  "activeState": "default"
+                },
+                "sensor.fordpass_tirepressure": {
+                  "inactiveState": "attribute:FRONT_LEFT:",
+                  "activeState": "attribute:FRONT_LEFT:",
+                  "active": "mdi:account",
+                  "inactive": "mdi:account-group"
+                }
+              },
+              "icon_interactions": {},
+              "icon_styles": {},
+              "icon_labels": {
+                "sensor.fordpass_tirepressure": "top"
+              },
+              "hybrid_display_order": "fuel_first",
+              "car_state_entity": "sensor.fordpass_ignitionstatus",
+              "charge_limit_entity": "",
+              "icon_size": 24,
+              "icon_gap": 12,
+              "showEntityInformation": true,
+              "carStateTextColor": "#e1e1e1",
+              "rangeTextColor": "#e1e1e1",
+              "percentageTextColor": "#e1e1e1",
+              "icon_sizes": {},
+              "engine_on_entity": "",
+              "row_separator_color": "Default",
+              "row_separator_height": 1,
+              "row_separators": {},
+              "iconActiveColor": "#03a9f4",
+              "iconInactiveColor": "#e1e1e1",
+              "useFormattedEntities": true,
+              "mainImageHeight": "140px",
+              "chargingImageHeight": "140px",
+              "showTitle": true,
+              "layoutType": "single",
+              "useBarGradient": true,
+              "barGradientStops": [
+                {
+                  "percentage": 20,
+                  "color": "#ff0000"
+                },
+                {
+                  "percentage": 100,
+                  "color": "#00ff00"
+                }
+              ],
+              "cardTitleColor": "#e1e1e1",
+              "cardBackgroundColor": "#1c1c1c",
+              "barBackgroundColor": "#1c1c1c",
+              "barBorderColor": "#9b9b9b",
+              "barFillColor": "#03a9f4",
+              "limitIndicatorColor": "#e1e1e1",
+              "infoTextColor": "#9b9b9b",
+              "show_engine_animation": true,
+              "show_charging_animation": true,
+              "show_charging_status": true,
+              "show_engine_on": true,
+              "engine_on_image_url_type": "none",
+              "type": "custom:ultra-vehicle-card",
+              "battery_level_entity": "sensor.fordpass_fuel",
+              "battery_range_entity": "sensor.fordpass_elveh",
+              "fuel_level_entity": "",
+              "fuel_range_entity": "",
+              "show_battery": true,
+              "show_battery_range": true,
+              "show_fuel": true,
+              "show_fuel_range": true,
+              "custom_labels": {},
+              "charging_image_entity": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
