@@ -60,7 +60,7 @@ rest_command: !include rest_commands.yaml
 
 binary_sensor: !include binary_sensors.yaml
 
-sensor: !include sensors.yaml
+sensor: !include_dir_merge_list sensors/
 
 input_select: !include input_selects.yaml
 

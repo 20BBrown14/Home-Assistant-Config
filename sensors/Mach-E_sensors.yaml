@@ -1,0 +1,286 @@
+# Mach-E
+- platform: template
+  sensors:
+    mme_12v_battery_voltage: 
+      friendly_name: Mach-E 12v Battery Voltage
+      unit_of_measurement: 'V'
+      value_template: "{{state_attr('sensor.fordpass_battery', 'Battery Voltage')}}"
+    
+    mme_driver_door:
+      friendly_name: Mach-E Driver Door
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'DRIVER')}}"
+    mme_rear_driver_door:
+      friendly_name: Mach-E Rear Driver Door
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'REAR_LEFT')}}"
+    mme_passenger_door:
+      friendly_name: Mach-E Passenger Door
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'PASSENGER')}}"
+    mme_rear_passenger_door:
+      friendly_name: Mach-E Rear Passenger Door
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'REAR_RIGHT')}}"
+    mme_tailgate:
+      friendly_name: Mach-E Tailgate
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'TAILGATE')}}"
+    mme_inner_tailgate:
+      friendly_name: Mach-E Inner Tailgate
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'INNER_TAILGATE')}}"
+    mme_hood:
+      friendly_name: Mach-E Hood
+      value_template: "{{state_attr('sensor.fordpass_doorStatus', 'HOOD')}}"
+    
+    mme_battery_performance_status:
+      friendly_name: Mach-E Battery Performance Status
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Battery Performance Status')}}"
+    mme_battery_charge:
+      friendly_name: Mach-E Battery Charge
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Battery Charge')}}"
+    mme_battery_actual_charge:
+      friendly_name: Mach-E Battery Actual Charge
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Battery Actual Charge')}}"
+    mme_maximum_battery_capacity:
+      friendly_name: Mach-E Maximum Battery Capacity
+      unit_of_measurement: 'kWh'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Maximum Battery Capacity')}}"
+    mme_maximum_battery_range:
+      friendly_name: Mach-E Maximum Battery Range
+      unit_of_measurement: 'mi'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Maximum Battery Range')}}"
+    mme_battery_voltage:
+      friendly_name: Mach-E Battery Voltage
+      unit_of_measurement: 'V'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Battery Voltage')}}"
+    mme_battery_amperage:
+      friendly_name: Mach-E Battery Amperage
+      unit_of_measurement: 'A'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Battery Amperage')}}"
+    mme_battery_kw:
+      friendly_name: Mach-E Battery kW
+      unit_of_measurement: 'kW'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Battery kW')}}"
+    mme_motor_voltage: 
+      friendly_name: Mach-E Motor Voltage
+      unit_of_measurement: 'V'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Motor Voltage')}}"
+    mme_motor_amperage:
+      friendly_name: Mach-E Motor Amperage
+      unit_of_measurement: 'A'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Motor Amperage')}}"
+    mme_motor_kw:
+      friendly_name: Mach-E Motor kW
+      unit_of_measurement: 'kW'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Motor kW')}}"
+    mme_trip_driving_score:
+      friendly_name: Mach-E Trip Driving Score
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Driving Score')}}"
+    mme_trip_range_regenerated:
+      friendly_name: Mach-E Trip Range Regenerated
+      unit_of_measurement: 'mi'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Range Regenerated')}}"
+    mme_trip_speed_score:
+      friendly_name: Mach-E Trip Spped Score
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Speed Score')}}"
+    mme_trip_deceleration_score:
+      friendly_name: Mach-E Trip Deceleration Score
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Deceleration Score')}}"
+    mme_trip_acceleration_score:
+      friendly_name: Mach-E Trip Acceleration Score
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Acceleration Score')}}"
+    mme_trip_electrical_efficiency:
+      friendly_name: Mach-E Trip Electrical Efficiency
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Electrical Efficiency')}}"
+    mme_trip_ambient_temp:
+      friendly_name: Mach-E Trip Ambient Temp
+      unit_of_measurement: '°F'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Ambient Temp')}}"
+    mme_trip_outside_air_ambient_temp:
+      friendly_name: Mach-E Trip Outside Air Ambient Temp
+      unit_of_measurement: '°F'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Outside Air Ambient Temp')}}"
+    mme_trip_duration:
+      friendly_name: Mach-E Trip Duration
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Duration')}}"
+    mme_trip_cabin_temp:
+      friendly_name: Mach-E Trip Cabin Temp
+      unit_of_measurement: '°F'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Cabin Temp')}}"
+    mme_trip_energy_consumed:
+      friendly_name: Mach-E Trip Energy Consumed
+      unit_of_measurement: 'kWh'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Energy Consumed')}}"
+    mme_distance_traveled:
+      friendly_name: Mach-E Trip Distance Traveled
+      unit_of_measurement: 'mi'
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Distance Traveled')}}"
+    mme_trip_efficiency:
+      friendly_name: Mach-E Trip Efficiency
+      value_template: "{{state_attr('sensor.fordpass_elVeh', 'Trip Efficiency')}}"
+
+    mme_plug_status:
+      friendly_name: Mach-E Plug status
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Plug Status')}}"
+    mme_charging_status_status:
+      friendly_name: Mach-E Charging Station Status
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charging Station Status')}}"
+    mme_charging_status:
+      friendly_name: Mach-E Charging Status
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charging Status')}}"
+    mme_charging_type:
+      friendly_name: Mach-E Charging Type
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charging Type')}}"
+    mme_charing_voltage:
+      friendly_name: Mach-E Charging Voltage
+      unit_of_measurement: 'V'
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charging Voltage')}}"
+    mme_charging_amperage:
+      friendly_name: Mach-E Charging Amperage
+      unit_of_measurement: 'A'
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charing Amperage')}}"
+    mme_charging_kw:
+      friendly_name: Mach-E Charging kW
+      unit_of_measurement: 'kW'
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charging kW')}}"
+    mme_battery_temperature:
+      friendly_name: Mach-E Battery Temperature
+      unit_of_measurement: '°F'
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Battery Temperature')}}"
+    mme_state_of_charge:
+      friendly_name: Mach-E State of Charge
+      unit_of_measurement: '%'
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Status of Charge')}}"
+    mme_estimated_charge_end_time:
+      friendly_name: Mach-E Estimated Charge End Time
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Estimated End Time')}}"
+    
+    mme_indicator_adaptive_cruise_control:
+      friendly_name: Mach-E Indicator - Adaptive Cruise Control
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'adaptiveCruiseControl')}}"
+    mme_indicator_air_filter_minder:
+      friendly_name: Mach-E Indicator - Air Filter Minder
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'airFilterMinder')}}"
+    mme_indicator_air_suspension_ride_control_fault:
+      friendly_name: Mach-E Indicator - Air Suspension Ride Control Fault
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'airSuspensionRideControlFault')}}"
+    mme_indicator_all_wheel_drive_disabled:
+      friendly_name: Mach-E Indicator - All Wheel Drive Disabled
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'allWheelDriveDisabled')}}"
+    mme_indicator_anti_theft:
+      friendly_name: Mach-E Indicator - Anti Theft
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'antiTheft')}}"
+    mme_indicator_antilock_brake:
+      friendly_name: Mach-E Indicator - Antilock Brake
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'antilockBrake')}}"
+    mme_indicator_blind_spot_detection:
+      friendly_name: Mach-E Indicator - Blind Spot Detection
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'blindSpotDetection')}}"
+    mme_indicator_brake_warning:
+      friendly_name: Mach-E Indicator - Brake Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'brakeWarning')}}"
+    mme_indicator_charge_system_fault:
+      friendly_name: Mach-E Indicator - Charge System Fault
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'chargeSystemFault')}}"
+    mme_indicator_check_fuel_cap:
+      friendly_name: Mach-E Indicator - Check Fuel Cap
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'checkFuelCap')}}"
+    mme_indicator_check_fuel_fill_inlet:
+      friendly_name: Mach-E Indicator - Check Fuel Fill Inlet
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'checkFuelFillInlet')}}"
+    mme_indicator_diesel_engine_idle_shutdown:
+      friendly_name: Mach-E Indicator - Diesel Engine Idle Shutdown
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselEngineIdleShutdown')}}"
+    mme_indicator_diesel_engine_warning:
+      friendly_name: Mach-E Indicator - Diesel Engine Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselEngineWarning')}}"
+    mme_indicator_diesel_exhaust_fluid_low:
+      friendly_name: Mach-E Indicator - Diesel Exhaust Fluid Low
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselExhaustFluidLow')}}"
+    mme_indicator_diesel_exhaust_fluid_system_fault:
+      friendly_name: Mach-E Indicator - Diesel Exhaust Fluid System Fault
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselExhaustFluidSystemFault')}}"
+    mme_indicator_diesel_exhaust_over_temp:
+      friendly_name: Mach-E Indicator - Diesel Exhaust Over Temp
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselExhaustOverTemp')}}"
+    mme_indicator_diesel_particulate_filter:
+      friendly_name: Mach-E Indicator - Diesel Particulate Filter
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselParticulateFilter')}}"
+    mme_indicator_diesel_pre_heat:
+      friendly_name: Mach-E Indicator - Diesel Pre Heat
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'dieselPreHeat')}}"
+    mme_indicator_electric_trailer_brake_connection:
+      friendly_name: Mach-E Indicator - Electric Trailer Brake Connection
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'electricTrailerBrakeConnection')}}"
+    mme_indicator_engine_coolant_over_temp:
+      friendly_name: Mach-E Indicator - Engine Coolant Over Temp
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'engineCoolantOverTemp')}}"
+    mme_indicator_fasten_seat_belt_warning:
+      friendly_name: Mach-E Indicator - Fasten Seat Belt Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'fastenSeatBeltWarning')}}"
+    mme_indicator_forward_collision_warning:
+      friendly_name: Mach-E Indicator - Forward Collision Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'forwardCollisionWarning')}}"
+    mme_indicator_fuel_door_open:
+      friendly_name: Mach-E Indicator - Fuel Door Open
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'fuelDoorOpen')}}"
+    mme_indicator_hev_hazard:
+      friendly_name: Mach-E Indicator - Hev Hazard
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'hevHazard')}}"
+    mme_indicator_hill_descent_control_fault:
+      friendly_name: Mach-E Indicator - Hill Descent Control Fault
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'hillDescentControlFault')}}"
+    mme_indicator_hill_start_assist_warning:
+      friendly_name: Mach-E Indicator - Hill Start Assist Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'hillStartAssistWarning')}}"
+    mme_indicator_lane_keeping_aid:
+      friendly_name: Mach-E Indicator - Lane Keeping Aid
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'laneKeepingAid')}}"
+    mme_indicator_lighting_system_failure:
+      friendly_name: Mach-E Indicator - Lighting System Failure
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'lightingSystemFailure')}}"
+    mme_indicator_low_engine_oil_pressure:
+      friendly_name: Mach-E Indicator - Low Engine Oil Pressure
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'lowEngineOilPressure')}}"
+    mme_indicator_low_fuel:
+      friendly_name: Mach-E Indicator - Low Fuel
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'lowFuel')}}"
+    mme_indicator_low_washer_fluid:
+      friendly_name: Mach-E Indicator - Low Washer Fluid
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'lowWasherFluid')}}"
+    mme_indicator_malfunction_indicator:
+      friendly_name: Mach-E Indicator - Malfunction Indicator
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'malfunctionIndicator')}}"
+    mme_indicator_park_aid_malfunction:
+      friendly_name: Mach-E Indicator - Park Aid Malfunction
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'parkAidMalfunction')}}"
+    mme_indicator_passive_entry_passive_start:
+      friendly_name: Mach-E Indicator - Passive Entry Passive Start
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'passiveEntryPassiveStart')}}"
+    mme_indicator_powertrain_malfunction:
+      friendly_name: Mach-E Indicator - Powertrain Malfunction
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'powertrainMalfunction')}}"
+    mme_indicator_restraints_indicator_warning:
+      friendly_name: Mach-E Indicator - Restraints Indicator Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'restraintsIndicatorWarning')}}"
+    mme_indicator_service_steering:
+      friendly_name: Mach-E Indicator - Service Steering
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'serviceSteering')}}"
+    mme_indicator_start_stop_engine_warning:
+      friendly_name: Mach-E Indicator - Start Stop Engine Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'startStopEngineWarning')}}"
+    mme_indicator_traction_control_disabled:
+      friendly_name: Mach-E Indicator - Traction Control Disabled
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'tractionControlDisabled')}}"
+    mme_indicator_traction_control_event:
+      friendly_name: Mach-E Indicator - Traction Control Event
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'tractionControlEvent')}}"
+    mme_indicator_tire_pressure_monitor_system_warning:
+      friendly_name: Mach-E Indicator - Tire Pressure Monitor System Warning
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'tirePressureMonitorSystemWarning')}}"
+    mme_indicator_water_in_fuel:
+      friendly_name: Mach-E Indicator - Water In Fuel
+      value_template: "{{state_attr('sensor.fordpass_indicators', 'waterInFuel')}}"
