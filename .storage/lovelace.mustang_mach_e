@@ -100,6 +100,46 @@
               "show_fuel_range": true,
               "custom_labels": {},
               "charging_image_entity": ""
+            },
+            {
+              "type": "custom:auto-entities",
+              "card": {
+                "type": "entities",
+                "show_header_toggle": true,
+                "state_color": false
+              },
+              "filter": {
+                "include": [
+                  {
+                    "entity_id": "*mme_*"
+                  }
+                ],
+                "exclude": [
+                  {
+                    "entity_id": "*mme_indicator*"
+                  }
+                ]
+              },
+              "sort": {
+                "method": "friendly_name"
+              }
+            },
+            {
+              "type": "custom:auto-entities",
+              "card": {
+                "type": "entities"
+              },
+              "filter": {
+                "include": [
+                  {
+                    "entity_id": "*mme_indicator*"
+                  }
+                ],
+                "exclude": []
+              },
+              "sort": {
+                "method": "friendly_name"
+              }
             }
           ]
         }
