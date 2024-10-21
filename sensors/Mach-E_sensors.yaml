@@ -141,7 +141,7 @@
     mme_charging_amperage:
       friendly_name: Mach-E Charging Amperage
       unit_of_measurement: 'A'
-      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charing Amperage')}}"
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Charging Amperage')}}"
     mme_charging_kw:
       friendly_name: Mach-E Charging kW
       unit_of_measurement: 'kW'
@@ -153,7 +153,7 @@
     mme_state_of_charge:
       friendly_name: Mach-E State of Charge
       unit_of_measurement: '%'
-      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Status of Charge')}}"
+      value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'State of Charge')}}"
     mme_estimated_charge_end_time:
       friendly_name: Mach-E Estimated Charge End Time
       value_template: "{{state_attr('sensor.fordpass_elVehCharging', 'Estimated End Time')}}"
@@ -284,3 +284,61 @@
     mme_indicator_water_in_fuel:
       friendly_name: Mach-E Indicator - Water In Fuel
       value_template: "{{state_attr('sensor.fordpass_indicators', 'waterInFuel')}}"
+
+    mme_accelerator_pedal_position:
+      friendly_name: Mach-E Accelerator Pedal Position
+      value_template: "{{state_attr('sensor.fordpass_speed', 'acceleratorPedalPosition')}}"
+    mme_brake_pedal_status:
+      friendly_name: Mach-E Brake Pedal Status
+      value_template: "{{state_attr('sensor.fordpass_speed', 'brakePedalStatus')}}"
+    mme_brake_torque:
+      friendly_name: Mach-E Brake Torque
+      value_template: "{{state_attr('sensor.fordpass_speed', 'brakeTorque')}}"
+    mme_gear_level_position:
+      friendly_name: Mach-E Gear Level Position
+      value_template: "{{state_attr('sensor.fordpass_speed', 'gearLeverPosition')}}"
+    mme_parking_brake_status:
+      friendly_name: Mach-E Parking Brake Status
+      value_template: "{{state_attr('sensor.fordpass_speed', 'parkingBrakeStatus')}}"
+    mme_torque_at_transmission:
+      friendly_name: Mach-E Torque At Transmission
+      value_template: "{{state_attr('sensor.fordpass_speed', 'torqueAtTransmission')}}"
+
+    mme_tire_pressure_front_left:
+      friendly_name: Mach-E Tire Pressure Front Left
+      value_template: "{{state_attr('sensor.fordpass_tirePressure', 'FRONT_LEFT')}}"
+      unit_of_measurement: "psi"
+    mme_tire_pressure_front_right:
+      friendly_name: Mach-E Tire Pressure Front Right
+      value_template: "{{state_attr('sensor.fordpass_tirePressure', 'FRONT_RIGHT')}}"
+      unit_of_measurement: "psi"
+    mme_tire_pressure_rear_left:
+      friendly_name: Mach-E Tire Pressure Rear LEFT
+      value_template: "{{state_attr('sensor.fordpass_tirePressure', 'REAR_LEFT')}}"
+      unit_of_measurement: "psi"
+    mme_tire_pressure_rear_right:
+      friendly_name: Mach-E Tire Pressure Rear Right
+      value_template: "{{state_attr('sensor.fordpass_tirePressure', 'REAR_RIGHT')}}"
+      unit_of_measurement: "psi"
+
+    mme_tracker_source:
+      friendly_name: Mach-E Tracker - Source
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'source_type')}}"
+    mme_tracker_latitude:
+      friendly_name: Mach-E Tracker - Latitude
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'latitude')}}"
+    mme_tracker_longitude:
+      friendly_name: Mach-E Tracker - Longitude
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'longitude')}}"
+    mme_tracker_gps_accuracy:
+      friendly_name: Mach-E Tracker - GPS Accuracy
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'gps_accuracy')}}"
+    mme_tracker_altitude:
+      friendly_name: Mach-E Tracker - Altitude
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'Altitude')}}"
+    mme_tracker_gps_coordinate_method:
+      friendly_name: Mach-E Tracker - GPS Coordinate Method
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'gpsCoordinateMethod')}}"
+    mme_tracker_gps_dimension:
+      friendly_name: Mach-E Tracker - GPS Dimension
+      value_template: "{{state_attr('device_tracker.fordpass_tracker', 'gpsDimension')}}"
