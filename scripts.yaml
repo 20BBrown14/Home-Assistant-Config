@@ -347,22 +347,22 @@ turn_on_holiday_lights:
         minutes: 0
         seconds: 3
         milliseconds: 0
-  - service: switch.turn_on
-    data: {}
+  - data: {}
     target:
       entity_id: switch.holiday_lights
-  - service: light.turn_on
-    data:
-      color_name: green
+    action: switch.turn_on
+  - data:
+      color_name: purple
       brightness_pct: 100
     target:
       entity_id: light.outdoor_sconce_lights
-  - service: light.turn_on
-    data:
+    action: light.turn_on
+  - data:
       brightness_pct: 63
-      effect: Christmas
+      color_name: purple
     target:
       entity_id: light.porch_light
+    action: light.turn_on
   - type: turn_on
     device_id: 39deb1f87e6aad05d538dd7f5a39245b
     entity_id: switch.christmas_tree
